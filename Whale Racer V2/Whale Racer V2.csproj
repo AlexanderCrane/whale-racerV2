@@ -243,6 +243,7 @@
     <Compile Include="Assets\Ocean Assets\Scripts\StandardCausticsShaderGUI.cs" />
     <Compile Include="Assets\Ocean Assets\Scripts\UWCaustics.cs" />
     <Compile Include="Assets\Scripts\MenuButton.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\System\ExactWaterHeight.cs" />
     <Compile Include="Assets\Scripts\System\HeightInWater.cs" />
   </ItemGroup>
