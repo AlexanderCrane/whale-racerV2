@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour {
         xMovement = Input.GetAxis("Horizontal");
         zMovement = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
-        Debug.Log(xMovement);
+        //Debug.Log(xMovement);
         Turn();
         whaleBody.AddRelativeForce(movement * -whaleSpeed);
 	}
