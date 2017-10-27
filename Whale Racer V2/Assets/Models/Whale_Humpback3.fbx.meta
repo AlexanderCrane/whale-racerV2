@@ -1,0 +1,4009 @@
+fileFormatVersion: 2
+guid: a8faa2c734e08f04d985c96fd6cc20b2
+timeCreated: 1471743707
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone
+    100002: Bone_end
+    100004: finL_joint
+    100006: finL_mid
+    100008: finL_mid._elb
+    100010: finL_mid._elb_end
+    100012: finL_shoulder
+    100014: finL_tip
+    100016: finL_tip_end
+    100018: finL_tipIK
+    100020: finL_tipIK_end
+    100022: finR_joint
+    100024: finR_mid
+    100026: finR_mid_elb
+    100028: finR_mid_elb_end
+    100030: finR_shoulder
+    100032: finR_tip
+    100034: finR_tip_end
+    100036: finR_tipIK
+    100038: finR_tipIK_end
+    100040: fluke
+    100042: fluke_end
+    100044: fluke_joint
+    100046: FlukeIK
+    100048: FlukeIK_end
+    100050: flukeL_mid
+    100052: flukeL_tip
+    100054: flukeL_tip_end
+    100056: flukeL_tipIK
+    100058: flukeL_tipIK_end
+    100060: flukeR_IK
+    100062: flukeR_IK_end
+    100064: flukeR_mid
+    100066: flukeR_tip
+    100068: flukeR_tip_end
+    100070: head
+    100072: Head_Rotor
+    100074: Head_Rotor_end
+    100076: Humpback
+    100078: jaw_bottom
+    100080: jaw_bottom_base
+    100082: jaw_bottomIK
+    100084: jaw_bottomIK_end
+    100086: jaw_top
+    100088: jaw_topIK
+    100090: jaw_topIK_end
+    100092: root
+    100094: Root Control
+    100096: Root Control_end
+    100098: spine_1
+    100100: spine_1.001
+    100102: spine_1.001_end
+    100104: spine_2
+    100106: spine_3
+    100108: spine_3.001
+    100110: spine_3.001_end
+    100112: spine_4
+    100114: spine_4.001
+    100116: spine_4.001_end
+    100118: spine_5
+    100120: spine_5.001
+    100122: spine_5.001_end
+    100124: tongue_base
+    100126: tongue_mid
+    100128: tongue_tip
+    100130: tongue_tip_end
+    100132: Whale Rig
+    100134: //RootNode
+    400000: Bone
+    400002: Bone_end
+    400004: finL_joint
+    400006: finL_mid
+    400008: finL_mid._elb
+    400010: finL_mid._elb_end
+    400012: finL_shoulder
+    400014: finL_tip
+    400016: finL_tip_end
+    400018: finL_tipIK
+    400020: finL_tipIK_end
+    400022: finR_joint
+    400024: finR_mid
+    400026: finR_mid_elb
+    400028: finR_mid_elb_end
+    400030: finR_shoulder
+    400032: finR_tip
+    400034: finR_tip_end
+    400036: finR_tipIK
+    400038: finR_tipIK_end
+    400040: fluke
+    400042: fluke_end
+    400044: fluke_joint
+    400046: FlukeIK
+    400048: FlukeIK_end
+    400050: flukeL_mid
+    400052: flukeL_tip
+    400054: flukeL_tip_end
+    400056: flukeL_tipIK
+    400058: flukeL_tipIK_end
+    400060: flukeR_IK
+    400062: flukeR_IK_end
+    400064: flukeR_mid
+    400066: flukeR_tip
+    400068: flukeR_tip_end
+    400070: head
+    400072: Head_Rotor
+    400074: Head_Rotor_end
+    400076: Humpback
+    400078: jaw_bottom
+    400080: jaw_bottom_base
+    400082: jaw_bottomIK
+    400084: jaw_bottomIK_end
+    400086: jaw_top
+    400088: jaw_topIK
+    400090: jaw_topIK_end
+    400092: root
+    400094: Root Control
+    400096: Root Control_end
+    400098: spine_1
+    400100: spine_1.001
+    400102: spine_1.001_end
+    400104: spine_2
+    400106: spine_3
+    400108: spine_3.001
+    400110: spine_3.001_end
+    400112: spine_4
+    400114: spine_4.001
+    400116: spine_4.001_end
+    400118: spine_5
+    400120: spine_5.001
+    400122: spine_5.001_end
+    400124: tongue_base
+    400126: tongue_mid
+    400128: tongue_tip
+    400130: tongue_tip_end
+    400132: Whale Rig
+    400134: //RootNode
+    4300000: Humpback
+    7400000: Whale Rig|Backwards
+    7400002: Whale Rig|Eating_Fancy
+    7400004: Whale Rig|Eating_Normal
+    7400006: Whale Rig|Emerge
+    7400008: Whale Rig|HemiAction
+    7400010: Whale Rig|HumpbackAction
+    7400012: Whale Rig|Idle_1
+    7400014: Whale Rig|Idle_2
+    7400016: Whale Rig|Idle_2_SL
+    7400018: Whale Rig|Idle_2_SR
+    7400020: Whale Rig|Idle_2_TurnL
+    7400022: Whale Rig|Idle_2_TurnR
+    7400024: Whale Rig|Jump
+    7400026: Whale Rig|Roam
+    7400028: Whale Rig|Roam_SL
+    7400030: Whale Rig|Roam_SR
+    7400032: Whale Rig|Rush
+    7400034: Whale Rig|Rush_SL
+    7400036: Whale Rig|Rush_SR
+    7400038: Whale Rig|Submerge
+    7400040: Humpback|HemiAction
+    7400042: Humpback|HumpbackAction
+    7400044: Humpback|Jump
+    9500000: //RootNode
+    13700000: Humpback
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Whale Rig|Backwards
+      takeName: Whale Rig|Backwards
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Eating_Fancy
+      takeName: Whale Rig|Eating_Fancy
+      firstFrame: 1
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Eating_Normal
+      takeName: Whale Rig|Eating_Normal
+      firstFrame: 1
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Emerge
+      takeName: Whale Rig|Emerge
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|HemiAction
+      takeName: Whale Rig|HemiAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|HumpbackAction
+      takeName: Whale Rig|HumpbackAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Idle_1
+      takeName: Whale Rig|Idle_1
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Idle_2
+      takeName: Whale Rig|Idle_2
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Idle_2_SL
+      takeName: Whale Rig|Idle_2_SL
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Idle_2_SR
+      takeName: Whale Rig|Idle_2_SR
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Idle_2_TurnL
+      takeName: Whale Rig|Idle_2_TurnL
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Idle_2_TurnR
+      takeName: Whale Rig|Idle_2_TurnR
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Jump
+      takeName: Whale Rig|Jump
+      firstFrame: 1
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Roam
+      takeName: Whale Rig|Roam
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Roam_SL
+      takeName: Whale Rig|Roam_SL
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Roam_SR
+      takeName: Whale Rig|Roam_SR
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Rush
+      takeName: Whale Rig|Rush
+      firstFrame: 1
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Rush_SL
+      takeName: Whale Rig|Rush_SL
+      firstFrame: 1
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Rush_SR
+      takeName: Whale Rig|Rush_SR
+      firstFrame: 1
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Whale Rig|Submerge
+      takeName: Whale Rig|Submerge
+      firstFrame: 1
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Humpback|HemiAction
+      takeName: Humpback|HemiAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Humpback|HumpbackAction
+      takeName: Humpback|HumpbackAction
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Humpback|Jump
+      takeName: Humpback|Jump
+      firstFrame: 1
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Humpback
+        weight: 1
+      - path: Whale Rig
+        weight: 1
+      - path: Whale Rig/Bone
+        weight: 1
+      - path: Whale Rig/Bone/Bone_end
+        weight: 1
+      - path: Whale Rig/finL_mid._elb
+        weight: 1
+      - path: Whale Rig/finL_mid._elb/finL_mid._elb_end
+        weight: 1
+      - path: Whale Rig/finL_tipIK
+        weight: 1
+      - path: Whale Rig/finL_tipIK/finL_tipIK_end
+        weight: 1
+      - path: Whale Rig/finR_mid_elb
+        weight: 1
+      - path: Whale Rig/finR_mid_elb/finR_mid_elb_end
+        weight: 1
+      - path: Whale Rig/finR_tipIK
+        weight: 1
+      - path: Whale Rig/finR_tipIK/finR_tipIK_end
+        weight: 1
+      - path: Whale Rig/FlukeIK
+        weight: 1
+      - path: Whale Rig/FlukeIK/FlukeIK_end
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK
+        weight: 1
+      - path: Whale Rig/flukeL_tipIK/flukeL_tipIK_end
+        weight: 1
+      - path: Whale Rig/flukeR_IK
+        weight: 1
+      - path: Whale Rig/flukeR_IK/flukeR_IK_end
+        weight: 1
+      - path: Whale Rig/Head_Rotor
+        weight: 1
+      - path: Whale Rig/Head_Rotor/Head_Rotor_end
+        weight: 1
+      - path: Whale Rig/root
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip
+        weight: 1
+      - path: Whale Rig/root/finL_shoulder/finL_joint/finL_mid/finL_tip/finL_tip_end
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip
+        weight: 1
+      - path: Whale Rig/root/finR_shoulder/finR_joint/finR_mid/finR_tip/finR_tip_end
+        weight: 1
+      - path: Whale Rig/root/head
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/jaw_bottom/jaw_bottomIK/jaw_bottomIK_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip
+        weight: 1
+      - path: Whale Rig/root/head/jaw_bottom_base/tongue_base/tongue_mid/tongue_tip/tongue_tip_end
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK
+        weight: 1
+      - path: Whale Rig/root/head/jaw_top/jaw_topIK/jaw_topIK_end
+        weight: 1
+      - path: Whale Rig/root/spine_1
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/fluke/fluke_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeL_mid/flukeL_tip/flukeL_tip_end
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip
+        weight: 1
+      - path: Whale Rig/root/spine_1/spine_2/spine_3/spine_4/spine_5/fluke_joint/flukeR_mid/flukeR_tip/flukeR_tip_end
+        weight: 1
+      - path: Whale Rig/Root Control
+        weight: 1
+      - path: Whale Rig/Root Control/Root Control_end
+        weight: 1
+      - path: Whale Rig/spine_1.001
+        weight: 1
+      - path: Whale Rig/spine_1.001/spine_1.001_end
+        weight: 1
+      - path: Whale Rig/spine_3.001
+        weight: 1
+      - path: Whale Rig/spine_3.001/spine_3.001_end
+        weight: 1
+      - path: Whale Rig/spine_4.001
+        weight: 1
+      - path: Whale Rig/spine_4.001/spine_4.001_end
+        weight: 1
+      - path: Whale Rig/spine_5.001
+        weight: 1
+      - path: Whale Rig/spine_5.001/spine_5.001_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
