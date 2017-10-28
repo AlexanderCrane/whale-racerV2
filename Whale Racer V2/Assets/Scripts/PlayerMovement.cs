@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private float whaleSpeed = 0f;
     private float turnSpeed = 10f;
+    public float accel = .5f;
 
     private Rigidbody whaleBody;
     private void Awake()
@@ -23,7 +24,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetAxisRaw("Vertical") > 0)
         {
             if (whaleSpeed < 17f){
-                whaleSpeed += .5f;
+                whaleSpeed += accel;
             }
             else
             {
@@ -35,7 +36,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             if (whaleSpeed < 6f)
             {
-                whaleSpeed += .5f;
+                whaleSpeed += accel;
          
             }
             else
@@ -48,7 +49,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             if (whaleSpeed < -1)
             {
-                whaleSpeed += .1f;
+                whaleSpeed += accel/5;
             }
             else
             {

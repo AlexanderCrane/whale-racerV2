@@ -2476,10 +2476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2814394d865a8174aa1bc10b8261b987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerID: 0
+  playerID: 1
   pmInstance: {fileID: 0}
   currentCheckpoint: 0
-  totalLaps: 1
   checkPoints: []
 --- !u!1 &495500698 stripped
 GameObject:
@@ -5612,6 +5611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d326b7b0bd691489bd6621c4278332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalLaps: 1
 --- !u!1001 &1300159119
 Prefab:
   m_ObjectHideFlags: 0
