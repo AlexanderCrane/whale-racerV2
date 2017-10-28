@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RaceManager : MonoBehaviour {
-    public static RaceManager rmInstance = null;
+public class PlayerManager : MonoBehaviour {
+    public int playerID = 0;
+    public PlayerManager pmInstance = null;
     public int currentCheckpoint = 0;
     private int currentLap = 1;
-    public int totalLaps = 1;
-    public List<Checkpoint> checkPoints;
+    public UnityEngine.Object[] checkPoints;
 	// Use this for initialization
 	void Awake () {
-		if (rmInstance == null)
+		if (pmInstance == null)
         {
-            rmInstance = this;
+            pmInstance = this;
         }
         if(checkPoints == null)
         {
-            checkPoints = new List<Checkpoint>();
+            checkPoints = FindObjectsOfType(typeof(Checkpoint));
         }
-	}
+    }
     public void newLap()
     {
         Debug.Log("Lap" + currentLap + "Complete");
@@ -29,8 +29,9 @@ public class RaceManager : MonoBehaviour {
             point.checkpointHit = false;
         }
         //totalLaps is configurable number of laps for race to last
-        if (currentLap == totalLaps+1)
+        if (currentLap == GameManager.gmInst.totalLaps+1)
         {
+            GameManager.winner = playerID;
             SceneManager.LoadScene(2);
         }
     }

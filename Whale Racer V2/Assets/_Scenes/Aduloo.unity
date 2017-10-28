@@ -2310,61 +2310,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d2a68a9dbf87414091fb9311b5bbffb, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &481412331
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 481412333}
-  - component: {fileID: 481412332}
-  - component: {fileID: 481412334}
-  m_Layer: 0
-  m_Name: RaceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &481412332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 481412331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b7596ce761bbe48bb6cf775d1291c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentCheckpoint: 0
-  checkPoints: []
---- !u!4 &481412333
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 481412331}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.9, y: -8, z: -183.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 36
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &481412334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 481412331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60999992d0f8b58498ce03d2e056dc69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  raceManager: {fileID: 481412331}
 --- !u!1 &483106161
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2323,8 @@ GameObject:
   - component: {fileID: 483106166}
   - component: {fileID: 483106165}
   - component: {fileID: 483106168}
+  - component: {fileID: 483106170}
+  - component: {fileID: 483106169}
   - component: {fileID: 483106164}
   - component: {fileID: 483106163}
   - component: {fileID: 483106162}
@@ -2427,7 +2374,7 @@ MonoBehaviour:
   WindAffectsPosition: 0
   WindFactor: 0.02
   xAngleAddsSliding: 1
-  slideFactor: 0.1
+  slideFactor: 9.91
   cvisible: 1
   wvisible: 1
   svisible: 0
@@ -2506,6 +2453,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3896e3894ac984a85a1e0a0b970a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &483106169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 483106161}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dded933cf416ec4cb8a9efb8fd790d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerManager: {fileID: 0}
+--- !u!114 &483106170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 483106161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2814394d865a8174aa1bc10b8261b987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerID: 0
+  pmInstance: {fileID: 0}
+  currentCheckpoint: 0
+  totalLaps: 1
+  checkPoints: []
 --- !u!1 &495500698 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: d3f049c9972be3246aeea62cf4801583, type: 3}
@@ -5621,6 +5596,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b36c8706cb30c8b4bae6bf0d45406550, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1294451051 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1882047262144390, guid: 6b016b859f96bd746bf408d1b8d2f233,
+    type: 2}
+  m_PrefabInternal: {fileID: 1031274554}
+--- !u!114 &1294451052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294451051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d326b7b0bd691489bd6621c4278332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1300159119
 Prefab:
   m_ObjectHideFlags: 0

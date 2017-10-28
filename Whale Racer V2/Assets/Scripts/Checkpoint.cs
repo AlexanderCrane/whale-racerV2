@@ -8,14 +8,15 @@ public class Checkpoint : MonoBehaviour {
 
     void Awake()
     {
-        RaceManager.rmInstance.checkPoints.Add(this);
     }
 	// Update is called once per frame
 	void Update () {
 	}
     void OnTriggerEnter(Collider other)
     {
-        RaceManager manager = RaceManager.rmInstance;
+        GameObject player = other.gameObject;
+        PlayerManager manager = player.GetComponent<PlayerManager>();
+        //PlayerManager manager = managerScript.pmInstance;
         if (!checkpointHit)
         {
             manager.currentCheckpoint = position;
