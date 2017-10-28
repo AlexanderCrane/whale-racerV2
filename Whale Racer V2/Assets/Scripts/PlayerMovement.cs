@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour {
     private float xMovement;
     private float zMovement;
 
-    private float whaleSpeed = 90f;
-    private float turnSpeed = 80f;
+    private float whaleSpeed = 0f;
+    private float turnSpeed = 10f;
 
     private Rigidbody whaleBody;
     private void Awake()
@@ -19,10 +19,46 @@ public class PlayerMovement : MonoBehaviour {
         xMovement = Input.GetAxis("Horizontal");
         zMovement = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
-        //Debug.Log(xMovement);
+        //going forward
+        if (Input.GetAxisRaw("Vertical") > 0)
+        {
+            if (whaleSpeed < 17f){
+                whaleSpeed += .5f;
+            }
+            else
+            {
+                whaleSpeed = 18f;
+            }
+        }
+        //backing up
+        else if (Input.GetAxisRaw("Vertical") < 0)
+        {
+            if (whaleSpeed < 6f)
+            {
+                whaleSpeed += .5f;
+         
+            }
+            else
+            {
+                whaleSpeed = 7f;
+            }
+        }
+        //stopping
+        else
+        {
+            if (whaleSpeed < -1)
+            {
+                whaleSpeed += .1f;
+            }
+            else
+            {
+                whaleSpeed = 0.0f;
+            }
+        }
+        whaleBody.AddRelativeForce(0.0f, 0.0f, zMovement * (-whaleSpeed));
         Turn();
-        whaleBody.AddRelativeForce(movement * -whaleSpeed);
-	}
+
+    }
 
     void Turn()
     {
