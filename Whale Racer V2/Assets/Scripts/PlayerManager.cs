@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour {
     public UnityEngine.Object[] checkPoints;
 	// Use this for initialization
 	void Awake () {
-		if (pmInstance == null)
+		if (pmInstance == null && pmInstance != this)
         {
             pmInstance = this;
         }

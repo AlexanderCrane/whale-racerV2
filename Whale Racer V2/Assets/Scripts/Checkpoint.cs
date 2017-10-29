@@ -14,17 +14,19 @@ public class Checkpoint : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider other)
     {
-        GameObject player = other.gameObject;
-        PlayerManager manager = player.GetComponent<PlayerManager>();
-        //PlayerManager manager = managerScript.pmInstance;
-        if (!checkpointHit)
+        if (other.gameObject.tag == "Player")
         {
-            manager.currentCheckpoint = position;
-            Debug.Log("Checkpoint " + manager.currentCheckpoint);
-            checkpointHit = true;
-            if (position == -1)
+            GameObject player = other.gameObject;
+            PlayerManager manager = player.GetComponent<PlayerManager>();
+            //PlayerManager manager = managerScript.pmInstance;
+            if (!checkpointHit)
             {
-                manager.newLap();
+                manager.currentCheckpoint = position;
+                checkpointHit = true;
+                if (position == -1)
+                {
+                    manager.newLap();
+                }
             }
         }
 
