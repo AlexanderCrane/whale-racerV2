@@ -8,25 +8,23 @@ public class PlayerManager : MonoBehaviour {
     public PlayerManager pmInstance = null;
     public int currentCheckpoint = 0;
     private int currentLap = 1;
-    public UnityEngine.Object[] checkPoints;
+    public bool[] checkpointsHit;
 	// Use this for initialization
 	void Awake () {
 		if (pmInstance == null && pmInstance != this)
         {
             pmInstance = this;
         }
-        if(checkPoints == null)
-        {
-            checkPoints = FindObjectsOfType(typeof(Checkpoint));
-        }
+        checkpointsHit = new bool[12];
     }
     public void newLap()
     {
         Debug.Log("Lap" + currentLap + "Complete");
         this.currentLap++;
-        foreach (Checkpoint point in checkPoints)
+        currentCheckpoint = 0;
+        for(int i =0; i<checkpointsHit.Length; i++)
         {
-            point.checkpointHit = false;
+            checkpointsHit[i] = false;
         }
         //totalLaps is configurable number of laps for race to last
         if (currentLap == GameManager.gmInst.totalLaps+1)

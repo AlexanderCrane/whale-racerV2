@@ -24,8 +24,7 @@ public class MoveTo : MonoBehaviour
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
             Debug.Log("retargeting");
             GameObject nextGoal = wayPoint.next.gameObject;
-            Debug.Log(nextGoal.name);
-            Debug.Log(agent.SetDestination(nextGoal.transform.position));
+            agent.SetDestination(nextGoal.transform.position);
             //agent.SetDestination(nextGoal.transform.position);
         }
     }

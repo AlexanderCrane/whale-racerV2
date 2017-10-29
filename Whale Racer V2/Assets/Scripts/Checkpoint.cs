@@ -18,12 +18,14 @@ public class Checkpoint : MonoBehaviour {
         {
             GameObject player = other.gameObject;
             PlayerManager manager = player.GetComponent<PlayerManager>();
-            //PlayerManager manager = managerScript.pmInstance;
-            if (!checkpointHit)
+            int index = position - 1;
+            //can't hit checkpoints repeatedly or hit them out of order
+            if (!manager.checkpointsHit[index] && (manager.currentCheckpoint == position-1))
             {
+                Debug.Log(player.name + " hit " + this.gameObject.name);
                 manager.currentCheckpoint = position;
-                checkpointHit = true;
-                if (position == -1)
+                manager.checkpointsHit[index] = true;
+                if (position == 12)
                 {
                     manager.newLap();
                 }
