@@ -7,7 +7,8 @@ public class PlayerMovement : MonoBehaviour {
     private float zMovement;
 
     private float whaleSpeed = 0f;
-    private float turnSpeed = 10f;
+    private float turnSpeed = 15f;
+    private int canJump = 0;
     public float accel = .5f;
 
     private Rigidbody whaleBody;
@@ -19,6 +20,9 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate () {
         xMovement = Input.GetAxis("Horizontal");
         zMovement = Input.GetAxis("Vertical");
+        //lock y rotation to 0 so the whale can't be flipped over (for now)
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);
+
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
         //going forward
         if (Input.GetAxisRaw("Vertical") > 0)
@@ -58,6 +62,23 @@ public class PlayerMovement : MonoBehaviour {
         }
         whaleBody.AddRelativeForce(0.0f, 0.0f, zMovement * (-whaleSpeed));
         Turn();
+        Debug.Log(canJump);
+        if (canJump >= 100)
+        {
+            canJump = 100;
+        }
+        else
+        {
+            canJump++;
+        }
+        if (canJump == 100)
+        {
+            if (Input.GetButton("Jump"))
+            {
+                whaleBody.AddRelativeForce(0, 100, -30, ForceMode.Impulse);
+                canJump = 0;
+            }
+        }
 
     }
 
@@ -68,6 +89,12 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetAxisRaw("Horizontal") > 0 )
             transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-
+    }
+    void Jump()
+    {
+        if (Input.GetButton("Jump"))
+        {
+            whaleBody.AddForce(0, 50, 0, ForceMode.Impulse);
+        }
     }
 }
