@@ -242,8 +242,16 @@
     <Compile Include="Assets\Ocean Assets\Scripts\SmoothFollow.cs" />
     <Compile Include="Assets\Ocean Assets\Scripts\StandardCausticsShaderGUI.cs" />
     <Compile Include="Assets\Ocean Assets\Scripts\UWCaustics.cs" />
+    <Compile Include="Assets\Scripts\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GetWinner.cs" />
     <Compile Include="Assets\Scripts\MenuButton.cs" />
+    <Compile Include="Assets\Scripts\MoveTo.cs" />
+    <Compile Include="Assets\Scripts\PathingWaypoint.cs" />
+    <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerManagerLoader.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerSplash.cs" />
     <Compile Include="Assets\Scripts\System\ExactWaterHeight.cs" />
     <Compile Include="Assets\Scripts\System\HeightInWater.cs" />
   </ItemGroup>

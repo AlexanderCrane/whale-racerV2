@@ -10,10 +10,11 @@ public class MoveTo : MonoBehaviour
     void Start()
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        bool worked = agent.SetDestination(goal.transform.position);
-        Debug.Log(worked);
-        Debug.Log(agent.destination);
+        Debug.Log(agent.transform.rotation);
+        agent.SetDestination(goal.transform.position);
     }
+
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -22,10 +23,9 @@ public class MoveTo : MonoBehaviour
         if (wayPoint != null)
         {
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
-            Debug.Log("retargeting");
             GameObject nextGoal = wayPoint.next.gameObject;
+            agent.transform.LookAt(nextGoal.transform.position);
             agent.SetDestination(nextGoal.transform.position);
-            //agent.SetDestination(nextGoal.transform.position);
         }
     }
 }

@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
     void OnGUI()
     {
         GUI.color = Color.black;
-        Debug.Log("drawing gui");
         string minutes = Mathf.Floor(timer / 60).ToString("00");
         string seconds = (timer % 60).ToString("00");
         GUI.Label(new Rect(550, 10, 250, 100), minutes + ":" + seconds);
