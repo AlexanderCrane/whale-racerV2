@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         whaleBody.AddRelativeForce(0.0f, 0.0f, zMovement * (-whaleSpeed));
         Turn();
-        Debug.Log(canJump);
+        Dive();
         if (canJump >= 100)
         {
             canJump = 100;
@@ -71,14 +71,8 @@ public class PlayerMovement : MonoBehaviour {
         {
             canJump++;
         }
-        if (canJump == 100)
-        {
-            if (Input.GetButton("Jump"))
-            {
-                whaleBody.AddRelativeForce(0, 100, -30, ForceMode.Impulse);
-                canJump = 0;
-            }
-        }
+        Jump();
+
 
     }
 
@@ -92,9 +86,20 @@ public class PlayerMovement : MonoBehaviour {
     }
     void Jump()
     {
-        if (Input.GetButton("Jump"))
+        if (canJump == 100)
         {
-            whaleBody.AddForce(0, 50, 0, ForceMode.Impulse);
+            if (Input.GetButton("Jump") && HeightInWater.underwater == false)
+            {
+                whaleBody.AddRelativeForce(0, 100, -30, ForceMode.Impulse);
+                canJump = 0;
+            }
+        }
+    }
+    void Dive()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            HeightInWater.underwater = !HeightInWater.underwater;
         }
     }
 }

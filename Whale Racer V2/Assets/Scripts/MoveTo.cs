@@ -11,7 +11,7 @@ public class MoveTo : MonoBehaviour
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         Debug.Log(agent.transform.rotation);
-        agent.SetDestination(goal.transform.position);
+        Debug.Log(agent.SetDestination(goal.transform.position));
     }
 
 
@@ -24,7 +24,6 @@ public class MoveTo : MonoBehaviour
         {
             NavMeshAgent agent = GetComponent<NavMeshAgent>();
             GameObject nextGoal = wayPoint.next.gameObject;
-            agent.transform.LookAt(nextGoal.transform.position);
             agent.SetDestination(nextGoal.transform.position);
         }
     }
