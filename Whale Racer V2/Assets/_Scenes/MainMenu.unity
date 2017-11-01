@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 924899275}
   - component: {fileID: 924899276}
   - component: {fileID: 924899274}
+  - component: {fileID: 924899277}
   m_Layer: 0
   m_Name: Quit
   m_TagString: Untagged
@@ -356,6 +357,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayButton: 0
   isQuitButton: 1
+--- !u!65 &924899277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 924899272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 98.8, y: 56.591812, z: 8.042178e-13}
+  m_Center: {x: 49.4, y: -28.295876, z: -4.021089e-13}
 --- !u!1 &944188608
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,4 +17,14 @@ public class MenuButton : MonoBehaviour {
             Application.Quit();
         }
     }
+    private void OnMouseEnter()
+    {
+        GetComponent<Renderer>().material.color = Color.yellow;
+
+    }
+    private void OnMouseExit()
+    {
+        GetComponent<Renderer>().material.color = Color.white;
+
+    }
 }
