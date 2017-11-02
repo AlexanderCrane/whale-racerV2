@@ -199,4 +199,13 @@ public class PlayerMovement : MonoBehaviour {
         maxForwardSpeed += 10;
         maxBackwardSpeed += 10;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Pick Up"))
+        {
+            other.gameObject.SetActive(false);
+           // yield return new WaitForSeconds(2000);
+        }
+    }
 }
