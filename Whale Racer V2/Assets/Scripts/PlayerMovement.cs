@@ -8,21 +8,33 @@ public class PlayerMovement : MonoBehaviour {
     public Animator whaleAnimator;
     private AnimationHashTable animations;
 
-    private float whaleSpeed = 0f;
+    public float whaleSpeed = 0f;
     public float turnSpeed = 15f;
-    private int canJump = 0;
     public float accel = .5f;
+    public float maxForwardSpeed = 17f;
+    public float maxBackwardSpeed = 6f;
+
+    public float baseMaxForward = 17f;
+    public float baseMaxBackward = 6f;
+
+    private int canJump = 0;
+    private float speedupDuration = 0;
+    private float speedupStart = 0;
 
     private bool diving = false;
+    private bool spedup = false;
 
     private Rigidbody whaleBody;
     private void Awake()
     {
         whaleBody = GetComponent<Rigidbody>();
         whaleAnimator = gameObject.GetComponent<Animator>();
+        baseMaxForward = maxForwardSpeed;
+        baseMaxBackward = maxBackwardSpeed;
     }
     // Update is called once per frame
-    void FixedUpdate () {
+    void FixedUpdate ()
+    {
         if (animations == null)
         {
             animations = GameManager.gmInst.GetComponent<AnimationHashTable>();
@@ -37,51 +49,19 @@ public class PlayerMovement : MonoBehaviour {
         zMovement = Input.GetAxis("Vertical");
         //lock y rotation to 0 so the whale can't be flipped over (for now)
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);
-
-        Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
-        //going forward
-        if (Input.GetAxisRaw("Vertical") > 0)
+        if (Time.time-speedupStart > speedupDuration && spedup)
         {
-            if (whaleSpeed < 17f){
-                whaleSpeed += accel;
-            }
-            else
+            if (whaleSpeed > baseMaxForward)
             {
-                whaleSpeed = 18f;
+                whaleSpeed = baseMaxForward;
             }
-            whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
+            maxBackwardSpeed = baseMaxBackward;
+            maxForwardSpeed = baseMaxForward;
+            spedup = false;
 
+            Debug.Log("Buff expired");
         }
-        //backing up
-        else if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            if (whaleSpeed < 6f)
-            {
-                whaleSpeed += accel;
-         
-            }
-            else
-            {
-                whaleSpeed = 7f;
-            }
-            whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
-
-        }
-        //stopping
-        else
-        {
-            if (whaleSpeed < -1)
-            {
-                whaleSpeed += accel/5;
-            }
-            else
-            {
-                whaleSpeed = 0.0f;
-            }
-            whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
-
-        }
-        whaleBody.AddRelativeForce(0.0f, 0.0f, zMovement * (-whaleSpeed));
+        Move2D();
         Turn();
         Dive();
         if (canJump >= 100)
@@ -95,6 +75,55 @@ public class PlayerMovement : MonoBehaviour {
         Jump();
 
 
+    }
+
+    private void Move2D()
+    {
+        Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
+        //going forward
+        if (Input.GetAxisRaw("Vertical") > 0)
+        {
+            if (whaleSpeed < maxForwardSpeed)
+            {
+                whaleSpeed += accel;
+            }
+            else
+            {
+                whaleSpeed = maxForwardSpeed + 1 ;
+            }
+            whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
+
+        }
+        //backing up
+        else if (Input.GetAxisRaw("Vertical") < 0)
+        {
+            if (whaleSpeed < maxBackwardSpeed)
+            {
+                whaleSpeed += accel;
+
+            }
+            else
+            {
+                whaleSpeed = maxBackwardSpeed+1;
+            }
+            whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
+
+        }
+        //stopping
+        else
+        {
+            if (whaleSpeed < -1)
+            {
+                whaleSpeed += accel / 5;
+            }
+            else
+            {
+                whaleSpeed = 0.0f;
+            }
+            whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
+
+        }
+        whaleBody.AddRelativeForce(0.0f, 0.0f, zMovement * (-whaleSpeed));
     }
 
     void Turn()
@@ -158,5 +187,16 @@ public class PlayerMovement : MonoBehaviour {
 
             whaleAnimator.SetBool(animations.diveBool, false);
         }
+    }
+    public void SpeedupPowerup(float duration)
+    {
+        if (speedupDuration == 0)
+        {
+            speedupDuration = duration;
+        }
+        spedup = true;
+        speedupStart = Time.time;
+        maxForwardSpeed += 10;
+        maxBackwardSpeed += 10;
     }
 }

@@ -19,13 +19,14 @@ public class MoveTo : MonoBehaviour
     }
     void Update()
     {
+        float velocity = GetComponent<NavMeshAgent>().velocity.magnitude;
         if (animations == null)
         {
             animations = GameManager.gmInst.GetComponent<AnimationHashTable>();
         }
-        if (GetComponent<NavMeshAgent>().velocity.magnitude > 2f)
+        if (velocity > 2f)
         {
-            whaleAnimator.SetFloat(animations.moveFloat, GetComponent<NavMeshAgent>().velocity.magnitude / 2);
+            whaleAnimator.SetFloat(animations.moveFloat, velocity / 2);
         }
     }
 
