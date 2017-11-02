@@ -642,7 +642,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.4713071
+  m_TransitionDuration: 0.2013071
   m_TransitionOffset: 0.065606944
   m_ExitTime: 0.051846333
   m_HasExitTime: 0
@@ -791,7 +791,7 @@ AnimatorState:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 2D Movement
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 110196576}

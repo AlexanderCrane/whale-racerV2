@@ -2793,7 +2793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3896e3894ac984a85a1e0a0b970a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accel: 0.5
+  whaleAnimator: {fileID: 483106165}
+  turnSpeed: 15
+  accel: 1
 --- !u!114 &483106170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7019,6 +7021,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalLaps: 1
+--- !u!114 &1294451053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1294451051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77989fc0d0d666448b305759e2abe740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveFloat: 0
+  turnFloat: 0
+  movementState: 0
+  jumpState: 0
+  emergeState: 0
+  submergeState: 0
+  groundedBool: 0
+  jumpBool: 0
+  underwaterBool: 0
+  diveBool: 0
+  subMovementBool: 0
 --- !u!1001 &1300159119
 Prefab:
   m_ObjectHideFlags: 0
@@ -7403,6 +7427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3896e3894ac984a85a1e0a0b970a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whaleAnimator: {fileID: 0}
+  turnSpeed: 15
   accel: 0.5
 --- !u!95 &1310626050
 Animator:
