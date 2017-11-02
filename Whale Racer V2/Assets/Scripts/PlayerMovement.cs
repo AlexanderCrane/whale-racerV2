@@ -18,7 +18,11 @@ public class PlayerMovement : MonoBehaviour {
     }
     // Update is called once per frame
     void FixedUpdate () {
-        xMovement = Input.GetAxis("Horizontal");
+        if ((Input.GetKey(KeyCode.M) && Input.GetKey(KeyCode.N)) && Input.GetKeyDown(KeyCode.RightShift))
+        {
+            gameObject.GetComponent<PlayerManager>().pmInstance.newLap();
+        }
+            xMovement = Input.GetAxis("Horizontal");
         zMovement = Input.GetAxis("Vertical");
         //lock y rotation to 0 so the whale can't be flipped over (for now)
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);

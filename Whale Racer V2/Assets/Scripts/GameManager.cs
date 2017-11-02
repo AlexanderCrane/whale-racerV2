@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static int winner;
     public int totalLaps = 1;
     public static float timer;
-    // Update is called once per frame
+    public static List<string> finishTimes = new List<string>();
     void Awake()
     {
         if (gmInst == null)
@@ -24,10 +24,13 @@ public class GameManager : MonoBehaviour
     void OnGUI()
     {
         GUI.color = Color.black;
+        GUI.Label(new Rect(550, 10, 250, 100), getStringTime());
+    }
+    public static string getStringTime()
+    {
         string minutes = Mathf.Floor(timer / 60).ToString("00");
         string seconds = (timer % 60).ToString("00");
-        GUI.Label(new Rect(550, 10, 250, 100), minutes + ":" + seconds);
-
+        return minutes + ":" + seconds;
 
     }
 }

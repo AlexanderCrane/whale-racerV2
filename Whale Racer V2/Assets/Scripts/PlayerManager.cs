@@ -30,6 +30,7 @@ public class PlayerManager : MonoBehaviour {
         if (currentLap == GameManager.gmInst.totalLaps+1)
         {
             GameManager.winner = playerID;
+            GameManager.finishTimes.Add(GameManager.getStringTime());
             SceneManager.LoadScene(2);
         }
     }

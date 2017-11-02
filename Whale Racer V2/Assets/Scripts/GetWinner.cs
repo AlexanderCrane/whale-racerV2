@@ -8,7 +8,9 @@ public class GetWinner : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        gameObject.GetComponent<TextMesh>().text = "Player " +  GameManager.winner.ToString() + " wins!";
+        string winnerTime = GameManager.finishTimes[0];
+        gameObject.GetComponent<TextMesh>().text = "Player " + GameManager.winner.ToString() + " wins in " + winnerTime + "!";
+
     }
 
     // Update is called once per frame
