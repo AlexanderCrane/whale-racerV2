@@ -688,6 +688,7 @@ GameObject:
   - component: {fileID: 874072797}
   - component: {fileID: 874072796}
   - component: {fileID: 874072795}
+  - component: {fileID: 874072798}
   m_Layer: 5
   m_Name: strtbtn
   m_TagString: Untagged
@@ -752,7 +753,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 874072796}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 874072798}
+        m_MethodName: loadByIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &874072796
@@ -788,6 +800,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 874072793}
+--- !u!114 &874072798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874072793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0194acc86dc34cc08db35fbcef1833b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1008839702
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +870,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 966be606197166640a108ef53355eddf, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1109,7 +1132,7 @@ Prefab:
     - target: {fileID: 21200000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 857c74ddb9da64294829d587968b88a4,
+      objectReference: {fileID: 21300000, guid: 6ab75d3f94b4e40ab847a74811a881b6,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7461a7b0cf97947fd9b9e4502fd2d07b, type: 2}
