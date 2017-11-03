@@ -1,9 +1,8 @@
 ﻿<Properties StartupItem="Whale Racer V2.Plugins.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PowerUp.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Ocean Assets\Scripts\Ocean.cs">
     <Files>
       <File FileName="Assets\Ocean Assets\Scripts\Ocean.cs" Line="493" Column="1" />
-      <File FileName="Assets\Scripts\PowerUp.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

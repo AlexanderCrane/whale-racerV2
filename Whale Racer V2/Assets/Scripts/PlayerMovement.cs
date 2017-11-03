@@ -17,24 +17,12 @@ public class PlayerMovement : MonoBehaviour {
     public float baseMaxForward = 17f;
     public float baseMaxBackward = 6f;
 
-
-    public float minForwardSpeed = 8f;
-    public float minBackwardSpeed = 3f;
-
-    public float baseMinForward = 8f;
-    public float baseMinBackward = 3f;
-
-
     private int canJump = 0;
     private float speedupDuration = 0;
-    private float slowDuration = 0;
     private float speedupStart = 0;
-    private float slowDownStart = 0;
-
 
     private bool diving = false;
     private bool spedup = false;
-    private bool slowed = false;
 
     private Rigidbody whaleBody;
     private void Awake()
@@ -72,18 +60,6 @@ public class PlayerMovement : MonoBehaviour {
             spedup = false;
 
             Debug.Log("Buff expired");
-        }
-        if (Time.time - slowDownStart > slowDuration && slowed)
-        {
-            if (whaleSpeed < baseMinForward)
-            {
-                whaleSpeed = baseMinForward;
-            }
-            minBackwardSpeed = baseMinBackward;
-            minForwardSpeed = baseMinForward;
-            slowed = false;
-
-            Debug.Log("Slow expired");
         }
         Move2D();
         Turn();
@@ -223,19 +199,6 @@ public class PlayerMovement : MonoBehaviour {
         maxForwardSpeed += 10;
         maxBackwardSpeed += 10;
     }
-
-    public void SlowZone(float duration)
-    {
-        if (slowDuration == 0)
-        {
-            slowDuration = duration;
-        }
-        slowed = true;
-        slowDownStart = Time.time;
-        minForwardSpeed -= 10;
-        minBackwardSpeed -= 10;
-    }
-
 
     private void OnTriggerEnter(Collider other)
     {
