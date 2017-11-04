@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool diving = false;
     private bool spedup = false;
-
+    private bool movementAudioPlaying = false;
     private Rigidbody whaleBody;
     private void Awake()
     {
@@ -82,9 +82,15 @@ public class PlayerMovement : MonoBehaviour {
     private void Move2D()
     {
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
+        AudioSource movementSplash = GetComponent<AudioSource>();
         //going forward
         if (Input.GetAxisRaw("Vertical") > 0)
         {
+            if (!movementAudioPlaying)
+            {
+                movementSplash.Play();
+                movementAudioPlaying = true;
+            }
             if (whaleSpeed < maxForwardSpeed)
             {
                 whaleSpeed += accel;
@@ -99,6 +105,12 @@ public class PlayerMovement : MonoBehaviour {
         //backing up
         else if (Input.GetAxisRaw("Vertical") < 0)
         {
+            if (!movementAudioPlaying)
+            {
+                movementSplash.Play();
+                movementAudioPlaying = true;
+            }
+
             if (whaleSpeed < maxBackwardSpeed)
             {
                 whaleSpeed += accel;
@@ -114,6 +126,11 @@ public class PlayerMovement : MonoBehaviour {
         //stopping
         else
         {
+            if (movementAudioPlaying)
+            {
+                movementSplash.Stop();
+                movementAudioPlaying = false;
+            }
             if (whaleSpeed < -1)
             {
                 whaleSpeed += accel / 5;
