@@ -8,15 +8,17 @@ public class MoveTo : MonoBehaviour
     private AnimationHashTable animations;
 
     public GameObject goal;
-
+    /// <summary>
+    /// Start method. Initializes navmeshagent and AI whale animator.
+    /// </summary>
     void Start()
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         whaleAnimator = gameObject.GetComponent<Animator>();
-
-        Debug.Log(agent.transform.rotation);
-        Debug.Log(agent.SetDestination(goal.transform.position));
     }
+    /// <summary>
+    /// Update method for the AI whale. Plays animations.
+    /// </summary>
     void Update()
     {
         float velocity = GetComponent<NavMeshAgent>().velocity.magnitude;
@@ -29,9 +31,10 @@ public class MoveTo : MonoBehaviour
             whaleAnimator.SetFloat(animations.moveFloat, velocity / 2);
         }
     }
-
-
-
+    /// <summary>
+    /// OnTriggerEnter method for the AI whale. Updates its destination to the next checkpoint when it enters one.
+    /// <param name="other">The object (eventually a PathingWaypoint) the AI whale collides with.</param>
+    /// </summary>
     void OnTriggerEnter(Collider other)
     {
         GameObject checkPoint = other.gameObject;

@@ -17,7 +17,9 @@ public class AnimationHashTable : MonoBehaviour {
     public int diveBool;
     public int subMovementBool;
 
-    // Use this for initialization
+    /// <summary>
+    /// Awake method. Initializes the class with hash values for each animation.
+    /// </summary>
     void Awake () {
         moveFloat = Animator.StringToHash("Speed");
         turnFloat = Animator.StringToHash("Turn");

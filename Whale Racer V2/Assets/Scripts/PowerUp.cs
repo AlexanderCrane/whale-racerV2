@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+///<summary>
+///Script to manage interaction between all types of powerups and players.
+///</summary>
 public class PowerUp : MonoBehaviour {
 
     public bool isSpeedup;
     public float speedupDuration = 5;
-	// Use this for initialization
-	void OnTriggerEnter (Collider other) {
+    // Use this for initialization
+    ///<summary>
+    ///OnTriggerEnter method for powerups. Calls PlayerMovement to modify player state based on type of powerup.
+    ///<param name="other">The object colliding with the PowerUp</param>
+    ///</summary>
+    void OnTriggerEnter (Collider other) {
         if (other.gameObject.tag == "Player")
         {
             if (isSpeedup)
@@ -18,9 +24,4 @@ public class PowerUp : MonoBehaviour {
             }
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
