@@ -42,21 +42,24 @@ public class GameManager : MonoBehaviour
         {
             font = Resources.Load<Font>("BAUHS93"),
             fontSize = 40,
+            alignment = TextAnchor.UpperCenter
         };
         style.normal.textColor = Color.red;
         if (countdownOngoing)
         {
-            GUI.Label(new Rect(910, 300, 1, 1), countdownTime.ToString().Substring(0, 4), style);
+            Debug.Log(Screen.width);
+            GUI.Label(new Rect(Screen.width/2, Screen.height/2-50, 1, 1), countdownTime.ToString().Substring(0, 4), style);
         }
         if (showGo)
         {
-            GUI.Label(new Rect(910, 300, 1, 1), "GO!", style);
+            GUI.Label(new Rect(Screen.width / 2, Screen.height / 2-50, 1, 1), "GO!", style);
             if(Time.timeSinceLevelLoad > 8f)
             {
                 showGo = false;
             }
         }
-        GUI.Label(new Rect(1700, 20, 250, 100), getStringTime(), style);
+        Debug.Log(Screen.width);
+        GUI.Label(new Rect(Screen.width/2-110, 20, 250, 100), getStringTime(), style);
         //asdf
     }
     public static string getStringTime()

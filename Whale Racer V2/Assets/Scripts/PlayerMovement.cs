@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float whaleSpeed = 0f;
     public float turnSpeed = 15f;
+    public float baseTurnSpeed = 15f;
     public float accel = .5f;
     public float maxForwardSpeed = 17f;
     public float maxBackwardSpeed = 6f;
@@ -57,6 +58,7 @@ public class PlayerMovement : MonoBehaviour {
             }
             maxBackwardSpeed = baseMaxBackward;
             maxForwardSpeed = baseMaxForward;
+            turnSpeed = baseTurnSpeed;
             spedup = false;
 
             Debug.Log("Buff expired");
@@ -198,6 +200,7 @@ public class PlayerMovement : MonoBehaviour {
         speedupStart = Time.time;
         maxForwardSpeed += 10;
         maxBackwardSpeed += 10;
+        turnSpeed += 10;
     }
 
     private void OnTriggerEnter(Collider other)
