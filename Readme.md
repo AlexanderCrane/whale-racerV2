@@ -1,7 +1,8 @@
-#Whale Racer 
-##by Carpet Co
+# Whale Racer 
 
-###Built in C# with Unity.
+## by Carpet Co
+
+### Built in C# with Unity.
 
 A 3D, third-person whale racing game for PC and Mac.
 
