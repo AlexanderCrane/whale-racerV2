@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     private float countdownTime;
     private bool countdownOngoing = true;
     private bool showGo = false;
+    /// <summary>
+    /// Awake method. Instantiates the Game Manager for non-static use.
+    /// </summary>
+
     void Awake()
     {
         if (gmInst == null)
@@ -19,6 +23,10 @@ public class GameManager : MonoBehaviour
             gmInst = this;
         }
     }
+    /// <summary>
+    /// For the first few seconds of the game, manages the initial countdown timer.
+    /// </summary>
+
     void Update()
     {
         if (countdownOngoing)
@@ -36,6 +44,10 @@ public class GameManager : MonoBehaviour
             timer += Time.deltaTime;
         }
     }
+    /// <summary>
+    /// OnGUI method. Draws player user interface.
+    /// </summary>
+
     void OnGUI()
     {
         GUIStyle style = new GUIStyle
@@ -62,6 +74,10 @@ public class GameManager : MonoBehaviour
         GUI.Label(new Rect(Screen.width/2-110, 20, 250, 100), getStringTime(), style);
         //asdf
     }
+    /// <summary>
+    /// Gets the current race time as a well-formatted string for the timer.
+    /// </summary>
+
     public static string getStringTime()
     {
         string minutes = Mathf.Floor(timer / 60).ToString("00");

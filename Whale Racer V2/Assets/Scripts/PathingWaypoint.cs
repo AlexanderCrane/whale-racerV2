@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//based on James Arndt's Unity Simple Vehicle AI tutorial - adapted from his JS sript
-//at any given time, ai whale's selected PathingWaypoint will be the waypoint it is HEADING TOWARDS
-//currently unused because I discovered the navmesh system, but will probably be used to guide navmeshagent between checkpts
+
+///<summary>
+///waypoint script attached to checkpoint for AI whales to path towards.
+///based on James Arndt's Unity Simple Vehicle AI tutorial - adapted from his JS script
+///at any given time, ai whale's selected PathingWaypoint will be the waypoint it is heading towards.
+///</summary>
 public class PathingWaypoint : MonoBehaviour
 {
     //the first waypoint - shared by all waypoint scripts
@@ -22,7 +25,9 @@ public class PathingWaypoint : MonoBehaviour
         return transform.position;
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Awake method for pathing waypoints. Initializes the first waypoint to this one if selected in the editor.
+    /// </summary>
     void Awake()
     {
         if (isStart)
@@ -30,6 +35,9 @@ public class PathingWaypoint : MonoBehaviour
             first = this;
         }
     }
+    /// <summary>
+    /// Draws a green line between correctly connected waypoints in the editor for design purposes.
+    /// </summary>
     void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0, 0, .3f);

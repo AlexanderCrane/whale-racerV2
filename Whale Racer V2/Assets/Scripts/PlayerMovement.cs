@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+///<summary>
+///Player movement control script.
+///</summary>
 public class PlayerMovement : MonoBehaviour {
     private float xMovement;
     private float zMovement;
@@ -26,14 +28,21 @@ public class PlayerMovement : MonoBehaviour {
     private bool spedup = false;
     private bool movementAudioPlaying = false;
     private Rigidbody whaleBody;
+    ///<summary>
+    ///Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.
+    ///</summary>
     private void Awake()
     {
         whaleBody = GetComponent<Rigidbody>();
         whaleAnimator = gameObject.GetComponent<Animator>();
         baseMaxForward = maxForwardSpeed;
         baseMaxBackward = maxBackwardSpeed;
+        baseTurnSpeed = turnSpeed;
     }
-    // Update is called once per frame
+    ///<summary>
+    ///Update method. Calls methods to player input to whale movement.
+    ///Checks for power up expiration and handles jump lockout.
+    ///</summary>
     void FixedUpdate()
     {
         if (animations == null)
@@ -78,7 +87,9 @@ public class PlayerMovement : MonoBehaviour {
 
 
     }
-
+    ///<summary>
+    ///Translates player input to forward/backward movement. Plays corresponding audio and animation.
+    ///</summary>
     private void Move2D()
     {
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
@@ -144,7 +155,9 @@ public class PlayerMovement : MonoBehaviour {
         }
         whaleBody.AddRelativeForce(0.0f, 0.0f, zMovement * (-whaleSpeed));
     }
-
+    ///<summary>
+    ///Translates input into rotation.
+    ///</summary>
     void Turn()
     {
         if (Input.GetAxisRaw("Horizontal") < 0)
@@ -177,6 +190,9 @@ public class PlayerMovement : MonoBehaviour {
 
         }
     }
+    ///<summary>
+    ///Handles dive input and plays diving animations.
+    ///</summary>
     void Dive()
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
@@ -207,6 +223,10 @@ public class PlayerMovement : MonoBehaviour {
             whaleAnimator.SetBool(animations.diveBool, false);
         }
     }
+    ///<summary>
+    ///Handles effects of speedup powerup.
+    ///<param name="duration">THe duration of the speedup.</param>
+    ///</summary>
     public void SpeedupPowerup(float duration)
     {
         if (speedupDuration == 0)
@@ -219,7 +239,10 @@ public class PlayerMovement : MonoBehaviour {
         maxBackwardSpeed += 10;
         turnSpeed += 10;
     }
-
+    ///<summary>
+    ///Handles disabling of powerups after they're picked up.
+    ///<param name="other">The pickup the player has collided with.</param>
+    ///</summary>
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pick Up"))
@@ -228,6 +251,9 @@ public class PlayerMovement : MonoBehaviour {
             // yield return new WaitForSeconds(2000);
         }
     }
+    ///<summary>
+    ///handles slowdown from oil slicks.
+    ///</summary>
     public void slowDown()
     {
         maxForwardSpeed = 5f;
@@ -236,6 +262,9 @@ public class PlayerMovement : MonoBehaviour {
         baseMaxForward = 5f;
         baseMaxBackward = 1f;
     }
+    ///<summary>
+    ///Handles oil slick slowdown expiry.
+    ///</summary>
     public void slowDownEnd()
     {
         maxForwardSpeed = 17f;

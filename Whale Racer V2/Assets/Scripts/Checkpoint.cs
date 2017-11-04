@@ -6,12 +6,11 @@ public class Checkpoint : MonoBehaviour {
     public int position;
     public bool checkpointHit = false;
 
-    void Awake()
-    {
-    }
-	// Update is called once per frame
-	void Update () {
-	}
+    /// <summary>
+    /// OnTriggerEnter method. When a player enters the checkpoint, updates their state accordingly.
+    /// Triggers new lap code in the game manager if the checkpoint is the finish line.
+    /// </summary>
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")

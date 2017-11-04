@@ -5,7 +5,10 @@ using UnityEngine;
 public class GetWinner : MonoBehaviour
 {
 
-    // Use this for initialization
+    /// <summary>
+    /// Awake method. Loads the winner and their time from the previous scene's Game Manager and displays it.
+    /// Will eventually display all finish times?
+    /// </summary>
     void Awake()
     {
         string winnerTime = GameManager.finishTimes[0];
