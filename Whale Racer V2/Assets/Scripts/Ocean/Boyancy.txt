@@ -1,0 +1,23 @@
+using UnityEngine;
+using System.Collections.Generic;
+
+namespace OceanSim
+{
+	public class Boyancy : MonoBehaviour 
+	{
+		#region Private Variables and Properties
+			//private 
+		#endregion
+		
+		#region Public Variables and Properties
+		#endregion
+		
+		#region System Methods
+		
+		#endregion
+		
+		#region Custom Methods
+		
+		#endregion		
+	}
+}
