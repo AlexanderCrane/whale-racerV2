@@ -242,20 +242,37 @@
     <Compile Include="Assets\Ocean Assets\Scripts\SmoothFollow.cs" />
     <Compile Include="Assets\Ocean Assets\Scripts\StandardCausticsShaderGUI.cs" />
     <Compile Include="Assets\Ocean Assets\Scripts\UWCaustics.cs" />
+    <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
+    <Compile Include="Assets\Scripts\AnimationHashTable.cs" />
+    <Compile Include="Assets\Scripts\ApplicationManager.cs" />
+    <Compile Include="Assets\Scripts\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\DragMe.cs" />
+    <Compile Include="Assets\Scripts\DragPanel.cs" />
+    <Compile Include="Assets\Scripts\DropMe.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GetWinner.cs" />
+    <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
     <Compile Include="Assets\Scripts\MenuButton.cs" />
     <Compile Include="Assets\Scripts\MoveTo.cs" />
+    <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\PathingWaypoint.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\PlayerManagerLoader.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerSplash.cs" />
+    <Compile Include="Assets\Scripts\PowerUp.cs" />
+    <Compile Include="Assets\Scripts\ResizePanel.cs" />
+    <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
+    <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\System\ExactWaterHeight.cs" />
     <Compile Include="Assets\Scripts\System\HeightInWater.cs" />
+    <Compile Include="Assets\Scripts\TiltWindow.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+    <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\Ocean Assets\Plugins\kissfft.license.txt" />
     <None Include="Assets\Ocean Assets\Shaders\DepthMask.shader" />
     <None Include="Assets\Ocean Assets\Shaders\Ocean.shader" />
@@ -338,6 +355,7 @@
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\Textures and Sprites\SF UI\Background\LICENSE.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

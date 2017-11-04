@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour {
@@ -9,6 +10,10 @@ public class PlayerManager : MonoBehaviour {
     public int currentCheckpoint = 0;
     private int currentLap = 1;
     public bool[] checkpointsHit;
+    //all whale movement is disabled at start of game
+    //when the race countdown ends, GameManager sets this to false
+    public static bool allWhaleMovementDisabled = true;
+
 	// Use this for initialization
 	void Awake () {
 		if (pmInstance == null && pmInstance != this)
@@ -16,8 +21,9 @@ public class PlayerManager : MonoBehaviour {
             pmInstance = this;
         }
         checkpointsHit = new bool[12];
+
     }
-    public void newLap()
+    public void NewLap()
     {
         Debug.Log("Lap" + currentLap + "Complete");
         this.currentLap++;
@@ -36,7 +42,23 @@ public class PlayerManager : MonoBehaviour {
     }
 
 // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update (){
+        if (allWhaleMovementDisabled)
+        {
+            gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+            if (gameObject.GetComponent<NavMeshAgent>() != null)
+            {
+                gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+            }      
+        }
+        else
+        {
+            if (gameObject.GetComponent<NavMeshAgent>() != null)
+            {
+                gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+            }
+        }
+    }
 }

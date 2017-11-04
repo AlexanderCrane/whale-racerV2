@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour {
         //cheat code - press N+M+RSHIFT to add a lap to your lap counter if you're testing the endgame
         if ((Input.GetKey(KeyCode.M) && Input.GetKey(KeyCode.N)) && Input.GetKeyDown(KeyCode.RightShift))
         {
-            gameObject.GetComponent<PlayerManager>().pmInstance.newLap();
+            gameObject.GetComponent<PlayerManager>().pmInstance.NewLap();
         }
 
         xMovement = Input.GetAxis("Horizontal");

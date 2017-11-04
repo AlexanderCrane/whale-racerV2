@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +8,10 @@ public class GameManager : MonoBehaviour
     public int totalLaps = 1;
     public static float timer;
     public static List<string> finishTimes = new List<string>();
+    public float countdownLength;
+    private float countdownTime;
+    private bool countdownOngoing = true;
+    private bool showGo = false;
     void Awake()
     {
         if (gmInst == null)
@@ -19,12 +21,44 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        timer += Time.deltaTime;
+        if (countdownOngoing)
+        {
+            countdownTime = countdownLength - Time.timeSinceLevelLoad;
+
+            if (countdownTime <= 0f)
+            {
+                countdownOngoing = false;
+                showGo = true;
+                PlayerManager.allWhaleMovementDisabled = false;
+            }
+        }
+        else
+        {
+            timer += Time.deltaTime;
+        }
     }
     void OnGUI()
     {
-        GUI.color = Color.black;
-        GUI.Label(new Rect(550, 10, 250, 100), getStringTime());
+        GUIStyle style = new GUIStyle
+        {
+            font = Resources.Load<Font>("BAUHS93"),
+            fontSize = 40,
+        };
+        style.normal.textColor = Color.red;
+        if (countdownOngoing)
+        {
+            GUI.Label(new Rect(910, 300, 1, 1), countdownTime.ToString().Substring(0, 4), style);
+        }
+        if (showGo)
+        {
+            GUI.Label(new Rect(910, 300, 1, 1), "GO!", style);
+            if(Time.timeSinceLevelLoad > 8f)
+            {
+                showGo = false;
+            }
+        }
+        GUI.Label(new Rect(1700, 20, 250, 100), getStringTime(), style);
+        //asdf
     }
     public static string getStringTime()
     {
