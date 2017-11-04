@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
             }
         }
         GUI.Label(new Rect(1700, 20, 250, 100), getStringTime(), style);
+        //asdf
     }
     public static string getStringTime()
     {
