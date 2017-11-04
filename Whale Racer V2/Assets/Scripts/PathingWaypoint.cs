@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-///<summary>
+/// <summary>
 ///waypoint script attached to checkpoint for AI whales to path towards.
 ///based on James Arndt's Unity Simple Vehicle AI tutorial - adapted from his JS script
 ///at any given time, ai whale's selected PathingWaypoint will be the waypoint it is heading towards.
-///</summary>
+/// </summary>
 public class PathingWaypoint : MonoBehaviour
 {
     //the first waypoint - shared by all waypoint scripts
@@ -25,9 +25,9 @@ public class PathingWaypoint : MonoBehaviour
         return transform.position;
     }
 
-    /// <summary>
+    ///  <summary>
     /// Awake method for pathing waypoints. Initializes the first waypoint to this one if selected in the editor.
-    /// </summary>
+    ///  </summary>
     void Awake()
     {
         if (isStart)
@@ -35,9 +35,9 @@ public class PathingWaypoint : MonoBehaviour
             first = this;
         }
     }
-    /// <summary>
+    ///  <summary>
     /// Draws a green line between correctly connected waypoints in the editor for design purposes.
-    /// </summary>
+    ///  </summary>
     void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0, 0, .3f);

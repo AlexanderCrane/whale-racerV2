@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
-///<summary>
-///Class to manage each individual player's progress in the race.
-///</summary>
+///  <summary>
+///  Tracks progress through the race and global race effects for each individual player.
+///  </summary>
 public class PlayerManager : MonoBehaviour {
     public int playerID = 0;
     public PlayerManager pmInstance = null;
@@ -17,9 +17,9 @@ public class PlayerManager : MonoBehaviour {
     //when the race countdown ends, GameManager sets this to false
     public static bool allWhaleMovementDisabled = true;
 
-    ///<summary>
-    ///Awake method. Initializes instance for non-static use. Initializes checkpointsHit array.
-    ///</summary>
+    /// <summary>
+    /// Awake method. Initializes instance for non-static use. Initializes checkpointsHit array.
+    /// </summary>
     void Awake () {
 		if (pmInstance == null && pmInstance != this)
         {
@@ -28,9 +28,9 @@ public class PlayerManager : MonoBehaviour {
         checkpointsHit = new bool[12];
 
     }
-    ///<summary>
+    /// <summary>
     /// Called when the player hits the finish line. Adds a lap or ends the race depending on the GameManager's total laps.
-    ///</summary>
+    /// </summary>
     public void NewLap()
     {
         Debug.Log("Lap" + currentLap + "Complete");
@@ -49,9 +49,9 @@ public class PlayerManager : MonoBehaviour {
         }
     }
 
-    ///<summary>
+    /// <summary>
     /// Update method for the player manager. Disables player movement if countdown isn't over yet.
-    ///</summary>
+    /// </summary>
     void Update (){
         if (allWhaleMovementDisabled)
         {

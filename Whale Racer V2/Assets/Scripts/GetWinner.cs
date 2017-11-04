@@ -15,10 +15,4 @@ public class GetWinner : MonoBehaviour
         gameObject.GetComponent<TextMesh>().text = "Player " + GameManager.winner.ToString() + " wins in " + winnerTime + "!";
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

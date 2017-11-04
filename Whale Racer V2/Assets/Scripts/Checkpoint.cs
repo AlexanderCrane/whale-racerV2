@@ -6,10 +6,10 @@ public class Checkpoint : MonoBehaviour {
     public int position;
     public bool checkpointHit = false;
 
-    /// <summary>
+    ///  <summary>
     /// OnTriggerEnter method. When a player enters the checkpoint, updates their state accordingly.
     /// Triggers new lap code in the game manager if the checkpoint is the finish line.
-    /// </summary>
+    ///  </summary>
 
     void OnTriggerEnter(Collider other)
     {

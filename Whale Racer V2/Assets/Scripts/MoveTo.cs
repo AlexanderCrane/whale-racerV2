@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.AI;
-
+/// <summary>
+/// Script to direct the AI Navmeshagent to move between checkpoints.
+/// </summary>
 public class MoveTo : MonoBehaviour
 {
     public Animator whaleAnimator;

@@ -1,17 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-///<summary>
-///Script to generate splash sprites as the player moves.
-///</summary>
+/// <summary>
+/// Script to generate splash sprites as the player moves.
+/// </summary>
 public class PlayerSplash : MonoBehaviour {
 
 
     public GameObject SplashVisual;
-    ///<summary>
-    ///OnTriggerEnter method. Checks for collision between whale's splash colliders and water, then triggers splash.
-    ///<param name="other">The object colliding with the whale.</param>
-    ///</summary>
+    /// <summary>
+    /// OnTriggerEnter method. Checks for collision between whale's splash colliders and water, then triggers splash.
+    /// <param name="other">The object colliding with the whale.</param>
+    /// </summary>
     void OnTriggerEnter (Collider other) {
 		if (other.CompareTag("SplashCollider"))
         {
@@ -20,11 +20,11 @@ public class PlayerSplash : MonoBehaviour {
             Splash(colliderRB.position, colliderRB.rotation);
         }
 	}
-    ///<summary>
-    ///Plays splash animation at given position.
-    ///<param name="position">The position to create the splash at.</param>
-    ///<param name="rotation">The initial rotation of the splash.</param>
-    ///</summary>
+    /// <summary>
+    /// Plays splash animation at given position.
+    /// <param name="position">The position to create the splash at.</param>
+    /// <param name="rotation">The initial rotation of the splash.</param>
+    /// </summary>
     void Splash(Vector3 position, Quaternion rotation)
     {
         //instantiate the splash effect asset at point of contact
@@ -32,10 +32,10 @@ public class PlayerSplash : MonoBehaviour {
 
         AnimateSplash(spray);
     }
-    ///<summary>
+    /// <summary>
     /// Moves splash sprite up from its point of creation, then destroys it once it expires.
     /// <param name="splash">The splash sprite to be animated.</param>
-    ///</summary>
+    /// </summary>
     void AnimateSplash(GameObject splash)
     {
         splash.transform.position += (1 * Vector3.up);
