@@ -15,6 +15,7 @@ public class MoveTo : MonoBehaviour
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();
         whaleAnimator = gameObject.GetComponent<Animator>();
+        agent.SetDestination(goal.transform.position);
     }
     /// <summary>
     /// Update method for the AI whale. Plays animations.
