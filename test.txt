@@ -1,3 +1,0 @@
-Whale Racer V2 by Carpet Co.
-Developed using Unity 2017.2
-Graphical assets and some ocean physics from Whale Racer V1 by Austin Irvine

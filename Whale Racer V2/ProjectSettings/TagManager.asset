@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PlayerCamera
+  - SplashCollider
+  - WhaleFinish
+  - BodySplashPart
+  - Ocean
+  - Floor
+  - Pick Up
+  - Checkpoint
+  - FinishLine
+  - Oil
   layers:
   - Default
   - TransparentFX

@@ -27,7 +27,7 @@ public class Checkpoint : MonoBehaviour {
                 manager.checkpointsHit[index] = true;
                 if (position == 12)
                 {
-                    manager.newLap();
+                    manager.NewLap();
                 }
             }
         }
