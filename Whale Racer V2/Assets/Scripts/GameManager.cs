@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         style.normal.textColor = Color.red;
         if (countdownOngoing)
         {
-            Debug.Log(Screen.width);
+           // Debug.Log(Screen.width);
             GUI.Label(new Rect(Screen.width/2, Screen.height/2-50, 1, 1), countdownTime.ToString().Substring(0, 4), style);
         }
         if (showGo)
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
                 showGo = false;
             }
         }
-        Debug.Log(Screen.width);
+       // Debug.Log(Screen.width);
         GUI.Label(new Rect(Screen.width/2-110, 20, 250, 100), getStringTime(), style);
         //asdf
     }

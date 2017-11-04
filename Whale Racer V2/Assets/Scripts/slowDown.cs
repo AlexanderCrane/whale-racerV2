@@ -14,6 +14,7 @@ public class slowDown : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("hit");
             PlayerMovement collidingPlayer = other.GetComponent<PlayerMovement>();
             collidingPlayer.slowDown();
 
