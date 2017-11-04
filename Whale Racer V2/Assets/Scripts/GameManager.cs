@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
         if (countdownOngoing)
         {
             countdownTime = countdownLength - Time.timeSinceLevelLoad;
-
             if (countdownTime <= 0f)
             {
                 countdownOngoing = false;

@@ -269,6 +269,7 @@
     <Compile Include="Assets\Scripts\System\ExactWaterHeight.cs" />
     <Compile Include="Assets\Scripts\System\HeightInWater.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
+    <Compile Include="Assets\slowDown.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
