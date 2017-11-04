@@ -244,5 +244,12 @@ public class PlayerMovement : MonoBehaviour {
         baseMaxForward = 17f;
         baseMaxBackward = 6f;
     }
+
+    public void BounceBack(Vector3 direction)
+    {
+       // Vector3 backward = transform.forward * -1;
+        whaleBody.AddForce(direction * 100000);
+        Debug.Log("BounceBack Called, " + transform.forward + ", direction , " + direction);
+    }
 }
 
