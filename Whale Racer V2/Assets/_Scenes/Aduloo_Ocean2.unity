@@ -12273,6 +12273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780166397}
   - component: {fileID: 1780166396}
+  - component: {fileID: 1780166398}
   m_Layer: 0
   m_Name: Water4AdvancedReflectionplayer_Camera
   m_TagString: Untagged
@@ -12321,13 +12322,21 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1780166395}
-  m_LocalRotation: {x: 0.023651823, y: 0.9677292, z: 0.09935513, w: -0.23036803}
-  m_LocalPosition: {x: -0.94246674, y: 0.032326356, z: 6.679474}
+  m_LocalRotation: {x: 0.0115180565, y: 0.9745598, z: 0.21782559, w: -0.051503997}
+  m_LocalPosition: {x: -258.76788, y: -169.39839, z: 343.2508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1780166398
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780166395}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1001 &1784282549
 Prefab:
   m_ObjectHideFlags: 0
@@ -14077,7 +14086,8 @@ MonoBehaviour:
 --- !u!114 &1967470133
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114765974345316826, guid: 1d3136d10502e514890cce768a4fe494,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967470122}
   m_Enabled: 0
@@ -14091,7 +14101,8 @@ MonoBehaviour:
 --- !u!114 &1967470134
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114634850920501518, guid: 1d3136d10502e514890cce768a4fe494,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967470122}
   m_Enabled: 0
@@ -14241,7 +14252,8 @@ MonoBehaviour:
 --- !u!114 &1967470135
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114740228137357428, guid: 1d3136d10502e514890cce768a4fe494,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1967470122}
   m_Enabled: 1
