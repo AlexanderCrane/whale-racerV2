@@ -217,7 +217,7 @@ public class PlayerMovement : MonoBehaviour {
                 whaleAnimator.SetBool(animations.diveBool, true);
                 whaleAnimator.SetBool(animations.subMovementBool, true);
                 whaleAnimator.speed = .5f;
-
+                BGMController.bgmInst.ToggleUnderWaterSound();
                 StartCoroutine("UnderWaterCoroutine");
             }
             else
@@ -227,6 +227,8 @@ public class PlayerMovement : MonoBehaviour {
                 whaleAnimator.SetBool(animations.underwaterBool, true);
                 whaleAnimator.SetBool(animations.diveBool, false);
                 whaleAnimator.SetBool(animations.subMovementBool, false);
+                BGMController.bgmInst.ToggleAboveWaterSound();
+
                 whaleAnimator.speed = 1f;
             }
         }

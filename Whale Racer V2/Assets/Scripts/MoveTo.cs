@@ -36,8 +36,8 @@ public class MoveTo : MonoBehaviour
     }
     /// <summary>
     /// OnTriggerEnter method for the AI whale. Updates its destination to the next checkpoint when it enters one.
-    /// <param name="other">The object (eventually a PathingWaypoint) the AI whale collides with.</param>
     /// </summary>
+    /// <param name="other">The object (eventually a PathingWaypoint) the AI whale collides with.</param>
     void OnTriggerEnter(Collider other)
     {
         GameObject checkPoint = other.gameObject;

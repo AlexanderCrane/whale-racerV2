@@ -32,6 +32,7 @@ var hierarchy =
       [ "ActiveStateToggler", "class_active_state_toggler.html", null ],
       [ "AnimationHashTable", "class_animation_hash_table.html", null ],
       [ "ApplicationManager", "class_application_manager.html", null ],
+      [ "BounceNBreak", "class_bounce_n_break.html", null ],
       [ "ChangeColor", "class_change_color.html", null ],
       [ "Checkpoint", "class_checkpoint.html", null ],
       [ "DragMe", "class_drag_me.html", null ],
