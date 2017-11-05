@@ -2958,13 +2958,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whaleAnimator: {fileID: 483106165}
   whaleSpeed: 0
-  turnSpeed: 15
-  baseTurnSpeed: 15
-  accel: 15
-  maxForwardSpeed: 600
-  maxBackwardSpeed: 6
-  baseMaxForward: 600
-  baseMaxBackward: 6
+  turnSpeed: 25
+  baseTurnSpeed: 500
+  accel: 100
+  maxForwardSpeed: 1200
+  maxBackwardSpeed: 500
+  baseMaxForward: 800
+  baseMaxBackward: 100
 --- !u!114 &483106169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2978,7 +2978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceB: 0
   volume: 0
-  density: 1000
+  density: 790
   massOfWater: 0
   underwaterObj: {fileID: 547983591}
 --- !u!114 &483106170
@@ -4189,6 +4189,70 @@ Transform:
   m_PrefabParentObject: {fileID: 4120843821586198, guid: 3d9f934d09c4f464987cfc90e83094d8,
     type: 2}
   m_PrefabInternal: {fileID: 886565904}
+--- !u!1 &730092049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 730092051}
+  - component: {fileID: 730092050}
+  m_Layer: 0
+  m_Name: Water4AdvancedReflectionplayer_Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &730092050
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730092049}
+  m_Enabled: 0
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967279
+  m_RenderingPath: 1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &730092051
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 730092049}
+  m_LocalRotation: {x: 0.031084465, y: 0.9675055, z: 0.20198187, w: -0.14889647}
+  m_LocalPosition: {x: 3.4508424, y: -8.513118, z: 29.966175}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &735407583 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4286365911519266, guid: 9084d99fc66224648bcfe2aa8c74d812,

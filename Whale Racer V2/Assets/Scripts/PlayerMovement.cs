@@ -26,8 +26,10 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool diving = false;
     private bool spedup = false;
+    private bool underWater = false;
     private bool movementAudioPlaying = false;
     private Rigidbody whaleBody;
+
     /// <summary>
     /// Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.
     /// </summary>
@@ -200,24 +202,32 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            HeightInWater.underwater = !HeightInWater.underwater;
-            if (HeightInWater.underwater)
+            //underWater = !underWater;
+            /*if(this.transform.position.y > -3.0f) { underWater = false; }
+            else { underWater = true; }*/
+
+            underWater = !underWater;
+
+            if (!underWater)
             {
+                whaleBody.mass = 1000.0f;
+                this.GetComponent<SimpleBoyancy>().SetDensity(769.276f);
                 whaleAnimator.SetBool(animations.underwaterBool, false);
 
                 whaleAnimator.SetBool(animations.diveBool, true);
                 whaleAnimator.SetBool(animations.subMovementBool, true);
                 whaleAnimator.speed = .5f;
 
+                StartCoroutine("UnderWaterCoroutine");
             }
             else
             {
+                whaleBody.mass = 63.1f;
+                this.GetComponent<SimpleBoyancy>().SetDensity(790f);
                 whaleAnimator.SetBool(animations.underwaterBool, true);
                 whaleAnimator.SetBool(animations.diveBool, false);
                 whaleAnimator.SetBool(animations.subMovementBool, false);
                 whaleAnimator.speed = 1f;
-
-
             }
         }
         else
@@ -225,6 +235,21 @@ public class PlayerMovement : MonoBehaviour {
 
             whaleAnimator.SetBool(animations.diveBool, false);
         }
+    }
+
+    /// <summary>
+    /// Waits to stabilize whale buoyancy underwater
+    /// </summary>
+    IEnumerator UnderWaterCoroutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(0.5f);
+            whaleBody.mass = 96.129f;
+            Debug.Log("Underwater Now & Stable");
+            StopAllCoroutines();
+        }
+        
     }
     /// <summary>
     /// Handles effects of speedup powerup.

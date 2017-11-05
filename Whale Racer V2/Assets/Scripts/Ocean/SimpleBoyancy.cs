@@ -108,5 +108,10 @@ public class SimpleBoyancy : MonoBehaviour
 
         return forceBuoy;
     }
+
+    public void SetDensity(float val)
+    {
+        density = val;
+    }
     #endregion
 }
