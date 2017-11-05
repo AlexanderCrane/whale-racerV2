@@ -1378,7 +1378,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!45 &263230853
 Skybox:
@@ -2772,7 +2772,6 @@ GameObject:
   - component: {fileID: 483106168}
   - component: {fileID: 483106170}
   - component: {fileID: 483106171}
-  - component: {fileID: 483106163}
   - component: {fileID: 483106169}
   - component: {fileID: 483106162}
   m_Layer: 0
@@ -2862,42 +2861,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &483106163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114094307363862418, guid: 1d3136d10502e514890cce768a4fe494,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 483106161}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 967f427140bc76347bf123223427539c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderQueue: 2000
-  useFixedUpdate: 1
-  moreAccurate: 1
-  magnitude: 6.78
-  ypos: -0.2
-  CenterOfMassOffset: 0
-  dampCoeff: 1.382
-  SlicesX: 6
-  SlicesZ: 6
-  interpolation: 2
-  ChoppynessAffectsPosition: 0
-  ChoppynessFactor: 0.13
-  WindAffectsPosition: 0
-  WindFactor: 0.02
-  xAngleAddsSliding: 1
-  slideFactor: 9.91
-  cvisible: 1
-  wvisible: 1
-  svisible: 0
-  _renderer: {fileID: 1659181221}
-  sink: 0
-  sinkForce: 3
-  underWater: 0
-  prevUnderWater: 0
 --- !u!95 &483106165
 Animator:
   serializedVersion: 3
@@ -3052,7 +3015,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4181859734162586, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
@@ -4247,11 +4210,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 730092049}
   m_LocalRotation: {x: 0.031084465, y: 0.9675055, z: 0.20198187, w: -0.14889647}
-  m_LocalPosition: {x: 3.4508424, y: -8.513118, z: 29.966175}
+  m_LocalPosition: {x: 1.0623069, y: -8.662065, z: 19.22946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &735407583 stripped
 Transform:
@@ -9514,70 +9477,6 @@ Transform:
   m_Father: {fileID: 280643507}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.022, y: 0.24919999, z: 0.3478}
---- !u!1 &1524848734
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1524848736}
-  - component: {fileID: 1524848735}
-  m_Layer: 0
-  m_Name: Water4SimpleReflectionSceneCamera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!20 &1524848735
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1524848734}
-  m_Enabled: 0
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967279
-  m_RenderingPath: 1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1524848736
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1524848734}
-  m_LocalRotation: {x: 0.0000000134702915, y: 0.9961947, z: 0.08715581, w: -0.00000016223693}
-  m_LocalPosition: {x: -5, y: -5.628463, z: 11.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1543030919
 Prefab:
   m_ObjectHideFlags: 0
@@ -13219,79 +13118,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b36c8706cb30c8b4bae6bf0d45406550, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &2005071228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2005071230}
-  - component: {fileID: 2005071229}
-  - component: {fileID: 2005071231}
-  m_Layer: 0
-  m_Name: Water4SimpleReflectionplayer_Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!20 &2005071229
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2005071228}
-  m_Enabled: 0
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967279
-  m_RenderingPath: 1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &2005071230
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2005071228}
-  m_LocalRotation: {x: -0.39449173, y: 0.18808785, z: 0.08284669, w: 0.8956203}
-  m_LocalPosition: {x: -314.14362, y: -244.6699, z: -224.80782}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!45 &2005071231
-Skybox:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2005071228}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 0}
 --- !u!1 &2014053412
 GameObject:
   m_ObjectHideFlags: 0
