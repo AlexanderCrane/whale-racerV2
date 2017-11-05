@@ -70,7 +70,7 @@ public class SimpleBoyancy : MonoBehaviour
     {
         meshMod.GenUnderwaterMesh();
 
-        meshMod.DisplayMesh(underwaterMesh, "Underwater Mesh" ,meshMod.underWaterTriangles);
+        //meshMod.DisplayMesh(underwaterMesh, "Underwater Mesh" ,meshMod.underWaterTriangles);
     }
 
     private void FixedUpdate()
