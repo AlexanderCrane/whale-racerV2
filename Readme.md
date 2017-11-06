@@ -14,6 +14,8 @@ Editing in Unity requires Blender and Unity 2017.2.
 
 Some graphical assets from Whale Racer Prototype by Austin Irvine.
 
+Music and Ocean sounds by George Irvine
+
 Splash sound by soundscapel.com.
 
 Documentation generated with Doxygen.
