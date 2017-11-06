@@ -288,19 +288,16 @@ public class PlayerMovement : MonoBehaviour {
     /// </summary>
     public void slowDown()
     {
-        maxForwardSpeed = 5f;
-        maxBackwardSpeed = 1f;
-
-        baseMaxForward = 5f;
-        baseMaxBackward = 1f;
+        maxForwardSpeed *= .2f;
+        maxBackwardSpeed*= .2f;
     }
     /// <summary>
     /// Handles oil slick slowdown expiry.
     /// </summary>
     public void slowDownEnd()
     {
-        maxForwardSpeed = 17f;
-        maxBackwardSpeed = 6f;
+        maxForwardSpeed = baseMaxForward;
+        maxBackwardSpeed = baseMaxBackward;
 
         baseMaxForward = 17f;
         baseMaxBackward = 6f;
