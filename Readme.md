@@ -24,3 +24,4 @@ Documentation generated with Doxygen.
 
 Some elements of PathingWaypoint.cs by James Arndt for the Unity Simple Vehicle AI tutorial.
 
+Buoyancy and water tutorials were followed from Habrador, or Erik Nordeus
