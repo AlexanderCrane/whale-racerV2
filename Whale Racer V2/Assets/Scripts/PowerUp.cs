@@ -16,7 +16,7 @@ public class PowerUp : MonoBehaviour {
         Debug.Log(other.name);
         if (other.gameObject.tag == "Player")
         {
-            if (isSpeedup)
+            if (isSpeedup && other.GetComponent<ChildCollide>() != null)
             {
                 PlayerMovement collectingPlayer = other.GetComponent<ChildCollide>().collisionParent.GetComponent<PlayerMovement>();
                 Debug.Log(collectingPlayer.gameObject.name);

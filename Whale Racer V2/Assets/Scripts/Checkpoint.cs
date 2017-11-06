@@ -16,7 +16,13 @@ public class Checkpoint : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             GameObject player = other.gameObject;
-            PlayerManager manager = player.GetComponent<PlayerManager>();
+            if (player.GetComponent<PlayerManager>() == null)
+            {
+                Debug.Log("NOT WHALE");
+                player = player.GetComponent<ChildCollide>().collisionParent;
+            }
+            Debug.Log(player.name);
+            PlayerManager manager = player.GetComponent<PlayerManager>().pmInstance;
             int index = position - 1;
             //can't hit checkpoints repeatedly or hit them out of order
             if (!manager.checkpointsHit[index] && (manager.currentCheckpoint == position-1))
