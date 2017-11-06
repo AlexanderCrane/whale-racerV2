@@ -200,16 +200,17 @@ public class PlayerMovement : MonoBehaviour {
     /// </summary>
     void Dive()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !diving)
         {
             //underWater = !underWater;
             /*if(this.transform.position.y > -3.0f) { underWater = false; }
             else { underWater = true; }*/
-
+            diving = true;
             underWater = !underWater;
 
             if (!underWater)
             {
+                Debug.Log("underwater");
                 whaleBody.mass = 1000.0f;
                 this.GetComponent<SimpleBoyancy>().SetDensity(769.276f);
                 whaleAnimator.SetBool(animations.underwaterBool, false);
@@ -222,6 +223,7 @@ public class PlayerMovement : MonoBehaviour {
             }
             else
             {
+                Debug.Log("abovewater");
                 whaleBody.mass = 63.1f;
                 this.GetComponent<SimpleBoyancy>().SetDensity(790f);
                 whaleAnimator.SetBool(animations.underwaterBool, true);
@@ -231,12 +233,18 @@ public class PlayerMovement : MonoBehaviour {
 
                 whaleAnimator.speed = 1f;
             }
+            Invoke("canDiveAgain", .5f);
         }
         else
         {
 
             whaleAnimator.SetBool(animations.diveBool, false);
         }
+    }
+
+    void canDiveAgain()
+    {
+        diving = false;
     }
 
     /// <summary>
