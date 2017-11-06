@@ -12,6 +12,8 @@ Android support and multiplayer coming soon.
 
 Editing in Unity requires Blender and Unity 2017.2. 
 
+## Citations
+
 Some graphical assets from Whale Racer Prototype by Austin Irvine.
 
 Splash sound by soundscapel.com.
