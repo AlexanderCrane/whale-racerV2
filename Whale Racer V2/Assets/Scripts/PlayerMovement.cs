@@ -185,7 +185,7 @@ public class PlayerMovement : MonoBehaviour {
             if (Input.GetButton("Jump") && HeightInWater.underwater == false)
             {
                 whaleAnimator.SetBool(animations.jumpBool, true);
-                whaleBody.AddRelativeForce(0, 100, -30, ForceMode.Impulse);
+                whaleBody.AddRelativeForce(0, 400, -30, ForceMode.Impulse);
                 canJump = 0;
             }
         }
