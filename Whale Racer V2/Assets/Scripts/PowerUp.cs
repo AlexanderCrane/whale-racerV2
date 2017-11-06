@@ -13,11 +13,13 @@ public class PowerUp : MonoBehaviour {
     /// <param name="other">The object colliding with the PowerUp</param>
     /// </summary>
     void OnTriggerEnter (Collider other) {
+        Debug.Log(other.name);
         if (other.gameObject.tag == "Player")
         {
             if (isSpeedup)
             {
-                PlayerMovement collectingPlayer = other.GetComponent<PlayerMovement>();
+                PlayerMovement collectingPlayer = other.GetComponent<ChildCollide>().collisionParent.GetComponent<PlayerMovement>();
+                Debug.Log(collectingPlayer.gameObject.name);
                 Debug.Log("Collected powerup!");
                 collectingPlayer.SpeedupPowerup(speedupDuration);
             }
