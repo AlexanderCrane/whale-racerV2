@@ -298,9 +298,6 @@ public class PlayerMovement : MonoBehaviour {
     {
         maxForwardSpeed = baseMaxForward;
         maxBackwardSpeed = baseMaxBackward;
-
-        baseMaxForward = 17f;
-        baseMaxBackward = 6f;
     }
 
     public void BounceBack(Vector3 direction)
