@@ -7,6 +7,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+/// <summary>
+/// New class to produce buoyancy effects on objects.
+/// </summary>
 [RequireComponent(typeof(Rigidbody))]
 public class SimpleBoyancy : MonoBehaviour
 {
