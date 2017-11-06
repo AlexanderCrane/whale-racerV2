@@ -1,6 +1,7 @@
 var searchData=
 [
   ['activestatetoggler',['ActiveStateToggler',['../class_active_state_toggler.html',1,'']]],
+  ['anglelimiter',['AngleLimiter',['../class_angle_limiter.html',1,'']]],
   ['animatesplash',['AnimateSplash',['../class_player_splash.html#aab2a19f9d25960e67532e8b8109cb284',1,'PlayerSplash']]],
   ['animationhashtable',['AnimationHashTable',['../class_animation_hash_table.html',1,'']]],
   ['applicationmanager',['ApplicationManager',['../class_application_manager.html',1,'']]],

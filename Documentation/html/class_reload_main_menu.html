@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: BounceNBreak Class Reference</title>
+<title>Whale Racer: ReloadMainMenu Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('class_bounce_n_break.html','');});
+$(document).ready(function(){initNavTree('class_reload_main_menu.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,31 +83,28 @@ $(document).ready(function(){initNavTree('class_bounce_n_break.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="class_bounce_n_break-members.html">List of all members</a>  </div>
+<a href="class_reload_main_menu-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BounceNBreak Class Reference</div>  </div>
+<div class="title">ReloadMainMenu Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Script for breakable box objects.  
- <a href="class_bounce_n_break.html#details">More...</a></p>
+<p>Script that the main menu from the endgame screen.  
+ <a href="class_reload_main_menu.html#details">More...</a></p>
 
 <p>Inherits MonoBehaviour.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab96786800939a3b8e2f6875e9dc5e9e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounce_n_break.html#ab96786800939a3b8e2f6875e9dc5e9e3">Start</a> ()</td></tr>
-<tr class="memdesc:ab96786800939a3b8e2f6875e9dc5e9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start method. Sets the direction to bounce the player on collision  <a href="#ab96786800939a3b8e2f6875e9dc5e9e3">More...</a><br /></td></tr>
-<tr class="separator:ab96786800939a3b8e2f6875e9dc5e9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b7ae5add7e4ba02b5d2875b90b82ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bounce_n_break.html#ad3b7ae5add7e4ba02b5d2875b90b82ee">OnCollisionEnter</a> (Collision other)</td></tr>
-<tr class="memdesc:ad3b7ae5add7e4ba02b5d2875b90b82ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnCollisionEnter method. Bounces the colliding object back if it's the player.  <a href="#ad3b7ae5add7e4ba02b5d2875b90b82ee">More...</a><br /></td></tr>
-<tr class="separator:ad3b7ae5add7e4ba02b5d2875b90b82ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cffc9071822e96d43d4b48270a8583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_reload_main_menu.html#a57cffc9071822e96d43d4b48270a8583">Update</a> ()</td></tr>
+<tr class="memdesc:a57cffc9071822e96d43d4b48270a8583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits five seconds after endgame screen load, then loads scene 0 (main menu).  <a href="#a57cffc9071822e96d43d4b48270a8583">More...</a><br /></td></tr>
+<tr class="separator:a57cffc9071822e96d43d4b48270a8583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Script for breakable box objects. </p>
+<div class="textblock"><p>Script that the main menu from the endgame screen. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad3b7ae5add7e4ba02b5d2875b90b82ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3b7ae5add7e4ba02b5d2875b90b82ee">&#9670;&nbsp;</a></span>OnCollisionEnter()</h2>
+<a id="a57cffc9071822e96d43d4b48270a8583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57cffc9071822e96d43d4b48270a8583">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,41 +113,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void BounceNBreak.OnCollisionEnter </td>
-          <td>(</td>
-          <td class="paramtype">Collision&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>OnCollisionEnter method. Bounces the colliding object back if it's the player. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab96786800939a3b8e2f6875e9dc5e9e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab96786800939a3b8e2f6875e9dc5e9e3">&#9670;&nbsp;</a></span>Start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BounceNBreak.Start </td>
+          <td class="memname">void ReloadMainMenu.Update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -163,19 +126,19 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Start method. Sets the direction to bounce the player on collision </p>
+<p>Waits five seconds after endgame screen load, then loads scene 0 (main menu). </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/BounceNBreak.cs</li>
+<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/ReloadMainMenu.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="class_bounce_n_break.html">BounceNBreak</a></li>
+    <li class="navelem"><a class="el" href="class_reload_main_menu.html">ReloadMainMenu</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

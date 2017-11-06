@@ -9,5 +9,6 @@ var class_player_movement =
     [ "slowDown", "class_player_movement.html#a688ef83dd4792fdb5bcf76195b7f2fae", null ],
     [ "slowDownEnd", "class_player_movement.html#a323e163d04bd2b048ca8d17510cfe299", null ],
     [ "SpeedupPowerup", "class_player_movement.html#a3189f8beb5500e6916843f7a896d3866", null ],
-    [ "Turn", "class_player_movement.html#ac650128e1d721b323c1c03567323fbaa", null ]
+    [ "Turn", "class_player_movement.html#ac650128e1d721b323c1c03567323fbaa", null ],
+    [ "UnderWaterCoroutine", "class_player_movement.html#a3a1e9c5e92db8a1cda43c3ffbd3f8d9b", null ]
 ];

@@ -2,11 +2,14 @@ var annotated_dup =
 [
     [ "OceanSim", "namespace_ocean_sim.html", "namespace_ocean_sim" ],
     [ "ActiveStateToggler", "class_active_state_toggler.html", null ],
+    [ "AngleLimiter", "class_angle_limiter.html", null ],
     [ "AnimationHashTable", "class_animation_hash_table.html", "class_animation_hash_table" ],
     [ "ApplicationManager", "class_application_manager.html", "class_application_manager" ],
-    [ "BounceNBreak", "class_bounce_n_break.html", null ],
+    [ "BGMController", "class_b_g_m_controller.html", null ],
+    [ "BounceNBreak", "class_bounce_n_break.html", "class_bounce_n_break" ],
     [ "ChangeColor", "class_change_color.html", null ],
     [ "Checkpoint", "class_checkpoint.html", "class_checkpoint" ],
+    [ "ChildCollide", "class_child_collide.html", null ],
     [ "DragMe", "class_drag_me.html", null ],
     [ "DragPanel", "class_drag_panel.html", null ],
     [ "DropMe", "class_drop_me.html", null ],
@@ -25,6 +28,7 @@ var annotated_dup =
     [ "PlayerMovement", "class_player_movement.html", "class_player_movement" ],
     [ "PlayerSplash", "class_player_splash.html", "class_player_splash" ],
     [ "PowerUp", "class_power_up.html", "class_power_up" ],
+    [ "ReloadMainMenu", "class_reload_main_menu.html", "class_reload_main_menu" ],
     [ "ResizePanel", "class_resize_panel.html", null ],
     [ "Rotator", "class_rotator.html", null ],
     [ "ScrollDetailTexture", "class_scroll_detail_texture.html", null ],
@@ -33,5 +37,6 @@ var annotated_dup =
     [ "slowDown", "classslow_down.html", "classslow_down" ],
     [ "TiltWindow", "class_tilt_window.html", null ],
     [ "TriangleType", "struct_triangle_type.html", null ],
+    [ "UnderWaterEffects", "class_under_water_effects.html", null ],
     [ "WaterConsole", "class_water_console.html", null ]
 ];
