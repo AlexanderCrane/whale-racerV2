@@ -9354,7 +9354,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 13
+  m_Speed: 17
   m_Acceleration: 5
   avoidancePriority: 0
   m_AngularSpeed: 120
@@ -12072,7 +12072,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4109254718616770, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -183.1
+      value: -177.6
       objectReference: {fileID: 0}
     - target: {fileID: 4109254718616770, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
       propertyPath: m_LocalRotation.x
