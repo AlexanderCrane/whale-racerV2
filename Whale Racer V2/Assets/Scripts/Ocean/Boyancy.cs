@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace OceanSim
 {
+    /// <summary>
+    /// Old class providing ocean buoyancy.
+    /// </summary>
 	public class Boyancy : MonoBehaviour 
 	{
 		#region Private Variables and Properties
