@@ -4,9 +4,15 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 
-public class LoadSceneOnClick : MonoBehaviour {
+public class LoadMap : MonoBehaviour {
+
+    public bool isStartSplitscreenButton;
+    public static bool passSplitscreen;
 	public void loadByIndex(int sceneIndex)
 	{
+        if (isStartSplitscreenButton){
+            passSplitscreen = true;
+        }
 		SceneManager.LoadScene (sceneIndex); 
 	}
     public void quitGame()

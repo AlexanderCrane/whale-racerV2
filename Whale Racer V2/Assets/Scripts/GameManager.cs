@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour
     public int totalLaps = 1;
     public static float timer;
     public static List<string> finishTimes = new List<string>();
+    public static List<Camera> allPlayerCams = new List<Camera>();
     public float countdownLength;
     private float countdownTime;
     private bool countdownOngoing = true;
@@ -21,6 +23,23 @@ public class GameManager : MonoBehaviour
         if (gmInst == null)
         {
             gmInst = this;
+        }
+        //some spicy LINQ for you
+        //get a GameObject[] of all the objects tagged player camera, then map to a List<Camera> using the function .GetComponent<Camera>
+        Camera[] cams = GameObject.FindGameObjectsWithTag("PlayerCamera").Select(obj => obj.GetComponent<Camera>()).ToArray();
+
+        if (LoadMap.passSplitscreen)
+        {
+            if (cams.Count() == 2)
+            {
+                cams[0].rect = new Rect(0, 0, 1, .5f);
+                cams[1].rect = new Rect(0, .5f, 1, .5f);
+            }
+        }
+        else
+        {
+            //if we're not doing splitscreen, disable all cameras that aren't player 1's camera
+            cams.Where(cam => cam.name != "player_Camera").Select(cam => { cam.enabled = false; return cam; }).ToList();
         }
     }
     ///  <summary>
