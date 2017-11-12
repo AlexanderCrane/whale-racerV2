@@ -53,19 +53,20 @@ public class PlayerManager : MonoBehaviour {
     /// Update method for the player manager. Disables player movement if countdown isn't over yet.
     /// </summary>
     void Update (){
+        NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();
         if (allWhaleMovementDisabled)
         {
             gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
 
-            if (gameObject.GetComponent<NavMeshAgent>() != null)
+            if (nma != null && nma.isActiveAndEnabled)
             {
                 gameObject.GetComponent<NavMeshAgent>().isStopped = true;
             }      
         }
         else
         {
-            if (gameObject.GetComponent<NavMeshAgent>() != null)
+            if (nma != null && nma.isActiveAndEnabled)
             {
                 gameObject.GetComponent<NavMeshAgent>().isStopped = false;
             }

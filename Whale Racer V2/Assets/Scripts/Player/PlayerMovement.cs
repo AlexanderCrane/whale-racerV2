@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour {
         //going forward
         if (Input.GetAxisRaw("Vertical") > 0)
         {
-            if (!movementAudioPlaying)
+            if (!movementAudioPlaying && movementSplash != null)
             {
                 movementSplash.Play();
                 movementAudioPlaying = true;
@@ -118,7 +118,7 @@ public class PlayerMovement : MonoBehaviour {
         //backing up
         else if (Input.GetAxisRaw("Vertical") < 0)
         {
-            if (!movementAudioPlaying)
+            if (!movementAudioPlaying && movementSplash != null)
             {
                 movementSplash.Play();
                 movementAudioPlaying = true;
@@ -139,7 +139,7 @@ public class PlayerMovement : MonoBehaviour {
         //stopping
         else
         {
-            if (movementAudioPlaying)
+            if (movementAudioPlaying && movementSplash != null)
             {
                 movementSplash.Stop();
                 movementAudioPlaying = false;
