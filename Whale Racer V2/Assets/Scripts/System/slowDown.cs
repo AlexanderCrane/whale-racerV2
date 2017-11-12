@@ -14,9 +14,15 @@ public class slowDown : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("hit");
             PlayerMovement collidingPlayer = other.GetComponent<PlayerMovement>();
-            collidingPlayer.slowDown();
+
+            if (collidingPlayer.ToString() == "AI_Whale (PlayerMovement)")
+            {
+                UnityEngine.AI.NavMeshAgent computerPlayer = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
+                computerPlayer.speed = 4;
+            }
+            else
+                collidingPlayer.slowDown();
 
 
         }
@@ -31,8 +37,14 @@ public class slowDown : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             PlayerMovement collidingPlayer = other.GetComponent<PlayerMovement>();
-            collidingPlayer.slowDownEnd();
 
+            if (collidingPlayer.ToString() == "AI_Whale (PlayerMovement)")
+            {
+                UnityEngine.AI.NavMeshAgent computerPlayer = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
+                computerPlayer.speed = 17;
+            }
+            else
+                collidingPlayer.slowDownEnd();
 
         }
 

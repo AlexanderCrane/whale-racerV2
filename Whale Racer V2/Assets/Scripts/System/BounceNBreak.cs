@@ -26,11 +26,7 @@ public class BounceNBreak : MonoBehaviour {
         {
             Debug.Log("Box collided with");
             PlayerMovement collidingPlayer = other.gameObject.GetComponent<PlayerMovement>();
-            if (collidingPlayer == null)
-            {
-                Debug.Log("AI COLLIDE");
-                other.gameObject.GetComponent<Rigidbody>().AddForce(correctDirection*10000);
-            }
+
             collidingPlayer.BounceBack(correctDirection, sound);
             Destroy(this.gameObject);
 
