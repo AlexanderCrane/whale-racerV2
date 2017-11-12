@@ -286,8 +286,10 @@ public class PlayerMovement : MonoBehaviour {
     /// Handles effects of speedup powerup.
     /// <param name="duration">THe duration of the speedup.</param>
     /// </summary>
-    public void SpeedupPowerup(float duration)
+    public void SpeedupPowerup(float duration, AudioClip sound)
     {
+        AudioSource whaleAudio = GetComponent<AudioSource>();
+        whaleAudio.PlayOneShot(sound, 1);
         if (speedupDuration == 0)
         {
             speedupDuration = duration;
