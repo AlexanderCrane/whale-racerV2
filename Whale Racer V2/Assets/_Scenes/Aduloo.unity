@@ -4280,7 +4280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2814394d865a8174aa1bc10b8261b987, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerID: 1
+  playerID: 2
   pmInstance: {fileID: 0}
   currentCheckpoint: 0
   checkpointsHit: 
@@ -13884,8 +13884,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1749613529}
-  m_LocalRotation: {x: 0.0000000134702915, y: 0.9961947, z: 0.08715581, w: -0.00000016223693}
-  m_LocalPosition: {x: 7.4, y: -3.259999, z: 10.9}
+  m_LocalRotation: {x: 0.25489765, y: 0.7420148, z: 0.47593224, w: -0.39740384}
+  m_LocalPosition: {x: 36.36228, y: -87.83179, z: 14.738026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
