@@ -30,6 +30,12 @@ public class PlayerMovement : MonoBehaviour {
     private bool movementAudioPlaying = false;
     private Rigidbody whaleBody;
 
+    private string horizontalAxis = "Horizontal";
+    private string verticalAxis = "Vertical";
+    private string jumpButton = "Jump";
+    private string diveButton = "Dive";
+
+    public bool splitscreenPlayer2 = false;
     /// <summary>
     /// Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.
     /// </summary>
@@ -40,6 +46,15 @@ public class PlayerMovement : MonoBehaviour {
         baseMaxForward = maxForwardSpeed;
         baseMaxBackward = maxBackwardSpeed;
         baseTurnSpeed = turnSpeed;
+        if (splitscreenPlayer2)
+        {
+            Debug.Log("Setting axes to p2 axes.");
+            horizontalAxis = "p2Horizontal";
+            verticalAxis = "p2Vertical";
+            jumpButton = "p2Jump";
+            diveButton = "p2Dive";
+
+        }
     }
     /// <summary>
     /// Update method. Calls methods to player input to whale movement.
@@ -57,8 +72,8 @@ public class PlayerMovement : MonoBehaviour {
             gameObject.GetComponent<PlayerManager>().pmInstance.NewLap();
         }
 
-        xMovement = Input.GetAxis("Horizontal");
-        zMovement = Input.GetAxis("Vertical");
+        xMovement = Input.GetAxis(horizontalAxis);
+        zMovement = Input.GetAxis(verticalAxis);
         //lock y rotation to 0 so the whale can't be flipped over (for now)
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);
         if (Time.time - speedupStart > speedupDuration && spedup)
@@ -97,7 +112,7 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
         AudioSource movementSplash = GetComponent<AudioSource>();
         //going forward
-        if (Input.GetAxisRaw("Vertical") > 0)
+        if (Input.GetAxisRaw(verticalAxis) > 0)
         {
             if (!movementAudioPlaying && movementSplash != null)
             {
@@ -116,7 +131,7 @@ public class PlayerMovement : MonoBehaviour {
 
         }
         //backing up
-        else if (Input.GetAxisRaw("Vertical") < 0)
+        else if (Input.GetAxisRaw(verticalAxis) < 0)
         {
             if (!movementAudioPlaying && movementSplash != null)
             {
@@ -162,13 +177,13 @@ public class PlayerMovement : MonoBehaviour {
     /// </summary>
     void Turn()
     {
-        if (Input.GetAxisRaw("Horizontal") < 0)
+        if (Input.GetAxisRaw(horizontalAxis) < 0)
         {
             transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
             //whaleAnimator.SetFloat(animations.turnFloat, turnSpeed);
         }
 
-        if (Input.GetAxisRaw("Horizontal") > 0)
+        if (Input.GetAxisRaw(horizontalAxis) > 0)
         {
             transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
             //whaleAnimator.SetFloat(animations.turnFloat, turnSpeed);
@@ -182,7 +197,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         if (canJump == 100)
         {
-            if (Input.GetButton("Jump") && HeightInWater.underwater == false)
+            if (Input.GetButton(jumpButton) && HeightInWater.underwater == false)
             {
                 whaleAnimator.SetBool(animations.jumpBool, true);
                 whaleBody.AddRelativeForce(0, 400, -30, ForceMode.Impulse);
@@ -200,7 +215,7 @@ public class PlayerMovement : MonoBehaviour {
     /// </summary>
     void Dive()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !diving)
+        if (Input.GetButton(diveButton) && !diving)
         {
             //underWater = !underWater;
             /*if(this.transform.position.y > -3.0f) { underWater = false; }
