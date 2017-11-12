@@ -177,16 +177,22 @@ public class PlayerMovement : MonoBehaviour {
     /// </summary>
     void Turn()
     {
+        int turnSpeedMult = 1;
+        if (Input.GetAxisRaw(verticalAxis) < 0)
+        {
+            turnSpeedMult = -1;
+        }
         if (Input.GetAxisRaw(horizontalAxis) < 0)
         {
-            transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime * turnSpeedMult);
+            
             //whaleAnimator.SetFloat(animations.turnFloat, turnSpeed);
         }
 
         if (Input.GetAxisRaw(horizontalAxis) > 0)
         {
-            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-            //whaleAnimator.SetFloat(animations.turnFloat, turnSpeed);
+                transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime*turnSpeedMult);
+                        //whaleAnimator.SetFloat(animations.turnFloat, turnSpeed);
         }
 
     }
