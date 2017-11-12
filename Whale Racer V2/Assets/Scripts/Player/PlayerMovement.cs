@@ -289,7 +289,10 @@ public class PlayerMovement : MonoBehaviour {
     public void SpeedupPowerup(float duration, AudioClip sound)
     {
         AudioSource whaleAudio = GetComponent<AudioSource>();
-        whaleAudio.PlayOneShot(sound, 1);
+        if (whaleAudio != null)
+        {
+            whaleAudio.PlayOneShot(sound, 1);
+        }
         if (speedupDuration == 0)
         {
             speedupDuration = duration;
@@ -331,9 +334,10 @@ public class PlayerMovement : MonoBehaviour {
         maxBackwardSpeed = baseMaxBackward;
     }
 
-    public void BounceBack(Vector3 direction)
+    public void BounceBack(Vector3 direction, AudioClip sound)
     {
-       // Vector3 backward = transform.forward * -1;
+        GetComponent<AudioSource>().PlayOneShot(sound);
+        // Vector3 backward = transform.forward * -1;
         whaleBody.AddForce(direction * 100000);
         Debug.Log("BounceBack Called, " + transform.forward + ", direction , " + direction);
     }

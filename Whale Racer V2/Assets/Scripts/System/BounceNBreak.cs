@@ -7,6 +7,7 @@ using UnityEngine;
 public class BounceNBreak : MonoBehaviour {
 
     [SerializeField] private Vector3 correctDirection;
+    public AudioClip sound;
 
 	/// <summary>
     /// Start method. Sets the direction to bounce the player on collision
@@ -30,7 +31,7 @@ public class BounceNBreak : MonoBehaviour {
                 Debug.Log("AI COLLIDE");
                 other.gameObject.GetComponent<Rigidbody>().AddForce(correctDirection*10000);
             }
-            collidingPlayer.BounceBack(correctDirection);
+            collidingPlayer.BounceBack(correctDirection, sound);
             Destroy(this.gameObject);
 
         }
