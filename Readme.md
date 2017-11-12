@@ -4,7 +4,7 @@
 
 ### Built in C# with Unity.
 
-A 3D, third-person whale racing game for PC and Mac.
+A 3D, third-person whale racing game for PC and Mac. 
 
 Featuring single player gameplay against one AI opponent.
 
