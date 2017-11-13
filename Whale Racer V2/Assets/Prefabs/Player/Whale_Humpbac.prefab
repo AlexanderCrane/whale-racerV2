@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114740228137357428}
   - component: {fileID: 114634850920501518}
   - component: {fileID: 114765974345316826}
+  - component: {fileID: 114299090986857484}
   m_Layer: 0
   m_Name: player_Camera
   m_TagString: PlayerCamera
@@ -2968,6 +2969,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParent: {fileID: 1274265205439508}
+--- !u!114 &114299090986857484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000118150065876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fad17225ed788540a5620fd78b6db5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  defaultDistance: {x: 0, y: 2, z: -10}
+  distanceDamp: 10
 --- !u!114 &114316863887013102
 MonoBehaviour:
   m_ObjectHideFlags: 1
