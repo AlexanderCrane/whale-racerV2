@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 /// <summary>
 ///Script to handle oil slick collision and slowdown.
@@ -15,16 +16,15 @@ public class slowDown : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             PlayerMovement collidingPlayer = other.GetComponent<PlayerMovement>();
-
-            if (collidingPlayer.ToString() == "AI_Whale (PlayerMovement)")
+            Debug.Log("Entered slick");
+            if (collidingPlayer.gameObject.GetComponent<NavMeshAgent>().isActiveAndEnabled)
             {
-                UnityEngine.AI.NavMeshAgent computerPlayer = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
+                Debug.Log("AI entered slick");
+                NavMeshAgent computerPlayer = other.gameObject.GetComponent<NavMeshAgent>();
                 computerPlayer.speed = 4;
             }
             else
                 collidingPlayer.slowDown();
-
-
         }
 
 

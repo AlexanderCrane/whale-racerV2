@@ -297,13 +297,22 @@ public class PlayerMovement : MonoBehaviour {
         {
             speedupDuration = duration;
         }
-        spedup = true;
         speedupStart = Time.time;
-        Debug.Log(maxForwardSpeed);
-        maxForwardSpeed *= 1.5f;
-        Debug.Log(maxForwardSpeed);
-        maxBackwardSpeed *=1.5f;
-        turnSpeed *=1.5f;
+        if (spedup)
+        {
+            maxForwardSpeed *= 1.1f;
+            maxBackwardSpeed *= 1.1f;
+            turnSpeed *= 1.1f;
+        }
+        else
+        {
+            maxForwardSpeed *= 1.5f;
+            maxBackwardSpeed *= 1.5f;
+            turnSpeed *= 1.5f;
+        }
+
+        spedup = true;
+
     }
     /// <summary>
     /// Handles disabling of powerups after they're picked up.
