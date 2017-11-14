@@ -38,7 +38,7 @@ public class slowDown : MonoBehaviour
         {
             PlayerMovement collidingPlayer = other.GetComponent<PlayerMovement>();
 
-            if (collidingPlayer.ToString() == "AI_Whale (PlayerMovement)")
+            if (collidingPlayer.gameObject.GetComponent<NavMeshAgent>().isActiveAndEnabled)
             {
                 UnityEngine.AI.NavMeshAgent computerPlayer = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
                 computerPlayer.speed = 17;
