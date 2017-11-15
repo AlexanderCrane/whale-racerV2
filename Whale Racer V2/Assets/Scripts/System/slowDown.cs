@@ -17,11 +17,19 @@ public class slowDown : MonoBehaviour
         {
             PlayerMovement collidingPlayer = other.GetComponent<PlayerMovement>();
             Debug.Log("Entered slick");
-            if (collidingPlayer.gameObject.GetComponent<NavMeshAgent>().isActiveAndEnabled)
+            NavMeshAgent computerPlayer = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
+
+            if (computerPlayer != null)
             {
-                Debug.Log("AI entered slick");
-                NavMeshAgent computerPlayer = other.gameObject.GetComponent<NavMeshAgent>();
-                computerPlayer.speed = 4;
+                if (computerPlayer.isActiveAndEnabled)
+                {
+                    Debug.Log("AI entered slick");
+                    computerPlayer.speed = 4;
+                }
+                else
+                {
+                    collidingPlayer.slowDown();
+                }
             }
             else
                 collidingPlayer.slowDown();
@@ -37,11 +45,17 @@ public class slowDown : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             PlayerMovement collidingPlayer = other.GetComponent<PlayerMovement>();
-
-            if (collidingPlayer.gameObject.GetComponent<NavMeshAgent>().isActiveAndEnabled)
+            NavMeshAgent computerPlayer = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
+            if (computerPlayer != null)
             {
-                UnityEngine.AI.NavMeshAgent computerPlayer = other.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
-                computerPlayer.speed = 17;
+                if (computerPlayer.isActiveAndEnabled)
+                {
+                    computerPlayer.speed = 17;
+                }
+                else
+                {
+                    collidingPlayer.slowDownEnd();
+                }
             }
             else
                 collidingPlayer.slowDownEnd();
