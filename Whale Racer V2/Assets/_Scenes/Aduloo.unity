@@ -3535,6 +3535,7 @@ GameObject:
   - component: {fileID: 483106164}
   - component: {fileID: 483106163}
   - component: {fileID: 483106162}
+  - component: {fileID: 483106172}
   m_Layer: 0
   m_Name: Whale_Humpbac
   m_TagString: Player
@@ -3757,6 +3758,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParent: {fileID: 483106161}
+--- !u!114 &483106172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 483106161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5ad79fb7aee884398d06a8d7676cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blowholeVisual: {fileID: 100000, guid: 8b721724428e6fc4e954b55c43405c20, type: 3}
 --- !u!1 &488286265 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7,
@@ -4166,6 +4179,7 @@ GameObject:
   - component: {fileID: 545499187}
   - component: {fileID: 545499186}
   - component: {fileID: 545499185}
+  - component: {fileID: 545499191}
   - component: {fileID: 545499184}
   - component: {fileID: 545499183}
   - component: {fileID: 545499182}
@@ -4450,6 +4464,18 @@ NavMeshAgent:
   m_BaseOffset: 40
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &545499191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 545499177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5ad79fb7aee884398d06a8d7676cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blowholeVisual: {fileID: 100000, guid: 8b721724428e6fc4e954b55c43405c20, type: 3}
 --- !u!1 &555724211
 GameObject:
   m_ObjectHideFlags: 0
@@ -9639,8 +9665,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1192376453}
-  m_LocalRotation: {x: 0.0000000134702915, y: 0.9961947, z: 0.08715581, w: -0.00000016223693}
-  m_LocalPosition: {x: 7.4, y: -3.259999, z: 10.9}
+  m_LocalRotation: {x: 0.06857751, y: 0.7281785, z: 0.07365727, w: -0.6779586}
+  m_LocalPosition: {x: -134.77182, y: -32.294346, z: -131.82222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
