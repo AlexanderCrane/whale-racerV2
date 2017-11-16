@@ -8,12 +8,12 @@ public class LoadMap : MonoBehaviour {
 
     public bool isStartSplitscreenButton;
     public static bool passSplitscreen;
-	public void loadByIndex(int sceneIndex)
+	public void loadByName(string sceneName)
 	{
         if (isStartSplitscreenButton){
             passSplitscreen = true;
         }
-		SceneManager.LoadScene (sceneIndex); 
+		SceneManager.LoadScene(sceneName); 
 	}
     public void quitGame()
     {
