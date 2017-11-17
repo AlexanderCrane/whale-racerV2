@@ -9,7 +9,8 @@ public class MPGameManager : NetworkBehaviour
     public static MPGameManager gmInst;
     public static int winner;
     public int totalLaps = 1;
-    public static float timer;
+    [SyncVar]
+    public float timer;
     public static List<string> finishTimes = new List<string>();
     public static List<Camera> allPlayerCams = new List<Camera>();
     public float countdownLength;
@@ -66,7 +67,10 @@ public class MPGameManager : NetworkBehaviour
         }
         else
         {
-            timer += Time.deltaTime;
+            if (NetworkServer.active)
+            {
+                timer += Time.deltaTime;
+            }
         }
     }
     ///  <summary>
@@ -103,7 +107,7 @@ public class MPGameManager : NetworkBehaviour
     /// Gets the current race time as a well-formatted string for the timer.
     ///  </summary>
 
-    public static string getStringTime()
+    public string getStringTime()
     {
         string minutes = Mathf.Floor(timer / 60).ToString("00");
         string seconds = (timer % 60).ToString("00");
