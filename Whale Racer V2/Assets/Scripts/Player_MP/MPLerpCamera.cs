@@ -26,6 +26,26 @@ public class MPLerpCamera : NetworkBehaviour
     // LateUpdate acts as Update but one frame late
     void LateUpdate()
     {
+            Debug.Log(target);
+
+
+        if (target == null)
+        {
+            this.gameObject.GetComponent<Camera>().enabled = false;
+            return;
+        }
+        else
+        {
+            if (target.GetComponent<NetworkIdentity>().isLocalPlayer)
+            {
+                this.gameObject.GetComponent<Camera>().enabled = true;
+            }
+            else
+            {
+                return;
+            }
+        }
+
         if (target != null)
         {
             Transform targetTransform = target.transform;
@@ -42,5 +62,10 @@ public class MPLerpCamera : NetworkBehaviour
     public void setTarget(GameObject target)
     {
         this.target = target;
+    }
+
+    public bool hasTarget()
+    {
+        return !(this.target == null);
     }
 }

@@ -70,7 +70,7 @@ public class MPPlayerMovement : NetworkBehaviour {
         }
         if (animations == null)
         {
-            animations = GameManager.gmInst.GetComponent<AnimationHashTable>();
+            animations = MPGameManager.gmInst.GetComponent<AnimationHashTable>();
         }
         //cheat code - press N+M+RSHIFT to add a lap to your lap counter if you're testing the endgame
         if ((Input.GetKey(KeyCode.M) && Input.GetKey(KeyCode.N)) && Input.GetKeyDown(KeyCode.RightShift))
@@ -183,7 +183,6 @@ public class MPPlayerMovement : NetworkBehaviour {
     /// </summary>
     void Turn()
     {
-        Debug.Log("turn");
         int turnSpeedMult = 1;
         if (Input.GetAxisRaw(verticalAxis) < 0)
         {

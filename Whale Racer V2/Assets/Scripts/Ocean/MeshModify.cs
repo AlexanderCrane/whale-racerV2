@@ -60,7 +60,6 @@ public class MeshModify
 
             //save global positions and calculate distance to water from the water sim
             objGlobalVertices[i] = globalPosition;
-
             distanceToWater[i] = WaterConsole.current.DistanceToWater(globalPosition, Time.time);
         }
 

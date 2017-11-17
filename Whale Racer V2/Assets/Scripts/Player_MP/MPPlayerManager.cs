@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.AI;
@@ -14,6 +15,7 @@ public class MPPlayerManager : NetworkBehaviour {
     public int currentCheckpoint = 0;
     private int currentLap = 1;
     public bool[] checkpointsHit;
+    private bool hasCam = false;
     //all whale movement is disabled at start of game
     //when the race countdown ends, GameManager sets this to false
     public static bool allWhaleMovementDisabled = true;
@@ -26,7 +28,9 @@ public class MPPlayerManager : NetworkBehaviour {
         {
             pmInstance = this;
         }
-        FindObjectOfType<MPLerpCamera>().setTarget(this.gameObject);
+        //get first cam that's not following a player and claim it
+        Debug.Log(FindObjectsOfType<MPLerpCamera>().Count());
+        Debug.Log(FindObjectsOfType<MPLerpCamera>()[0].hasTarget());
         checkpointsHit = new bool[12];
 
     }
@@ -55,6 +59,12 @@ public class MPPlayerManager : NetworkBehaviour {
     /// Update method for the player manager. Disables player movement if countdown isn't over yet.
     /// </summary>
     void Update (){
+        if (!hasCam)
+        {
+            Debug.Log(FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).Count());
+            FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).First().setTarget(this.gameObject);
+            hasCam = true;
+        }
         NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();
         if (allWhaleMovementDisabled)
         {
