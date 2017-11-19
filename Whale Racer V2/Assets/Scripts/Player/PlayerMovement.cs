@@ -6,7 +6,7 @@ using UnityEngine;
 /// <summary>
 ///Player movement control script.
 /// </summary>
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : NetworkBehaviour {
     private float xMovement;
     private float zMovement;
     public Animator whaleAnimator;
@@ -64,6 +64,10 @@ public class PlayerMovement : MonoBehaviour {
     /// </summary>
     void FixedUpdate()
     {
+        if (GameManager.gmInst.isMP && !isLocalPlayer)
+        {
+            return;
+        }
         if (animations == null)
         {
             animations = GameManager.gmInst.GetComponent<AnimationHashTable>();

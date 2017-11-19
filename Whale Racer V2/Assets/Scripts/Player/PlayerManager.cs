@@ -1,18 +1,21 @@
 ﻿using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 ///  <summary>
 ///  Tracks progress through the race and global race effects for each individual player.
 ///  </summary>
-public class PlayerManager : MonoBehaviour {
+public class PlayerManager : NetworkBehaviour {
     public int playerID = 0;
     public PlayerManager pmInstance = null;
     public int currentCheckpoint = 0;
     private int currentLap = 1;
     public bool[] checkpointsHit;
+    private bool hasCam = false;
     //all whale movement is disabled at start of game
     //when the race countdown ends, GameManager sets this to false
     public static bool allWhaleMovementDisabled = true;
@@ -53,6 +56,12 @@ public class PlayerManager : MonoBehaviour {
     /// Update method for the player manager. Disables player movement if countdown isn't over yet.
     /// </summary>
     void Update (){
+        if (GameManager.gmInst.isMP && !hasCam)
+        {
+            Debug.Log(FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).Count());
+            FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).First().setTarget(this.gameObject);
+            hasCam = true;
+        }
         NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();
         if (allWhaleMovementDisabled)
         {

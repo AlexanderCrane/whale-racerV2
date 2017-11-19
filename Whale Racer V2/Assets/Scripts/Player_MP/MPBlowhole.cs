@@ -7,9 +7,12 @@ public class MPBlowhole : MonoBehaviour {
     public GameObject blowholeVisual;
 	void Awake()
     {
-        if (gameObject.GetComponent<PlayerMovement>().splitscreenPlayer2)
+        if (!GameManager.gmInst.isMP)
         {
-            blowholeButton = "p2Blowhole";
+            if (gameObject.GetComponent<PlayerMovement>().splitscreenPlayer2)
+            {
+                blowholeButton = "p2Blowhole";
+            }
         }
     }
 	// Update is called once per frame

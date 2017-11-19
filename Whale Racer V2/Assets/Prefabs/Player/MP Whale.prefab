@@ -492,8 +492,8 @@ GameObject:
   - component: {fileID: 114423845602533568}
   - component: {fileID: 114535200652255086}
   - component: {fileID: 114560304618751216}
-  - component: {fileID: 114827453744313130}
-  - component: {fileID: 114999352140572120}
+  - component: {fileID: 114343160947050950}
+  - component: {fileID: 114398587462971038}
   m_Layer: 0
   m_Name: MP Whale
   m_TagString: Player
@@ -2776,6 +2776,42 @@ MonoBehaviour:
   density: 790
   massOfWater: 0
   underwaterObj: {fileID: 1771659546439474}
+--- !u!114 &114343160947050950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457677468697990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2814394d865a8174aa1bc10b8261b987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerID: 0
+  pmInstance: {fileID: 0}
+  currentCheckpoint: 0
+  checkpointsHit: 
+--- !u!114 &114398587462971038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457677468697990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3896e3894ac984a85a1e0a0b970a38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whaleAnimator: {fileID: 0}
+  whaleSpeed: 0
+  turnSpeed: 25
+  baseTurnSpeed: 500
+  accel: 100
+  maxForwardSpeed: 1200
+  maxBackwardSpeed: 500
+  baseMaxForward: 1200
+  baseMaxBackward: 500
+  splitscreenPlayer2: 0
 --- !u!114 &114423845602533568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2960,21 +2996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParent: {fileID: 1457677468697990}
---- !u!114 &114827453744313130
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1457677468697990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adbe37594d8af1d44ad5ee4d4fa71da8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerID: 1
-  pmInstance: {fileID: 0}
-  currentCheckpoint: 0
-  checkpointsHit: 
 --- !u!114 &114846399117229074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3023,27 +3044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParent: {fileID: 1457677468697990}
---- !u!114 &114999352140572120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1457677468697990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c02d8a54da281364dad88a92db82d933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whaleAnimator: {fileID: 95679868830563410}
-  whaleSpeed: 0
-  turnSpeed: 100
-  baseTurnSpeed: 100
-  accel: 100
-  maxForwardSpeed: 1200
-  maxBackwardSpeed: 500
-  baseMaxForward: 1200
-  baseMaxBackward: 500
-  splitscreenPlayer2: 0
 --- !u!124 &124352040344352496
 Behaviour:
   m_ObjectHideFlags: 1
