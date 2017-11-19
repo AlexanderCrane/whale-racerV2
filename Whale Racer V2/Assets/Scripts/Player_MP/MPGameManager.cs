@@ -62,7 +62,7 @@ public class MPGameManager : NetworkBehaviour
             {
                 countdownOngoing = false;
                 showGo = true;
-                PlayerManager.allWhaleMovementDisabled = false;
+                MPPlayerManager.allWhaleMovementDisabled = false;
             }
         }
         else

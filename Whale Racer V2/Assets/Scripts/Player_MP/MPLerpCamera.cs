@@ -26,8 +26,6 @@ public class MPLerpCamera : NetworkBehaviour
     // LateUpdate acts as Update but one frame late
     void LateUpdate()
     {
-            Debug.Log(target);
-
 
         if (target == null)
         {
