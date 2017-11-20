@@ -21,7 +21,6 @@ public class Checkpoint : MonoBehaviour {
                 Debug.Log("NOT WHALE");
                 player = player.GetComponent<ChildCollide>().collisionParent;
             }
-            Debug.Log(player.name);
             PlayerManager manager = player.GetComponent<PlayerManager>().pmInstance;
             int index = position - 1;
             //can't hit checkpoints repeatedly or hit them out of order
