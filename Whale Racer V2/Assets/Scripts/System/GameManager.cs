@@ -8,10 +8,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : NetworkBehaviour
 {
     public static GameManager gmInst;
-    public static int winner;
+    [SyncVar]
+    public int winner;
     public int totalLaps = 1;
-    public static float timer;
-    public static List<string> finishTimes = new List<string>();
+    [SyncVar]
+    public float timer;
+    public SyncListString finishTimes = new SyncListString();
     public static List<Camera> allPlayerCams = new List<Camera>();
     public float countdownLength;
     private float countdownTime;
@@ -24,6 +26,7 @@ public class GameManager : NetworkBehaviour
 
     void Awake()
     {
+        DontDestroyOnLoad(this);
         if (SceneManager.GetActiveScene().name == "Aduloo_MP")
         {
             isMP = true;
@@ -122,8 +125,8 @@ public class GameManager : NetworkBehaviour
 
     public static string getStringTime()
     {
-        string minutes = Mathf.Floor(timer / 60).ToString("00");
-        string seconds = (timer % 60).ToString("00");
+        string minutes = Mathf.Floor(gmInst.timer / 60).ToString("00");
+        string seconds = (gmInst.timer % 60).ToString("00");
         return minutes + ":" + seconds;
 
     }

@@ -24,7 +24,18 @@ public class PlayerManager : NetworkBehaviour {
     /// Awake method. Initializes instance for non-static use. Initializes checkpointsHit array.
     /// </summary>
     void Awake () {
-		if (pmInstance == null && pmInstance != this)
+        if (playerID == 0)
+        {
+            foreach(PlayerManager player in Object.FindObjectsOfType<PlayerManager>())
+            {
+                if (player.playerID != 0)
+                {
+                    playerID++;
+                }
+            }
+            playerID += 1;
+        }
+        if (pmInstance == null && pmInstance != this)
         {
             pmInstance = this;
         }
@@ -46,8 +57,8 @@ public class PlayerManager : NetworkBehaviour {
         //totalLaps is configurable number of laps for race to last
         if (currentLap == GameManager.gmInst.totalLaps+1)
         {
-            GameManager.winner = playerID;
-            GameManager.finishTimes.Add(GameManager.getStringTime());
+            GameManager.gmInst.winner = playerID;
+            GameManager.gmInst.finishTimes.Add(GameManager.getStringTime());
             SceneManager.LoadScene(2);
         }
     }
