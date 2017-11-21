@@ -125,8 +125,8 @@ public class GameManager : NetworkBehaviour
 
     public static string getStringTime()
     {
-        string minutes = Mathf.Floor(gmInst.timer / 60).ToString("00");
-        string seconds = (gmInst.timer % 60).ToString("00");
+        string minutes = Mathf.Floor(gmInst.timer / 59).ToString("00");
+        string seconds = (gmInst.timer % 59).ToString("00");
         return minutes + ":" + seconds;
 
     }
