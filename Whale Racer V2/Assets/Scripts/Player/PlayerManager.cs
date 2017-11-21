@@ -60,6 +60,7 @@ public class PlayerManager : NetworkBehaviour {
             GameManager.gmInst.winner = playerID;
             GameManager.gmInst.finishTimes.Add(GameManager.getStringTime());
             SceneManager.LoadScene(2);
+            Destroy(GameManager.gmInst);
         }
     }
 
