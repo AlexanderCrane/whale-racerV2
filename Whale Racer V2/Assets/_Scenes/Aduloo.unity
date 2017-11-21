@@ -3786,11 +3786,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whaleAnimator: {fileID: 483106165}
   whaleSpeed: 0
-  turnSpeed: 25
+  turnSpeed: 40
   baseTurnSpeed: 500
   accel: 100
   maxForwardSpeed: 1200
-  maxBackwardSpeed: 500
+  maxBackwardSpeed: 700
   baseMaxForward: 800
   baseMaxBackward: 100
   splitscreenPlayer2: 0
@@ -4397,7 +4397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whaleAnimator: {fileID: 545499184}
   whaleSpeed: 0
-  turnSpeed: 25
+  turnSpeed: 50
   baseTurnSpeed: 500
   accel: 100
   maxForwardSpeed: 1200
