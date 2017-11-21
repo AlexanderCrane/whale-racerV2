@@ -9,6 +9,10 @@ public class LoadSelectedMap : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         mapName = LoadMap.mpMap;
+        if (mapName == null)
+        {
+            mapName = "Aduloo_MP";
+        }
         gameObject.GetComponent<NetworkLobbyManager>().playScene = mapName;
 
 	}

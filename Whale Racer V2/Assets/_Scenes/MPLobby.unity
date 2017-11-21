@@ -309,13 +309,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 706667270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 227461547, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 61c5f58a579f20d42a6d703df776227e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
+  manager: {fileID: 706667271}
   showGUI: 1
-  offsetX: 0
-  offsetY: 0
+  offsetX: 250
+  offsetY: 40
 --- !u!114 &706667274
 MonoBehaviour:
   m_ObjectHideFlags: 0
