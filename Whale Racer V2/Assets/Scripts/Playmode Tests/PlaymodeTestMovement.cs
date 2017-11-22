@@ -29,7 +29,7 @@ public class NewPlayModeTest : IPrebuildSetup {
         testPM.animations = new AnimationHashTable();
     }
     [UnityTest]
-	public IEnumerator TestJump() {
+	public IEnumerator TestJumpIncreasesHeight() {
         //yield a frame before initializing game objects to let the scene load
         yield return null;
         RealSetup();
