@@ -30,7 +30,7 @@ public class PlayerMovement : NetworkBehaviour {
     private bool spedup = false;
     private bool underWater = false;
     private bool movementAudioPlaying = false;
-    private Rigidbody whaleBody;
+    public Rigidbody whaleBody;
 
     private string horizontalAxis = "Horizontal";
     private string verticalAxis = "Vertical";
@@ -64,6 +64,8 @@ public class PlayerMovement : NetworkBehaviour {
     /// </summary>
     void FixedUpdate()
     {
+        Debug.Log(whaleBody.velocity.magnitude);
+
         if (GameManager.gmInst.isMP && !isLocalPlayer)
         {
             return;
@@ -204,6 +206,10 @@ public class PlayerMovement : NetworkBehaviour {
     public bool CheckCanJump()
     {
         return (canJump == 100);
+    }
+    public void SetCanJump()
+    {
+        canJump = 100;
     }
     /// <summary>
     /// Handles jump input.
