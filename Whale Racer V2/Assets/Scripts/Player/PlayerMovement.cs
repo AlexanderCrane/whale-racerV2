@@ -10,7 +10,7 @@ public class PlayerMovement : NetworkBehaviour {
     private float xMovement;
     private float zMovement;
     public Animator whaleAnimator;
-    private AnimationHashTable animations;
+    public AnimationHashTable animations;
 
     public float whaleSpeed = 0f;
     public float turnSpeed = 15f;
@@ -95,9 +95,9 @@ public class PlayerMovement : NetworkBehaviour {
 
             Debug.Log("Buff expired");
         }
-        Move2D();
-        Turn();
-        Dive();
+        Move2D(Input.GetAxisRaw(verticalAxis));
+        Turn(Input.GetAxisRaw(verticalAxis),Input.GetAxisRaw(horizontalAxis));
+        Dive(Input.GetButton(diveButton));
         if (canJump >= 100)
         {
             canJump = 100;
@@ -106,19 +106,19 @@ public class PlayerMovement : NetworkBehaviour {
         {
             canJump++;
         }
-        Jump();
+        Jump(Input.GetButton(jumpButton));
 
 
     }
     /// <summary>
     /// Translates player input to forward/backward movement. Plays corresponding audio and animation.
     /// </summary>
-    private void Move2D()
+    public void Move2D(float input)
     {
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
         AudioSource movementSplash = GetComponent<AudioSource>();
         //going forward
-        if (Input.GetAxisRaw(verticalAxis) > 0)
+        if (input > 0)
         {
             if (!movementAudioPlaying && movementSplash != null)
             {
@@ -137,7 +137,7 @@ public class PlayerMovement : NetworkBehaviour {
 
         }
         //backing up
-        else if (Input.GetAxisRaw(verticalAxis) < 0)
+        else if (input < 0)
         {
             if (!movementAudioPlaying && movementSplash != null)
             {
@@ -181,35 +181,38 @@ public class PlayerMovement : NetworkBehaviour {
     /// <summary>
     /// Translates input into rotation.
     /// </summary>
-    void Turn()
+    public void Turn(float inputVertical, float inputHorizontal)
     {
         int turnSpeedMult = 1;
-        if (Input.GetAxisRaw(verticalAxis) < 0)
+        if (inputVertical < 0)
         {
             turnSpeedMult = -1;
         }
-        if (Input.GetAxisRaw(horizontalAxis) < 0)
+        if (inputHorizontal < 0)
         {
             transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime * turnSpeedMult);
             
             //whaleAnimator.SetFloat(animations.turnFloat, turnSpeed);
         }
 
-        if (Input.GetAxisRaw(horizontalAxis) > 0)
+        if (inputHorizontal > 0)
         {
-                transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime*turnSpeedMult);
-                        //whaleAnimator.SetFloat(animations.turnFloat, turnSpeed);
+            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime*turnSpeedMult);
         }
 
+    }
+    public bool CheckCanJump()
+    {
+        return (canJump == 100);
     }
     /// <summary>
     /// Handles jump input.
     /// </summary>
-    void Jump()
+    public void Jump(bool jumpPressed)
     {
-        if (canJump == 100)
+        if (CheckCanJump())
         {
-            if (Input.GetButton(jumpButton) && HeightInWater.underwater == false)
+            if (jumpPressed && HeightInWater.underwater == false)
             {
                 whaleAnimator.SetBool(animations.jumpBool, true);
                 whaleBody.AddRelativeForce(0, 400, -30, ForceMode.Impulse);
@@ -225,9 +228,9 @@ public class PlayerMovement : NetworkBehaviour {
     /// <summary>
     /// Handles dive input and plays diving animations.
     /// </summary>
-    void Dive()
+    public void Dive(bool divePressed)
     {
-        if (Input.GetButton(diveButton) && !diving)
+        if (divePressed && !diving)
         {
             //underWater = !underWater;
             /*if(this.transform.position.y > -3.0f) { underWater = false; }
