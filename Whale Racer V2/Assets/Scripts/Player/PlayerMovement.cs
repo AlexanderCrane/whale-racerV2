@@ -28,7 +28,7 @@ public class PlayerMovement : NetworkBehaviour {
 
     private bool diving = false;
     private bool spedup = false;
-    private bool underWater = false;
+    private bool underWater = true;
     private bool movementAudioPlaying = false;
     public Rigidbody whaleBody;
 
@@ -64,7 +64,6 @@ public class PlayerMovement : NetworkBehaviour {
     /// </summary>
     void FixedUpdate()
     {
-        Debug.Log(whaleBody.velocity.magnitude);
 
         if (GameManager.gmInst.isMP && !isLocalPlayer)
         {
@@ -178,7 +177,8 @@ public class PlayerMovement : NetworkBehaviour {
             whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
 
         }
-        whaleBody.AddRelativeForce(0.0f, 0.0f, zMovement * (-whaleSpeed));
+
+        whaleBody.AddRelativeForce(0.0f, 0.0f, input * (-whaleSpeed));
     }
     /// <summary>
     /// Translates input into rotation.
@@ -259,6 +259,7 @@ public class PlayerMovement : NetworkBehaviour {
             }
             else
             {
+
                 Debug.Log("abovewater");
                 whaleBody.mass = 63.1f;
                 this.GetComponent<SimpleBoyancy>().SetDensity(790f);
