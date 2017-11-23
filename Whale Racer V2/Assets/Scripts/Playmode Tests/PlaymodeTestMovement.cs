@@ -71,7 +71,7 @@ public class NewPlayModeTest : IPrebuildSetup {
 
     }
     [UnityTest]
-    public IEnumerator TestMove()
+    public IEnumerator TestForwardBackwardMove()
     {
         yield return null;
         RealSetup();
@@ -89,6 +89,32 @@ public class NewPlayModeTest : IPrebuildSetup {
             yield return null;
         }
         Assert.That(System.Math.Abs(whale.transform.position.z) < postMoveFowardZ); //pass if backward movement has occurred
-
+    }
+    [UnityTest]
+    public IEnumerator TestTurn()
+    {
+        yield return null;
+        RealSetup();
+        float initRotation = whale.transform.rotation.eulerAngles.y;
+        for (int i = 0; i<20; i++)
+        {
+            testPM.Turn(0, 1);
+            yield return null;
+        }
+        float postTurnRotation = whale.transform.rotation.eulerAngles.y;
+        Assert.That(postTurnRotation > initRotation);
+        Debug.Log("postturn: " + postTurnRotation);
+        //don't turn left for quite as long as we turn right
+        //if we turn too far left and get into a y angle which is shown as negative in the editor
+        //the .y property of the transform returns it as the equivalent positive angle which will break this test
+        //ie -15degrees = 345degrees
+        //if you changed turn speed and this test broke that's probably why
+        for (int i =0; i<10; i++) 
+        {
+            testPM.Turn(0, -1);
+            yield return null;
+        }
+        Debug.Log(whale.transform.rotation.eulerAngles.y);
+        Assert.That(whale.transform.rotation.eulerAngles.y < postTurnRotation);
     }
 }
