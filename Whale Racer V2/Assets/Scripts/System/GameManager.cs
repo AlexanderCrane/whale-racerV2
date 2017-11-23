@@ -36,6 +36,11 @@ public class GameManager : NetworkBehaviour
         {
             gmInst = this;
         }
+        if (totalLaps > 0 && totalLaps < 4)
+        {
+            totalLaps = SelectedMap.selectedLaps;
+        }
+        else totalLaps = 1;
         //some spicy LINQ for you
         //get a GameObject[] of all the objects tagged player camera, then map to a List<Camera> using the function .GetComponent<Camera>
         if (!isMP)

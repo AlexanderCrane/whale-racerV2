@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelectedMap : MonoBehaviour {
 
     public static string selectedMap;
+    public static int selectedLaps;
 
     public void setMap(int mapNum)
     {
-        switch (mapNum) {
+        selectedLaps = GameObject.Find("LapsDropdown").GetComponent<Dropdown>().value;
+        switch (mapNum)
+        {
             case 1:
                 selectedMap = "Aduloo";
                 break;
@@ -22,5 +26,6 @@ public class SelectedMap : MonoBehaviour {
                 selectedMap = "Aduloo";
                 break;
         }
+
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
 
-public class NewPlayModeTest : IPrebuildSetup {
+public class TestMovement : IPrebuildSetup {
     private GameObject whale;
     private PlayerMovement testPM;
     private Transform testTransform;
@@ -71,7 +71,7 @@ public class NewPlayModeTest : IPrebuildSetup {
 
     }
     [UnityTest]
-    public IEnumerator TestForwardBackwardMove()
+    public IEnumerator Test2DMoveModifiesPosition()
     {
         yield return null;
         RealSetup();
@@ -91,7 +91,7 @@ public class NewPlayModeTest : IPrebuildSetup {
         Assert.That(System.Math.Abs(whale.transform.position.z) < postMoveFowardZ); //pass if backward movement has occurred
     }
     [UnityTest]
-    public IEnumerator TestTurn()
+    public IEnumerator TestTurnModifiesRotation()
     {
         yield return null;
         RealSetup();
@@ -100,7 +100,7 @@ public class NewPlayModeTest : IPrebuildSetup {
         {
             testPM.Turn(0, 1);
             yield return null;
-        }
+        } //turn right for 20 frames, verify that our y rotation increases
         float postTurnRotation = whale.transform.rotation.eulerAngles.y;
         Assert.That(postTurnRotation > initRotation);
         Debug.Log("postturn: " + postTurnRotation);
@@ -113,8 +113,20 @@ public class NewPlayModeTest : IPrebuildSetup {
         {
             testPM.Turn(0, -1);
             yield return null;
-        }
+        } //turn left for 10 frames, verify that y rotation decreases
         Debug.Log(whale.transform.rotation.eulerAngles.y);
         Assert.That(whale.transform.rotation.eulerAngles.y < postTurnRotation);
+    }
+    [UnityTest]
+    public IEnumerator TestSpeedupPowerupIncreasesSpeed()
+    {
+        yield return null;
+        RealSetup();
+        testPM.SpeedupPowerup(5, new AudioClip());
+        Assert.That(testPM.maxForwardSpeed == testPM.baseMaxForward * 1.5);
+        Assert.That(testPM.maxBackwardSpeed == testPM.baseMaxBackward * 1.5);
+        Assert.That(testPM.turnSpeed == testPM.baseTurnSpeed * 1.5);
+
+
     }
 }
