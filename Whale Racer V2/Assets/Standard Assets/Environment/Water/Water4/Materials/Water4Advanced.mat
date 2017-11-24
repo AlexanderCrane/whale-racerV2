@@ -159,8 +159,8 @@ Material:
     - _InvFadeParemeter: {r: 0.21896552, g: 0.15944828, b: 0.04310345, a: 0}
     - _MainTex_ST: {r: 1, g: 1, b: 0, a: 0}
     - _ObjectDisp: {r: -5, g: 0, b: 0, a: 0}
-    - _ObjectDisp1: {r: 7.4, g: 0, b: -0.6, a: 0}
-    - _ObjectDisp2: {r: -5, g: 0, b: 0, a: 0}
+    - _ObjectDisp1: {r: -5, g: 0, b: 0, a: 0}
+    - _ObjectDisp2: {r: 7.4, g: 0, b: -0.6, a: 0}
     - _ObjectDisp3: {r: 1, g: 1, b: 1, a: 0}
     - _ObjectDisp4: {r: 1, g: 1, b: 1, a: 0}
     - _ObjectDisp5: {r: 1, g: 1, b: 1, a: 0}
