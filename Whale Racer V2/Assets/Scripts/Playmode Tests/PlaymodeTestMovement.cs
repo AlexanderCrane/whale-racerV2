@@ -3,6 +3,7 @@ using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
+using UnityEditor.SceneManagement;
 
 public class TestMovement : IPrebuildSetup {
     private GameObject whale;
@@ -126,7 +127,28 @@ public class TestMovement : IPrebuildSetup {
         Assert.That(testPM.maxForwardSpeed == testPM.baseMaxForward * 1.5);
         Assert.That(testPM.maxBackwardSpeed == testPM.baseMaxBackward * 1.5);
         Assert.That(testPM.turnSpeed == testPM.baseTurnSpeed * 1.5);
+    }
+    [UnityTest]
+    public IEnumerator TestBounceBackBouncesBack()
+    {
+        yield return null;
+        RealSetup();
+        float initPos = whale.transform.position.z;
+        Vector3 bouncebackVector = new Vector3(0, 0, 100);
+        testPM.BounceBack(bouncebackVector, new AudioClip());
+        yield return null;
+        Assert.That(whale.transform.position.z > initPos);
+    }
 
+    [UnityTest]
+    public IEnumerator TestSlowdown()
+    {
+        yield return null;
+        RealSetup();        
+        testPM.slowDown();
+        yield return null;
+        Assert.That(testPM.maxForwardSpeed == testPM.baseMaxForward * .2);
+        Assert.That(testPM.maxBackwardSpeed == testPM.baseMaxBackward * .2);
 
     }
 }
