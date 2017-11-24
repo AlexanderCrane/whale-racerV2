@@ -791,6 +791,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.9073343, y: 1.3531446, z: 2.6373322}
   m_Center: {x: 0.19106707, y: -0.67649555, z: -0.68133575}
+--- !u!114 &104562218 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114354991465071988, guid: b544816461f324e56a39767fdeb5b114,
+    type: 2}
+  m_PrefabInternal: {fileID: 650945567}
+  m_Script: {fileID: 11500000, guid: f5f860df463d746498850a023e22043f, type: 3}
 --- !u!4 &109512052 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4287004125441972, guid: e43359172d088fa48977ce3bae23bd3c,
@@ -6912,6 +6918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterHeight: -0.3
+  rRipple: {fileID: 104562218}
   isFlowing: 0
   scale: 0.1
   speed: 1
@@ -6967,8 +6974,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d326b7b0bd691489bd6621c4278332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winner: 0
   totalLaps: 1
+  timer: 0
   countdownLength: 0
+  isMP: 0
 --- !u!1001 &1300159119
 Prefab:
   m_ObjectHideFlags: 0
