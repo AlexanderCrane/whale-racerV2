@@ -36,7 +36,7 @@ public class GameManager : NetworkBehaviour
         {
             gmInst = this;
         }
-        if (totalLaps > 0 && totalLaps < 4)
+        if (SelectedMap.selectedLaps > 0 && SelectedMap.selectedLaps < 4)
         {
             totalLaps = SelectedMap.selectedLaps;
         }

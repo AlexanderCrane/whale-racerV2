@@ -1781,6 +1781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 10
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &434468532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1892,6 +1893,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 2
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &443117635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2063,6 +2065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 5
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &462150166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,6 +2433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 11
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &520444722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2591,6 +2595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 9
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &568309257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2702,6 +2707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 7
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &611265648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2961,16 +2967,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114354991465071988, guid: b544816461f324e56a39767fdeb5b114,
-        type: 2}
-      propertyPath: whales.Array.data[0]
-      value: 
-      objectReference: {fileID: 545499177}
-    - target: {fileID: 114354991465071988, guid: b544816461f324e56a39767fdeb5b114,
-        type: 2}
-      propertyPath: whales.Array.data[1]
-      value: 
-      objectReference: {fileID: 483106161}
+    - target: {fileID: 400006, guid: b544816461f324e56a39767fdeb5b114, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: b544816461f324e56a39767fdeb5b114, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 4.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b544816461f324e56a39767fdeb5b114, type: 2}
   m_IsPrefabParent: 0
@@ -3913,7 +3917,6 @@ GameObject:
   - component: {fileID: 854552345}
   - component: {fileID: 854552344}
   - component: {fileID: 854552343}
-  - component: {fileID: 854552342}
   - component: {fileID: 854552341}
   m_Layer: 0
   m_Name: Waypoint 1.5
@@ -3934,19 +3937,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 1.7985613e-14, z: 10.000002}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &854552342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 854552340}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee2d669bf2c3a24596326e53e3f4dad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: 1
-  checkpointHit: 0
 --- !u!114 &854552343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6671,6 +6661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 3
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &1194858706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8008,6 +7999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 4
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &1460633666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8515,6 +8507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 12
   checkpointHit: 0
+  isFinishLine: 1
 --- !u!114 &1593893442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9938,7 +9931,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1794204127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 292, y: -31, z: 0}
+  m_LocalPosition: {x: 281, y: -326.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 805830963}
@@ -10242,6 +10235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 6
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &1825591516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10786,6 +10780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 8
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &1889517791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11038,7 +11033,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933875200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 420, y: 159, z: 0}
+  m_LocalPosition: {x: 409, y: 454.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 805830963}
@@ -11061,7 +11056,6 @@ GameObject:
   - component: {fileID: 1936202252}
   - component: {fileID: 1936202251}
   - component: {fileID: 1936202250}
-  - component: {fileID: 1936202249}
   - component: {fileID: 1936202248}
   m_Layer: 0
   m_Name: Waypoint 1.75
@@ -11082,19 +11076,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 1.7985613e-14, z: 10.000002}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1936202249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1936202247}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee2d669bf2c3a24596326e53e3f4dad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: 1
-  checkpointHit: 0
 --- !u!114 &1936202250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11385,6 +11366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: 1
   checkpointHit: 0
+  isFinishLine: 0
 --- !u!114 &1959908684
 MonoBehaviour:
   m_ObjectHideFlags: 0
