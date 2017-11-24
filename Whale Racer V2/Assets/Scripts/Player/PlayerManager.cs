@@ -1,18 +1,21 @@
 ﻿using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 ///  <summary>
 ///  Tracks progress through the race and global race effects for each individual player.
 ///  </summary>
-public class PlayerManager : MonoBehaviour {
+public class PlayerManager : NetworkBehaviour {
     public int playerID = 0;
     public PlayerManager pmInstance = null;
     public int currentCheckpoint = 0;
     private int currentLap = 1;
     public bool[] checkpointsHit;
+    private bool hasCam = false;
     //all whale movement is disabled at start of game
     //when the race countdown ends, GameManager sets this to false
     public static bool allWhaleMovementDisabled = true;
@@ -21,7 +24,18 @@ public class PlayerManager : MonoBehaviour {
     /// Awake method. Initializes instance for non-static use. Initializes checkpointsHit array.
     /// </summary>
     void Awake () {
-		if (pmInstance == null && pmInstance != this)
+        if (playerID == 0)
+        {
+            foreach(PlayerManager player in Object.FindObjectsOfType<PlayerManager>())
+            {
+                if (player.playerID != 0)
+                {
+                    playerID++;
+                }
+            }
+            playerID += 1;
+        }
+        if (pmInstance == null && pmInstance != this)
         {
             pmInstance = this;
         }
@@ -43,9 +57,10 @@ public class PlayerManager : MonoBehaviour {
         //totalLaps is configurable number of laps for race to last
         if (currentLap == GameManager.gmInst.totalLaps+1)
         {
-            GameManager.winner = playerID;
-            GameManager.finishTimes.Add(GameManager.getStringTime());
+            GameManager.gmInst.winner = playerID;
+            GameManager.gmInst.finishTimes.Add(GameManager.getStringTime());
             SceneManager.LoadScene(2);
+            Destroy(GameManager.gmInst);
         }
     }
 
@@ -53,6 +68,12 @@ public class PlayerManager : MonoBehaviour {
     /// Update method for the player manager. Disables player movement if countdown isn't over yet.
     /// </summary>
     void Update (){
+        if (GameManager.gmInst.isMP && !hasCam)
+        {
+            Debug.Log(FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).Count());
+            FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).First().setTarget(this.gameObject);
+            hasCam = true;
+        }
         NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();
         if (allWhaleMovementDisabled)
         {

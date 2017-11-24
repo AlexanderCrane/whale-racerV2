@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/_Scenes/MainMenu.unity
+    path: Assets/_Scenes/OldMainMenu.unity
     guid: ecb72f0ffe31c2e43bee5b88441c1d1f
   - enabled: 1
-    path: Assets/_Scenes/MainMenu 1.unity
+    path: Assets/_Scenes/MainMenu.unity
     guid: 74b2d041391344fbca1d3312aee2d47e
   - enabled: 1
     path: Assets/_Scenes/Aduloo.unity
@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/EndGame.unity
     guid: cebc92b1f47c5ad48a2c1b8eb4dc2c65
+  - enabled: 1
+    path: Assets/_Scenes/Aduloo_MP.unity
+    guid: e8490df415d38bb4d96cf8e68dc82ca9
+  - enabled: 1
+    path: Assets/_Scenes/MPLobby.unity
+    guid: 7ac887a5c4bac5345a102ed366daa90a

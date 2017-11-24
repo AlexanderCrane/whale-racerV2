@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Water;
-
+using UnityEngine.Networking;
 /// <summary>
 /// Class to customize ocean behavior.
 /// </summary>
-public class WaterConsole : MonoBehaviour
+public class WaterConsole : NetworkBehaviour
 {
 
     #region Information
@@ -34,7 +34,7 @@ public class WaterConsole : MonoBehaviour
     #endregion
 
     #region System Methods
-    private void Start()
+    private void Awake()
     {
         current = this;
     }
