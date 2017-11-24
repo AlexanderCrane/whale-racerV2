@@ -11,7 +11,15 @@ public class GetWinner : MonoBehaviour
     /// </summary>
     void Awake()
     {
-        string winnerTime = GameManager.gmInst.finishTimes[0];
+        string winnerTime = "0:00";
+        if (GameManager.gmInst.isMP)
+        {
+            winnerTime = GameManager.gmInst.finishTimes[0];
+        }
+        else
+        {
+            winnerTime = GameManager.gmInst.spFinishTimes[0];
+        }
         gameObject.GetComponent<TextMesh>().text = "Player " + GameManager.gmInst.winner.ToString() + " wins in " + winnerTime + "!";
 
     }

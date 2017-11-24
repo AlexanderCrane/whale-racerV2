@@ -15,6 +15,7 @@ public class GameManager : NetworkBehaviour
     [SyncVar]
     public float timer;
     public SyncListString finishTimes = new SyncListString();
+    public List<String> spFinishTimes = new List<String>();
     public static List<Camera> allPlayerCams = new List<Camera>();
     public float countdownLength;
     private float countdownTime;
@@ -145,5 +146,16 @@ public class GameManager : NetworkBehaviour
         string seconds = (gmInst.timer % 59).ToString("00");
         return minutes + ":" + seconds;
 
+    }
+    public void getFinishTimesList()
+    {
+        if (isMP)
+        {
+
+        }
+        else
+        {
+
+        }
     }
 }
