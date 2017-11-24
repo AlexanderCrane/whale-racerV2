@@ -112,12 +112,22 @@ Material:
     - _InvFadeDepthFade: 0.07197756
     - _InvFadeFoam: 0.1217
     - _NormalsDisplacement: 0
+    - _ObjectSpeed1: 1
+    - _ObjectSpeed2: 1
+    - _ObjectSpeed3: 0
+    - _ObjectSpeed4: 0
+    - _ObjectSpeed5: 0
     - _ReflDistort: 0.9267696
     - _RefrDistort: 1.4393286
     - _Shininess: 313.21838
     - _ShoreTiling: 56.862743
     - _Speed: 0.4137931
     - _WaterDepth: 40.98077
+    - _WaterHeight1: 0
+    - _WaterHeight2: 0
+    - _WaterHeight3: 0
+    - _WaterHeight4: 0
+    - _WaterHeight5: 0
     - _WaveCapsAmount: 0.18275861
     - _WaveFoamDistort: 0.27931035
     - _WaveScale: 0.046289656
@@ -148,6 +158,12 @@ Material:
     - _HorizonColor: {r: 0.052907113, g: 0.24486735, b: 0.2835821, a: 1}
     - _InvFadeParemeter: {r: 0.21896552, g: 0.15944828, b: 0.04310345, a: 0}
     - _MainTex_ST: {r: 1, g: 1, b: 0, a: 0}
+    - _ObjectDisp: {r: -5, g: 0, b: 0, a: 0}
+    - _ObjectDisp1: {r: -5, g: 0, b: 0, a: 0}
+    - _ObjectDisp2: {r: 7.4, g: 0, b: -0.6, a: 0}
+    - _ObjectDisp3: {r: 1, g: 1, b: 1, a: 0}
+    - _ObjectDisp4: {r: 1, g: 1, b: 1, a: 0}
+    - _ObjectDisp5: {r: 1, g: 1, b: 1, a: 0}
     - _ReflectionColor: {r: 0.5794164, g: 0.6849238, b: 0.76119405, a: 0.43137255}
     - _ReflectionTex_ST: {r: 1, g: 1, b: 0, a: 0}
     - _ReflectiveColorCube_ST: {r: 1, g: 1, b: 0, a: 0}
@@ -161,6 +177,7 @@ Material:
     - _ShoreTiling: {r: 1, g: 1, b: 0.1, a: 0.1}
     - _SpecularColor: {r: 0.91791046, g: 0.91791046, b: 0.91791046, a: 1}
     - _UnderwaterColor: {r: 0.6950323, g: 0.89552236, b: 0.7502397, a: 1}
+    - _WHeight1: {r: 0, g: 3, b: 0, a: 0}
     - _WaveOffset: {r: 1, g: 1, b: -0.01, a: -0.01}
     - _WaveScale4: {r: 0.1, g: 0.1, b: 0.01, a: 0.01}
     - _WorldLightDir: {r: -0.030375138, g: -0.20139083, b: -0.97903997, a: 0}

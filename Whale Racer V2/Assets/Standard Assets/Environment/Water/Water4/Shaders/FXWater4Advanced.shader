@@ -8,30 +8,45 @@ Properties {
 	_ShoreTex ("Shore & Foam texture ", 2D) = "black" {}
 	_BumpMap ("Normals ", 2D) = "bump" {}
 	
-	_DistortParams ("Distortions (Bump waves, Reflection, Fresnel power, Fresnel bias)", Vector) = (1.0 ,1.0, 2.0, 1.15)
-	_InvFadeParemeter ("Auto blend parameter (Edge, Shore, Distance scale)", Vector) = (0.15 ,0.15, 0.5, 1.0)
-	
-	_AnimationTiling ("Animation Tiling (Displacement)", Vector) = (2.2 ,2.2, -1.1, -1.1)
-	_AnimationDirection ("Animation Direction (displacement)", Vector) = (1.0 ,1.0, 1.0, 1.0)
+	_DistortParams("Distortions (Bump waves, Reflection, Fresnel power, Fresnel bias)", Vector) = (1.0 ,1.0, 2.0, 1.15)
+	_InvFadeParemeter("Auto blend parameter (Edge, Shore, Distance scale)", Vector) = (0.15 ,0.15, 0.5, 1.0)
 
-	_BumpTiling ("Bump Tiling", Vector) = (1.0 ,1.0, -2.0, 3.0)
-	_BumpDirection ("Bump Direction & Speed", Vector) = (1.0 ,1.0, -1.0, 1.0)
-	
-	_FresnelScale ("FresnelScale", Range (0.15, 4.0)) = 0.75
+	_AnimationTiling("Animation Tiling (Displacement)", Vector) = (2.2 ,2.2, -1.1, -1.1)
+	_AnimationDirection("Animation Direction (displacement)", Vector) = (1.0 ,1.0, 1.0, 1.0)
 
-	_BaseColor ("Base color", COLOR)  = ( .54, .95, .99, 0.5)
-	_ReflectionColor ("Reflection color", COLOR)  = ( .54, .95, .99, 0.5)
-	_SpecularColor ("Specular color", COLOR)  = ( .72, .72, .72, 1)
-	
-	_WorldLightDir ("Specular light direction", Vector) = (0.0, 0.1, -0.5, 0.0)
-	_Shininess ("Shininess", Range (2.0, 500.0)) = 200.0
-	
-	_Foam ("Foam (intensity, cutoff)", Vector) = (0.1, 0.375, 0.0, 0.0)
+	_BumpTiling("Bump Tiling", Vector) = (1.0 ,1.0, -2.0, 3.0)
+	_BumpDirection("Bump Direction & Speed", Vector) = (1.0 ,1.0, -1.0, 1.0)
+
+	_FresnelScale("FresnelScale", Range(0.15, 4.0)) = 0.75
+
+	_BaseColor("Base color", COLOR) = (.54, .95, .99, 0.5)
+	_ReflectionColor("Reflection color", COLOR) = (.54, .95, .99, 0.5)
+	_SpecularColor("Specular color", COLOR) = (.72, .72, .72, 1)
+
+	_WorldLightDir("Specular light direction", Vector) = (0.0, 0.1, -0.5, 0.0)
+	_Shininess("Shininess", Range(2.0, 500.0)) = 200.0
+
+	_Foam("Foam (intensity, cutoff)", Vector) = (0.1, 0.375, 0.0, 0.0)
+
+	//game object vector stuff
+	_ObjectDisp1("_ObjectDisp1", Vector) = (1.0, 1.0, 1.0, 0.0)
+	_ObjectDisp2("_ObjectDisp2", Vector) = (1.0, 1.0, 1.0, 0.0)
+	_ObjectDisp3("_ObjectDisp3", Vector) = (1.0, 1.0, 1.0, 0.0)
+	_ObjectDisp4("_ObjectDisp4", Vector) = (1.0, 1.0, 1.0, 0.0)
+	_ObjectDisp5("_ObjectDisp5", Vector) = (1.0, 1.0, 1.0, 0.0)
+
+	_ObjectSpeed1("_ObjectSpeed1", Float) = 0
+	_ObjectSpeed2("_ObjectSpeed2", Float) = 0
+	_ObjectSpeed3("_ObjectSpeed3", Float) = 0
+	_ObjectSpeed4("_ObjectSpeed4", Float) = 0
+	_ObjectSpeed5("_ObjectSpeed5", Float) = 0
+
+	_WHeight1("_WHeight1", Vector) = (0.0, 0.0, 0.0, 0.0)
 	
 	_GerstnerIntensity("Per vertex displacement", Float) = 1.0
 	_GAmplitude ("Wave Amplitude", Vector) = (0.3 ,0.35, 0.25, 0.25)
 	_GFrequency ("Wave Frequency", Vector) = (1.3, 1.35, 1.25, 1.25)
-	_GSteepness ("Wave Steepness", Vector) = (1.0, 1.0, 1.0, 1.0)
+	_GSteepness ("Wave Steepness", Vector) = (0.0, 0.0, 1.0, 1.0)
 	_GSpeed ("Wave Speed", Vector) = (1.2, 1.375, 1.1, 1.5)
 	_GDirectionAB ("Wave Direction", Vector) = (0.3 ,0.85, 0.85, 0.25)
 	_GDirectionCD ("Wave Direction", Vector) = (0.1 ,0.9, 0.5, 0.5)
@@ -112,7 +127,26 @@ CGINCLUDE
 	uniform float4 _GSpeed;
 	uniform float4 _GDirectionAB;
 	uniform float4 _GDirectionCD;
-	
+
+	//gameobject
+	extern float4 _ObjectDisp1;
+	extern float4 _ObjectDisp2;
+	extern float4 _ObjectDisp3;
+	extern float4 _ObjectDisp4;
+	extern float4 _ObjectDisp5;
+
+	extern float _ObjectSpeed1;
+	extern float _ObjectSpeed2;
+	extern float _ObjectSpeed3;
+	extern float _ObjectSpeed4;
+	extern float _ObjectSpeed5;
+
+	extern float4 _FloatObjects[5];// = { _ObjectDisp1, _ObjectDisp2, _ObjectDisp3, _ObjectDisp4, _ObjectDisp5 };
+	extern float _FloatSpeeds[5];// = { _ObjectSpeed1, _ObjectSpeed2, _ObjectSpeed3, _ObjectSpeed4, _ObjectSpeed5 };
+
+	//x,y,z * 5 --> Points for center, front, tail, left, right
+	float ePts[15];
+
 	// foam
 	uniform float4 _Foam;
 	
@@ -127,12 +161,135 @@ CGINCLUDE
 	//
 	// HQ VERSION
 	//
-	
-	v2f vert(appdata_full v)
+
+	/*v2f vert(inout appdata_full v)
 	{
 		v2f o;
+	}*/
+
+	float radiusCalc(float3 a, float3 b)
+	{
+		a.x = a.x - b.x;
+		a.y = a.y - b.y;
+		a.z = a.z - b.z;
+
+		return(sqrt(a.x*a.x + a.y*a.y + a.z*a.z));
+	}
+
+	v2f vert(in appdata_full v)
+	{
+		v2f o;
+
+		//float smallRadius = 0.5f;
+		float farRadius = 2.0f;
+		float vecOfVec[14];
 		
+
 		half3 worldSpaceVertex = mul(unity_ObjectToWorld,(v.vertex)).xyz;
+		//half3 worldSpaceVertex = mul(unity_ObjectToWorld, (v.vertex)).xyz;
+		//this.material.SetFloat("_ObjectSpeed1", 10.0f);
+		_FloatObjects[0] = _ObjectDisp1;
+		_FloatObjects[1] = _ObjectDisp2;
+		_FloatObjects[2] = _ObjectDisp3;
+		_FloatObjects[3] = _ObjectDisp4;
+		_FloatObjects[4] = _ObjectDisp5;
+		
+		_FloatSpeeds[0] = _ObjectSpeed1;
+		_FloatSpeeds[1] = _ObjectSpeed2;
+		_FloatSpeeds[2] = _ObjectSpeed3;
+		_FloatSpeeds[3] = _ObjectSpeed4;
+		_FloatSpeeds[4] = _ObjectSpeed5;
+		float j;
+		//All Whales
+		for (j = 0; j < 2; j++)
+		{
+			float4 curObj = _FloatObjects[j];
+			float curSpeed = _FloatSpeeds[j];
+			//=====================================================================
+			//center of whale
+			ePts[0] = curObj.x;
+			ePts[1] = curObj.y;
+			ePts[2] = curObj.z;
+			//front of whale
+			ePts[3] = curObj.x;
+			ePts[4] = curObj.y - 1.0f;
+			ePts[5] = curObj.z - 2.5f;
+			//tail of whale
+			ePts[6] = curObj.x;
+			ePts[7] = curObj.y - 1.07f;
+			ePts[8] = curObj.z + 7.5f;
+			//left of whale
+			ePts[9] = curObj.x + 4.1f;
+			ePts[10] = curObj.y - 0.94f;
+			ePts[11] = curObj.z - 0.47f;
+			//right of whale
+			ePts[12] = curObj.x - 4.1f;
+			ePts[13] = curObj.y - 0.94f;
+			ePts[14] = curObj.z - 0.47f;
+			//extrapolatedPoints = extrapolateVectors(worldSpaceVertex);
+			//=====================================================================
+			float actualRadius1 = radiusCalc(curObj.xyz, worldSpaceVertex.xyz);
+			float actualRadius2 = radiusCalc((ePts[3], ePts[4], ePts[5]), worldSpaceVertex.xyz);
+			float actualRadius3 = radiusCalc((ePts[6], ePts[7], ePts[8]), worldSpaceVertex.xyz);
+			float actualRadius4 = radiusCalc((ePts[9], ePts[10], ePts[11]), worldSpaceVertex.xyz);
+			float actualRadius5 = radiusCalc((ePts[12], ePts[13], ePts[14]), worldSpaceVertex.xyz);
+			float radii[5] = { actualRadius1, actualRadius2, actualRadius3, actualRadius4, actualRadius5 };
+			float i;
+
+			for (i = 0; i < 5; i++)
+			{
+				if (curSpeed != 0)
+				{
+					if (radii[i] <= farRadius)
+					{
+						//v.vertex.y -= (sin(3.14159 / 3 - .5) - 2.0)* _ObjectSpeed1;
+						float z = v.vertex.z;
+						float x = v.vertex.x;
+
+						if (v.vertex.x > (cos((3.14159 / 2) + x) + z))
+						{
+							v.vertex.y += 1.0f * curSpeed;
+						}
+						if (v.vertex.x < (cos((3.14159 / 2) + x) + z))
+						{
+							v.vertex.y -= 1.3f * curSpeed;
+						}
+
+						if (i == 2)
+						{
+							if (actualRadius2 < 0.5f)
+							{
+								v.vertex.y += 2.0f * curSpeed;
+							}
+						}
+						if (i == 3)
+						{
+							if (actualRadius3 < 1.0f)
+							{
+								v.vertex.y -= 2.0f * curSpeed;
+							}
+						}
+						if (i == 4)
+						{
+							if (actualRadius4 < 0.5f)
+							{
+								v.vertex.y -= 2.0f * curSpeed;
+							}
+						}
+						if (i == 5)
+						{
+							if (actualRadius5 < 0.5f)
+							{
+								v.vertex.y -= 2.0f * curSpeed;
+							}
+						}
+					}
+
+				}
+			}
+		}
+
+		worldSpaceVertex = mul(unity_ObjectToWorld, (v.vertex)).xyz;
 		half3 vtxForAni = (worldSpaceVertex).xzz;
 
 		half3 nrml;
@@ -143,13 +300,14 @@ CGINCLUDE
 			_GFrequency,												// frequency
 			_GSteepness,												// steepness
 			_GSpeed,													// speed
-			_GDirectionAB,												// direction # 1, 2
+			_GDirectionAB*2,												// direction # 1, 2
 			_GDirectionCD												// direction # 3, 4
 		);
 		
 		v.vertex.xyz += offsets;
 		
 		// one can also use worldSpaceVertex.xz here (speed!), albeit it'll end up a little skewed
+		//previous: unity_ObjectToWorld
 		half2 tileableUv = mul(unity_ObjectToWorld,(v.vertex)).xz;
 		
 		o.bumpCoords.xyzw = (tileableUv.xyxy + _Time.xxxx * _BumpDirection.xyzw) * _BumpTiling.xyzw;
@@ -221,6 +379,95 @@ CGINCLUDE
 		baseColor = baseColor + spec * _SpecularColor;
 		
 		// handle foam
+		/*_FloatObjects[0] = _ObjectDisp1;
+		_FloatObjects[1] = _ObjectDisp2;
+		_FloatObjects[2] = _ObjectDisp3;
+		_FloatObjects[3] = _ObjectDisp4;
+		_FloatObjects[4] = _ObjectDisp5;
+
+		_FloatSpeeds[0] = _ObjectSpeed1;
+		_FloatSpeeds[1] = _ObjectSpeed2;
+		_FloatSpeeds[2] = _ObjectSpeed3;
+		_FloatSpeeds[3] = _ObjectSpeed4;
+		_FloatSpeeds[4] = _ObjectSpeed5;
+		float j;
+		//All Whales
+		for (j = 0; j < 2; j++)
+		{
+			float4 curObj = _FloatObjects[j];
+			float curSpeed = _FloatSpeeds[j];
+			//=====================================================================
+			//center of whale
+			ePts[0] = curObj.x;
+			ePts[1] = curObj.y;
+			ePts[2] = curObj.z;
+			//front of whale
+			ePts[3] = curObj.x;
+			ePts[4] = curObj.y - 1.0f;
+			ePts[5] = curObj.z - 2.5f;
+			//tail of whale
+			ePts[6] = curObj.x;
+			ePts[7] = curObj.y - 1.07f;
+			ePts[8] = curObj.z + 7.5f;
+			//left of whale
+			ePts[9] = curObj.x + 4.1f;
+			ePts[10] = curObj.y - 0.94f;
+			ePts[11] = curObj.z - 0.47f;
+			//right of whale
+			ePts[12] = curObj.x - 4.1f;
+			ePts[13] = curObj.y - 0.94f;
+			ePts[14] = curObj.z - 0.47f;
+			//extrapolatedPoints = extrapolateVectors(worldSpaceVertex);
+			//=====================================================================
+			float actualRadius1 = radiusCalc(curObj.xyz, worldSpaceVertex.xyz);
+			float actualRadius2 = radiusCalc((ePts[3], ePts[4], ePts[5]), worldSpaceVertex.xyz);
+			float actualRadius3 = radiusCalc((ePts[6], ePts[7], ePts[8]), worldSpaceVertex.xyz);
+			float actualRadius4 = radiusCalc((ePts[9], ePts[10], ePts[11]), worldSpaceVertex.xyz);
+			float actualRadius5 = radiusCalc((ePts[12], ePts[13], ePts[14]), worldSpaceVertex.xyz);
+			float radii[5] = { actualRadius1, actualRadius2, actualRadius3, actualRadius4, actualRadius5 };
+			float i;
+
+			for (i = 0; i < 5; i++)
+			{
+				if (curSpeed != 0)
+				{
+					if (radii[i] <= farRadius)
+					{
+						//v.vertex.y -= (sin(3.14159 / 3 - .5) - 2.0)* _ObjectSpeed1;
+						float z = v.vertex.z;
+						float x = v.vertex.x;
+
+						if (i == 3)
+						{
+							if (actualRadius3 < 1.0f)
+							{
+								//v.vertex.y -= 2.0f * curSpeed;
+								i.bumpCoords.xyzw += (tileableUv.xyxy + _Time.xxxx * _BumpDirection.xyzw) * v.vertex.xyzw;
+							}
+						}
+						if (i == 4)
+						{
+							if (actualRadius4 < 0.5f)
+							{
+								//v.vertex.y -= 2.0f * curSpeed;
+								i.bumpCoords.xyzw += (tileableUv.xyxy + _Time.xxxx * _BumpDirection.xyzw) * _BumpTiling.xyzw;
+							}
+						}
+						if (i == 5)
+						{
+							if (actualRadius5 < 0.5f)
+							{
+								//v.vertex.y -= 2.0f * curSpeed;
+								i.bumpCoords.xyzw += (tileableUv.xyxy + _Time.xxxx * _BumpDirection.xyzw) * _BumpTiling.xyzw;
+							}
+						}
+					}
+
+				}
+			}
+		}*/
+
+
 		half4 foam = Foam(_ShoreTex, i.bumpCoords * 2.0);
 		baseColor.rgb += foam.rgb * _Foam.x * (edgeBlendFactors.y + saturate(i.viewInterpolator.w - _Foam.y));
 		

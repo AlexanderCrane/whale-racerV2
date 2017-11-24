@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Water;
 
 /// <summary>
 /// Class to customize ocean behavior.
@@ -13,6 +14,7 @@ public class WaterConsole : MonoBehaviour
 
     #region Private Variables
     [SerializeField] private float waterHeight = -1.0f;
+    [SerializeField] private RealRipple rRipple;
     #endregion
 
     #region Public Variables
@@ -35,6 +37,11 @@ public class WaterConsole : MonoBehaviour
     private void Start()
     {
         current = this;
+    }
+
+    private void Update()
+    {
+        waterHeight = rRipple.waterHeight1.y;
     }
     #endregion
 
