@@ -5,6 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour {
     public int position;
     public bool checkpointHit = false;
+    public bool isFinishLine;
 
     ///  <summary>
     /// OnTriggerEnter method. When a player enters the checkpoint, updates their state accordingly.
@@ -29,7 +30,7 @@ public class Checkpoint : MonoBehaviour {
                 Debug.Log(player.name + " hit " + this.gameObject.name);
                 manager.currentCheckpoint = position;
                 manager.checkpointsHit[index] = true;
-                if (position == 12)
+                if (isFinishLine)
                 {
                     manager.NewLap();
                 }

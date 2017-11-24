@@ -39,7 +39,8 @@ public class PlayerManager : NetworkBehaviour {
         {
             pmInstance = this;
         }
-        checkpointsHit = new bool[12];
+        int numCheckpoints = Object.FindObjectsOfType<Checkpoint>().Count();
+        checkpointsHit = new bool[numCheckpoints];
 
     }
     /// <summary>
