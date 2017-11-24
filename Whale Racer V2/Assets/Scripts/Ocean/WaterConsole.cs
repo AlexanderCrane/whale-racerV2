@@ -13,8 +13,7 @@ public class WaterConsole : NetworkBehaviour
     #endregion
 
     #region Private Variables
-    [SerializeField] private float waterHeight = -1.0f;
-    [SerializeField] private RealRipple rRipple;
+    [SerializeField] private float waterHeight = 0.0f;
     #endregion
 
     #region Public Variables
@@ -37,11 +36,6 @@ public class WaterConsole : NetworkBehaviour
     private void Awake()
     {
         current = this;
-    }
-
-    private void Update()
-    {
-        waterHeight = rRipple.waterHeight1.y;
     }
     #endregion
 
