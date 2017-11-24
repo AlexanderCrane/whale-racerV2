@@ -2961,14 +2961,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 400006, guid: b544816461f324e56a39767fdeb5b114, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 4.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400006, guid: b544816461f324e56a39767fdeb5b114, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 4.5
-      objectReference: {fileID: 0}
+    - target: {fileID: 114354991465071988, guid: b544816461f324e56a39767fdeb5b114,
+        type: 2}
+      propertyPath: whales.Array.data[0]
+      value: 
+      objectReference: {fileID: 545499177}
+    - target: {fileID: 114354991465071988, guid: b544816461f324e56a39767fdeb5b114,
+        type: 2}
+      propertyPath: whales.Array.data[1]
+      value: 
+      objectReference: {fileID: 483106161}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b544816461f324e56a39767fdeb5b114, type: 2}
   m_IsPrefabParent: 0
@@ -6960,6 +6962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waterHeight: -0.3
+  rRipple: {fileID: 0}
   isFlowing: 0
   scale: 0.1
   speed: 1
@@ -9935,7 +9938,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1794204127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68, y: -326.5, z: 0}
+  m_LocalPosition: {x: 292, y: -31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 805830963}
@@ -11035,7 +11038,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933875200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 196, y: 454.5, z: 0}
+  m_LocalPosition: {x: 420, y: 159, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 805830963}
