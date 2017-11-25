@@ -147,15 +147,4 @@ public class GameManager : NetworkBehaviour
         return minutes + ":" + seconds;
 
     }
-    public void getFinishTimesList()
-    {
-        if (isMP)
-        {
-
-        }
-        else
-        {
-
-        }
-    }
 }
