@@ -38,6 +38,10 @@ public class PlayerMovement : NetworkBehaviour {
     private string diveButton = "Dive";
 
     public bool splitscreenPlayer2 = false;
+
+	//For the player health
+	GameObject player;
+	PlayerHealth playerHealth;
     /// <summary>
     /// Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.
     /// </summary>
@@ -57,6 +61,10 @@ public class PlayerMovement : NetworkBehaviour {
             diveButton = "p2Dive";
 
         }
+
+		player = GameObject.Find ("Whale_Humpbac");
+		playerHealth = player.GetComponent<PlayerHealth> ();
+		playerHealth.currentHealth = 100;
     }
     /// <summary>
     /// Update method. Calls methods to player input to whale movement.
@@ -361,6 +369,9 @@ public class PlayerMovement : NetworkBehaviour {
 
     public void BounceBack(Vector3 direction, AudioClip sound)
     {
+		if (playerHealth.currentHealth > 0) {
+			playerHealth.TakeDamage (10);
+		}
         GetComponent<AudioSource>().PlayOneShot(sound);
         // Vector3 backward = transform.forward * -1;
         whaleBody.AddForce(direction * 100000);
