@@ -8723,6 +8723,11 @@ Prefab:
       propertyPath: m_Name
       value: Whale_Humpbac
       objectReference: {fileID: 0}
+    - target: {fileID: 82185577986235972, guid: 7e333495cbbdfce47b136d126f4d3a8d,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 81578483028485816, guid: 7e333495cbbdfce47b136d126f4d3a8d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7e333495cbbdfce47b136d126f4d3a8d, type: 2}
@@ -8794,7 +8799,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381076769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -373.5, y: -210, z: 0}
+  m_LocalPosition: {x: -371.5, y: -209, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 611057387}
@@ -11342,7 +11347,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1794204127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 245.5, y: -82, z: 0}
+  m_LocalPosition: {x: 243.5, y: -81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 805830963}
@@ -12688,7 +12693,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933875200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 373.5, y: 210, z: 0}
+  m_LocalPosition: {x: 371.5, y: 209, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 805830963}
@@ -13980,7 +13985,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2056780831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 757, y: 420, z: 0}
+  m_LocalPosition: {x: 753, y: 418, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1381076770}
