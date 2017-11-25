@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
 using System.Linq;
-using UnityEditor.SceneManagement;
 
 public class TestCheckpoints : IPrebuildSetup
 {

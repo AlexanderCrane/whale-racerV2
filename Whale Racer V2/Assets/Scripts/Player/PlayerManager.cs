@@ -12,6 +12,7 @@ using UnityEngine.SceneManagement;
 public class PlayerManager : NetworkBehaviour {
     public int playerID = 0;
     public PlayerManager pmInstance = null;
+    [SyncVar]
     public int currentCheckpoint = 0;
     private int currentLap = 1;
     public bool[] checkpointsHit;
