@@ -83,7 +83,6 @@ namespace UnityStandardAssets.Water
                 {
                     m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", .85f);
                 }
-                Debug.Log(speeds[0] + " and " + speeds[1]);
             }
         }
     }
