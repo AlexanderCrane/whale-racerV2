@@ -23,10 +23,15 @@ public class LoadMap : MonoBehaviour {
         if (isStartSplitscreenButton){
             passSplitscreen = true;
         }
+        if (sceneName == "MainMenu" )
+        {
+            Destroy(GameObject.Find("LobbyManager"));
+        }
 		SceneManager.LoadScene(sceneName); 
 	}
     public void quitGame()
     {
         Application.Quit();
     }
+
 }

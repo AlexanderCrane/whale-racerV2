@@ -14,16 +14,6 @@ public class PathingWaypoint : MonoBehaviour
     //pointer to the next waypoint after this one
     public PathingWaypoint next;
     bool isStart = false;
-    public Vector3 CalculateTarget(Vector3 position)
-    {
-        //once close to the waypoint we're heading towards, start heading towards the one after that in advance
-        if (Vector3.Distance(transform.position, position) < 6)
-        {
-            return next.transform.position;
-        }
-        //else just return the current target
-        return transform.position;
-    }
 
     ///  <summary>
     /// Awake method for pathing waypoints. Initializes the first waypoint to this one if selected in the editor.
