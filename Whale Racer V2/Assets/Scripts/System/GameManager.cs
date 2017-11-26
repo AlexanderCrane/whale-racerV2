@@ -15,6 +15,7 @@ public class GameManager : NetworkBehaviour
     [SyncVar]
     public float timer;
     public SyncListString finishTimes = new SyncListString();
+    public List<String> spFinishTimes = new List<String>();
     public static List<Camera> allPlayerCams = new List<Camera>();
     public float countdownLength;
     private float countdownTime;

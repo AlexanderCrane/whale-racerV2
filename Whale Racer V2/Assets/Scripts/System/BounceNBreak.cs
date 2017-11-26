@@ -28,7 +28,12 @@ public class BounceNBreak : MonoBehaviour {
             PlayerMovement collidingPlayer = other.gameObject.GetComponent<PlayerMovement>();
 
             collidingPlayer.BounceBack(correctDirection, sound);
-            Destroy(this.gameObject);
+            if (GameManager.gmInst.isMP)
+            {
+                UnityEngine.Network.Destroy(this.gameObject);
+                Destroy(this.gameObject);
+            }
+            else Destroy(this.gameObject);
 
         }
     }

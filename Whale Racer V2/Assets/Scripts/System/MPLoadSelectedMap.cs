@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using UnityEngine;
 
-public class LoadSelectedMap : MonoBehaviour {
+public class MPLoadSelectedMap : MonoBehaviour {
     private string mapName;
 	// Use this for initialization
 	void Start () {
@@ -14,6 +14,6 @@ public class LoadSelectedMap : MonoBehaviour {
             mapName = "Aduloo_MP";
         }
         gameObject.GetComponent<NetworkLobbyManager>().playScene = mapName;
-
+        
 	}
 }

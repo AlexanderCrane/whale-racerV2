@@ -3,7 +3,7 @@ using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
-using UnityEditor.SceneManagement;
+using System.Linq;
 
 public class TestCheckpoints : IPrebuildSetup
 {
@@ -27,7 +27,7 @@ public class TestCheckpoints : IPrebuildSetup
     }
 
     [UnityTest]
-    public IEnumerator TestCheckpointHit()
+    public IEnumerator TestCheckpointHitRecorded()
     {
         //yield a frame before initializing game objects to let the scene load
         yield return null;
@@ -39,7 +39,7 @@ public class TestCheckpoints : IPrebuildSetup
         Assert.That(testManager.checkpointsHit[0] == true);
     }
     [UnityTest]
-    public IEnumerator TestHitCheckpointOutOfOrder()
+    public IEnumerator TestHitCheckpointOutOfOrderFails()
     {
         yield return null;
         RealSetup(); //teleport whale to checkpoint 2 without hitting checkpoint 1,verify not marked
@@ -49,8 +49,45 @@ public class TestCheckpoints : IPrebuildSetup
         foreach(bool checkpointHit in testManager.checkpointsHit)
         {
             Assert.That(checkpointHit == false);
-        }
-           
+        }            
+    }
+    [UnityTest]
+    public IEnumerator TestHitCheckpointRepeatedlyFails()
+    {
+        yield return null;
+        RealSetup();
+        GameObject checkpoint1 = GameObject.Find("Checkpoint 1");
+        whale.transform.position = checkpoint1.transform.position; //teleport whale to checkpoint 1
+        yield return null;
+
+        whale.transform.position = new Vector3(0, 0, 0) ; //teleport whale to an arbitrary point
+        yield return null;
+
+        whale.transform.position = checkpoint1.transform.position; //and back
+        yield return null;
+
+        Assert.That(testManager.checkpointsHit.Where(q => q == true).Count() == 1); //verify that only one checkpoint is still marked
     }
 
+    [UnityTest]
+    public IEnumerator TestHittingFinishWinsGame()
+    {
+        yield return null;
+        RealSetup();
+        GameObject finishLine = GameObject.Find("FinishLine");
+        for(int i =0; i<testManager.checkpointsHit.Length; i++) //test player has hit all checkpoints except the finish line
+        {
+            if (i!= testManager.checkpointsHit.Length - 1)
+            {
+                testManager.checkpointsHit[i] = true;
+            }
+        }
+        testManager.currentCheckpoint = finishLine.GetComponent<Checkpoint>().position - 1;
+        whale.transform.position = finishLine.transform.position; //teleport to finish line
+        for (int i = 0; i < 200; i++)
+        {
+            yield return null;
+        }
+        Assert.That(SceneManager.GetActiveScene().name == "EndGame");
+    }
 }

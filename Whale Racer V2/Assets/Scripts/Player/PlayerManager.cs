@@ -12,6 +12,7 @@ using UnityEngine.SceneManagement;
 public class PlayerManager : NetworkBehaviour {
     public int playerID = 0;
     public PlayerManager pmInstance = null;
+    [SyncVar]
     public int currentCheckpoint = 0;
     private int currentLap = 1;
     public bool[] checkpointsHit;
@@ -59,7 +60,14 @@ public class PlayerManager : NetworkBehaviour {
         if (currentLap == GameManager.gmInst.totalLaps+1)
         {
             GameManager.gmInst.winner = playerID;
-            GameManager.gmInst.finishTimes.Add(GameManager.getStringTime());
+            if (GameManager.gmInst.isMP)
+            {
+                GameManager.gmInst.finishTimes.Add(GameManager.getStringTime());
+            }
+            else
+            {
+                GameManager.gmInst.spFinishTimes.Add(GameManager.getStringTime());
+            }
             SceneManager.LoadScene(2);
             Destroy(GameManager.gmInst);
         }

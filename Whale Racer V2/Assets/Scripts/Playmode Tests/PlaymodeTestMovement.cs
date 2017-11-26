@@ -3,7 +3,6 @@ using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
-using UnityEditor.SceneManagement;
 
 public class TestMovement : IPrebuildSetup {
     private GameObject whale;

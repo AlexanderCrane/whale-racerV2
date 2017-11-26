@@ -26,6 +26,8 @@ public class PlayerMovement : NetworkBehaviour
 
     public bool splitscreenPlayer2 = false;
     public bool freeFormMovement = false;
+
+    public PlayerHealth playerHealth;
     #endregion
 
     #region private variables and properties
@@ -76,6 +78,10 @@ public class PlayerMovement : NetworkBehaviour
             diveButton = "p2Dive";
             sprintButton = "p2Sprint";
         }
+
+        //health
+        playerHealth = this.GetComponent<PlayerHealth>();
+        playerHealth.currentHealth = 100;
 
         if (freeFormMovement)
         {
@@ -338,34 +344,9 @@ public class PlayerMovement : NetworkBehaviour
         {
             if (this.transform.position.y > -2.0f)// && !Input.GetButton(verticalAxis))
             {
-                //Quaternion yRot;
-                //Quaternion zRot;// = Quaternion.Euler(0.0f, 0.0f, 0.0f);
-
-                //yRot = Quaternion.Euler(0.0f, transform.localEulerAngles.y + 30.0f, 0.0f);
                 transform.Rotate(transform.TransformDirection(Vector3.up), inputSpiral * whaleSpeed/25 * Time.deltaTime);
-                //transform.localRotation = Quaternion.Slerp(transform.localRotation, yRot,
-                //    whaleSpeed / whaleBody.mass / 5 * Time.deltaTime);
-                
-                //if (inputSpiral > 0)//(transform.localEulerAngles.z > 60.0f )
-                //{
-                
-                //zRot = Quaternion.Euler(0.0f, 0.0f, 80.0f);
-                
                 transform.Rotate(Vector3.forward, inputSpiral * whaleSpeed / 20 * Time.deltaTime);
-                    //whaleBody.AddForce(new Vector3(1.0f, 0.0f, 0.5f) * whaleSpeed / whaleBody.mass / 5 * Time.deltaTime);
-                //transform.localRotation = Quaternion.Slerp(transform.localRotation, zRot,
-                //    whaleSpeed / whaleBody.mass / 5 * Time.deltaTime);
 
-                //}
-                //else
-                //{
-                    //yRot = Quaternion.Euler(0.0f, transform.localEulerAngles.y - 30.0f, 0.0f);
-                    //zRot = Quaternion.Euler(0.0f, 0.0f, -80.0f);
-                    //transform.Rotate(Vector3.forward, inputSpiral * whaleSpeed / 25 * Time.deltaTime);
-                    //whaleBody.AddForce(new Vector3(-1.0f, 0.0f, 0.5f) * whaleSpeed / whaleBody.mass / 5 * Time.deltaTime);
-                    //transform.localRotation = Quaternion.Slerp(transform.localRotation, zRot,
-                    //   whaleSpeed / whaleBody.mass / 5 * Time.deltaTime);
-                //}
                 yRotation = transform.eulerAngles.y;
                 zRotation = transform.eulerAngles.z;
                 PositionReset(1);
@@ -521,6 +502,9 @@ public class PlayerMovement : NetworkBehaviour
 
     public void BounceBack(Vector3 direction, AudioClip sound)
     {
+		if (playerHealth.currentHealth > 0) {
+			playerHealth.TakeDamage (10);
+		}
         GetComponent<AudioSource>().PlayOneShot(sound);
         // Vector3 backward = transform.forward * -1;
         whaleBody.AddForce(direction * 100000);
