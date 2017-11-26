@@ -87,8 +87,9 @@ namespace UnityEngine.Networking
                     {
                         manager.StartClient();
                     }
+                    GUI.Label(new Rect(xpos, ypos+20, 270, 20), "Client will use host's map settings.");
 
-                    manager.networkAddress = GUI.TextField(new Rect(xpos + 100, ypos, 95, 20), manager.networkAddress);
+                    manager.networkAddress = GUI.TextField(new Rect(xpos + 100, ypos, 100, 20), manager.networkAddress);
                     ypos += spacing;
                 }
                 else
