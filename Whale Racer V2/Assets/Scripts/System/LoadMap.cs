@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using UnityEngine.Networking;
 
 public class LoadMap : MonoBehaviour {
 
@@ -25,6 +25,7 @@ public class LoadMap : MonoBehaviour {
         }
         if (sceneName == "MainMenu" )
         {
+            NetworkLobbyManager.singleton.StopClient();
             Destroy(GameObject.Find("LobbyManager"));
         }
 		SceneManager.LoadScene(sceneName); 
