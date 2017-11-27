@@ -89,7 +89,7 @@ public class PlayerMovement : NetworkBehaviour
         }
         else
         {
-            whaleBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+            whaleBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY |RigidbodyConstraints.FreezeRotationZ;
         }
     }
     /// <summary>
@@ -305,6 +305,7 @@ public class PlayerMovement : NetworkBehaviour
     /// </summary>
     public void PositionReset(int xAndZ) //0 for x&z, 1 for x, 2 for z
     {
+        Debug.Log("posreset");
         Quaternion fromRotation = transform.rotation;
         Quaternion targetRotation;
         yRotation = this.transform.eulerAngles.y;
@@ -328,6 +329,8 @@ public class PlayerMovement : NetworkBehaviour
         float zAng = transform.localEulerAngles.z;
         if ((xAng > 20.0f || xAng < -10.0f) || (zAng > 10.0f || zAng < -10.0f))
         {
+            Debug.Log("posreset");
+
             this.transform.localRotation = Quaternion.Slerp(this.transform.rotation, targetRotation,
                 5.50f * Time.deltaTime);
         }
@@ -408,7 +411,6 @@ public class PlayerMovement : NetworkBehaviour
     {
         if(divePressed)
         {
-            Debug.Log("underwater");
             whaleBody.mass += 300;
             this.GetComponent<SimpleBoyancy>().SetDensity(769.276f);
 
@@ -423,7 +425,6 @@ public class PlayerMovement : NetworkBehaviour
         }
         else
         {
-            Debug.Log("abovewater");
             whaleBody.mass = 63.1f;
             this.GetComponent<SimpleBoyancy>().SetDensity(790f);
             RoamAnimation();
