@@ -847,8 +847,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4317798420628128}
   - component: {fileID: 54333860423301072}
-  - component: {fileID: 65519057877746360}
   - component: {fileID: 33823031907811898}
+  - component: {fileID: 64030534557537346}
+  - component: {fileID: 65519057877746360}
   - component: {fileID: 95134690644723294}
   - component: {fileID: 114219012806199916}
   - component: {fileID: 114380166769440108}
@@ -857,6 +858,7 @@ GameObject:
   - component: {fileID: 114772607951043778}
   - component: {fileID: 82674621031184308}
   - component: {fileID: 114604886742032742}
+  - component: {fileID: 114377873199058496}
   m_Layer: 0
   m_Name: Humpback
   m_TagString: Player
@@ -996,6 +998,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4308466170057886}
+  - component: {fileID: 33854289602103190}
+  - component: {fileID: 23524521248610496}
   m_Layer: 0
   m_Name: underwater
   m_TagString: Untagged
@@ -2306,6 +2310,40 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!23 &23524521248610496
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1916961374347608}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &23538545916961504
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -2483,7 +2521,14 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1824624685822142}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300002, guid: 9216f85ca72cdb444b7b2e182e54f630, type: 3}
+--- !u!33 &33854289602103190
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1916961374347608}
+  m_Mesh: {fileID: 4300002, guid: 9216f85ca72cdb444b7b2e182e54f630, type: 3}
 --- !u!54 &54333860423301072
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -2491,9 +2536,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1824624685822142}
   serializedVersion: 2
-  m_Mass: 200
-  m_Drag: 0.75
-  m_AngularDrag: 1.1
+  m_Mass: 2500
+  m_Drag: 0.2
+  m_AngularDrag: 0.5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -2544,6 +2589,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!64 &64030534557537346
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824624685822142}
+  m_Material: {fileID: 13400000, guid: 52baaeb214519f347a35cf0edfd262ff, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 1
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 9216f85ca72cdb444b7b2e182e54f630, type: 3}
 --- !u!65 &65207315168358470
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2600,7 +2659,7 @@ BoxCollider:
   m_GameObject: {fileID: 1824624685822142}
   m_Material: {fileID: 13400000, guid: 52baaeb214519f347a35cf0edfd262ff, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 5.54, y: 2.5860605, z: 15.549073}
   m_Center: {x: 0, y: 0.09221172, z: 0.31408453}
@@ -2785,7 +2844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerID: 1
-  pmInstance: {fileID: 0}
+  pmInstance: {fileID: 114025040251288358}
   currentCheckpoint: 0
   checkpointsHit: 
 --- !u!114 &114046242422267572
@@ -2895,6 +2954,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParent: {fileID: 1824624685822142}
+--- !u!114 &114377873199058496
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824624685822142}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6d68f959fd4a8ea65864ef1c4e444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+  damageImage: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 963e69a9a3b954af19f8aa7d6d4e1ce7, type: 3}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &114380166769440108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2911,8 +2988,8 @@ MonoBehaviour:
   whaleSpeed: 0
   turnSpeed: 40
   baseTurnSpeed: 500
-  accel: 100
-  maxForwardSpeed: 1650
+  accel: 10000
+  maxForwardSpeed: 50000
   maxBackwardSpeed: 700
   baseMaxForward: 800
   baseMaxBackward: 100
@@ -2920,7 +2997,8 @@ MonoBehaviour:
   underwaterMod: 1
   whaleBody: {fileID: 0}
   splitscreenPlayer2: 0
-  freeFormMovement: 1
+  freeFormMovement: 0
+  playerHealth: {fileID: 114377873199058496}
   wDirect:
     xSensitivity: 0.2
     ySensitivity: 0.2
@@ -2992,7 +3070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceB: 0
   volume: 0
-  density: 790
+  density: 1000
   massOfWater: 0
   underwaterObj: {fileID: 1916961374347608}
 --- !u!114 &114803532279352852

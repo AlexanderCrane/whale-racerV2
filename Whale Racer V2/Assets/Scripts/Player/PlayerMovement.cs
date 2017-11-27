@@ -54,6 +54,7 @@ public class PlayerMovement : NetworkBehaviour
     private string spiralAxis = "Spiral";
     private bool noTurn = false;
     private bool noSpiral = false;
+    private float OriginalMass = 0.0f;
     #endregion
     /// <summary>
     /// Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.
@@ -65,6 +66,7 @@ public class PlayerMovement : NetworkBehaviour
         baseMaxForward = maxForwardSpeed;
         baseMaxBackward = maxBackwardSpeed;
         baseTurnSpeed = turnSpeed;
+        OriginalMass = whaleBody.mass;
 
         wDirect.Init(transform, playerCam.transform);
 
@@ -424,7 +426,7 @@ public class PlayerMovement : NetworkBehaviour
         else
         {
             Debug.Log("abovewater");
-            whaleBody.mass = 63.1f;
+            whaleBody.mass = OriginalMass;
             this.GetComponent<SimpleBoyancy>().SetDensity(790f);
             RoamAnimation();
         }
