@@ -52,9 +52,9 @@ public class GameManager : NetworkBehaviour
             {
                 if (cams.Count() == 2)
                 {
-                    cams[0].rect = new Rect(0, 0, 1, .5f);
-                    cams[1].rect = new Rect(0, .5f, 1, .5f);
-                    GameObject ai = cams[0].GetComponent<lerpCamera>().target.gameObject;
+                    cams[1].rect = new Rect(0, 0, 1, .5f);
+                    cams[0].rect = new Rect(0, .5f, 1, .5f);
+                    GameObject ai = GameObject.Find("AI_Whale");
                     ai.GetComponent<NavMeshAgent>().enabled = false;
                     ai.GetComponent<PlayerMovement>().enabled = true;
                 }
@@ -63,7 +63,7 @@ public class GameManager : NetworkBehaviour
             {
                 //if we're not doing splitscreen, disable all cameras that aren't player 1's camera
                 cams.Where(cam => cam.name != "player_Camera").Select(cam => { cam.enabled = false; return cam; }).ToList();
-                cams[0].GetComponent<lerpCamera>().target.transform.localScale = new Vector3(.5f, .5f, -.5f);
+                cams[1].GetComponent<lerpCamera>().target.transform.localScale = new Vector3(.5f, .5f, -.5f);
 
             }
         }
