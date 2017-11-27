@@ -89,7 +89,7 @@ public class PlayerMovement : NetworkBehaviour
         }
         else
         {
-            whaleBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+            whaleBody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY |RigidbodyConstraints.FreezeRotationZ;
         }
     }
     /// <summary>
