@@ -5160,6 +5160,11 @@ Prefab:
       propertyPath: goal
       value: 
       objectReference: {fileID: 1959908678}
+    - target: {fileID: 114420142250749476, guid: 793ea5c03f40faf41b7ec0e6aceb7189,
+        type: 2}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 673270591}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 793ea5c03f40faf41b7ec0e6aceb7189, type: 2}
   m_IsPrefabParent: 0
@@ -6725,6 +6730,7 @@ GameObject:
   - component: {fileID: 673270584}
   - component: {fileID: 673270583}
   - component: {fileID: 673270588}
+  - component: {fileID: 673270592}
   m_Layer: 0
   m_Name: ai_Camera
   m_TagString: PlayerCamera
@@ -7024,6 +7030,29 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &673270592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673270581}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6d4281e5d7cd44d8c6e38bc2c1b8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 0.036
+  chromaticAberration: 0.2
+  axialAberration: 0.5
+  blur: 0
+  blurSpread: 0.75
+  luminanceDependency: 0.25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!1001 &673539007
 Prefab:
   m_ObjectHideFlags: 0
@@ -13069,6 +13098,11 @@ Prefab:
       propertyPath: Loop
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114409923859898420, guid: 7e333495cbbdfce47b136d126f4d3a8d,
+        type: 2}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1967470130}
     m_RemovedComponents:
     - {fileID: 81578483028485816, guid: 7e333495cbbdfce47b136d126f4d3a8d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7e333495cbbdfce47b136d126f4d3a8d, type: 2}
@@ -13210,7 +13244,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381076769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -582, y: -266, z: 0}
+  m_LocalPosition: {x: -418.5, y: -459.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 611057387}
@@ -17787,7 +17821,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1794204127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 454, y: -138, z: 0}
+  m_LocalPosition: {x: 290.5, y: -331.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 805830963}
@@ -19939,7 +19973,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933875200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 582, y: 266, z: 0}
+  m_LocalPosition: {x: 418.5, y: 459.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 805830963}
@@ -20331,6 +20365,7 @@ GameObject:
   - component: {fileID: 1967470132}
   - component: {fileID: 1967470131}
   - component: {fileID: 1967470124}
+  - component: {fileID: 1967470125}
   m_Layer: 0
   m_Name: player_Camera
   m_TagString: PlayerCamera
@@ -20367,6 +20402,29 @@ MonoBehaviour:
   defaultDistance: {x: 0, y: 3, z: 15}
   distanceDamp: 5
   rotationalDamp: 5
+--- !u!114 &1967470125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967470122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6d4281e5d7cd44d8c6e38bc2c1b8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 0.036
+  chromaticAberration: 0.2
+  axialAberration: 0.5
+  blur: 0
+  blurSpread: 0.75
+  luminanceDependency: 0.25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!81 &1967470127
 AudioListener:
   m_ObjectHideFlags: 0
@@ -21475,7 +21533,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2056780831}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1174, y: 532, z: 0}
+  m_LocalPosition: {x: 847, y: 919, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1381076770}
