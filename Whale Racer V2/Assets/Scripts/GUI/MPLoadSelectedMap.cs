@@ -6,8 +6,10 @@ using UnityEngine;
 
 public class MPLoadSelectedMap : MonoBehaviour {
     private string mapName;
-	// Use this for initialization
-	void Start () {
+    /// <summary>
+    /// Start method. Sets the lobby manager's play scene to the selected map from the menu.
+    /// </summary>
+    void Start () {
         mapName = LoadMap.mpMap;
         if (mapName == null)
         {
