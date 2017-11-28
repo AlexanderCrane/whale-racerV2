@@ -21,7 +21,7 @@ public class PlayerMovement : NetworkBehaviour
     public float maxBackwardSpeed = 700.0f;
     public float baseMaxForward = 800.0f;
     public float baseMaxBackward = 100.0f;
-    public float sprintMultiplier = 1.2f;
+    public float sprintMultiplier = 1.8f;
     public float underwaterMod = 1.0f; //it is 2.0f when underwater
     public Rigidbody whaleBody;
 
@@ -43,6 +43,7 @@ public class PlayerMovement : NetworkBehaviour
     private float yRotation = 0;
     private float zRotation = 0;
     private int canJump = 0;
+    private int canSprint = 0;
     private bool diving = false;
     private string jumpButton = "Jump";
     private string diveButton = "Dive";
@@ -161,6 +162,14 @@ public class PlayerMovement : NetworkBehaviour
         {
             canJump++;
         }
+        if (canSprint >= 1000)
+        {
+            canSprint = 1000;
+        }
+        else
+        {
+            canSprint++;
+        }
         Jump(Input.GetButton(jumpButton));
 
         if (GameManager.gmInst.isMP && !isLocalPlayer)
@@ -269,11 +278,12 @@ public class PlayerMovement : NetworkBehaviour
 
         }
 
-        if(Input.GetButton(sprintButton))
+        if(Input.GetButton(sprintButton) && canSprint == 100)
         {
             Debug.Log("Sprinting");
             whaleBody.AddRelativeForce(0.0f, 0.0f, input * (-whaleSpeed) * sprintMultiplier * underwaterMod);
             whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed*4);
+            canSprint = 0;
             return;
         }
         whaleBody.AddRelativeForce(0.0f, 0.0f, input * (-whaleSpeed) * underwaterMod);
@@ -379,6 +389,14 @@ public class PlayerMovement : NetworkBehaviour
     public void SetCanJump()
     {
         canJump = 100;
+    }
+    public bool CheckCanSprint()
+    {
+        return (canSprint == 100);
+    }
+    public void SetCanSprint()
+    {
+        canSprint = 100;
     }
     /// <summary>
     /// Handles jump input.
