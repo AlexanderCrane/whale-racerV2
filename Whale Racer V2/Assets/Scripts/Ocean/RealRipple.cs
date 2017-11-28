@@ -34,9 +34,11 @@ namespace UnityStandardAssets.Water
 
         private void Start()
         {
-            for(int i = 0; i < whales.Count; i++)
+            for (int i = 0; i < whales.Count; i++)
             {
-                speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
+                if (whales[i] != null) { 
+                    speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
+                }
             }
             m_WaterBase = (WaterBase)gameObject.GetComponent(typeof(WaterBase));
             waterHeight1 = new Vector3(0.0f, 0.0f, 0.0f);
