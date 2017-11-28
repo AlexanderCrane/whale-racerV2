@@ -117,6 +117,36 @@ public class TestMovement : IPrebuildSetup {
         Assert.That(whale.transform.rotation.eulerAngles.y < postTurnRotation);
     }
     [UnityTest]
+    public IEnumerator TestSpiralModifiesYRotationOnSurface()
+    {
+        yield return null;
+        RealSetup();
+        float initY = whale.transform.rotation.eulerAngles.y;
+        for (int i = 0; i < 500; i++)
+        {
+            testPM.Move2D(1);
+            testPM.Spiral(1);
+            yield return null;
+        }
+        Assert.That(whale.transform.rotation.eulerAngles.y > initY);
+    }
+
+    [UnityTest]
+    public IEnumerator TestSpiralModifiesZRotationUnderWater()
+    {
+        yield return null;
+        RealSetup();
+        float initZ = whale.transform.rotation.eulerAngles.z;
+        for (int i = 0; i < 500; i++)
+        {
+            testPM.Dive(true);
+            testPM.Move2D(1);
+            testPM.Spiral(1);
+            yield return null;
+        }
+        Assert.That(whale.transform.rotation.eulerAngles.z > initZ);
+    }
+    [UnityTest]
     public IEnumerator TestSpeedupPowerupIncreasesSpeed()
     {
         yield return null;
@@ -147,6 +177,5 @@ public class TestMovement : IPrebuildSetup {
         yield return null;
         Assert.That(testPM.maxForwardSpeed == testPM.baseMaxForward * .2);
         Assert.That(testPM.maxBackwardSpeed == testPM.baseMaxBackward * .2);
-
     }
 }
