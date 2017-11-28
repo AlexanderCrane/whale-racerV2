@@ -6,7 +6,7 @@ using UnityEngine;
 public class MPLerpCamera : NetworkBehaviour
 {
 
-    private GameObject target = null;
+    public GameObject target = null;
 
     [SerializeField] Vector3 defaultDistance = new Vector3(0f, 2f, -10f);
 

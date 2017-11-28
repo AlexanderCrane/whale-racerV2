@@ -17,6 +17,7 @@ public class PlayerManager : NetworkBehaviour {
     private int currentLap = 1;
     public bool[] checkpointsHit;
     private bool hasCam = false;
+    public MPLerpCamera cam;
     //all whale movement is disabled at start of game
     //when the race countdown ends, GameManager sets this to false
     public static bool allWhaleMovementDisabled = true;
@@ -79,8 +80,8 @@ public class PlayerManager : NetworkBehaviour {
     void Update (){
         if (GameManager.gmInst.isMP && !hasCam)
         {
-            Debug.Log(FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).Count());
-            FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).First().setTarget(this.gameObject);
+            cam = FindObjectsOfType<MPLerpCamera>().Where(obj => obj.hasTarget() == false).First();
+            cam.setTarget(this.gameObject);
             hasCam = true;
         }
         NavMeshAgent nma = gameObject.GetComponent<NavMeshAgent>();

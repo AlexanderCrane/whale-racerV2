@@ -5,6 +5,7 @@
  * Purpose: Send scene information of objects that should produce waves
 */
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -43,46 +44,53 @@ namespace UnityStandardAssets.Water
 
         public void Update()
         {
-            //speed = whale.GetComponent<PlayerMovement>().whaleSpeed;
-            if (!m_WaterBase)
+            try
             {
-                m_WaterBase = (WaterBase)gameObject.GetComponent(typeof(WaterBase));
+                //speed = whale.GetComponent<PlayerMovement>().whaleSpeed;
+                if (!m_WaterBase)
+                {
+                    m_WaterBase = (WaterBase)gameObject.GetComponent(typeof(WaterBase));
+                }
+
+                if (m_WaterBase.sharedMaterial)
+                {
+                    for (int i = 0; i < whales.Count; i++)
+                    {
+                        speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
+                    }
+
+                    m_WaterBase.sharedMaterial.SetVector("_ObjectDisp1", whales[0].transform.position);
+                    if (speeds[0] == 0)
+                    {
+                        m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed1", 0.2f);
+                    }
+                    else if (speeds[0] < 700)
+                    {
+                        m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed1", .5f);
+                    }
+                    else
+                    {
+                        m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed1", .85f);
+                    }
+
+                    m_WaterBase.sharedMaterial.SetVector("_ObjectDisp2", whales[1].transform.position);
+                    if (speeds[1] == 0)
+                    {
+                        m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", 0.2f);
+                    }
+                    else if (speeds[1] < 700)
+                    {
+                        m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", .5f);
+                    }
+                    else
+                    {
+                        m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", .85f);
+                    }
+                }
             }
-
-            if (m_WaterBase.sharedMaterial)
+            catch (Exception e)
             {
-                for (int i = 0; i < whales.Count; i++)
-                {
-                    speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
-                }
 
-                m_WaterBase.sharedMaterial.SetVector("_ObjectDisp1", whales[0].transform.position);
-                if (speeds[0] == 0)
-                {
-                    m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed1", 0.2f);
-                }
-                else if (speeds[0] < 700)
-                {
-                    m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed1", .5f);
-                }
-                else
-                {
-                    m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed1", .85f);
-                }
-
-                m_WaterBase.sharedMaterial.SetVector("_ObjectDisp2", whales[1].transform.position);
-                if (speeds[1] == 0)
-                {
-                    m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", 0.2f);
-                }
-                else if(speeds[1] < 700)
-                {
-                    m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", .5f);
-                }
-                else
-                {
-                    m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", .85f);
-                }
             }
         }
     }

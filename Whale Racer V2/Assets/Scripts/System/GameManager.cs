@@ -29,7 +29,7 @@ public class GameManager : NetworkBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this);
-        if (SceneManager.GetActiveScene().name == "Aduloo_MP")
+        if (SceneManager.GetActiveScene().name == "Aduloo_MP" || SceneManager.GetActiveScene().name == "TheShipyard_MP")
         {
             isMP = true;
         }

@@ -20,6 +20,7 @@ public class WhaleDirect {
     private Quaternion m_playerTargetRotation;
     private Quaternion m_camTargetRotation;
     private bool m_cursorIsLocked = true;
+    public bool initialized = false;
 
     [SerializeField] private float xSensitivity = 2.0f;
     [SerializeField] private float ySensitivity = 2.0f;
@@ -48,6 +49,7 @@ public class WhaleDirect {
     {
         m_camTargetRotation = cam.localRotation;
         m_playerTargetRotation = player.localRotation;
+        initialized = true;
     }
     /// <summary>
     /// Rotates And Look. Rotates player and camera

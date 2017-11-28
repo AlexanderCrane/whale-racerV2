@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.Networking;
+using System.Linq;
 using UnityEngine;
 /// <summary>
 ///Player movement control script.
@@ -65,8 +66,7 @@ public class PlayerMovement : NetworkBehaviour
         baseMaxForward = maxForwardSpeed;
         baseMaxBackward = maxBackwardSpeed;
         baseTurnSpeed = turnSpeed;
-
-        wDirect.Init(transform, playerCam.transform);
+        Debug.Log("CAMS STARTING");
 
         if (splitscreenPlayer2)
         {
@@ -80,9 +80,9 @@ public class PlayerMovement : NetworkBehaviour
         }
 
         //health
-        playerHealth = this.GetComponent<PlayerHealth>();
-        playerHealth.currentHealth = 100;
-
+        //playerHealth = this.GetComponent<PlayerHealth>();
+        //playerHealth.currentHealth = 100;
+        Debug.Log("Health worked");
         if (freeFormMovement)
         {
             whaleBody.constraints = RigidbodyConstraints.None;
@@ -97,6 +97,15 @@ public class PlayerMovement : NetworkBehaviour
     /// </summary>
     private void Update()
     {
+        if (playerCam == null)
+        {
+            Debug.Log("CAM: " + gameObject.GetComponent<PlayerManager>().cam.gameObject.name);
+            playerCam = gameObject.GetComponent<PlayerManager>().cam.gameObject.GetComponent<Camera>();
+            if (wDirect.initialized == false)
+            {
+                wDirect.Init(transform, playerCam.transform);
+            }
+        }
         if (GameManager.gmInst.isMP && !isLocalPlayer)
         {
             return;
