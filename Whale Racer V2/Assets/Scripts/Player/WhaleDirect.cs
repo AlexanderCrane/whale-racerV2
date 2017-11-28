@@ -12,6 +12,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 /// <summary>
 ///Whale Direction Script Controls 3D Movement & Direction
+///Used only in experimental free mouse movement mode.
 /// </summary>
 [Serializable]
 public class WhaleDirect {

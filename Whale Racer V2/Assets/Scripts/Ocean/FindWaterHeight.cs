@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Debug script to find the height of water
+/// </summary>
 public class FindWaterHeight : MonoBehaviour {
 
     public float waterY = 0;
-
+    /// <summary>
+    /// Logs collision with ocean
+    /// </summary>
     private void FixedUpdate()
     {
         //int maskLayers = LayerMask.GetMask("Water");

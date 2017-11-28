@@ -4,20 +4,26 @@ using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
 using System.Linq;
-
+/// <summary>
+/// Tests for the checkpoint system and winning the race.
+/// </summary>
 public class TestCheckpoints : IPrebuildSetup
 {
     private GameObject whale;
     private PlayerManager testManager;
     private Transform testTransform;
 
-
+    /// <summary>
+    /// Loads Aduloo.
+    /// </summary>
     [SetUp]
     public void Setup()
     {
         SceneManager.LoadScene("Aduloo");
     }
-
+    /// <summary>
+    /// RealSetup method to be run after Aduloo loads.
+    /// </summary>
     public void RealSetup()
     {
         GameManager gm = GameObject.FindObjectOfType<GameManager>();
@@ -25,7 +31,10 @@ public class TestCheckpoints : IPrebuildSetup
         whale = GameObject.Find("Whale_Humpbac");
         testManager = whale.GetComponent<PlayerManager>();
     }
-
+    /// <summary>
+    /// Test that hitting the first checkpoint is recorded in the whale's PlayerManager
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestCheckpointHitRecorded()
     {
@@ -38,6 +47,10 @@ public class TestCheckpoints : IPrebuildSetup
         yield return null;
         Assert.That(testManager.checkpointsHit[0] == true);
     }
+    /// <summary>
+    /// Test that hitting the second checkpoint without hitting the first does nothing.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestHitCheckpointOutOfOrderFails()
     {
@@ -51,6 +64,10 @@ public class TestCheckpoints : IPrebuildSetup
             Assert.That(checkpointHit == false);
         }            
     }
+    /// <summary>
+    /// Test that hitting the first checkpoint twice doesn't mark checkpoint 2 as visited.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestHitCheckpointRepeatedlyFails()
     {
@@ -68,7 +85,10 @@ public class TestCheckpoints : IPrebuildSetup
 
         Assert.That(testManager.checkpointsHit.Where(q => q == true).Count() == 1); //verify that only one checkpoint is still marked
     }
-
+    /// <summary>
+    /// Test that, when FinishLine is the next checkpoint the player needs to hit, hitting it ends the game.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestHittingFinishWinsGame()
     {

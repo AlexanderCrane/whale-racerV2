@@ -40,11 +40,22 @@ public class WaterConsole : NetworkBehaviour
     #endregion
 
     #region Custom Methods
+    /// <summary>
+    /// Returns the water's height.
+    /// </summary>
+    /// <param name="position">Unused</param>
+    /// <param name="timeSinceStart">Unused</param>
+    /// <returns></returns>
     public float GetWaveYPos(Vector3 position, float timeSinceStart)
     {
         return waterHeight;
     }
-
+    /// <summary>
+    /// Get a position's distance from the water.
+    /// </summary>
+    /// <param name="position">The position.</param>
+    /// <param name="timeSinceStart">Time the ocean has been running.</param>
+    /// <returns></returns>
     public float DistanceToWater(Vector3 position, float timeSinceStart)
     {
         float waterHeight = GetWaveYPos(position, timeSinceStart);

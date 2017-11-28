@@ -4,19 +4,26 @@ using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
 using UnityEngine.AI;
-
+/// <summary>
+/// Tests for the NavMeshAgent AI.
+/// </summary>
 public class TestAI : IPrebuildSetup {
     private GameObject whale;
     private NavMeshAgent testNMA;
     private MoveTo testMoveTo;
     private Transform testTransform;
 
-
+    /// <summary>
+    /// Loads Aduloo.
+    /// </summary>
     [SetUp]
     public void Setup()
     {
         SceneManager.LoadScene("Aduloo");
     }
+    /// <summary>
+    /// Setup to run after Aduloo loads.
+    /// </summary>
     public void RealSetup()
     {
         GameManager gm = GameObject.FindObjectOfType<GameManager>();
@@ -26,6 +33,10 @@ public class TestAI : IPrebuildSetup {
         testMoveTo = whale.GetComponent<MoveTo>();
         testTransform = whale.transform;
     }
+    /// <summary>
+    /// Check that the AI colliding with its current target waypoint gives it a new target.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestAIWaypointCollideChangesTarget()
     {

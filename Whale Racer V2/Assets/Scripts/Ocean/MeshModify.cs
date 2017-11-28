@@ -7,7 +7,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Class used to create a dynamic mesh for objects to float realistically on a moving water surface
+/// </summary>
 public class MeshModify
 {
 
@@ -33,6 +35,10 @@ public class MeshModify
     #endregion
 
     #region Custom Methods
+    /// <summary>
+    /// Constructor.
+    /// </summary>
+    /// <param name="obj"></param>
     public MeshModify(GameObject obj)
     {
         //transform
@@ -47,7 +53,9 @@ public class MeshModify
         //all distance to water
         distanceToWater = new float[objVerticeCoordinates.Length];
     }
-
+    /// <summary>
+    /// Finds distances to water objects and calculates distances.
+    /// </summary>
     public void GenUnderwaterMesh()
     {
         //Clear all data from list
@@ -66,7 +74,9 @@ public class MeshModify
         //Add underwater mesh
         AddTriangles();
     }
-
+    /// <summary>
+    /// Creates water triangles.
+    /// </summary>
     private void AddTriangles()
     {
         //List that will store the data we need to sort the vertices based on distance to water
@@ -137,7 +147,10 @@ public class MeshModify
         }
     }
 
-    //Build the new triangles where one of the old vertices is above the water
+    /// <summary>
+    /// Build new triangles where one of the old vertices is above the water
+    /// </summary>
+    /// <param name="vertexData"></param>
     private void AddTrianglesOneAboveWater(List<VertexData> vertexData)
     {
         //H is always at position 0
@@ -209,7 +222,10 @@ public class MeshModify
         underWaterTriangles.Add(new TriangleType(M, I_L, L));
     }
 
-    //Build the new triangles where two of the old vertices are above the water
+    /// <summary>
+    /// Build  new triangles where two of the old vertices are above the water
+    /// </summary>
+    /// <param name="vertexData"></param>
     private void AddTrianglesTwoAboveWater(List<VertexData> vertexData)
     {
         //H and M are above the water
@@ -279,7 +295,10 @@ public class MeshModify
         underWaterTriangles.Add(new TriangleType(L, J_H, J_M));
     }
 
-    //Help class to store triangle data so we can sort the distances
+  
+    /// <summary>
+    /// Helper class to store triangle data so we can sort the distances
+    /// </summary>
     private class VertexData
     {
         //The distance to water from this vertex
@@ -290,7 +309,12 @@ public class MeshModify
         public Vector3 globalVertexPos;
     }
 
-    //Display the underwater mesh
+   /// <summary>
+   /// Displays the underwater mesh.
+   /// </summary>
+   /// <param name="mesh">The target mesh</param>
+   /// <param name="name">The mesh's name</param>
+   /// <param name="triangesData">The list of water triangles</param>
     public void DisplayMesh(Mesh mesh, string name, List<TriangleType> triangesData)
     {
         List<Vector3> vertices = new List<Vector3>();

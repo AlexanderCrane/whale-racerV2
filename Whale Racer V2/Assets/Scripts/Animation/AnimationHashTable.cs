@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Container class to hold all the animation float values.
+/// </summary>
 public class AnimationHashTable : MonoBehaviour {
     public int moveFloat;
     public int turnFloat;

@@ -3,13 +3,17 @@ using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 using NUnit.Framework;
 using System.Collections;
-
+/// <summary>
+/// Tests for player movement.
+/// </summary>
 public class TestMovement : IPrebuildSetup {
     private GameObject whale;
     private PlayerMovement testPM;
     private Transform testTransform;
 
-
+    /// <summary>
+    /// Loads Aduloo.
+    /// </summary>
     [SetUp]
     public void Setup()
     {
@@ -20,6 +24,11 @@ public class TestMovement : IPrebuildSetup {
     //we can only yield in the actual UnityTests, so call this 'real setup' function after we do
     //this does the actual setup
     //yes this is a hack
+    /// <summary>
+    /// Function run after running the desired testing scene for one frame so that things can be initialized.
+    /// Doing setup this way lets us use the actual play scenes for testing to save time on mocking.
+    /// This is a hack.
+    /// </summary>
     public void RealSetup()
     {
         GameManager gm = GameObject.FindObjectOfType<GameManager>();
@@ -30,6 +39,10 @@ public class TestMovement : IPrebuildSetup {
         testPM.whaleAnimator = GameObject.Find("Whale_Humpbac").GetComponent<Animator>();
         testPM.animations = new AnimationHashTable();
     }
+    /// <summary>
+    /// Test that jumping increases the player's height.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
 	public IEnumerator TestJumpIncreasesHeight() {
         //yield a frame before initializing game objects to let the scene load
@@ -48,6 +61,10 @@ public class TestMovement : IPrebuildSetup {
 
         Assert.That(whale.transform.position.y > initY); //pass test if y position increases
     }
+    /// <summary>
+    /// Test that diving decreases the player's height and surfacing increases it.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestDiveModifiesHeight()
     {
@@ -69,6 +86,10 @@ public class TestMovement : IPrebuildSetup {
         Assert.That(whale.transform.position.y > postDiveY);
 
     }
+    /// <summary>
+    /// Test that forward and backward movement correctly modify player position.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator Test2DMoveModifiesPosition()
     {
@@ -89,6 +110,10 @@ public class TestMovement : IPrebuildSetup {
         }
         Assert.That(System.Math.Abs(whale.transform.position.z) < postMoveFowardZ); //pass if backward movement has occurred
     }
+    /// <summary>
+    /// Test that turning correctly modifies player rotation.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestTurnModifiesRotation()
     {
@@ -116,6 +141,10 @@ public class TestMovement : IPrebuildSetup {
         Debug.Log(whale.transform.rotation.eulerAngles.y);
         Assert.That(whale.transform.rotation.eulerAngles.y < postTurnRotation);
     }
+    /// <summary>
+    /// Test that spiraling when on the surface banks the whale.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestSpiralModifiesYRotationOnSurface()
     {
@@ -130,7 +159,10 @@ public class TestMovement : IPrebuildSetup {
         }
         Assert.That(whale.transform.rotation.eulerAngles.y > initY);
     }
-
+    /// <summary>
+    /// Test that spiraling when underwater spirals the whale.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestSpiralModifiesZRotationUnderWater()
     {
@@ -146,6 +178,10 @@ public class TestMovement : IPrebuildSetup {
         }
         Assert.That(whale.transform.rotation.eulerAngles.z > initZ);
     }
+    /// <summary>
+    /// Test that picking up a speedup powerup increases speed.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestSpeedupPowerupIncreasesSpeed()
     {
@@ -156,6 +192,10 @@ public class TestMovement : IPrebuildSetup {
         Assert.That(testPM.maxBackwardSpeed == testPM.baseMaxBackward * 1.5);
         Assert.That(testPM.turnSpeed == testPM.baseTurnSpeed * 1.5);
     }
+    /// <summary>
+    /// Test that hitting a BounceBack object bounces the whale back.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestBounceBackBouncesBack()
     {
@@ -167,7 +207,10 @@ public class TestMovement : IPrebuildSetup {
         yield return null;
         Assert.That(whale.transform.position.z > initPos);
     }
-
+    /// <summary>
+    /// Test that hitting an oil slick slows the whale down.
+    /// </summary>
+    /// <returns></returns>
     [UnityTest]
     public IEnumerator TestSlowdown()
     {

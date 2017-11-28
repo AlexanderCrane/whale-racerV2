@@ -54,12 +54,17 @@ public class SimpleBoyancy : MonoBehaviour
     #endregion
 
     #region System Methods
+    /// <summary>
+    /// Awake method. Initializes components.
+    /// </summary>
     private void Awake()
     {
         underwaterObj.AddComponent<MeshFilter>();
         underwaterObj.AddComponent<MeshRenderer>();
     }
-
+    /// <summary>
+    /// Start method. Initializes components.
+    /// </summary>
     private void Start()
     {
         baseRB = gameObject.GetComponent<Rigidbody>();
@@ -68,14 +73,18 @@ public class SimpleBoyancy : MonoBehaviour
 
         underwaterMesh = underwaterObj.GetComponent<MeshFilter>().mesh;
     }
-
+    /// <summary>
+    /// Update method. Regenerates the underwater mesh.
+    /// </summary>
     private void Update()
     {
         meshMod.GenUnderwaterMesh();
 
         //meshMod.DisplayMesh(underwaterMesh, "Underwater Mesh" ,meshMod.underWaterTriangles);
     }
-
+    /// <summary>
+    /// Fixed update method. Triggers physics method to add buoyant forces.
+    /// </summary>
     private void FixedUpdate()
     {
         //Physics
@@ -87,6 +96,9 @@ public class SimpleBoyancy : MonoBehaviour
     #endregion
 
     #region Custom Methods
+    /// <summary>
+    /// Adds buoyant force to objects.
+    /// </summary>
     private void AddWaterForces()
     {
         //Get Surfaces Underwater
@@ -101,7 +113,12 @@ public class SimpleBoyancy : MonoBehaviour
             baseRB.AddForceAtPosition(buoyancyForce, tri.center);
         }
     }
-
+    /// <summary>
+    /// Calculates buoyant force
+    /// </summary>
+    /// <param name="density">The density of the parent object.</param>
+    /// <param name="tri">The current water triangle.</param>
+    /// <returns></returns>
     private Vector3 BuoyancyForce(float density, TriangleType tri)
     {
         Vector3 forceBuoy = density * Physics.gravity.y * tri.distanceToSurface * tri.area * tri.normal;
@@ -111,7 +128,10 @@ public class SimpleBoyancy : MonoBehaviour
 
         return forceBuoy;
     }
-
+    /// <summary>
+    /// Sets the object's density
+    /// </summary>
+    /// <param name="val"></param>
     public void SetDensity(float val)
     {
         density = val;

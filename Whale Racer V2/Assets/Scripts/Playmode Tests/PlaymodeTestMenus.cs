@@ -15,7 +15,9 @@ public class TestMenus : IPrebuildSetup
     private PlayerMovement testPM;
     private Transform testTransform;
 
-
+    /// <summary>
+    /// Loads MainMenu.
+    /// </summary>
     [SetUp]
     public void Setup()
     {
