@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/// <summary>
+/// Script containing various methods by which the main menu loads maps.
+/// </summary>
 public class LoadMap : MonoBehaviour {
 
     public bool isStartSplitscreenButton;

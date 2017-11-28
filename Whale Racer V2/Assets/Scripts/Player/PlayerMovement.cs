@@ -510,7 +510,11 @@ public class PlayerMovement : NetworkBehaviour
             whaleBody.AddForce(Vector3.down * 2000.0f);// * Time.deltaTime);
         }
     }
-
+    /// <summary>
+    /// Handles bouncing the player away on collision with crates.
+    /// </summary>
+    /// <param name="direction">The direction to bounce</param>
+    /// <param name="sound">The bounce sound.</param>
     public void BounceBack(Vector3 direction, AudioClip sound)
     {
 		if (playerHealth.currentHealth > 0) {

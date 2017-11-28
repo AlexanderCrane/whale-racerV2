@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script to be placed on race checkpoints to track player progress.
+/// </summary>
 public class Checkpoint : MonoBehaviour {
     public int position;
     public bool checkpointHit = false;

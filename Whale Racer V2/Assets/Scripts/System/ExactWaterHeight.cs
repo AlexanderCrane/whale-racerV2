@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Container class to hold the water level.
+/// </summary>
 public class ExactWaterHeight : MonoBehaviour
 {
 

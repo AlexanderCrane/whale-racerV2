@@ -5,7 +5,9 @@ using UnityEngine.AI;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using System;
-
+/// <summary>
+/// Class to handle various setup and GUI tasks throughout the race.
+/// </summary>
 public class GameManager : NetworkBehaviour
 {
     public static GameManager gmInst;

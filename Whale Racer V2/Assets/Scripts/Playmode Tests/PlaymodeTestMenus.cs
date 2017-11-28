@@ -6,6 +6,9 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Networking;
 
+/// <summary>
+/// Tests for the main menu.
+/// </summary>
 public class TestMenus : IPrebuildSetup
 {
     private GameObject whale;

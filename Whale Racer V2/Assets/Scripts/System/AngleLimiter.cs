@@ -7,7 +7,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Script to limit movement of buoyant objects.
+/// </summary>
 public class AngleLimiter : MonoBehaviour {
 
     #region Private Variables & Properties
@@ -22,11 +24,16 @@ public class AngleLimiter : MonoBehaviour {
     #endregion
 
     #region System Methods
+        /// <summary>
+        /// Start method. Gets the containing object's rigidbody.
+        /// </summary>
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
     }
-
+    /// <summary>
+    /// FixedUpdate method. Calls ReStabilize if buoyant object is out of alignment.
+    /// </summary>
     private void FixedUpdate ()
     {
         //RaycastHit hitFloor;
@@ -55,7 +62,10 @@ public class AngleLimiter : MonoBehaviour {
             Debug.Log("Hit the bottom");
         }*/
     }
-
+    /// <summary>
+    /// Realigns a buoyant object by Slerping it back.
+    /// </summary>
+    /// <param name="angle"></param>
     private void ReStabilize(float angle)
     {
         lookDirection = Quaternion.LookRotation(-Vector3.down);

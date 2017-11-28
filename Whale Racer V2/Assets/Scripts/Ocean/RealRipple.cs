@@ -13,8 +13,12 @@ using UnityEngine;
 
 namespace UnityStandardAssets.Water
 {
+    /// <summary>
+    /// Script to send scene information about objects that should produce ripples.
+    /// </summary>
     [RequireComponent(typeof(WaterBase))]
     [ExecuteInEditMode]
+
     public class RealRipple : MonoBehaviour
     {
         public Vector3 waterHeight1;
@@ -31,7 +35,9 @@ namespace UnityStandardAssets.Water
         //private float speed5;
         private WaterBase m_WaterBase;
 
-
+        /// <summary>
+        /// Start method. Gets whale speeds and water height.
+        /// </summary>
         private void Start()
         {
             for (int i = 0; i < whales.Count; i++)
@@ -44,7 +50,9 @@ namespace UnityStandardAssets.Water
             waterHeight1 = new Vector3(0.0f, 0.0f, 0.0f);
         }
 
-
+        /// <summary>
+        /// Populates whales in multiplayer and creates ripples around whales.
+        /// </summary>
         public void Update()
         {
                 if (SceneManager.GetActiveScene().name == "MPLobby")

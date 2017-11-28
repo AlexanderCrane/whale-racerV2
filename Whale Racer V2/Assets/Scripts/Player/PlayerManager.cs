@@ -76,6 +76,7 @@ public class PlayerManager : NetworkBehaviour {
 
     /// <summary>
     /// Update method for the player manager. Disables player movement if countdown isn't over yet.
+    /// In Multiplayer, finds the player a camera if they don't have one.
     /// </summary>
     void Update (){
         if (GameManager.gmInst.isMP && !hasCam)

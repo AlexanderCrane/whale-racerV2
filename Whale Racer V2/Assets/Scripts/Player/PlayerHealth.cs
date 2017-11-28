@@ -2,7 +2,9 @@
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Script handling player health. Not fully implemented.
+/// </summary>
 public class PlayerHealth : MonoBehaviour {
 
 	public int startingHealth = 100;
@@ -21,8 +23,10 @@ public class PlayerHealth : MonoBehaviour {
 	bool damaged;
 
 
-	// Use this for initialization
-	void Awake ()
+    /// <summary>
+    /// Awake method. Initializes the player's health.
+    /// </summary>
+    void Awake ()
 	{
 		anim = GetComponent <Animator> ();
 		playerAudio = GetComponent <AudioSource> ();
@@ -30,7 +34,9 @@ public class PlayerHealth : MonoBehaviour {
 		//playerShooting = GetComponentInChildren <PlayerShooting> ();
 		currentHealth = startingHealth;
 	}
-
+    /// <summary>
+    /// Update method. Updates the UI when the player is damaged.
+    /// </summary>
 	void Update ()
 	{
 		if(damaged)
@@ -43,7 +49,10 @@ public class PlayerHealth : MonoBehaviour {
 		}
 		damaged = false;
 	}
-
+    /// <summary>
+    /// Applies damage to the player and checks if the player is dead.
+    /// </summary>
+    /// <param name="amount"></param>
 	public void TakeDamage (int amount)
 	{
 		damaged = true;
@@ -59,7 +68,9 @@ public class PlayerHealth : MonoBehaviour {
 			Death ();
 		}
 	}
-
+    /// <summary>
+    /// Plays the death animation and disables the player's movement.
+    /// </summary>
 	void Death ()
 	{
 		isDead = true;

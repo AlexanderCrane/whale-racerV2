@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script to make cameras follow players at a slight delay.
+/// </summary>
 public class lerpCamera : MonoBehaviour
 {
 
@@ -14,7 +17,9 @@ public class lerpCamera : MonoBehaviour
 
     Transform myT;
 
-
+    /// <summary>
+    /// Awake method. Stores the camera's transform.
+    /// </summary>
     // Use this for initialization
     void Awake()
     {
@@ -22,7 +27,9 @@ public class lerpCamera : MonoBehaviour
 
     }
 
-    // LateUpdate acts as Update but one frame late
+    /// <summary>
+    /// Delayed Update method. Lerps the camera's position and rotation to follow the player at a delay.
+    /// </summary>
     void LateUpdate()
     {
         Transform targetTransform = target.transform;
