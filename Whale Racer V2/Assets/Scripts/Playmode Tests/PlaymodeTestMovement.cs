@@ -55,15 +55,14 @@ public class TestMovement : IPrebuildSetup {
         RealSetup();
 
         float initY = whale.transform.position.y;
-        testPM.Dive(true); //calling Dive while above water decreases whale height
         for (int i =0; i<100; i++)
         {
+            testPM.Dive(true); //calling Dive while above water decreases whale height
             yield return null;
         }
         float postDiveY = whale.transform.position.y;
         Assert.That(postDiveY< initY);
-        testPM.Dive(true); //calling Dive while below water increases whale height
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 150; i++)
         {
             yield return null;
         }
@@ -76,14 +75,14 @@ public class TestMovement : IPrebuildSetup {
         yield return null;
         RealSetup();
         float initZ = System.Math.Abs(whale.transform.position.z); //atm whale is pointing in the -z direction by default so use absolute values
-        for (int i = 0; i < 50; i++) //move forward for 50 frames
+        for (int i = 0; i < 100; i++) //move forward for 50 frames
         {
             testPM.Move2D(1);
             yield return null;
         }
         float postMoveFowardZ = System.Math.Abs(whale.transform.position.z);
         Assert.That(postMoveFowardZ > initZ); //pass if forward movement has occurred
-        for (int i = 0; i < 50; i++) //move backward for 50 frames
+        for (int i = 0; i < 100; i++) //move backward for 50 frames
         {
             testPM.Move2D(-1);
             yield return null;

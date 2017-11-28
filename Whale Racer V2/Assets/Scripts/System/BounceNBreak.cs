@@ -21,7 +21,7 @@ public class BounceNBreak : MonoBehaviour {
     /// <param name="other"></param>
     void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Collision");
+        Debug.Log("Collision with " + other.gameObject.name);
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("Box collided with");
@@ -33,7 +33,10 @@ public class BounceNBreak : MonoBehaviour {
                 UnityEngine.Network.Destroy(this.gameObject);
                 Destroy(this.gameObject);
             }
-            else Destroy(this.gameObject);
+            else
+            {
+                Destroy(this.gameObject);
+            }
 
         }
     }

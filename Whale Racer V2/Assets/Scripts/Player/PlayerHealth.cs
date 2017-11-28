@@ -35,11 +35,11 @@ public class PlayerHealth : MonoBehaviour {
 	{
 		if(damaged)
 		{
-			damageImage.color = flashColour;
+			//damageImage.color = flashColour;
 		}
 		else
 		{
-			damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+			//damageImage.color = Color.Lerp (damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
 		}
 		damaged = false;
 	}
@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour {
 
 		currentHealth -= amount;
 
-		healthSlider.value = currentHealth;
+		//healthSlider.value = currentHealth;
 
 		playerAudio.Play ();
 

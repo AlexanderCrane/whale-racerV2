@@ -80,8 +80,8 @@ public class PlayerMovement : NetworkBehaviour
         }
 
         //health
-        //playerHealth = this.GetComponent<PlayerHealth>();
-        //playerHealth.currentHealth = 100;
+        playerHealth = this.GetComponent<PlayerHealth>();
+        playerHealth.currentHealth = 100;
         Debug.Log("Health worked");
         if (freeFormMovement)
         {
@@ -269,6 +269,7 @@ public class PlayerMovement : NetworkBehaviour
 
         if(Input.GetButton(sprintButton))
         {
+            Debug.Log("Sprinting");
             whaleBody.AddRelativeForce(0.0f, 0.0f, input * (-whaleSpeed) * sprintMultiplier * underwaterMod);
             whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed*4);
             return;
@@ -314,7 +315,6 @@ public class PlayerMovement : NetworkBehaviour
     /// </summary>
     public void PositionReset(int xAndZ) //0 for x&z, 1 for x, 2 for z
     {
-        Debug.Log("posreset");
         Quaternion fromRotation = transform.rotation;
         Quaternion targetRotation;
         yRotation = this.transform.eulerAngles.y;
@@ -338,8 +338,6 @@ public class PlayerMovement : NetworkBehaviour
         float zAng = transform.localEulerAngles.z;
         if ((xAng > 20.0f || xAng < -10.0f) || (zAng > 10.0f || zAng < -10.0f))
         {
-            Debug.Log("posreset");
-
             this.transform.localRotation = Quaternion.Slerp(this.transform.rotation, targetRotation,
                 5.50f * Time.deltaTime);
         }
@@ -506,6 +504,7 @@ public class PlayerMovement : NetworkBehaviour
     {
         if(this.transform.position.y > 3.5f)
         {
+            Debug.Log("no flying whales");
             whaleBody.AddForce(Vector3.down * 2000.0f);// * Time.deltaTime);
         }
     }
