@@ -97,6 +97,15 @@ public class PlayerMovement : NetworkBehaviour
     /// </summary>
     private void Update()
     {
+
+    }
+    /// <summary>
+    /// Fixed Update method. Calls methods to player input to whale movement.
+    /// Checks for power up expiration and handles jump lockout.
+    /// </summary>
+    void FixedUpdate()
+    {
+
         if (playerCam == null)
         {
             Debug.Log("CAM: " + gameObject.GetComponent<PlayerManager>().cam.gameObject.name);
@@ -133,7 +142,7 @@ public class PlayerMovement : NetworkBehaviour
             NoFlyingWhales();
         }
 
-        if(transform.position.y > -2.0f) { underwaterMod = 1.0f; }
+        if (transform.position.y > -2.0f) { underwaterMod = 1.0f; }
         else { underwaterMod = 2.0f; }
 
         float spiralInput = Input.GetAxis(spiralAxis);
@@ -153,13 +162,6 @@ public class PlayerMovement : NetworkBehaviour
             canJump++;
         }
         Jump(Input.GetButton(jumpButton));
-    }
-    /// <summary>
-    /// Fixed Update method. Calls methods to player input to whale movement.
-    /// Checks for power up expiration and handles jump lockout.
-    /// </summary>
-    void FixedUpdate()
-    {
 
         if (GameManager.gmInst.isMP && !isLocalPlayer)
         {
