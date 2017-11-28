@@ -8,6 +8,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 namespace UnityStandardAssets.Water
@@ -44,8 +45,22 @@ namespace UnityStandardAssets.Water
 
         public void Update()
         {
-            try
-            {
+                if (SceneManager.GetActiveScene().name == "MPLobby")
+                {
+                    return;
+                }
+                if (GameManager.gmInst.isMP && whales.Count == 0)
+                {
+                    Debug.Log("Populating whales");
+                    ;
+                    foreach(GameObject whale in GameObject.FindGameObjectsWithTag("Player"))
+                    {
+                        if (whale.name.StartsWith("MP Whale"))
+                        {
+                            whales.Add(whale);
+                        }
+                    }
+                }
                 //speed = whale.GetComponent<PlayerMovement>().whaleSpeed;
                 if (!m_WaterBase)
                 {
@@ -87,11 +102,6 @@ namespace UnityStandardAssets.Water
                         m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", .85f);
                     }
                 }
-            }
-            catch (Exception e)
-            {
-
-            }
         }
     }
 }
