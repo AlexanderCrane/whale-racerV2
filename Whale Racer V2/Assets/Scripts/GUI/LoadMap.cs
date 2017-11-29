@@ -16,7 +16,11 @@ public class LoadMap : MonoBehaviour {
     /// Load the map selected in SelectedMap (by user using menu buttons)
     /// </summary>
     public void loadSelected()
-    { 
+    {
+        if (isStartSplitscreenButton)
+        {
+            passSplitscreen = true;
+        }
         SceneManager.LoadScene(SelectedMap.selectedMap);
     }
     /// <summary>
