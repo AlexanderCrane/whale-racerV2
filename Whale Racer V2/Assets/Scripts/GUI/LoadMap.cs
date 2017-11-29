@@ -36,13 +36,10 @@ public class LoadMap : MonoBehaviour {
         if (isStartSplitscreenButton){
             passSplitscreen = true;
         }
-        if (sceneName == "MainMenu" )
-        {
-            NetworkLobbyManager.singleton.StopClient();
-            Destroy(GameObject.Find("LobbyManager"));
-        }
-		SceneManager.LoadScene(sceneName); 
-	}
+        SceneManager.LoadScene(sceneName);
+
+
+    }
     /// <summary>
     /// Quit the game.
     /// </summary>
