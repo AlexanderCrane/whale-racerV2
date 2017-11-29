@@ -67,8 +67,16 @@ public class GameManager : NetworkBehaviour
                 //if we're not doing splitscreen, disable all cameras that aren't player 1's camera
                 cams.Where(cam => cam.name != "player_Camera").Select(cam => { cam.enabled = false; return cam; }).ToList();
                 GameObject.Find("ai_Camera").GetComponent<lerpCamera>().target.transform.localScale = new Vector3(.5f, .5f, -.5f);
-                GameObject.Find("P2MinimapCanvas").SetActive(false);
-                GameObject.Find("MinimapCameraP2").SetActive(false);
+                GameObject p2Canvas = GameObject.Find("P2MinimapCanvas");
+                GameObject p2MMCam = GameObject.Find("MinimapCameraP2");
+                if (p2Canvas != null)
+                {
+                    GameObject.Find("P2MinimapCanvas").SetActive(false);
+                }
+                if (p2MMCam != null)
+                {
+                    GameObject.Find("MinimapCameraP2").SetActive(false);
+                }
             }
         }
     }
