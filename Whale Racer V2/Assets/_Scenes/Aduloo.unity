@@ -2592,7 +2592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &380076768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4147,6 +4147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 569397464}
   - component: {fileID: 569397463}
+  - component: {fileID: 569397465}
   m_Layer: 0
   m_Name: Water4Advanced-Map1Reflectionplayer_Camera
   m_TagString: Untagged
@@ -4202,6 +4203,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &569397465
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 569397462}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &573724873
 GameObject:
   m_ObjectHideFlags: 0
@@ -10762,6 +10771,7 @@ GameObject:
   - component: {fileID: 1366102623}
   - component: {fileID: 1366102625}
   - component: {fileID: 1366102624}
+  - component: {fileID: 1366102626}
   m_Layer: 5
   m_Name: MinimapBorder
   m_TagString: Untagged
@@ -10820,6 +10830,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1366102622}
+--- !u!114 &1366102626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1366102622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1376368442 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: dff36b742a2be8b4683836fe66bacab4, type: 3}
@@ -14423,7 +14447,7 @@ Prefab:
       objectReference: {fileID: 880948354}
     - target: {fileID: 1711947926596774, guid: 793ea5c03f40faf41b7ec0e6aceb7189, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 793ea5c03f40faf41b7ec0e6aceb7189, type: 2}
@@ -16180,7 +16204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1988539856
 Transform:
   m_ObjectHideFlags: 0
@@ -16866,7 +16890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2059844515
 Transform:
   m_ObjectHideFlags: 0
