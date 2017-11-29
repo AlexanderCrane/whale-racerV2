@@ -19,6 +19,11 @@ public class TestMovement : IPrebuildSetup {
     {
         SceneManager.LoadScene("Aduloo");
     }
+    [TearDown]
+    public void Teardown()
+    {
+        UnityEngine.Object.Destroy(GameObject.FindGameObjectWithTag("GameController"));
+    }
     //after running nunit's setup function to load the scene we need to yield to run for a frame
     //if we do not yield, the gameobjects we're testing with won't be initialized
     //we can only yield in the actual UnityTests, so call this 'real setup' function after we do
@@ -151,7 +156,7 @@ public class TestMovement : IPrebuildSetup {
         yield return null;
         RealSetup();
         float initY = whale.transform.rotation.eulerAngles.y;
-        for (int i = 0; i < 500; i++)
+        for (int i = 0; i < 200; i++)
         {
             testPM.Move2D(1);
             testPM.Spiral(1);
@@ -169,7 +174,7 @@ public class TestMovement : IPrebuildSetup {
         yield return null;
         RealSetup();
         float initZ = whale.transform.rotation.eulerAngles.z;
-        for (int i = 0; i < 500; i++)
+        for (int i = 0; i < 200; i++)
         {
             testPM.Dive(true);
             testPM.Move2D(1);

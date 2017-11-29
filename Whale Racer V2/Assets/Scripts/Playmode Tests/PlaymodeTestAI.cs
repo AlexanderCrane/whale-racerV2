@@ -21,6 +21,11 @@ public class TestAI : IPrebuildSetup {
     {
         SceneManager.LoadScene("Aduloo");
     }
+    [TearDown]
+    public void Teardown()
+    {
+        UnityEngine.Object.Destroy(GameObject.FindGameObjectWithTag("GameController"));
+    }
     /// <summary>
     /// Setup to run after Aduloo loads.
     /// </summary>

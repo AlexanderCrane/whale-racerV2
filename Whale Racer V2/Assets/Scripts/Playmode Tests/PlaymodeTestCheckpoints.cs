@@ -21,6 +21,11 @@ public class TestCheckpoints : IPrebuildSetup
     {
         SceneManager.LoadScene("Aduloo");
     }
+    [TearDown]
+    public void Teardown()
+    {
+        UnityEngine.Object.Destroy(GameObject.FindGameObjectWithTag("GameController"));
+    }
     /// <summary>
     /// RealSetup method to be run after Aduloo loads.
     /// </summary>

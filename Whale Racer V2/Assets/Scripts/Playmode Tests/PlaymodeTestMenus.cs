@@ -23,6 +23,11 @@ public class TestMenus : IPrebuildSetup
     {
         SceneManager.LoadScene("MainMenu");
     }
+    [TearDown]
+    public void Teardown()
+    {
+        UnityEngine.Object.DestroyImmediate(GameObject.Find("LobbyManager"));
+    }
     public void RealSetup()
     {
     }
