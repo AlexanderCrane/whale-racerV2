@@ -6,7 +6,7 @@
 
 A 3D, third-person whale racing game for PC and Mac. 
 
-###Now Featuring:
+### Now Featuring:
 
 Single Player VS AI
 
@@ -20,7 +20,7 @@ Blowholes
 
 Editing in Unity requires Blender and Unity 2017.2. 
 
-##Testing
+## Testing
 
 Our test suite was developed using Unity's built-in integration with NUnit. To run tests, open the project in Unity 2017.2 and use the Window menu to open the Test Runner. Open the Play Mode tests tab and press Run All to run the test suite.
 
