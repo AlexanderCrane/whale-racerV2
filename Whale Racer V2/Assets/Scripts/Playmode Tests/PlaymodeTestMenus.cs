@@ -22,6 +22,7 @@ public class TestMenus : IPrebuildSetup
     public void Setup()
     {
         SceneManager.LoadScene("MainMenu");
+        UnityEngine.Object.DestroyImmediate(GameObject.Find("GameController"));
     }
     /// <summary>
     /// Teardown. Destroy the DontDestroyOnLoad lobby manager generated when MPLobby is loaded.

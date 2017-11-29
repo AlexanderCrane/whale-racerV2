@@ -109,7 +109,6 @@ public class PlayerMovement : NetworkBehaviour
 
         if (playerCam == null)
         {
-            Debug.Log("CAM: " + gameObject.GetComponent<PlayerManager>().cam.gameObject.name);
             playerCam = gameObject.GetComponent<PlayerManager>().cam.gameObject.GetComponent<Camera>();
             if (wDirect.initialized == false)
             {
