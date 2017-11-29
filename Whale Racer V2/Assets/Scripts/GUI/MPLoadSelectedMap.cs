@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 using UnityEngine;
-
+/// <summary>
+/// Script to pull the selected map from LoadMap and pass it to the lobby manager
+/// </summary>
 public class MPLoadSelectedMap : MonoBehaviour {
     private string mapName;
     /// <summary>
