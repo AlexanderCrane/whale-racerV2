@@ -81,7 +81,10 @@ namespace UnityStandardAssets.Water
                 {
                     for (int i = 0; i < whales.Count; i++)
                     {
-                        speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
+                        if (whales[i] != null)
+                        {
+                            speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
+                        }
                     }
 
                     m_WaterBase.sharedMaterial.SetVector("_ObjectDisp1", whales[0].transform.position);
