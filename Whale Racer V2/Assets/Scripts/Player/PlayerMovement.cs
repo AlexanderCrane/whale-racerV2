@@ -12,6 +12,7 @@ public class PlayerMovement : NetworkBehaviour
     public Animator whaleAnimator;
     public AnimationHashTable animations;
 
+    public float OriginalMass = 0.0f;
     public float whaleSpeed = 0f;
     public float turnSpeed = 40.0f;
     public float baseTurnSpeed = 500.0f;
@@ -54,7 +55,7 @@ public class PlayerMovement : NetworkBehaviour
     private string spiralAxis = "Spiral";
     private bool noTurn = false;
     private bool noSpiral = false;
-    private float OriginalMass = 0.0f;
+    private float previousHeight = 0.0f;
     #endregion
     /// <summary>
     /// Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.
@@ -112,40 +113,23 @@ public class PlayerMovement : NetworkBehaviour
             RotatePlayer();
         }
 
+
+        float xAngle = this.transform.rotation.eulerAngles.x;
+
         if (noTurn && noSpiral)
         {
             PositionReset(0); //reset x and z
         }
-        else if (transform.position.y > -2)
+        else if (xAngle > 20.0f || xAngle < -20.0f)
         {
-            float xAngle = this.transform.rotation.eulerAngles.x;
-            if (xAngle > 40.0f || xAngle < -70.0f)
-            {
-                PositionReset(0);
-            }
+            PositionReset(0);
+        }
+
+        if (transform.position.y > 0)
+        {
             NoFlyingWhales();
         }
 
-        if(transform.position.y > -2.0f) { underwaterMod = 1.0f; }
-        else { underwaterMod = 2.0f; }
-
-        float spiralInput = Input.GetAxis(spiralAxis);
-        xMovement = Input.GetAxis(horizontalAxis);
-        zMovement = Input.GetAxis(verticalAxis);
-        Move2D(zMovement);
-        noTurn = Turn(zMovement, xMovement);
-        noSpiral = Spiral(spiralInput);
-
-        Dive(Input.GetButton(diveButton));
-        if (canJump >= 100)
-        {
-            canJump = 100;
-        }
-        else
-        {
-            canJump++;
-        }
-        Jump(Input.GetButton(jumpButton));
     }
     /// <summary>
     /// Fixed Update method. Calls methods to player input to whale movement.
@@ -185,6 +169,27 @@ public class PlayerMovement : NetworkBehaviour
 
             Debug.Log("Buff expired");
         }
+        ///////////////////////////////////////////////////
+        if (transform.position.y > -2.0f) { underwaterMod = 1.0f; }
+        else { underwaterMod = 2.0f; }
+
+        float spiralInput = Input.GetAxis(spiralAxis);
+        xMovement = Input.GetAxis(horizontalAxis);
+        zMovement = Input.GetAxis(verticalAxis);
+        Move2D(zMovement);
+        noTurn = Turn(zMovement, xMovement);
+        noSpiral = Spiral(spiralInput);
+
+        Dive(Input.GetButton(diveButton));
+        if (canJump >= 100)
+        {
+            canJump = 100;
+        }
+        else
+        {
+            canJump++;
+        }
+        Jump(Input.GetButton(jumpButton));
         //move and turn were here
         //jum and stuff were here
 
@@ -331,7 +336,7 @@ public class PlayerMovement : NetworkBehaviour
         if ((xAng > 20.0f || xAng < -10.0f) || (zAng > 10.0f || zAng < -10.0f))
         {
             this.transform.localRotation = Quaternion.Slerp(this.transform.rotation, targetRotation,
-                5.50f * Time.deltaTime);
+                3.0f * Time.deltaTime);
         }
         //whaleBody.AddForce(-Vector3.forward * zMovement * whaleSpeed);
         //whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed * 2);
@@ -346,8 +351,8 @@ public class PlayerMovement : NetworkBehaviour
         {
             if (this.transform.position.y > -2.0f)// && !Input.GetButton(verticalAxis))
             {
-                transform.Rotate(transform.TransformDirection(Vector3.up), inputSpiral * whaleSpeed/25 * Time.deltaTime);
-                transform.Rotate(Vector3.forward, inputSpiral * whaleSpeed / 20 * Time.deltaTime);
+                transform.Rotate(transform.TransformDirection(Vector3.up), inputSpiral * whaleSpeed/800 * Time.deltaTime);
+                transform.Rotate(Vector3.forward, inputSpiral * whaleSpeed / 500 * Time.deltaTime);
 
                 yRotation = transform.eulerAngles.y;
                 zRotation = transform.eulerAngles.z;
@@ -377,10 +382,15 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (CheckCanJump())
         {
-            if (jumpPressed && HeightInWater.underwater == false)
+            if (jumpPressed)
             {
-                whaleAnimator.SetBool(animations.jumpBool, true);
-                whaleBody.AddRelativeForce(0, 400, -30, ForceMode.Impulse);
+                if (this.transform.position.y < -1.0f)
+                {
+                    EmergeAnimation();
+                }
+                else { whaleAnimator.SetBool(animations.jumpBool, true); }
+                
+                whaleBody.AddRelativeForce(0, whaleSpeed / 5, -30, ForceMode.Impulse);
                 canJump = 0;
             }
         }
@@ -403,18 +413,31 @@ public class PlayerMovement : NetworkBehaviour
         whaleAnimator.SetBool(animations.subMovementBool, false);
         whaleAnimator.speed = 1f;
     }
+    private void EmergeAnimation()
+    {
+        whaleAnimator.SetBool(animations.underwaterBool, true);
+        whaleAnimator.SetBool(animations.diveBool, false);
+        whaleAnimator.SetBool(animations.subMovementBool, true);
+        whaleAnimator.speed = 1f;
+    }
     /// <summary>
     /// Handles dive input and plays diving animations.
     /// </summary>
     public void Dive(bool divePressed)
     {
-        if(divePressed)
+        float currentY = this.transform.position.y;
+        float diffY = currentY + previousHeight;
+        if (divePressed)
         {
             Debug.Log("underwater");
-            whaleBody.mass += 300;
+            if (currentY <= 0.5f || currentY >= 0.5f || diffY >= 1.0f)
+            {
+                whaleBody.mass += 300;
+                whaleBody.AddForce(Vector3.down * 10000);
+            }
             this.GetComponent<SimpleBoyancy>().SetDensity(769.276f);
 
-            if (transform.position.y > -4.0f)
+            if (currentY > -4.0f)
             {
                 DiveAnimation();
             }
@@ -426,10 +449,31 @@ public class PlayerMovement : NetworkBehaviour
         else
         {
             Debug.Log("abovewater");
-            whaleBody.mass = OriginalMass;
-            this.GetComponent<SimpleBoyancy>().SetDensity(790f);
-            RoamAnimation();
+            if(currentY < -1)
+            {
+                Surfacing(currentY);
+            }
+            else
+            {
+                whaleBody.mass = OriginalMass;
+                this.GetComponent<SimpleBoyancy>().SetDensity(790f);
+                RoamAnimation();
+            }
         }
+        previousHeight = this.transform.position.y;
+    }
+
+    private void Surfacing(float currY)
+    {
+        if (whaleBody.mass > OriginalMass * 2)
+        {
+            whaleBody.mass += (whaleBody.mass * currY) / 45 ;
+        }
+
+        if(currY > -4.0f)
+        {
+            EmergeAnimation();
+        }        
     }
     /// <summary>
     /// Handles effects of speedup powerup.
