@@ -1,0 +1,85 @@
+\hypertarget{class_blowhole}{}\section{Blowhole Class Reference}
+\label{class_blowhole}\index{Blowhole@{Blowhole}}
+
+
+Inherits Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_blowhole_ab1aebd5e7a3694f00edc95874f453159}{Splash} (Vector3 position, Quaternion rotation)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_blowhole_a1f3c65dc793a21c7eb7ea3fdb3343147}{Awake} ()
+\item 
+void \hyperlink{class_blowhole_a2be62f8ab9936a90cc8aa90e30f9272c}{Update} ()
+\item 
+void \hyperlink{class_blowhole_ad09ba8046d84ff5362b89a6a71d8b086}{Animate\+Splash} (Game\+Object splash)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class which handles input to trigger the whale\textquotesingle{}s blowhole. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_blowhole_ad09ba8046d84ff5362b89a6a71d8b086}\label{class_blowhole_ad09ba8046d84ff5362b89a6a71d8b086}} 
+\index{Blowhole@{Blowhole}!Animate\+Splash@{Animate\+Splash}}
+\index{Animate\+Splash@{Animate\+Splash}!Blowhole@{Blowhole}}
+\subsubsection{\texorpdfstring{Animate\+Splash()}{AnimateSplash()}}
+{\footnotesize\ttfamily void Blowhole.\+Animate\+Splash (\begin{DoxyParamCaption}\item[{Game\+Object}]{splash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Moves the input splash sprite up and despawns it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em splash} & The object to move up\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_blowhole_a1f3c65dc793a21c7eb7ea3fdb3343147}\label{class_blowhole_a1f3c65dc793a21c7eb7ea3fdb3343147}} 
+\index{Blowhole@{Blowhole}!Awake@{Awake}}
+\index{Awake@{Awake}!Blowhole@{Blowhole}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Blowhole.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Awake method. Sets the blowhole control to an alternate value if this player is splitscreen p2. 
+
+\mbox{\Hypertarget{class_blowhole_ab1aebd5e7a3694f00edc95874f453159}\label{class_blowhole_ab1aebd5e7a3694f00edc95874f453159}} 
+\index{Blowhole@{Blowhole}!Splash@{Splash}}
+\index{Splash@{Splash}!Blowhole@{Blowhole}}
+\subsubsection{\texorpdfstring{Splash()}{Splash()}}
+{\footnotesize\ttfamily void Blowhole.\+Splash (\begin{DoxyParamCaption}\item[{Vector3}]{position,  }\item[{Quaternion}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Similar to whale fin splash method -\/ instantiates a splash sprite and calls Animate\+Splash. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to splash at\\
+\hline
+{\em rotation} & The rotation of the whale\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_blowhole_a2be62f8ab9936a90cc8aa90e30f9272c}\label{class_blowhole_a2be62f8ab9936a90cc8aa90e30f9272c}} 
+\index{Blowhole@{Blowhole}!Update@{Update}}
+\index{Update@{Update}!Blowhole@{Blowhole}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Blowhole.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update method. Triggers splash if the blowhole button is pressed. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Player/Blowhole.\+cs\end{DoxyCompactItemize}

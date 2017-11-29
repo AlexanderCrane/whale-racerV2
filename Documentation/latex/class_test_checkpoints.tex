@@ -1,0 +1,118 @@
+\hypertarget{class_test_checkpoints}{}\section{Test\+Checkpoints Class Reference}
+\label{class_test_checkpoints}\index{Test\+Checkpoints@{Test\+Checkpoints}}
+
+
+Inherits I\+Prebuild\+Setup.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_test_checkpoints_a0289aed3d7797a957e8d2b1d076e4747}{Setup} ()
+\item 
+void \hyperlink{class_test_checkpoints_a951c529270c526ccbcb75e0dd66f3625}{Teardown} ()
+\item 
+void \hyperlink{class_test_checkpoints_aea5f3ddc6b621a5e24d767a457e1bf29}{Real\+Setup} ()
+\item 
+I\+Enumerator \hyperlink{class_test_checkpoints_ab5b10117fcbbd425531ee9dc7bc37bfd}{Test\+Checkpoint\+Hit\+Recorded} ()
+\item 
+I\+Enumerator \hyperlink{class_test_checkpoints_aae8a7ff45f25ef40dc7fb7634f9cb8b7}{Test\+Hit\+Checkpoint\+Out\+Of\+Order\+Fails} ()
+\item 
+I\+Enumerator \hyperlink{class_test_checkpoints_a63efe64ce70c26ce129a9314bd005a88}{Test\+Hit\+Checkpoint\+Repeatedly\+Fails} ()
+\item 
+I\+Enumerator \hyperlink{class_test_checkpoints_a96497243b0586c2eb5a98cc359079a29}{Test\+Hitting\+Finish\+Wins\+Game} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tests for the checkpoint system and winning the race. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test_checkpoints_aea5f3ddc6b621a5e24d767a457e1bf29}\label{class_test_checkpoints_aea5f3ddc6b621a5e24d767a457e1bf29}} 
+\index{Test\+Checkpoints@{Test\+Checkpoints}!Real\+Setup@{Real\+Setup}}
+\index{Real\+Setup@{Real\+Setup}!Test\+Checkpoints@{Test\+Checkpoints}}
+\subsubsection{\texorpdfstring{Real\+Setup()}{RealSetup()}}
+{\footnotesize\ttfamily void Test\+Checkpoints.\+Real\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Real\+Setup method to be run after Aduloo loads. 
+
+\mbox{\Hypertarget{class_test_checkpoints_a0289aed3d7797a957e8d2b1d076e4747}\label{class_test_checkpoints_a0289aed3d7797a957e8d2b1d076e4747}} 
+\index{Test\+Checkpoints@{Test\+Checkpoints}!Setup@{Setup}}
+\index{Setup@{Setup}!Test\+Checkpoints@{Test\+Checkpoints}}
+\subsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void Test\+Checkpoints.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads Aduloo. 
+
+\mbox{\Hypertarget{class_test_checkpoints_a951c529270c526ccbcb75e0dd66f3625}\label{class_test_checkpoints_a951c529270c526ccbcb75e0dd66f3625}} 
+\index{Test\+Checkpoints@{Test\+Checkpoints}!Teardown@{Teardown}}
+\index{Teardown@{Teardown}!Test\+Checkpoints@{Test\+Checkpoints}}
+\subsubsection{\texorpdfstring{Teardown()}{Teardown()}}
+{\footnotesize\ttfamily void Test\+Checkpoints.\+Teardown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Teardown. Destroys Dont\+Destroy\+On\+Load Game\+Controllers left behind when Aduloo is loaded. 
+
+\mbox{\Hypertarget{class_test_checkpoints_ab5b10117fcbbd425531ee9dc7bc37bfd}\label{class_test_checkpoints_ab5b10117fcbbd425531ee9dc7bc37bfd}} 
+\index{Test\+Checkpoints@{Test\+Checkpoints}!Test\+Checkpoint\+Hit\+Recorded@{Test\+Checkpoint\+Hit\+Recorded}}
+\index{Test\+Checkpoint\+Hit\+Recorded@{Test\+Checkpoint\+Hit\+Recorded}!Test\+Checkpoints@{Test\+Checkpoints}}
+\subsubsection{\texorpdfstring{Test\+Checkpoint\+Hit\+Recorded()}{TestCheckpointHitRecorded()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Checkpoints.\+Test\+Checkpoint\+Hit\+Recorded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that hitting the first checkpoint is recorded in the whale\textquotesingle{}s \hyperlink{class_player_manager}{Player\+Manager} 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_checkpoints_aae8a7ff45f25ef40dc7fb7634f9cb8b7}\label{class_test_checkpoints_aae8a7ff45f25ef40dc7fb7634f9cb8b7}} 
+\index{Test\+Checkpoints@{Test\+Checkpoints}!Test\+Hit\+Checkpoint\+Out\+Of\+Order\+Fails@{Test\+Hit\+Checkpoint\+Out\+Of\+Order\+Fails}}
+\index{Test\+Hit\+Checkpoint\+Out\+Of\+Order\+Fails@{Test\+Hit\+Checkpoint\+Out\+Of\+Order\+Fails}!Test\+Checkpoints@{Test\+Checkpoints}}
+\subsubsection{\texorpdfstring{Test\+Hit\+Checkpoint\+Out\+Of\+Order\+Fails()}{TestHitCheckpointOutOfOrderFails()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Checkpoints.\+Test\+Hit\+Checkpoint\+Out\+Of\+Order\+Fails (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that hitting the second checkpoint without hitting the first does nothing. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_checkpoints_a63efe64ce70c26ce129a9314bd005a88}\label{class_test_checkpoints_a63efe64ce70c26ce129a9314bd005a88}} 
+\index{Test\+Checkpoints@{Test\+Checkpoints}!Test\+Hit\+Checkpoint\+Repeatedly\+Fails@{Test\+Hit\+Checkpoint\+Repeatedly\+Fails}}
+\index{Test\+Hit\+Checkpoint\+Repeatedly\+Fails@{Test\+Hit\+Checkpoint\+Repeatedly\+Fails}!Test\+Checkpoints@{Test\+Checkpoints}}
+\subsubsection{\texorpdfstring{Test\+Hit\+Checkpoint\+Repeatedly\+Fails()}{TestHitCheckpointRepeatedlyFails()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Checkpoints.\+Test\+Hit\+Checkpoint\+Repeatedly\+Fails (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that hitting the first checkpoint twice doesn\textquotesingle{}t mark checkpoint 2 as visited. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_checkpoints_a96497243b0586c2eb5a98cc359079a29}\label{class_test_checkpoints_a96497243b0586c2eb5a98cc359079a29}} 
+\index{Test\+Checkpoints@{Test\+Checkpoints}!Test\+Hitting\+Finish\+Wins\+Game@{Test\+Hitting\+Finish\+Wins\+Game}}
+\index{Test\+Hitting\+Finish\+Wins\+Game@{Test\+Hitting\+Finish\+Wins\+Game}!Test\+Checkpoints@{Test\+Checkpoints}}
+\subsubsection{\texorpdfstring{Test\+Hitting\+Finish\+Wins\+Game()}{TestHittingFinishWinsGame()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Checkpoints.\+Test\+Hitting\+Finish\+Wins\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that, when Finish\+Line is the next checkpoint the player needs to hit, hitting it ends the game. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Playmode Tests/Playmode\+Test\+Checkpoints.\+cs\end{DoxyCompactItemize}

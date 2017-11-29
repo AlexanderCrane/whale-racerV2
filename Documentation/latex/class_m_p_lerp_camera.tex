@@ -1,0 +1,81 @@
+\hypertarget{class_m_p_lerp_camera}{}\section{M\+P\+Lerp\+Camera Class Reference}
+\label{class_m_p_lerp_camera}\index{M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}}
+
+
+Inherits Network\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_m_p_lerp_camera_a1c75492c5d0813ea66cee2c3e98a6904}{set\+Target} (Game\+Object target)
+\item 
+bool \hyperlink{class_m_p_lerp_camera_a9f0745c8f677c1ad470dee1e06aee457}{has\+Target} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_m_p_lerp_camera_af5c43c4eebc02520b2f9a6c1a7e75661}{Awake} ()
+\item 
+void \hyperlink{class_m_p_lerp_camera_a6e6a8bf08b3f9ca3b93aa47bd8339f3b}{Late\+Update} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Alternate version of the Lerp Camera for multiplayer. Finds itself a target dynamically instead of being assigned one. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_p_lerp_camera_af5c43c4eebc02520b2f9a6c1a7e75661}\label{class_m_p_lerp_camera_af5c43c4eebc02520b2f9a6c1a7e75661}} 
+\index{M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}!Awake@{Awake}}
+\index{Awake@{Awake}!M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void M\+P\+Lerp\+Camera.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Awake method. Stores the camera\textquotesingle{}s transform. 
+
+\mbox{\Hypertarget{class_m_p_lerp_camera_a9f0745c8f677c1ad470dee1e06aee457}\label{class_m_p_lerp_camera_a9f0745c8f677c1ad470dee1e06aee457}} 
+\index{M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}!has\+Target@{has\+Target}}
+\index{has\+Target@{has\+Target}!M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}}
+\subsubsection{\texorpdfstring{has\+Target()}{hasTarget()}}
+{\footnotesize\ttfamily bool M\+P\+Lerp\+Camera.\+has\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the camera has a target. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_m_p_lerp_camera_a6e6a8bf08b3f9ca3b93aa47bd8339f3b}\label{class_m_p_lerp_camera_a6e6a8bf08b3f9ca3b93aa47bd8339f3b}} 
+\index{M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}!Late\+Update@{Late\+Update}}
+\index{Late\+Update@{Late\+Update}!M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}}
+\subsubsection{\texorpdfstring{Late\+Update()}{LateUpdate()}}
+{\footnotesize\ttfamily void M\+P\+Lerp\+Camera.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Delayed Update method. If the lerp camera does not have a target, disables it. Otherwise functions as a lerp camera. 
+
+\mbox{\Hypertarget{class_m_p_lerp_camera_a1c75492c5d0813ea66cee2c3e98a6904}\label{class_m_p_lerp_camera_a1c75492c5d0813ea66cee2c3e98a6904}} 
+\index{M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}!set\+Target@{set\+Target}}
+\index{set\+Target@{set\+Target}!M\+P\+Lerp\+Camera@{M\+P\+Lerp\+Camera}}
+\subsubsection{\texorpdfstring{set\+Target()}{setTarget()}}
+{\footnotesize\ttfamily void M\+P\+Lerp\+Camera.\+set\+Target (\begin{DoxyParamCaption}\item[{Game\+Object}]{target }\end{DoxyParamCaption})}
+
+
+
+Function to assist player manager in finding a camera in MP In MP, the player is spawned based on a prefab when all players load in. The cameras are already in the scene and cannot be manually assigned to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Player\+\_\+\+M\+P/M\+P\+Lerp\+Camera.\+cs\end{DoxyCompactItemize}

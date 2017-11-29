@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quit',['Quit',['../class_application_manager.html#a5ea098d2bfc1c4dbd1c402709aa31cb8',1,'ApplicationManager']]]
+  ['init',['Init',['../class_whale_direct.html#a782d4d5e42b0f197080b4bc703cd83a9',1,'WhaleDirect']]]
 ];

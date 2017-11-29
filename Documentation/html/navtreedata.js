@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Whale Racer", "index.html", [
+  [ "Whale Racer V2", "index.html", [
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ]
     ] ],

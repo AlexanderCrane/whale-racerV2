@@ -1,0 +1,63 @@
+\hypertarget{class_angle_limiter}{}\section{Angle\+Limiter Class Reference}
+\label{class_angle_limiter}\index{Angle\+Limiter@{Angle\+Limiter}}
+
+
+Inherits Mono\+Behaviour.
+
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_angle_limiter_a89e574bae24693203bab055a3a4fd184}{Start} ()
+\item 
+void \hyperlink{class_angle_limiter_afa4aa01bc9ab1fa09caede11d39cbaa4}{Fixed\+Update} ()
+\item 
+void \hyperlink{class_angle_limiter_afced607afbb55c3efcd949ee0e397b1a}{Re\+Stabilize} (float angle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Script to limit movement of buoyant objects. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_angle_limiter_afa4aa01bc9ab1fa09caede11d39cbaa4}\label{class_angle_limiter_afa4aa01bc9ab1fa09caede11d39cbaa4}} 
+\index{Angle\+Limiter@{Angle\+Limiter}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Angle\+Limiter@{Angle\+Limiter}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Angle\+Limiter.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fixed\+Update method. Calls Re\+Stabilize if buoyant object is out of alignment. 
+
+\mbox{\Hypertarget{class_angle_limiter_afced607afbb55c3efcd949ee0e397b1a}\label{class_angle_limiter_afced607afbb55c3efcd949ee0e397b1a}} 
+\index{Angle\+Limiter@{Angle\+Limiter}!Re\+Stabilize@{Re\+Stabilize}}
+\index{Re\+Stabilize@{Re\+Stabilize}!Angle\+Limiter@{Angle\+Limiter}}
+\subsubsection{\texorpdfstring{Re\+Stabilize()}{ReStabilize()}}
+{\footnotesize\ttfamily void Angle\+Limiter.\+Re\+Stabilize (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Realigns a buoyant object by Slerping it back. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_angle_limiter_a89e574bae24693203bab055a3a4fd184}\label{class_angle_limiter_a89e574bae24693203bab055a3a4fd184}} 
+\index{Angle\+Limiter@{Angle\+Limiter}!Start@{Start}}
+\index{Start@{Start}!Angle\+Limiter@{Angle\+Limiter}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Angle\+Limiter.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Start method. Gets the containing object\textquotesingle{}s rigidbody. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+System/Angle\+Limiter.\+cs\end{DoxyCompactItemize}

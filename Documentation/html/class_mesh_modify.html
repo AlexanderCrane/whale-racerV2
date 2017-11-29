@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: MeshModify Class Reference</title>
+<title>Whale Racer V2: MeshModify Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Whale Racer
-   &#160;<span id="projectnumber">Project 3</span>
+   <div id="projectname">Whale Racer V2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A 3D whale racing game in C# with Unity.</div>
+   <div id="projectbrief">A 3D Whale Racing video game written in C# with Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -83,6 +83,8 @@ $(document).ready(function(){initNavTree('class_mesh_modify.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_mesh_modify-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MeshModify Class Reference</div>  </div>
@@ -93,9 +95,215 @@ $(document).ready(function(){initNavTree('class_mesh_modify.html','');});
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh_modify_1_1_vertex_data.html">VertexData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a530bd2a60da92fef8e91ff5af4dc57b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh_modify.html#a530bd2a60da92fef8e91ff5af4dc57b1">MeshModify</a> (GameObject obj)</td></tr>
+<tr class="separator:a530bd2a60da92fef8e91ff5af4dc57b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2b336a7955779a71bc2da2833695d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh_modify.html#a5f2b336a7955779a71bc2da2833695d1">GenUnderwaterMesh</a> ()</td></tr>
+<tr class="separator:a5f2b336a7955779a71bc2da2833695d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ec1d4ecf9ba803cbfe796c9a300cc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh_modify.html#ad3ec1d4ecf9ba803cbfe796c9a300cc8">DisplayMesh</a> (Mesh mesh, string name, List&lt; <a class="el" href="struct_triangle_type.html">TriangleType</a> &gt; triangesData)</td></tr>
+<tr class="separator:ad3ec1d4ecf9ba803cbfe796c9a300cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a0843560bb4dcfaff495f4bc8b2e7df96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh_modify.html#a0843560bb4dcfaff495f4bc8b2e7df96">AddTriangles</a> ()</td></tr>
+<tr class="separator:a0843560bb4dcfaff495f4bc8b2e7df96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c5593a3aad880222dfa22dc4cca4384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh_modify.html#a0c5593a3aad880222dfa22dc4cca4384">AddTrianglesOneAboveWater</a> (List&lt; <a class="el" href="class_mesh_modify_1_1_vertex_data.html">VertexData</a> &gt; vertexData)</td></tr>
+<tr class="separator:a0c5593a3aad880222dfa22dc4cca4384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a32e877e4dcd875dac22d49b30d083"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mesh_modify.html#a97a32e877e4dcd875dac22d49b30d083">AddTrianglesTwoAboveWater</a> (List&lt; <a class="el" href="class_mesh_modify_1_1_vertex_data.html">VertexData</a> &gt; vertexData)</td></tr>
+<tr class="separator:a97a32e877e4dcd875dac22d49b30d083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class used to create a dynamic mesh for objects to float realistically on a moving water surface </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a530bd2a60da92fef8e91ff5af4dc57b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a530bd2a60da92fef8e91ff5af4dc57b1">&#9670;&nbsp;</a></span>MeshModify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MeshModify.MeshModify </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0843560bb4dcfaff495f4bc8b2e7df96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0843560bb4dcfaff495f4bc8b2e7df96">&#9670;&nbsp;</a></span>AddTriangles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MeshModify.AddTriangles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates water triangles. </p>
+
+</div>
+</div>
+<a id="a0c5593a3aad880222dfa22dc4cca4384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c5593a3aad880222dfa22dc4cca4384">&#9670;&nbsp;</a></span>AddTrianglesOneAboveWater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MeshModify.AddTrianglesOneAboveWater </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_mesh_modify_1_1_vertex_data.html">VertexData</a> &gt;&#160;</td>
+          <td class="paramname"><em>vertexData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Build new triangles where one of the old vertices is above the water </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertexData</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a97a32e877e4dcd875dac22d49b30d083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a32e877e4dcd875dac22d49b30d083">&#9670;&nbsp;</a></span>AddTrianglesTwoAboveWater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MeshModify.AddTrianglesTwoAboveWater </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="class_mesh_modify_1_1_vertex_data.html">VertexData</a> &gt;&#160;</td>
+          <td class="paramname"><em>vertexData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Build new triangles where two of the old vertices are above the water </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vertexData</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad3ec1d4ecf9ba803cbfe796c9a300cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ec1d4ecf9ba803cbfe796c9a300cc8">&#9670;&nbsp;</a></span>DisplayMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MeshModify.DisplayMesh </td>
+          <td>(</td>
+          <td class="paramtype">Mesh&#160;</td>
+          <td class="paramname"><em>mesh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="struct_triangle_type.html">TriangleType</a> &gt;&#160;</td>
+          <td class="paramname"><em>triangesData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays the underwater mesh. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mesh</td><td>The target mesh</td></tr>
+    <tr><td class="paramname">name</td><td>The mesh's name</td></tr>
+    <tr><td class="paramname">triangesData</td><td>The list of water triangles</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5f2b336a7955779a71bc2da2833695d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f2b336a7955779a71bc2da2833695d1">&#9670;&nbsp;</a></span>GenUnderwaterMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MeshModify.GenUnderwaterMesh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds distances to water objects and calculates distances. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/Ocean/MeshModify.cs</li>
+<li>C:/Users/Jerkbot/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/Ocean/MeshModify.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

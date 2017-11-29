@@ -1,14 +1,25 @@
 var class_player_movement =
 [
     [ "Awake", "class_player_movement.html#a589e2f9da48918ca04fea0c418f46d32", null ],
-    [ "Dive", "class_player_movement.html#adc1e777249a78b6e664a21725f916d16", null ],
+    [ "BounceBack", "class_player_movement.html#afb1de7cf992b55d0dc16fa0f39cec433", null ],
+    [ "CheckCanJump", "class_player_movement.html#a14c78137af78e9cc16246804a42b90a7", null ],
+    [ "CheckCanSprint", "class_player_movement.html#aff95a78e48e00b3196b7ec14c77539e2", null ],
+    [ "Dive", "class_player_movement.html#a17f581958c3a8d8bf6f230117ce79a4e", null ],
+    [ "DiveAnimation", "class_player_movement.html#a7e49eea241ab7a3b11125c33aae4b12d", null ],
     [ "FixedUpdate", "class_player_movement.html#a0caaa871b9ef680c9f02bd0e22c77db1", null ],
-    [ "Jump", "class_player_movement.html#addc5f78eff185c73ab0a77cc04f13bd9", null ],
-    [ "Move2D", "class_player_movement.html#a86269beaf9973f026fd0b2c8c6ac75f8", null ],
+    [ "Jump", "class_player_movement.html#ae0738f125df9382e2425be64619cbf4a", null ],
+    [ "Move2D", "class_player_movement.html#a14a6dd3ffa26d0ccbf484448b5266b79", null ],
+    [ "NoFlyingWhales", "class_player_movement.html#a49aa6a80bb76113ff3702536ea1b46de", null ],
     [ "OnTriggerEnter", "class_player_movement.html#a0d2a1162c4cc3a5d4be939d00368c6e3", null ],
+    [ "PositionReset", "class_player_movement.html#a0f28741d3452090520ee11352140aed0", null ],
+    [ "RoamAnimation", "class_player_movement.html#a96683270dabdb0389c014c436aaf3cb6", null ],
+    [ "RotatePlayer", "class_player_movement.html#af5abbfc3a23ae53153afb7fc46588770", null ],
+    [ "SetCanJump", "class_player_movement.html#af704bd9f7ca1cda2ba100a8ef631dbc9", null ],
+    [ "SetCanSprint", "class_player_movement.html#a6eca87a71348040e0eedb138eb1c3a0c", null ],
     [ "slowDown", "class_player_movement.html#a688ef83dd4792fdb5bcf76195b7f2fae", null ],
     [ "slowDownEnd", "class_player_movement.html#a323e163d04bd2b048ca8d17510cfe299", null ],
-    [ "SpeedupPowerup", "class_player_movement.html#a3189f8beb5500e6916843f7a896d3866", null ],
-    [ "Turn", "class_player_movement.html#ac650128e1d721b323c1c03567323fbaa", null ],
-    [ "UnderWaterCoroutine", "class_player_movement.html#a3a1e9c5e92db8a1cda43c3ffbd3f8d9b", null ]
+    [ "SpeedupPowerup", "class_player_movement.html#a9d75c39b5e4ee0c5d999bdfdc4d1db73", null ],
+    [ "Spiral", "class_player_movement.html#a02c0e10fc29c38c92c6196d70364ac89", null ],
+    [ "Turn", "class_player_movement.html#a32c7ec914f2b18dfcf6e9c354f6e2f8e", null ],
+    [ "Update", "class_player_movement.html#aaf9b77d7177d538be9c1447d08191322", null ]
 ];

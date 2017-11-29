@@ -21,6 +21,9 @@ public class TestCheckpoints : IPrebuildSetup
     {
         SceneManager.LoadScene("Aduloo");
     }
+    /// <summary>
+    /// Teardown. Destroys DontDestroyOnLoad GameControllers left behind when Aduloo is loaded.
+    /// </summary>
     [TearDown]
     public void Teardown()
     {

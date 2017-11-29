@@ -1,0 +1,193 @@
+\hypertarget{class_test_movement}{}\section{Test\+Movement Class Reference}
+\label{class_test_movement}\index{Test\+Movement@{Test\+Movement}}
+
+
+Inherits I\+Prebuild\+Setup.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_test_movement_ac3b7b7f9394bdfebb7dd09ee94de48cb}{Setup} ()
+\item 
+void \hyperlink{class_test_movement_aabeb3beb5a4c82191e651aaafd25961b}{Teardown} ()
+\item 
+void \hyperlink{class_test_movement_a62ef8c8115a8bbce2274cbda3f92eb5e}{Real\+Setup} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_a235b8457a9c92a20b0af8832e8e2e8cf}{Test\+Jump\+Increases\+Height} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_ab57160ba5b445dda6736525803be376d}{Test\+Dive\+Modifies\+Height} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_ae5b9bf5e6413a93f4d1a0d3b979dd7d1}{Test2\+D\+Move\+Modifies\+Position} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_a9eb3b16a356adc915132870fbbddde54}{Test\+Turn\+Modifies\+Rotation} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_ad490417a5ff71ec4c013a0dc34da901f}{Test\+Spiral\+Modifies\+Y\+Rotation\+On\+Surface} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_ad0a89a32757696be0407fe3fe128fbf6}{Test\+Spiral\+Modifies\+Z\+Rotation\+Under\+Water} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_a7a866849fbeb51e7c3d500b1fc3d5a09}{Test\+Speedup\+Powerup\+Increases\+Speed} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_a1de5217b6d56fba40c12f7edbbb3d071}{Test\+Bounce\+Back\+Bounces\+Back} ()
+\item 
+I\+Enumerator \hyperlink{class_test_movement_af1ce0ac38691919ebda49bfa1b6713c9}{Test\+Slowdown} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tests for player movement. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test_movement_a62ef8c8115a8bbce2274cbda3f92eb5e}\label{class_test_movement_a62ef8c8115a8bbce2274cbda3f92eb5e}} 
+\index{Test\+Movement@{Test\+Movement}!Real\+Setup@{Real\+Setup}}
+\index{Real\+Setup@{Real\+Setup}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Real\+Setup()}{RealSetup()}}
+{\footnotesize\ttfamily void Test\+Movement.\+Real\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function run after running the desired testing scene for one frame so that things can be initialized. Doing setup this way lets us use the actual play scenes for testing to save time on mocking. This is a hack. 
+
+\mbox{\Hypertarget{class_test_movement_ac3b7b7f9394bdfebb7dd09ee94de48cb}\label{class_test_movement_ac3b7b7f9394bdfebb7dd09ee94de48cb}} 
+\index{Test\+Movement@{Test\+Movement}!Setup@{Setup}}
+\index{Setup@{Setup}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void Test\+Movement.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads Aduloo. 
+
+\mbox{\Hypertarget{class_test_movement_aabeb3beb5a4c82191e651aaafd25961b}\label{class_test_movement_aabeb3beb5a4c82191e651aaafd25961b}} 
+\index{Test\+Movement@{Test\+Movement}!Teardown@{Teardown}}
+\index{Teardown@{Teardown}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Teardown()}{Teardown()}}
+{\footnotesize\ttfamily void Test\+Movement.\+Teardown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Teardown. Destroys Dont\+Destroy\+On\+Load Game\+Controllers left behind when Aduloo is loaded. 
+
+\mbox{\Hypertarget{class_test_movement_ae5b9bf5e6413a93f4d1a0d3b979dd7d1}\label{class_test_movement_ae5b9bf5e6413a93f4d1a0d3b979dd7d1}} 
+\index{Test\+Movement@{Test\+Movement}!Test2\+D\+Move\+Modifies\+Position@{Test2\+D\+Move\+Modifies\+Position}}
+\index{Test2\+D\+Move\+Modifies\+Position@{Test2\+D\+Move\+Modifies\+Position}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test2\+D\+Move\+Modifies\+Position()}{Test2DMoveModifiesPosition()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test2\+D\+Move\+Modifies\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that forward and backward movement correctly modify player position. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_a1de5217b6d56fba40c12f7edbbb3d071}\label{class_test_movement_a1de5217b6d56fba40c12f7edbbb3d071}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Bounce\+Back\+Bounces\+Back@{Test\+Bounce\+Back\+Bounces\+Back}}
+\index{Test\+Bounce\+Back\+Bounces\+Back@{Test\+Bounce\+Back\+Bounces\+Back}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Bounce\+Back\+Bounces\+Back()}{TestBounceBackBouncesBack()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Bounce\+Back\+Bounces\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that hitting a Bounce\+Back object bounces the whale back. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_ab57160ba5b445dda6736525803be376d}\label{class_test_movement_ab57160ba5b445dda6736525803be376d}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Dive\+Modifies\+Height@{Test\+Dive\+Modifies\+Height}}
+\index{Test\+Dive\+Modifies\+Height@{Test\+Dive\+Modifies\+Height}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Dive\+Modifies\+Height()}{TestDiveModifiesHeight()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Dive\+Modifies\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that diving decreases the player\textquotesingle{}s height and surfacing increases it. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_a235b8457a9c92a20b0af8832e8e2e8cf}\label{class_test_movement_a235b8457a9c92a20b0af8832e8e2e8cf}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Jump\+Increases\+Height@{Test\+Jump\+Increases\+Height}}
+\index{Test\+Jump\+Increases\+Height@{Test\+Jump\+Increases\+Height}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Jump\+Increases\+Height()}{TestJumpIncreasesHeight()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Jump\+Increases\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that jumping increases the player\textquotesingle{}s height. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_af1ce0ac38691919ebda49bfa1b6713c9}\label{class_test_movement_af1ce0ac38691919ebda49bfa1b6713c9}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Slowdown@{Test\+Slowdown}}
+\index{Test\+Slowdown@{Test\+Slowdown}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Slowdown()}{TestSlowdown()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Slowdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that hitting an oil slick slows the whale down. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_a7a866849fbeb51e7c3d500b1fc3d5a09}\label{class_test_movement_a7a866849fbeb51e7c3d500b1fc3d5a09}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Speedup\+Powerup\+Increases\+Speed@{Test\+Speedup\+Powerup\+Increases\+Speed}}
+\index{Test\+Speedup\+Powerup\+Increases\+Speed@{Test\+Speedup\+Powerup\+Increases\+Speed}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Speedup\+Powerup\+Increases\+Speed()}{TestSpeedupPowerupIncreasesSpeed()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Speedup\+Powerup\+Increases\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that picking up a speedup powerup increases speed. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_ad490417a5ff71ec4c013a0dc34da901f}\label{class_test_movement_ad490417a5ff71ec4c013a0dc34da901f}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Spiral\+Modifies\+Y\+Rotation\+On\+Surface@{Test\+Spiral\+Modifies\+Y\+Rotation\+On\+Surface}}
+\index{Test\+Spiral\+Modifies\+Y\+Rotation\+On\+Surface@{Test\+Spiral\+Modifies\+Y\+Rotation\+On\+Surface}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Spiral\+Modifies\+Y\+Rotation\+On\+Surface()}{TestSpiralModifiesYRotationOnSurface()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Spiral\+Modifies\+Y\+Rotation\+On\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that spiraling when on the surface banks the whale. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_ad0a89a32757696be0407fe3fe128fbf6}\label{class_test_movement_ad0a89a32757696be0407fe3fe128fbf6}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Spiral\+Modifies\+Z\+Rotation\+Under\+Water@{Test\+Spiral\+Modifies\+Z\+Rotation\+Under\+Water}}
+\index{Test\+Spiral\+Modifies\+Z\+Rotation\+Under\+Water@{Test\+Spiral\+Modifies\+Z\+Rotation\+Under\+Water}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Spiral\+Modifies\+Z\+Rotation\+Under\+Water()}{TestSpiralModifiesZRotationUnderWater()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Spiral\+Modifies\+Z\+Rotation\+Under\+Water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that spiraling when underwater spirals the whale. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_movement_a9eb3b16a356adc915132870fbbddde54}\label{class_test_movement_a9eb3b16a356adc915132870fbbddde54}} 
+\index{Test\+Movement@{Test\+Movement}!Test\+Turn\+Modifies\+Rotation@{Test\+Turn\+Modifies\+Rotation}}
+\index{Test\+Turn\+Modifies\+Rotation@{Test\+Turn\+Modifies\+Rotation}!Test\+Movement@{Test\+Movement}}
+\subsubsection{\texorpdfstring{Test\+Turn\+Modifies\+Rotation()}{TestTurnModifiesRotation()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Movement.\+Test\+Turn\+Modifies\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that turning correctly modifies player rotation. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Playmode Tests/Playmode\+Test\+Movement.\+cs\end{DoxyCompactItemize}

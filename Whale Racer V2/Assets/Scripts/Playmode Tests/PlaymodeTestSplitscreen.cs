@@ -22,6 +22,9 @@ public class TestSplitscreen : IPrebuildSetup {
         LoadMap.passSplitscreen = true;
         SceneManager.LoadScene("Aduloo");
     }
+    /// <summary>
+    /// Teardown. Destroys DontDestroyOnLoad GameControllers left behind when Aduloo is loaded.
+    /// </summary>
     [TearDown]
     public void Teardown()
     {

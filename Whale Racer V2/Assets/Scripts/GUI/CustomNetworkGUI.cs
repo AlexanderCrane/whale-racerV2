@@ -6,6 +6,11 @@ using UnityEngine.SceneManagement;
 
 namespace UnityEngine.Networking
 {
+    /// <summary>
+    /// A slightly modified implementation of Unity's default network connection GUI.
+    /// Removed a few buttons that we don't use.
+    /// Methods in this class are just slightly truncated versions of the originals.
+    /// </summary>
     [AddComponentMenu("Network/NetworkManagerHUD")]
     [RequireComponent(typeof(NetworkManager))]
     [EditorBrowsable(EditorBrowsableState.Never)]

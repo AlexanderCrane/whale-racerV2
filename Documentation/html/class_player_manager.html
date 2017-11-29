@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: PlayerManager Class Reference</title>
+<title>Whale Racer V2: PlayerManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Whale Racer
-   &#160;<span id="projectnumber">Project 3</span>
+   <div id="projectname">Whale Racer V2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A 3D whale racing game in C# with Unity.</div>
+   <div id="projectbrief">A 3D Whale Racing video game written in C# with Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -90,24 +90,18 @@ $(document).ready(function(){initNavTree('class_player_manager.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Tracks progress through the race and global race effects for each individual player.  
- <a href="class_player_manager.html#details">More...</a></p>
-
-<p>Inherits MonoBehaviour.</p>
+<p>Inherits NetworkBehaviour.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afc42c9dacfdfdf7a707f49591c1b4ace"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_manager.html#afc42c9dacfdfdf7a707f49591c1b4ace">NewLap</a> ()</td></tr>
-<tr class="memdesc:afc42c9dacfdfdf7a707f49591c1b4ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the player hits the finish line. Adds a lap or ends the race depending on the <a class="el" href="class_game_manager.html">GameManager</a>'s total laps.  <a href="#afc42c9dacfdfdf7a707f49591c1b4ace">More...</a><br /></td></tr>
 <tr class="separator:afc42c9dacfdfdf7a707f49591c1b4ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a1416e7628e83873973f7e6bf513e2e11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_manager.html#a1416e7628e83873973f7e6bf513e2e11">Awake</a> ()</td></tr>
-<tr class="memdesc:a1416e7628e83873973f7e6bf513e2e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Awake method. Initializes instance for non-static use. Initializes checkpointsHit array.  <a href="#a1416e7628e83873973f7e6bf513e2e11">More...</a><br /></td></tr>
 <tr class="separator:a1416e7628e83873973f7e6bf513e2e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845f49f829496d56defe86c77e03fa12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_manager.html#a845f49f829496d56defe86c77e03fa12">Update</a> ()</td></tr>
-<tr class="memdesc:a845f49f829496d56defe86c77e03fa12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update method for the player manager. Disables player movement if countdown isn't over yet.  <a href="#a845f49f829496d56defe86c77e03fa12">More...</a><br /></td></tr>
 <tr class="separator:a845f49f829496d56defe86c77e03fa12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -155,7 +149,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called when the player hits the finish line. Adds a lap or ends the race depending on the <a class="el" href="class_game_manager.html">GameManager</a>'s total laps. </p>
+<p>Called when the player hits the finish line. Adds a lap or ends the race depending on the <a class="el" href="class_game_manager.html" title="Class to handle various setup and GUI tasks throughout the race. ">GameManager</a>'s total laps. </p>
 
 </div>
 </div>
@@ -182,12 +176,12 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Update method for the player manager. Disables player movement if countdown isn't over yet. </p>
+<p>Update method for the player manager. Disables player movement if countdown isn't over yet. In Multiplayer, finds the player a camera if they don't have one. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/PlayerManager.cs</li>
+<li>C:/Users/Jerkbot/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/Player/PlayerManager.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

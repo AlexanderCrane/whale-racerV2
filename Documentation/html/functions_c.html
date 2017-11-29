@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: Class Members</title>
+<title>Whale Racer V2: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Whale Racer
-   &#160;<span id="projectnumber">Project 3</span>
+   <div id="projectname">Whale Racer V2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A 3D whale racing game in C# with Unity.</div>
+   <div id="projectbrief">A 3D Whale Racing video game written in C# with Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -84,14 +84,26 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_c"></a>- c -</h3><ul>
-<li>CalculateTarget()
-: <a class="el" href="class_pathing_waypoint.html#acfee3c56412768b0a31e7188a12d77fb">PathingWaypoint</a>
+<li>cam
+: <a class="el" href="class_player_manager.html#acf2ae6c7d5ff006269934c13ae8ba64f">PlayerManager</a>
 </li>
 <li>canJump
 : <a class="el" href="class_player_movement.html#a6da238056774f061d6327f319ac0583b">PlayerMovement</a>
 </li>
+<li>canSprint
+: <a class="el" href="class_player_movement.html#a9793cb7acdebe32fdddb3cde9c4797e4">PlayerMovement</a>
+</li>
+<li>cCC
+: <a class="el" href="class_under_water_effects.html#ad42a84c211a6ba4d88f4c7ebb9e8c247">UnderWaterEffects</a>
+</li>
 <li>center
 : <a class="el" href="struct_triangle_type.html#ac90d83f28a3ce15a759f1debaea50ed6">TriangleType</a>
+</li>
+<li>CheckCanJump()
+: <a class="el" href="class_player_movement.html#a14c78137af78e9cc16246804a42b90a7">PlayerMovement</a>
+</li>
+<li>CheckCanSprint()
+: <a class="el" href="class_player_movement.html#aff95a78e48e00b3196b7ec14c77539e2">PlayerMovement</a>
 </li>
 <li>checkpointHit
 : <a class="el" href="class_checkpoint.html#a98872ea4b9df5ade43107b5f5e69ade5">Checkpoint</a>
@@ -99,14 +111,17 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>checkpointsHit
 : <a class="el" href="class_player_manager.html#a27f239b98dd3d97ba6308fafee43fbba">PlayerManager</a>
 </li>
-<li>ClampToWindow()
-: <a class="el" href="class_drag_panel.html#ad76a3b6fd9d0a06dba9a4383536fdca3">DragPanel</a>
+<li>ClampRotationOnX()
+: <a class="el" href="class_whale_direct.html#aa1ba12dfe3841069efb4cb94b9b3bdfd">WhaleDirect</a>
 </li>
-<li>CloseCurrent()
-: <a class="el" href="class_panel_manager.html#af40a6b89e9c49aea0d61f3ef56c95a0a">PanelManager</a>
+<li>clampVertRotation
+: <a class="el" href="class_whale_direct.html#a71544a702cbc3aa8e1bc73ec7234c40e">WhaleDirect</a>
 </li>
-<li>containerImage
-: <a class="el" href="class_drop_me.html#acc135526f30abeb985b196b68f449411">DropMe</a>
+<li>collisionParent
+: <a class="el" href="class_child_collide.html#a872aa343a0d5128418454cce14e7290b">ChildCollide</a>
+</li>
+<li>correctDirection
+: <a class="el" href="class_bounce_n_break.html#afcd4dbf41a84ca940c399f98684deac3">BounceNBreak</a>
 </li>
 <li>countdownLength
 : <a class="el" href="class_game_manager.html#a5546e7b343f679892b8092c3030765e6">GameManager</a>
@@ -123,8 +138,14 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>currentCheckpoint
 : <a class="el" href="class_player_manager.html#ae826679328a2f86aba89ed9c9bf0cc9a">PlayerManager</a>
 </li>
+<li>currentHealth
+: <a class="el" href="class_player_health.html#ac824ef20d43c0489bae436f3b25c1683">PlayerHealth</a>
+</li>
 <li>currentLap
 : <a class="el" href="class_player_manager.html#a894cc56e0339d331a9e10566ac62c943">PlayerManager</a>
+</li>
+<li>cursorLock
+: <a class="el" href="class_whale_direct.html#ab50f0cec0ea930b81aeb4eae74df3a04">WhaleDirect</a>
 </li>
 </ul>
 </div><!-- contents -->

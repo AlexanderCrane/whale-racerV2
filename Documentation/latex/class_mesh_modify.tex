@@ -1,0 +1,125 @@
+\hypertarget{class_mesh_modify}{}\section{Mesh\+Modify Class Reference}
+\label{class_mesh_modify}\index{Mesh\+Modify@{Mesh\+Modify}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_mesh_modify_1_1_vertex_data}{Vertex\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mesh_modify_a530bd2a60da92fef8e91ff5af4dc57b1}{Mesh\+Modify} (Game\+Object obj)
+\item 
+void \hyperlink{class_mesh_modify_a5f2b336a7955779a71bc2da2833695d1}{Gen\+Underwater\+Mesh} ()
+\item 
+void \hyperlink{class_mesh_modify_ad3ec1d4ecf9ba803cbfe796c9a300cc8}{Display\+Mesh} (Mesh mesh, string name, List$<$ \hyperlink{struct_triangle_type}{Triangle\+Type} $>$ trianges\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_mesh_modify_a0843560bb4dcfaff495f4bc8b2e7df96}{Add\+Triangles} ()
+\item 
+void \hyperlink{class_mesh_modify_a0c5593a3aad880222dfa22dc4cca4384}{Add\+Triangles\+One\+Above\+Water} (List$<$ \hyperlink{class_mesh_modify_1_1_vertex_data}{Vertex\+Data} $>$ vertex\+Data)
+\item 
+void \hyperlink{class_mesh_modify_a97a32e877e4dcd875dac22d49b30d083}{Add\+Triangles\+Two\+Above\+Water} (List$<$ \hyperlink{class_mesh_modify_1_1_vertex_data}{Vertex\+Data} $>$ vertex\+Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to create a dynamic mesh for objects to float realistically on a moving water surface 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mesh_modify_a530bd2a60da92fef8e91ff5af4dc57b1}\label{class_mesh_modify_a530bd2a60da92fef8e91ff5af4dc57b1}} 
+\index{Mesh\+Modify@{Mesh\+Modify}!Mesh\+Modify@{Mesh\+Modify}}
+\index{Mesh\+Modify@{Mesh\+Modify}!Mesh\+Modify@{Mesh\+Modify}}
+\subsubsection{\texorpdfstring{Mesh\+Modify()}{MeshModify()}}
+{\footnotesize\ttfamily Mesh\+Modify.\+Mesh\+Modify (\begin{DoxyParamCaption}\item[{Game\+Object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mesh_modify_a0843560bb4dcfaff495f4bc8b2e7df96}\label{class_mesh_modify_a0843560bb4dcfaff495f4bc8b2e7df96}} 
+\index{Mesh\+Modify@{Mesh\+Modify}!Add\+Triangles@{Add\+Triangles}}
+\index{Add\+Triangles@{Add\+Triangles}!Mesh\+Modify@{Mesh\+Modify}}
+\subsubsection{\texorpdfstring{Add\+Triangles()}{AddTriangles()}}
+{\footnotesize\ttfamily void Mesh\+Modify.\+Add\+Triangles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates water triangles. 
+
+\mbox{\Hypertarget{class_mesh_modify_a0c5593a3aad880222dfa22dc4cca4384}\label{class_mesh_modify_a0c5593a3aad880222dfa22dc4cca4384}} 
+\index{Mesh\+Modify@{Mesh\+Modify}!Add\+Triangles\+One\+Above\+Water@{Add\+Triangles\+One\+Above\+Water}}
+\index{Add\+Triangles\+One\+Above\+Water@{Add\+Triangles\+One\+Above\+Water}!Mesh\+Modify@{Mesh\+Modify}}
+\subsubsection{\texorpdfstring{Add\+Triangles\+One\+Above\+Water()}{AddTrianglesOneAboveWater()}}
+{\footnotesize\ttfamily void Mesh\+Modify.\+Add\+Triangles\+One\+Above\+Water (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{class_mesh_modify_1_1_vertex_data}{Vertex\+Data} $>$}]{vertex\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Build new triangles where one of the old vertices is above the water 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mesh_modify_a97a32e877e4dcd875dac22d49b30d083}\label{class_mesh_modify_a97a32e877e4dcd875dac22d49b30d083}} 
+\index{Mesh\+Modify@{Mesh\+Modify}!Add\+Triangles\+Two\+Above\+Water@{Add\+Triangles\+Two\+Above\+Water}}
+\index{Add\+Triangles\+Two\+Above\+Water@{Add\+Triangles\+Two\+Above\+Water}!Mesh\+Modify@{Mesh\+Modify}}
+\subsubsection{\texorpdfstring{Add\+Triangles\+Two\+Above\+Water()}{AddTrianglesTwoAboveWater()}}
+{\footnotesize\ttfamily void Mesh\+Modify.\+Add\+Triangles\+Two\+Above\+Water (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{class_mesh_modify_1_1_vertex_data}{Vertex\+Data} $>$}]{vertex\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Build new triangles where two of the old vertices are above the water 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mesh_modify_ad3ec1d4ecf9ba803cbfe796c9a300cc8}\label{class_mesh_modify_ad3ec1d4ecf9ba803cbfe796c9a300cc8}} 
+\index{Mesh\+Modify@{Mesh\+Modify}!Display\+Mesh@{Display\+Mesh}}
+\index{Display\+Mesh@{Display\+Mesh}!Mesh\+Modify@{Mesh\+Modify}}
+\subsubsection{\texorpdfstring{Display\+Mesh()}{DisplayMesh()}}
+{\footnotesize\ttfamily void Mesh\+Modify.\+Display\+Mesh (\begin{DoxyParamCaption}\item[{Mesh}]{mesh,  }\item[{string}]{name,  }\item[{List$<$ \hyperlink{struct_triangle_type}{Triangle\+Type} $>$}]{trianges\+Data }\end{DoxyParamCaption})}
+
+
+
+Displays the underwater mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & The target mesh\\
+\hline
+{\em name} & The mesh\textquotesingle{}s name\\
+\hline
+{\em trianges\+Data} & The list of water triangles\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mesh_modify_a5f2b336a7955779a71bc2da2833695d1}\label{class_mesh_modify_a5f2b336a7955779a71bc2da2833695d1}} 
+\index{Mesh\+Modify@{Mesh\+Modify}!Gen\+Underwater\+Mesh@{Gen\+Underwater\+Mesh}}
+\index{Gen\+Underwater\+Mesh@{Gen\+Underwater\+Mesh}!Mesh\+Modify@{Mesh\+Modify}}
+\subsubsection{\texorpdfstring{Gen\+Underwater\+Mesh()}{GenUnderwaterMesh()}}
+{\footnotesize\ttfamily void Mesh\+Modify.\+Gen\+Underwater\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Finds distances to water objects and calculates distances. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Ocean/Mesh\+Modify.\+cs\end{DoxyCompactItemize}

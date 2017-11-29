@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: WaterConsole Class Reference</title>
+<title>Whale Racer V2: WaterConsole Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Whale Racer
-   &#160;<span id="projectnumber">Project 3</span>
+   <div id="projectname">Whale Racer V2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A 3D whale racing game in C# with Unity.</div>
+   <div id="projectbrief">A 3D Whale Racing video game written in C# with Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -82,20 +82,103 @@ $(document).ready(function(){initNavTree('class_water_console.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_water_console-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">WaterConsole Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Class to customize ocean behavior.  
- <a href="class_water_console.html#details">More...</a></p>
-
-<p>Inherits MonoBehaviour.</p>
+<p>Inherits NetworkBehaviour.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aab7b61cf764417ae88f2ad3aac5f33ca"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_water_console.html#aab7b61cf764417ae88f2ad3aac5f33ca">GetWaveYPos</a> (Vector3 position, float timeSinceStart)</td></tr>
+<tr class="separator:aab7b61cf764417ae88f2ad3aac5f33ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21c13f7838f38d0b9abba1e1c9fe81f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_water_console.html#ab21c13f7838f38d0b9abba1e1c9fe81f">DistanceToWater</a> (Vector3 position, float timeSinceStart)</td></tr>
+<tr class="separator:ab21c13f7838f38d0b9abba1e1c9fe81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to customize ocean behavior. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/Ocean/WaterConsole.cs</li>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab21c13f7838f38d0b9abba1e1c9fe81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21c13f7838f38d0b9abba1e1c9fe81f">&#9670;&nbsp;</a></span>DistanceToWater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WaterConsole.DistanceToWater </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeSinceStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a position's distance from the water. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The position.</td></tr>
+    <tr><td class="paramname">timeSinceStart</td><td>Time the ocean has been running.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aab7b61cf764417ae88f2ad3aac5f33ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7b61cf764417ae88f2ad3aac5f33ca">&#9670;&nbsp;</a></span>GetWaveYPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float WaterConsole.GetWaveYPos </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>timeSinceStart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the water's height. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>Unused</td></tr>
+    <tr><td class="paramname">timeSinceStart</td><td>Unused</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>C:/Users/Jerkbot/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/Ocean/WaterConsole.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

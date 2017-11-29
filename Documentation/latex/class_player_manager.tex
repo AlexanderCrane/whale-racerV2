@@ -1,0 +1,61 @@
+\hypertarget{class_player_manager}{}\section{Player\+Manager Class Reference}
+\label{class_player_manager}\index{Player\+Manager@{Player\+Manager}}
+
+
+Inherits Network\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_manager_afc42c9dacfdfdf7a707f49591c1b4ace}{New\+Lap} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_manager_a1416e7628e83873973f7e6bf513e2e11}{Awake} ()
+\item 
+void \hyperlink{class_player_manager_a845f49f829496d56defe86c77e03fa12}{Update} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tracks progress through the race and global race effects for each individual player. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_manager_a1416e7628e83873973f7e6bf513e2e11}\label{class_player_manager_a1416e7628e83873973f7e6bf513e2e11}} 
+\index{Player\+Manager@{Player\+Manager}!Awake@{Awake}}
+\index{Awake@{Awake}!Player\+Manager@{Player\+Manager}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Player\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Awake method. Initializes instance for non-\/static use. Initializes checkpoints\+Hit array. 
+
+\mbox{\Hypertarget{class_player_manager_afc42c9dacfdfdf7a707f49591c1b4ace}\label{class_player_manager_afc42c9dacfdfdf7a707f49591c1b4ace}} 
+\index{Player\+Manager@{Player\+Manager}!New\+Lap@{New\+Lap}}
+\index{New\+Lap@{New\+Lap}!Player\+Manager@{Player\+Manager}}
+\subsubsection{\texorpdfstring{New\+Lap()}{NewLap()}}
+{\footnotesize\ttfamily void Player\+Manager.\+New\+Lap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the player hits the finish line. Adds a lap or ends the race depending on the \hyperlink{class_game_manager}{Game\+Manager}\textquotesingle{}s total laps. 
+
+\mbox{\Hypertarget{class_player_manager_a845f49f829496d56defe86c77e03fa12}\label{class_player_manager_a845f49f829496d56defe86c77e03fa12}} 
+\index{Player\+Manager@{Player\+Manager}!Update@{Update}}
+\index{Update@{Update}!Player\+Manager@{Player\+Manager}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update method for the player manager. Disables player movement if countdown isn\textquotesingle{}t over yet. In Multiplayer, finds the player a camera if they don\textquotesingle{}t have one. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Player/Player\+Manager.\+cs\end{DoxyCompactItemize}

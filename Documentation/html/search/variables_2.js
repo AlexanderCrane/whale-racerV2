@@ -1,14 +1,21 @@
 var searchData=
 [
+  ['cam',['cam',['../class_player_manager.html#acf2ae6c7d5ff006269934c13ae8ba64f',1,'PlayerManager']]],
   ['canjump',['canJump',['../class_player_movement.html#a6da238056774f061d6327f319ac0583b',1,'PlayerMovement']]],
+  ['cansprint',['canSprint',['../class_player_movement.html#a9793cb7acdebe32fdddb3cde9c4797e4',1,'PlayerMovement']]],
+  ['ccc',['cCC',['../class_under_water_effects.html#ad42a84c211a6ba4d88f4c7ebb9e8c247',1,'UnderWaterEffects']]],
   ['center',['center',['../struct_triangle_type.html#ac90d83f28a3ce15a759f1debaea50ed6',1,'TriangleType']]],
   ['checkpointhit',['checkpointHit',['../class_checkpoint.html#a98872ea4b9df5ade43107b5f5e69ade5',1,'Checkpoint']]],
   ['checkpointshit',['checkpointsHit',['../class_player_manager.html#a27f239b98dd3d97ba6308fafee43fbba',1,'PlayerManager']]],
-  ['containerimage',['containerImage',['../class_drop_me.html#acc135526f30abeb985b196b68f449411',1,'DropMe']]],
+  ['clampvertrotation',['clampVertRotation',['../class_whale_direct.html#a71544a702cbc3aa8e1bc73ec7234c40e',1,'WhaleDirect']]],
+  ['collisionparent',['collisionParent',['../class_child_collide.html#a872aa343a0d5128418454cce14e7290b',1,'ChildCollide']]],
+  ['correctdirection',['correctDirection',['../class_bounce_n_break.html#afcd4dbf41a84ca940c399f98684deac3',1,'BounceNBreak']]],
   ['countdownlength',['countdownLength',['../class_game_manager.html#a5546e7b343f679892b8092c3030765e6',1,'GameManager']]],
   ['countdownongoing',['countdownOngoing',['../class_game_manager.html#af3921998b02db95c1945be468bf7fbcc',1,'GameManager']]],
   ['countdowntime',['countdownTime',['../class_game_manager.html#a323147238351d19f2fe1d89ef3a0a0e7',1,'GameManager']]],
   ['current',['current',['../class_water_console.html#aacb1d3f580d23d1820be0bca70daa662',1,'WaterConsole']]],
   ['currentcheckpoint',['currentCheckpoint',['../class_player_manager.html#ae826679328a2f86aba89ed9c9bf0cc9a',1,'PlayerManager']]],
-  ['currentlap',['currentLap',['../class_player_manager.html#a894cc56e0339d331a9e10566ac62c943',1,'PlayerManager']]]
+  ['currenthealth',['currentHealth',['../class_player_health.html#ac824ef20d43c0489bae436f3b25c1683',1,'PlayerHealth']]],
+  ['currentlap',['currentLap',['../class_player_manager.html#a894cc56e0339d331a9e10566ac62c943',1,'PlayerManager']]],
+  ['cursorlock',['cursorLock',['../class_whale_direct.html#ab50f0cec0ea930b81aeb4eae74df3a04',1,'WhaleDirect']]]
 ];

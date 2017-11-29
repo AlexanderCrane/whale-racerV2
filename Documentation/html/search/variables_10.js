@@ -1,13 +1,25 @@
 var searchData=
 [
   ['scale',['scale',['../class_water_console.html#a515dbab9bcee0757e2aa91c0652b1852',1,'WaterConsole']]],
-  ['scrollpersecond',['scrollPerSecond',['../class_scroll_detail_texture.html#a22e1c4cce6c2f6dfdd1508c6f93ba7e7',1,'ScrollDetailTexture']]],
+  ['selectedlaps',['selectedLaps',['../class_selected_map.html#a2401d45fb586eba378df902e95340001',1,'SelectedMap']]],
+  ['selectedmap',['selectedMap',['../class_selected_map.html#a74cad617fcbe33d7b0c2184c9eeac7e9',1,'SelectedMap']]],
   ['showgo',['showGo',['../class_game_manager.html#aa3e4e5c81176e875ea602980f47b05c8',1,'GameManager']]],
+  ['smoothingenabled',['smoothingEnabled',['../class_whale_direct.html#a6e6d0c3f3b5f5bc908737f99dfa649e3',1,'WhaleDirect']]],
+  ['smoothingfactor',['smoothingFactor',['../class_whale_direct.html#a79644df07038b6b2fc6f89071b84426a',1,'WhaleDirect']]],
+  ['sound',['sound',['../class_bounce_n_break.html#aa4b4e2ceccc1c8c4d638a293c1b90612',1,'BounceNBreak.sound()'],['../class_power_up.html#af93f4230457e84341fd7e7c74c36bbd9',1,'PowerUp.sound()']]],
   ['spedup',['spedup',['../class_player_movement.html#ac4c398c29487188c7d58ab05de6e60d7',1,'PlayerMovement']]],
   ['speed',['speed',['../class_water_console.html#a37ef558209132c1d74558b306278b8af',1,'WaterConsole']]],
+  ['speeds',['speeds',['../class_unity_standard_assets_1_1_water_1_1_real_ripple.html#a683108e163fe3153500eac8d940c242f',1,'UnityStandardAssets::Water::RealRipple']]],
   ['speedupduration',['speedupDuration',['../class_player_movement.html#ab821429bd5fecc50d183d91658709bde',1,'PlayerMovement.speedupDuration()'],['../class_power_up.html#adb905375d3b10a3e43acf6dafe73eeac',1,'PowerUp.speedupDuration()']]],
   ['speedupstart',['speedupStart',['../class_player_movement.html#a84fb37c0a75099018fe67fbc3f714fc8',1,'PlayerMovement']]],
+  ['spfinishtimes',['spFinishTimes',['../class_game_manager.html#ad79cd70a59d9825dbd6c39022757ff65',1,'GameManager']]],
+  ['spiralaxis',['spiralAxis',['../class_player_movement.html#ac81667dfa0bf8a748b2b692aff4135fc',1,'PlayerMovement']]],
   ['splashvisual',['SplashVisual',['../class_player_splash.html#a45a3d6c60cfe66b729afd7188341c598',1,'PlayerSplash']]],
+  ['splitscreenplayer2',['splitscreenPlayer2',['../class_player_movement.html#aab65b35b2d82cb717db304e596264bf3',1,'PlayerMovement']]],
+  ['sprintbutton',['sprintButton',['../class_player_movement.html#a0c669f99f2776fa309a14666f261b4e5',1,'PlayerMovement']]],
+  ['sprintmultiplier',['sprintMultiplier',['../class_player_movement.html#afed4c14a2a0eae089155630d69fa0d40',1,'PlayerMovement']]],
+  ['ss',['sS',['../class_under_water_effects.html#adb6973a14e3a43a3cf5b52f5a8b116af',1,'UnderWaterEffects']]],
+  ['startinghealth',['startingHealth',['../class_player_health.html#ab688986266097903627ed2aebf0aee7b',1,'PlayerHealth']]],
   ['submergestate',['submergeState',['../class_animation_hash_table.html#abcc895dc288965201cad5f990046eec0',1,'AnimationHashTable']]],
   ['submovementbool',['subMovementBool',['../class_animation_hash_table.html#a59c063549c11928fc482e9b53fb21122',1,'AnimationHashTable']]]
 ];

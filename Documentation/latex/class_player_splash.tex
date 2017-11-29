@@ -1,0 +1,75 @@
+\hypertarget{class_player_splash}{}\section{Player\+Splash Class Reference}
+\label{class_player_splash}\index{Player\+Splash@{Player\+Splash}}
+
+
+Inherits Mono\+Behaviour.
+
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_splash_a19c86b6b926d2d274e54ed300fc0233f}{On\+Trigger\+Enter} (Collider other)
+\item 
+void \hyperlink{class_player_splash_a15b0ea50799fed0ddbc77b61fbc268f1}{Splash} (Vector3 position, Quaternion rotation)
+\item 
+void \hyperlink{class_player_splash_aab2a19f9d25960e67532e8b8109cb284}{Animate\+Splash} (Game\+Object splash)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Script to generate splash sprites as the player moves. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_splash_aab2a19f9d25960e67532e8b8109cb284}\label{class_player_splash_aab2a19f9d25960e67532e8b8109cb284}} 
+\index{Player\+Splash@{Player\+Splash}!Animate\+Splash@{Animate\+Splash}}
+\index{Animate\+Splash@{Animate\+Splash}!Player\+Splash@{Player\+Splash}}
+\subsubsection{\texorpdfstring{Animate\+Splash()}{AnimateSplash()}}
+{\footnotesize\ttfamily void Player\+Splash.\+Animate\+Splash (\begin{DoxyParamCaption}\item[{Game\+Object}]{splash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Moves splash sprite up from its point of creation, then destroys it once it expires. 
+\begin{DoxyParams}{Parameters}
+{\em splash} & The splash sprite to be animated.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\Hypertarget{class_player_splash_a19c86b6b926d2d274e54ed300fc0233f}\label{class_player_splash_a19c86b6b926d2d274e54ed300fc0233f}} 
+\index{Player\+Splash@{Player\+Splash}!On\+Trigger\+Enter@{On\+Trigger\+Enter}}
+\index{On\+Trigger\+Enter@{On\+Trigger\+Enter}!Player\+Splash@{Player\+Splash}}
+\subsubsection{\texorpdfstring{On\+Trigger\+Enter()}{OnTriggerEnter()}}
+{\footnotesize\ttfamily void Player\+Splash.\+On\+Trigger\+Enter (\begin{DoxyParamCaption}\item[{Collider}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+On\+Trigger\+Enter method. Checks for collision between whale\textquotesingle{}s splash colliders and water, then triggers splash. 
+\begin{DoxyParams}{Parameters}
+{\em other} & The object colliding with the whale.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\Hypertarget{class_player_splash_a15b0ea50799fed0ddbc77b61fbc268f1}\label{class_player_splash_a15b0ea50799fed0ddbc77b61fbc268f1}} 
+\index{Player\+Splash@{Player\+Splash}!Splash@{Splash}}
+\index{Splash@{Splash}!Player\+Splash@{Player\+Splash}}
+\subsubsection{\texorpdfstring{Splash()}{Splash()}}
+{\footnotesize\ttfamily void Player\+Splash.\+Splash (\begin{DoxyParamCaption}\item[{Vector3}]{position,  }\item[{Quaternion}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Plays splash animation at given position. 
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to create the splash at.\\
+\hline
+{\em rotation} & The initial rotation of the splash.\\
+\hline
+\end{DoxyParams}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Animation/Player\+Splash.\+cs\end{DoxyCompactItemize}

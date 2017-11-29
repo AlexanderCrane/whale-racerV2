@@ -1,0 +1,124 @@
+\hypertarget{class_simple_boyancy}{}\section{Simple\+Boyancy Class Reference}
+\label{class_simple_boyancy}\index{Simple\+Boyancy@{Simple\+Boyancy}}
+
+
+Inherits Mono\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_simple_boyancy_a87c040d98ee3745e8eb1bb2b91fa1261}{Set\+Density} (float val)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_simple_boyancy_a50976b477c44c01f1a21ba19e750b308}{Awake} ()
+\item 
+void \hyperlink{class_simple_boyancy_aaa7adc7a2919cd7c2138fdfa165bd96a}{Start} ()
+\item 
+void \hyperlink{class_simple_boyancy_ad1e88e01095b9f9ca6b3b58ece3c7644}{Update} ()
+\item 
+void \hyperlink{class_simple_boyancy_a61d29420919b334a33acc84663eaea57}{Fixed\+Update} ()
+\item 
+void \hyperlink{class_simple_boyancy_a6be2438811dcea90cb336116a0395f57}{Add\+Water\+Forces} ()
+\item 
+Vector3 \hyperlink{class_simple_boyancy_a6cf63e5c114b0e5679fe2e30ac7353a1}{Buoyancy\+Force} (float density, \hyperlink{struct_triangle_type}{Triangle\+Type} tri)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+New class to produce buoyancy effects on objects. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_boyancy_a6be2438811dcea90cb336116a0395f57}\label{class_simple_boyancy_a6be2438811dcea90cb336116a0395f57}} 
+\index{Simple\+Boyancy@{Simple\+Boyancy}!Add\+Water\+Forces@{Add\+Water\+Forces}}
+\index{Add\+Water\+Forces@{Add\+Water\+Forces}!Simple\+Boyancy@{Simple\+Boyancy}}
+\subsubsection{\texorpdfstring{Add\+Water\+Forces()}{AddWaterForces()}}
+{\footnotesize\ttfamily void Simple\+Boyancy.\+Add\+Water\+Forces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Adds buoyant force to objects. 
+
+\mbox{\Hypertarget{class_simple_boyancy_a50976b477c44c01f1a21ba19e750b308}\label{class_simple_boyancy_a50976b477c44c01f1a21ba19e750b308}} 
+\index{Simple\+Boyancy@{Simple\+Boyancy}!Awake@{Awake}}
+\index{Awake@{Awake}!Simple\+Boyancy@{Simple\+Boyancy}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Simple\+Boyancy.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Awake method. Initializes components. 
+
+\mbox{\Hypertarget{class_simple_boyancy_a6cf63e5c114b0e5679fe2e30ac7353a1}\label{class_simple_boyancy_a6cf63e5c114b0e5679fe2e30ac7353a1}} 
+\index{Simple\+Boyancy@{Simple\+Boyancy}!Buoyancy\+Force@{Buoyancy\+Force}}
+\index{Buoyancy\+Force@{Buoyancy\+Force}!Simple\+Boyancy@{Simple\+Boyancy}}
+\subsubsection{\texorpdfstring{Buoyancy\+Force()}{BuoyancyForce()}}
+{\footnotesize\ttfamily Vector3 Simple\+Boyancy.\+Buoyancy\+Force (\begin{DoxyParamCaption}\item[{float}]{density,  }\item[{\hyperlink{struct_triangle_type}{Triangle\+Type}}]{tri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculates buoyant force 
+
+
+\begin{DoxyParams}{Parameters}
+{\em density} & The density of the parent object.\\
+\hline
+{\em tri} & The current water triangle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simple_boyancy_a61d29420919b334a33acc84663eaea57}\label{class_simple_boyancy_a61d29420919b334a33acc84663eaea57}} 
+\index{Simple\+Boyancy@{Simple\+Boyancy}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Simple\+Boyancy@{Simple\+Boyancy}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Simple\+Boyancy.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fixed update method. Triggers physics method to add buoyant forces. 
+
+\mbox{\Hypertarget{class_simple_boyancy_a87c040d98ee3745e8eb1bb2b91fa1261}\label{class_simple_boyancy_a87c040d98ee3745e8eb1bb2b91fa1261}} 
+\index{Simple\+Boyancy@{Simple\+Boyancy}!Set\+Density@{Set\+Density}}
+\index{Set\+Density@{Set\+Density}!Simple\+Boyancy@{Simple\+Boyancy}}
+\subsubsection{\texorpdfstring{Set\+Density()}{SetDensity()}}
+{\footnotesize\ttfamily void Simple\+Boyancy.\+Set\+Density (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets the object\textquotesingle{}s density 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simple_boyancy_aaa7adc7a2919cd7c2138fdfa165bd96a}\label{class_simple_boyancy_aaa7adc7a2919cd7c2138fdfa165bd96a}} 
+\index{Simple\+Boyancy@{Simple\+Boyancy}!Start@{Start}}
+\index{Start@{Start}!Simple\+Boyancy@{Simple\+Boyancy}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Simple\+Boyancy.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Start method. Initializes components. 
+
+\mbox{\Hypertarget{class_simple_boyancy_ad1e88e01095b9f9ca6b3b58ece3c7644}\label{class_simple_boyancy_ad1e88e01095b9f9ca6b3b58ece3c7644}} 
+\index{Simple\+Boyancy@{Simple\+Boyancy}!Update@{Update}}
+\index{Update@{Update}!Simple\+Boyancy@{Simple\+Boyancy}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Simple\+Boyancy.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update method. Regenerates the underwater mesh. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Ocean/Simple\+Boyancy.\+cs\end{DoxyCompactItemize}

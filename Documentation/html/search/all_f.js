@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['reloadmainmenu',['ReloadMainMenu',['../class_reload_main_menu.html',1,'']]],
-  ['resizepanel',['ResizePanel',['../class_resize_panel.html',1,'']]],
-  ['rotator',['Rotator',['../class_rotator.html',1,'']]]
+  ['quitgame',['quitGame',['../class_load_map.html#a256a172f9b18774eed707b43c1fbd452',1,'LoadMap']]]
 ];

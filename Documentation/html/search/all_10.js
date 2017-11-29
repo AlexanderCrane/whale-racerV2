@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['scrolldetailtexture',['ScrollDetailTexture',['../class_scroll_detail_texture.html',1,'']]],
-  ['showslidervalue',['ShowSliderValue',['../class_show_slider_value.html',1,'']]],
-  ['simpleboyancy',['SimpleBoyancy',['../class_simple_boyancy.html',1,'']]],
-  ['slowdown',['slowDown',['../classslow_down.html',1,'slowDown'],['../class_player_movement.html#a688ef83dd4792fdb5bcf76195b7f2fae',1,'PlayerMovement.slowDown()']]],
-  ['slowdownend',['slowDownEnd',['../class_player_movement.html#a323e163d04bd2b048ca8d17510cfe299',1,'PlayerMovement']]],
-  ['speeduppowerup',['SpeedupPowerup',['../class_player_movement.html#a3189f8beb5500e6916843f7a896d3866',1,'PlayerMovement']]],
-  ['splash',['Splash',['../class_player_splash.html#a15b0ea50799fed0ddbc77b61fbc268f1',1,'PlayerSplash']]],
-  ['start',['Start',['../class_bounce_n_break.html#ab96786800939a3b8e2f6875e9dc5e9e3',1,'BounceNBreak.Start()'],['../class_move_to.html#ae802f560d398f92c7cb15ffb306f4202',1,'MoveTo.Start()']]]
+  ['realripple',['RealRipple',['../class_unity_standard_assets_1_1_water_1_1_real_ripple.html',1,'UnityStandardAssets::Water']]],
+  ['realsetup',['RealSetup',['../class_test_a_i.html#ae82b5aeaa28f4930c2167a3523294f58',1,'TestAI.RealSetup()'],['../class_test_checkpoints.html#aea5f3ddc6b621a5e24d767a457e1bf29',1,'TestCheckpoints.RealSetup()'],['../class_test_movement.html#a62ef8c8115a8bbce2274cbda3f92eb5e',1,'TestMovement.RealSetup()'],['../class_test_splitscreen.html#a879cc1a382656028ea140b4bed4e7f1b',1,'TestSplitscreen.RealSetup()']]],
+  ['reloadmainmenu',['ReloadMainMenu',['../class_reload_main_menu.html',1,'']]],
+  ['restabilize',['ReStabilize',['../class_angle_limiter.html#afced607afbb55c3efcd949ee0e397b1a',1,'AngleLimiter']]],
+  ['roamanimation',['RoamAnimation',['../class_player_movement.html#a96683270dabdb0389c014c436aaf3cb6',1,'PlayerMovement']]],
+  ['rotateandlook',['RotateAndLook',['../class_whale_direct.html#a726224202ede10e4d812468509537e3f',1,'WhaleDirect']]],
+  ['rotateplayer',['RotatePlayer',['../class_player_movement.html#af5abbfc3a23ae53153afb7fc46588770',1,'PlayerMovement']]],
+  ['rotator',['Rotator',['../class_rotator.html',1,'']]]
 ];

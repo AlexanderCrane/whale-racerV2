@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['loadsceneonclick',['LoadSceneOnClick',['../class_load_scene_on_click.html',1,'']]]
+  ['lerpcamera',['lerpCamera',['../classlerp_camera.html',1,'']]],
+  ['loadmap',['LoadMap',['../class_load_map.html',1,'']]]
 ];

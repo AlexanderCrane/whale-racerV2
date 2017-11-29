@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: BGMController Class Reference</title>
+<title>Whale Racer V2: BGMController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Whale Racer
-   &#160;<span id="projectnumber">Project 3</span>
+   <div id="projectname">Whale Racer V2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A 3D whale racing game in C# with Unity.</div>
+   <div id="projectbrief">A 3D Whale Racing video game written in C# with Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,8 @@ $(document).ready(function(){initNavTree('class_b_g_m_controller.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_b_g_m_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">BGMController Class Reference</div>  </div>
@@ -89,8 +91,89 @@ $(document).ready(function(){initNavTree('class_b_g_m_controller.html','');});
 <div class="contents">
 
 <p>Inherits MonoBehaviour.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:afe57a67a897f90d66a636c55bd5801ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_g_m_controller.html#afe57a67a897f90d66a636c55bd5801ac">ToggleAboveWaterSound</a> ()</td></tr>
+<tr class="separator:afe57a67a897f90d66a636c55bd5801ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba3eaf3dfafbbd774a7910569f858b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_g_m_controller.html#aeba3eaf3dfafbbd774a7910569f858b0">ToggleUnderWaterSound</a> ()</td></tr>
+<tr class="separator:aeba3eaf3dfafbbd774a7910569f858b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a98751ed946ac8b99540a0173227850f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_g_m_controller.html#a98751ed946ac8b99540a0173227850f0">Awake</a> ()</td></tr>
+<tr class="separator:a98751ed946ac8b99540a0173227850f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Controls background music. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a98751ed946ac8b99540a0173227850f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98751ed946ac8b99540a0173227850f0">&#9670;&nbsp;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BGMController.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Awake method. Creates a static instance for reference. </p>
+
+</div>
+</div>
+<a id="afe57a67a897f90d66a636c55bd5801ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe57a67a897f90d66a636c55bd5801ac">&#9670;&nbsp;</a></span>ToggleAboveWaterSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BGMController.ToggleAboveWaterSound </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts playing abovewater sounds. To be called when camera passes above water. </p>
+
+</div>
+</div>
+<a id="aeba3eaf3dfafbbd774a7910569f858b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba3eaf3dfafbbd774a7910569f858b0">&#9670;&nbsp;</a></span>ToggleUnderWaterSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BGMController.ToggleUnderWaterSound </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts playing underwater sounds. To be called when camera passes under water. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/BGMController.cs</li>
+<li>C:/Users/Jerkbot/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/System/BGMController.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

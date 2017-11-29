@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 ///waypoint script attached to checkpoint for AI whales to path towards.
 ///based on James Arndt's Unity Simple Vehicle AI tutorial - adapted from his JS script
-///at any given time, ai whale's selected PathingWaypoint will be the waypoint it is heading towards.
+///PathingWaypoint scripts on checkpoints serve as a 'linked list' of destinations for the AI NavMeshAgent.
 /// </summary>
 public class PathingWaypoint : MonoBehaviour
 {

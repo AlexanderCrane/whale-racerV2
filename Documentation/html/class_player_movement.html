@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: PlayerMovement Class Reference</title>
+<title>Whale Racer V2: PlayerMovement Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Whale Racer
-   &#160;<span id="projectnumber">Project 3</span>
+   <div id="projectname">Whale Racer V2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A 3D whale racing game in C# with Unity.</div>
+   <div id="projectbrief">A 3D Whale Racing video game written in C# with Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -90,61 +90,57 @@ $(document).ready(function(){initNavTree('class_player_movement.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Player movement control script.  
- <a href="class_player_movement.html#details">More...</a></p>
-
-<p>Inherits MonoBehaviour.</p>
+<p>Inherits NetworkBehaviour.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3189f8beb5500e6916843f7a896d3866"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a3189f8beb5500e6916843f7a896d3866">SpeedupPowerup</a> (float duration)</td></tr>
-<tr class="memdesc:a3189f8beb5500e6916843f7a896d3866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles effects of speedup powerup. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">duration</td><td>THe duration of the speedup.</td></tr>
-  </table>
-  </dd>
-</dl>
- <a href="#a3189f8beb5500e6916843f7a896d3866">More...</a><br /></td></tr>
-<tr class="separator:a3189f8beb5500e6916843f7a896d3866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a6dd3ffa26d0ccbf484448b5266b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a14a6dd3ffa26d0ccbf484448b5266b79">Move2D</a> (float input)</td></tr>
+<tr class="separator:a14a6dd3ffa26d0ccbf484448b5266b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c7ec914f2b18dfcf6e9c354f6e2f8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a32c7ec914f2b18dfcf6e9c354f6e2f8e">Turn</a> (float inputVertical, float inputHorizontal)</td></tr>
+<tr class="separator:a32c7ec914f2b18dfcf6e9c354f6e2f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f28741d3452090520ee11352140aed0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a0f28741d3452090520ee11352140aed0">PositionReset</a> (int xAndZ)</td></tr>
+<tr class="separator:a0f28741d3452090520ee11352140aed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c0e10fc29c38c92c6196d70364ac89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a02c0e10fc29c38c92c6196d70364ac89">Spiral</a> (float inputSpiral)</td></tr>
+<tr class="separator:a02c0e10fc29c38c92c6196d70364ac89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c78137af78e9cc16246804a42b90a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a14c78137af78e9cc16246804a42b90a7">CheckCanJump</a> ()</td></tr>
+<tr class="separator:a14c78137af78e9cc16246804a42b90a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af704bd9f7ca1cda2ba100a8ef631dbc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#af704bd9f7ca1cda2ba100a8ef631dbc9">SetCanJump</a> ()</td></tr>
+<tr class="separator:af704bd9f7ca1cda2ba100a8ef631dbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff95a78e48e00b3196b7ec14c77539e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#aff95a78e48e00b3196b7ec14c77539e2">CheckCanSprint</a> ()</td></tr>
+<tr class="separator:aff95a78e48e00b3196b7ec14c77539e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eca87a71348040e0eedb138eb1c3a0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a6eca87a71348040e0eedb138eb1c3a0c">SetCanSprint</a> ()</td></tr>
+<tr class="separator:a6eca87a71348040e0eedb138eb1c3a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0738f125df9382e2425be64619cbf4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#ae0738f125df9382e2425be64619cbf4a">Jump</a> (bool jumpPressed)</td></tr>
+<tr class="separator:ae0738f125df9382e2425be64619cbf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f581958c3a8d8bf6f230117ce79a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a17f581958c3a8d8bf6f230117ce79a4e">Dive</a> (bool divePressed)</td></tr>
+<tr class="separator:a17f581958c3a8d8bf6f230117ce79a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d75c39b5e4ee0c5d999bdfdc4d1db73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a9d75c39b5e4ee0c5d999bdfdc4d1db73">SpeedupPowerup</a> (float duration, AudioClip sound)</td></tr>
+<tr class="separator:a9d75c39b5e4ee0c5d999bdfdc4d1db73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a688ef83dd4792fdb5bcf76195b7f2fae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a688ef83dd4792fdb5bcf76195b7f2fae">slowDown</a> ()</td></tr>
-<tr class="memdesc:a688ef83dd4792fdb5bcf76195b7f2fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles slowdown from oil slicks.  <a href="#a688ef83dd4792fdb5bcf76195b7f2fae">More...</a><br /></td></tr>
 <tr class="separator:a688ef83dd4792fdb5bcf76195b7f2fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323e163d04bd2b048ca8d17510cfe299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a323e163d04bd2b048ca8d17510cfe299">slowDownEnd</a> ()</td></tr>
-<tr class="memdesc:a323e163d04bd2b048ca8d17510cfe299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles oil slick slowdown expiry.  <a href="#a323e163d04bd2b048ca8d17510cfe299">More...</a><br /></td></tr>
 <tr class="separator:a323e163d04bd2b048ca8d17510cfe299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb1de7cf992b55d0dc16fa0f39cec433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#afb1de7cf992b55d0dc16fa0f39cec433">BounceBack</a> (Vector3 direction, AudioClip sound)</td></tr>
+<tr class="separator:afb1de7cf992b55d0dc16fa0f39cec433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a589e2f9da48918ca04fea0c418f46d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a589e2f9da48918ca04fea0c418f46d32">Awake</a> ()</td></tr>
-<tr class="memdesc:a589e2f9da48918ca04fea0c418f46d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.  <a href="#a589e2f9da48918ca04fea0c418f46d32">More...</a><br /></td></tr>
 <tr class="separator:a589e2f9da48918ca04fea0c418f46d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9b77d7177d538be9c1447d08191322"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#aaf9b77d7177d538be9c1447d08191322">Update</a> ()</td></tr>
+<tr class="separator:aaf9b77d7177d538be9c1447d08191322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a0caaa871b9ef680c9f02bd0e22c77db1">FixedUpdate</a> ()</td></tr>
-<tr class="memdesc:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update method. Calls methods to player input to whale movement. Checks for power up expiration and handles jump lockout.  <a href="#a0caaa871b9ef680c9f02bd0e22c77db1">More...</a><br /></td></tr>
 <tr class="separator:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86269beaf9973f026fd0b2c8c6ac75f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a86269beaf9973f026fd0b2c8c6ac75f8">Move2D</a> ()</td></tr>
-<tr class="memdesc:a86269beaf9973f026fd0b2c8c6ac75f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates player input to forward/backward movement. Plays corresponding audio and animation.  <a href="#a86269beaf9973f026fd0b2c8c6ac75f8">More...</a><br /></td></tr>
-<tr class="separator:a86269beaf9973f026fd0b2c8c6ac75f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac650128e1d721b323c1c03567323fbaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#ac650128e1d721b323c1c03567323fbaa">Turn</a> ()</td></tr>
-<tr class="memdesc:ac650128e1d721b323c1c03567323fbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates input into rotation.  <a href="#ac650128e1d721b323c1c03567323fbaa">More...</a><br /></td></tr>
-<tr class="separator:ac650128e1d721b323c1c03567323fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc5f78eff185c73ab0a77cc04f13bd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#addc5f78eff185c73ab0a77cc04f13bd9">Jump</a> ()</td></tr>
-<tr class="memdesc:addc5f78eff185c73ab0a77cc04f13bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles jump input.  <a href="#addc5f78eff185c73ab0a77cc04f13bd9">More...</a><br /></td></tr>
-<tr class="separator:addc5f78eff185c73ab0a77cc04f13bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc1e777249a78b6e664a21725f916d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#adc1e777249a78b6e664a21725f916d16">Dive</a> ()</td></tr>
-<tr class="memdesc:adc1e777249a78b6e664a21725f916d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles dive input and plays diving animations.  <a href="#adc1e777249a78b6e664a21725f916d16">More...</a><br /></td></tr>
-<tr class="separator:adc1e777249a78b6e664a21725f916d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a1e9c5e92db8a1cda43c3ffbd3f8d9b"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a3a1e9c5e92db8a1cda43c3ffbd3f8d9b">UnderWaterCoroutine</a> ()</td></tr>
-<tr class="memdesc:a3a1e9c5e92db8a1cda43c3ffbd3f8d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits to stabilize whale buoyancy underwater  <a href="#a3a1e9c5e92db8a1cda43c3ffbd3f8d9b">More...</a><br /></td></tr>
-<tr class="separator:a3a1e9c5e92db8a1cda43c3ffbd3f8d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5abbfc3a23ae53153afb7fc46588770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#af5abbfc3a23ae53153afb7fc46588770">RotatePlayer</a> ()</td></tr>
+<tr class="separator:af5abbfc3a23ae53153afb7fc46588770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e49eea241ab7a3b11125c33aae4b12d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a7e49eea241ab7a3b11125c33aae4b12d">DiveAnimation</a> ()</td></tr>
+<tr class="separator:a7e49eea241ab7a3b11125c33aae4b12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96683270dabdb0389c014c436aaf3cb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a96683270dabdb0389c014c436aaf3cb6">RoamAnimation</a> ()</td></tr>
+<tr class="separator:a96683270dabdb0389c014c436aaf3cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2a1162c4cc3a5d4be939d00368c6e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a0d2a1162c4cc3a5d4be939d00368c6e3">OnTriggerEnter</a> (Collider other)</td></tr>
-<tr class="memdesc:a0d2a1162c4cc3a5d4be939d00368c6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles disabling of powerups after they're picked up. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>The pickup the player has collided with.</td></tr>
-  </table>
-  </dd>
-</dl>
- <a href="#a0d2a1162c4cc3a5d4be939d00368c6e3">More...</a><br /></td></tr>
 <tr class="separator:a0d2a1162c4cc3a5d4be939d00368c6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49aa6a80bb76113ff3702536ea1b46de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a49aa6a80bb76113ff3702536ea1b46de">NoFlyingWhales</a> ()</td></tr>
+<tr class="separator:a49aa6a80bb76113ff3702536ea1b46de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Player movement control script. </p>
@@ -176,8 +172,105 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adc1e777249a78b6e664a21725f916d16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc1e777249a78b6e664a21725f916d16">&#9670;&nbsp;</a></span>Dive()</h2>
+<a id="afb1de7cf992b55d0dc16fa0f39cec433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb1de7cf992b55d0dc16fa0f39cec433">&#9670;&nbsp;</a></span>BounceBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.BounceBack </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AudioClip&#160;</td>
+          <td class="paramname"><em>sound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles bouncing the player away on collision with crates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>The direction to bounce</td></tr>
+    <tr><td class="paramname">sound</td><td>The bounce sound.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14c78137af78e9cc16246804a42b90a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14c78137af78e9cc16246804a42b90a7">&#9670;&nbsp;</a></span>CheckCanJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerMovement.CheckCanJump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the player can currently jump. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aff95a78e48e00b3196b7ec14c77539e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff95a78e48e00b3196b7ec14c77539e2">&#9670;&nbsp;</a></span>CheckCanSprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerMovement.CheckCanSprint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the player can currently sprint. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a17f581958c3a8d8bf6f230117ce79a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f581958c3a8d8bf6f230117ce79a4e">&#9670;&nbsp;</a></span>Dive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.Dive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>divePressed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles dive input and plays diving animations. </p>
+
+</div>
+</div>
+<a id="a7e49eea241ab7a3b11125c33aae4b12d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e49eea241ab7a3b11125c33aae4b12d">&#9670;&nbsp;</a></span>DiveAnimation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +279,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PlayerMovement.Dive </td>
+          <td class="memname">void PlayerMovement.DiveAnimation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -199,7 +292,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles dive input and plays diving animations. </p>
+<p>Play the diving animation. </p>
 
 </div>
 </div>
@@ -226,39 +319,52 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Update method. Calls methods to player input to whale movement. Checks for power up expiration and handles jump lockout. </p>
+<p>Fixed Update method. Calls methods to player input to whale movement. Checks for power up expiration and handles jump lockout. </p>
 
 </div>
 </div>
-<a id="addc5f78eff185c73ab0a77cc04f13bd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addc5f78eff185c73ab0a77cc04f13bd9">&#9670;&nbsp;</a></span>Jump()</h2>
+<a id="ae0738f125df9382e2425be64619cbf4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0738f125df9382e2425be64619cbf4a">&#9670;&nbsp;</a></span>Jump()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void PlayerMovement.Jump </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>jumpPressed</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Handles jump input. </p>
 
 </div>
 </div>
-<a id="a86269beaf9973f026fd0b2c8c6ac75f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86269beaf9973f026fd0b2c8c6ac75f8">&#9670;&nbsp;</a></span>Move2D()</h2>
+<a id="a14a6dd3ffa26d0ccbf484448b5266b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a6dd3ffa26d0ccbf484448b5266b79">&#9670;&nbsp;</a></span>Move2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.Move2D </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Translates player input to forward/backward movement. Plays corresponding audio and animation. </p>
+
+</div>
+</div>
+<a id="a49aa6a80bb76113ff3702536ea1b46de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49aa6a80bb76113ff3702536ea1b46de">&#9670;&nbsp;</a></span>NoFlyingWhales()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +373,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PlayerMovement.Move2D </td>
+          <td class="memname">void PlayerMovement.NoFlyingWhales </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -280,7 +386,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Translates player input to forward/backward movement. Plays corresponding audio and animation. </p>
+<p>Repositions whale and adds force if out of constraints </p>
 
 </div>
 </div>
@@ -315,6 +421,118 @@ Private Member Functions</h2></td></tr>
   </dd>
 </dl>
 </p>
+
+</div>
+</div>
+<a id="a0f28741d3452090520ee11352140aed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f28741d3452090520ee11352140aed0">&#9670;&nbsp;</a></span>PositionReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.PositionReset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>xAndZ</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rotates player back to resting position </p>
+
+</div>
+</div>
+<a id="a96683270dabdb0389c014c436aaf3cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96683270dabdb0389c014c436aaf3cb6">&#9670;&nbsp;</a></span>RoamAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.RoamAnimation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Play the movement animation. </p>
+
+</div>
+</div>
+<a id="af5abbfc3a23ae53153afb7fc46588770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5abbfc3a23ae53153afb7fc46588770">&#9670;&nbsp;</a></span>RotatePlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.RotatePlayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update method. Calls methods to move and rotate player </p>
+
+</div>
+</div>
+<a id="af704bd9f7ca1cda2ba100a8ef631dbc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af704bd9f7ca1cda2ba100a8ef631dbc9">&#9670;&nbsp;</a></span>SetCanJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.SetCanJump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the player's ability to jump. </p>
+
+</div>
+</div>
+<a id="a6eca87a71348040e0eedb138eb1c3a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eca87a71348040e0eedb138eb1c3a0c">&#9670;&nbsp;</a></span>SetCanSprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.SetCanSprint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the player's ability to sprint. </p>
 
 </div>
 </div>
@@ -356,8 +574,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3189f8beb5500e6916843f7a896d3866"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3189f8beb5500e6916843f7a896d3866">&#9670;&nbsp;</a></span>SpeedupPowerup()</h2>
+<a id="a9d75c39b5e4ee0c5d999bdfdc4d1db73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d75c39b5e4ee0c5d999bdfdc4d1db73">&#9670;&nbsp;</a></span>SpeedupPowerup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,8 +584,18 @@ Private Member Functions</h2></td></tr>
           <td class="memname">void PlayerMovement.SpeedupPowerup </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>duration</em></td><td>)</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">AudioClip&#160;</td>
+          <td class="paramname"><em>sound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -382,35 +610,58 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac650128e1d721b323c1c03567323fbaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac650128e1d721b323c1c03567323fbaa">&#9670;&nbsp;</a></span>Turn()</h2>
+<a id="a02c0e10fc29c38c92c6196d70364ac89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c0e10fc29c38c92c6196d70364ac89">&#9670;&nbsp;</a></span>Spiral()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void PlayerMovement.Turn </td>
+          <td class="memname">bool PlayerMovement.Spiral </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inputSpiral</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+<p>Spirals the whale along z-axis </p>
+
+</div>
+</div>
+<a id="a32c7ec914f2b18dfcf6e9c354f6e2f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c7ec914f2b18dfcf6e9c354f6e2f8e">&#9670;&nbsp;</a></span>Turn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerMovement.Turn </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inputVertical</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>inputHorizontal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 <p>Translates input into rotation. </p>
 
 </div>
 </div>
-<a id="a3a1e9c5e92db8a1cda43c3ffbd3f8d9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a1e9c5e92db8a1cda43c3ffbd3f8d9b">&#9670;&nbsp;</a></span>UnderWaterCoroutine()</h2>
+<a id="aaf9b77d7177d538be9c1447d08191322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9b77d7177d538be9c1447d08191322">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,7 +670,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">IEnumerator PlayerMovement.UnderWaterCoroutine </td>
+          <td class="memname">void PlayerMovement.Update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -432,12 +683,12 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Waits to stabilize whale buoyancy underwater </p>
+<p>Update method. Calls methods to move and rotate player </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/PlayerMovement.cs</li>
+<li>C:/Users/Jerkbot/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/Player/PlayerMovement.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

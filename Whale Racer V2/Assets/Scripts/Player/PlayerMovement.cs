@@ -382,18 +382,32 @@ public class PlayerMovement : NetworkBehaviour
         }
         return true;
     }
+    /// <summary>
+    /// Check whether the player can currently jump.
+    /// </summary>
+    /// <returns></returns>
     public bool CheckCanJump()
     {
         return (canJump == 100);
     }
+    /// <summary>
+    /// Set the player's ability to jump.
+    /// </summary>
     public void SetCanJump()
     {
         canJump = 100;
     }
+    /// <summary>
+    /// Check whether the player can currently sprint.
+    /// </summary>
+    /// <returns></returns>
     public bool CheckCanSprint()
     {
         return (canSprint == 100);
     }
+    /// <summary>
+    /// Set the player's ability to sprint.
+    /// </summary>
     public void SetCanSprint()
     {
         canSprint = 100;
@@ -417,6 +431,9 @@ public class PlayerMovement : NetworkBehaviour
             whaleAnimator.SetBool(animations.jumpBool, true);
         }
     }
+    /// <summary>
+    /// Play the diving animation.
+    /// </summary>
     private void DiveAnimation()
     {
         whaleAnimator.SetBool(animations.underwaterBool, false);
@@ -424,6 +441,9 @@ public class PlayerMovement : NetworkBehaviour
         whaleAnimator.SetBool(animations.subMovementBool, true);
         whaleAnimator.speed = 0.9f;
     }
+    /// <summary>
+    /// Play the movement animation.
+    /// </summary>
     private void RoamAnimation()
     {
         whaleAnimator.SetBool(animations.underwaterBool, true);

@@ -1,0 +1,88 @@
+\hypertarget{class_test_splitscreen}{}\section{Test\+Splitscreen Class Reference}
+\label{class_test_splitscreen}\index{Test\+Splitscreen@{Test\+Splitscreen}}
+
+
+Inherits I\+Prebuild\+Setup.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_test_splitscreen_a2bbadc0dfb0f6e6475b20bea58cbe36e}{Setup} ()
+\item 
+void \hyperlink{class_test_splitscreen_ab0295bf280db9a3c4b638d8cf0d83cb2}{Teardown} ()
+\item 
+void \hyperlink{class_test_splitscreen_a879cc1a382656028ea140b4bed4e7f1b}{Real\+Setup} ()
+\item 
+I\+Enumerator \hyperlink{class_test_splitscreen_a24f4aefda2ea64efd8507bfa6e566253}{Test\+Splitscreen\+A\+I\+Disabled} ()
+\item 
+I\+Enumerator \hyperlink{class_test_splitscreen_ada07c146c9a8cc889e096f7de9e783c8}{Test\+Splitscreen\+Cameras\+Split} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tests for aspects of game setup related to splitscreen. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test_splitscreen_a879cc1a382656028ea140b4bed4e7f1b}\label{class_test_splitscreen_a879cc1a382656028ea140b4bed4e7f1b}} 
+\index{Test\+Splitscreen@{Test\+Splitscreen}!Real\+Setup@{Real\+Setup}}
+\index{Real\+Setup@{Real\+Setup}!Test\+Splitscreen@{Test\+Splitscreen}}
+\subsubsection{\texorpdfstring{Real\+Setup()}{RealSetup()}}
+{\footnotesize\ttfamily void Test\+Splitscreen.\+Real\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function run after running the desired testing scene for one frame so that things can be initialized. Doing setup this way lets us use the actual play scenes for testing to save time on mocking. This is a hack. 
+
+\mbox{\Hypertarget{class_test_splitscreen_a2bbadc0dfb0f6e6475b20bea58cbe36e}\label{class_test_splitscreen_a2bbadc0dfb0f6e6475b20bea58cbe36e}} 
+\index{Test\+Splitscreen@{Test\+Splitscreen}!Setup@{Setup}}
+\index{Setup@{Setup}!Test\+Splitscreen@{Test\+Splitscreen}}
+\subsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void Test\+Splitscreen.\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads Aduloo. 
+
+\mbox{\Hypertarget{class_test_splitscreen_ab0295bf280db9a3c4b638d8cf0d83cb2}\label{class_test_splitscreen_ab0295bf280db9a3c4b638d8cf0d83cb2}} 
+\index{Test\+Splitscreen@{Test\+Splitscreen}!Teardown@{Teardown}}
+\index{Teardown@{Teardown}!Test\+Splitscreen@{Test\+Splitscreen}}
+\subsubsection{\texorpdfstring{Teardown()}{Teardown()}}
+{\footnotesize\ttfamily void Test\+Splitscreen.\+Teardown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Teardown. Destroys Dont\+Destroy\+On\+Load Game\+Controllers left behind when Aduloo is loaded. 
+
+\mbox{\Hypertarget{class_test_splitscreen_a24f4aefda2ea64efd8507bfa6e566253}\label{class_test_splitscreen_a24f4aefda2ea64efd8507bfa6e566253}} 
+\index{Test\+Splitscreen@{Test\+Splitscreen}!Test\+Splitscreen\+A\+I\+Disabled@{Test\+Splitscreen\+A\+I\+Disabled}}
+\index{Test\+Splitscreen\+A\+I\+Disabled@{Test\+Splitscreen\+A\+I\+Disabled}!Test\+Splitscreen@{Test\+Splitscreen}}
+\subsubsection{\texorpdfstring{Test\+Splitscreen\+A\+I\+Disabled()}{TestSplitscreenAIDisabled()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Splitscreen.\+Test\+Splitscreen\+A\+I\+Disabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that the Nav\+Mesh\+Agent AI is disabled and the \textquotesingle{}AI Whale\textquotesingle{} is controlled by a player if splitscreen is enabled. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_splitscreen_ada07c146c9a8cc889e096f7de9e783c8}\label{class_test_splitscreen_ada07c146c9a8cc889e096f7de9e783c8}} 
+\index{Test\+Splitscreen@{Test\+Splitscreen}!Test\+Splitscreen\+Cameras\+Split@{Test\+Splitscreen\+Cameras\+Split}}
+\index{Test\+Splitscreen\+Cameras\+Split@{Test\+Splitscreen\+Cameras\+Split}!Test\+Splitscreen@{Test\+Splitscreen}}
+\subsubsection{\texorpdfstring{Test\+Splitscreen\+Cameras\+Split()}{TestSplitscreenCamerasSplit()}}
+{\footnotesize\ttfamily I\+Enumerator Test\+Splitscreen.\+Test\+Splitscreen\+Cameras\+Split (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test that both cameras are enabled and displayed if splitscreen is enabled. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Playmode Tests/Playmode\+Test\+Splitscreen.\+cs\end{DoxyCompactItemize}

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['changecolor',['ChangeColor',['../class_change_color.html',1,'']]],
+  ['checkcanjump',['CheckCanJump',['../class_player_movement.html#a14c78137af78e9cc16246804a42b90a7',1,'PlayerMovement']]],
+  ['checkcansprint',['CheckCanSprint',['../class_player_movement.html#aff95a78e48e00b3196b7ec14c77539e2',1,'PlayerMovement']]],
   ['checkpoint',['Checkpoint',['../class_checkpoint.html',1,'']]],
-  ['childcollide',['ChildCollide',['../class_child_collide.html',1,'']]]
+  ['childcollide',['ChildCollide',['../class_child_collide.html',1,'']]],
+  ['clamprotationonx',['ClampRotationOnX',['../class_whale_direct.html#aa1ba12dfe3841069efb4cb94b9b3bdfd',1,'WhaleDirect']]]
 ];

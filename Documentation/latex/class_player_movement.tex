@@ -1,0 +1,312 @@
+\hypertarget{class_player_movement}{}\section{Player\+Movement Class Reference}
+\label{class_player_movement}\index{Player\+Movement@{Player\+Movement}}
+
+
+Inherits Network\+Behaviour.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_movement_a14a6dd3ffa26d0ccbf484448b5266b79}{Move2D} (float input)
+\item 
+bool \hyperlink{class_player_movement_a32c7ec914f2b18dfcf6e9c354f6e2f8e}{Turn} (float input\+Vertical, float input\+Horizontal)
+\item 
+void \hyperlink{class_player_movement_a0f28741d3452090520ee11352140aed0}{Position\+Reset} (int x\+AndZ)
+\item 
+bool \hyperlink{class_player_movement_a02c0e10fc29c38c92c6196d70364ac89}{Spiral} (float input\+Spiral)
+\item 
+bool \hyperlink{class_player_movement_a14c78137af78e9cc16246804a42b90a7}{Check\+Can\+Jump} ()
+\item 
+void \hyperlink{class_player_movement_af704bd9f7ca1cda2ba100a8ef631dbc9}{Set\+Can\+Jump} ()
+\item 
+bool \hyperlink{class_player_movement_aff95a78e48e00b3196b7ec14c77539e2}{Check\+Can\+Sprint} ()
+\item 
+void \hyperlink{class_player_movement_a6eca87a71348040e0eedb138eb1c3a0c}{Set\+Can\+Sprint} ()
+\item 
+void \hyperlink{class_player_movement_ae0738f125df9382e2425be64619cbf4a}{Jump} (bool jump\+Pressed)
+\item 
+void \hyperlink{class_player_movement_a17f581958c3a8d8bf6f230117ce79a4e}{Dive} (bool dive\+Pressed)
+\item 
+void \hyperlink{class_player_movement_a9d75c39b5e4ee0c5d999bdfdc4d1db73}{Speedup\+Powerup} (float duration, Audio\+Clip sound)
+\item 
+void \hyperlink{class_player_movement_a688ef83dd4792fdb5bcf76195b7f2fae}{slow\+Down} ()
+\item 
+void \hyperlink{class_player_movement_a323e163d04bd2b048ca8d17510cfe299}{slow\+Down\+End} ()
+\item 
+void \hyperlink{class_player_movement_afb1de7cf992b55d0dc16fa0f39cec433}{Bounce\+Back} (Vector3 direction, Audio\+Clip sound)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_movement_a589e2f9da48918ca04fea0c418f46d32}{Awake} ()
+\item 
+void \hyperlink{class_player_movement_aaf9b77d7177d538be9c1447d08191322}{Update} ()
+\item 
+void \hyperlink{class_player_movement_a0caaa871b9ef680c9f02bd0e22c77db1}{Fixed\+Update} ()
+\item 
+void \hyperlink{class_player_movement_af5abbfc3a23ae53153afb7fc46588770}{Rotate\+Player} ()
+\item 
+void \hyperlink{class_player_movement_a7e49eea241ab7a3b11125c33aae4b12d}{Dive\+Animation} ()
+\item 
+void \hyperlink{class_player_movement_a96683270dabdb0389c014c436aaf3cb6}{Roam\+Animation} ()
+\item 
+void \hyperlink{class_player_movement_a0d2a1162c4cc3a5d4be939d00368c6e3}{On\+Trigger\+Enter} (Collider other)
+\item 
+void \hyperlink{class_player_movement_a49aa6a80bb76113ff3702536ea1b46de}{No\+Flying\+Whales} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Player movement control script. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_movement_a589e2f9da48918ca04fea0c418f46d32}\label{class_player_movement_a589e2f9da48918ca04fea0c418f46d32}} 
+\index{Player\+Movement@{Player\+Movement}!Awake@{Awake}}
+\index{Awake@{Awake}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody. 
+
+\mbox{\Hypertarget{class_player_movement_afb1de7cf992b55d0dc16fa0f39cec433}\label{class_player_movement_afb1de7cf992b55d0dc16fa0f39cec433}} 
+\index{Player\+Movement@{Player\+Movement}!Bounce\+Back@{Bounce\+Back}}
+\index{Bounce\+Back@{Bounce\+Back}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Bounce\+Back()}{BounceBack()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Bounce\+Back (\begin{DoxyParamCaption}\item[{Vector3}]{direction,  }\item[{Audio\+Clip}]{sound }\end{DoxyParamCaption})}
+
+
+
+Handles bouncing the player away on collision with crates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction to bounce\\
+\hline
+{\em sound} & The bounce sound.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_movement_a14c78137af78e9cc16246804a42b90a7}\label{class_player_movement_a14c78137af78e9cc16246804a42b90a7}} 
+\index{Player\+Movement@{Player\+Movement}!Check\+Can\+Jump@{Check\+Can\+Jump}}
+\index{Check\+Can\+Jump@{Check\+Can\+Jump}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Check\+Can\+Jump()}{CheckCanJump()}}
+{\footnotesize\ttfamily bool Player\+Movement.\+Check\+Can\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check whether the player can currently jump. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_movement_aff95a78e48e00b3196b7ec14c77539e2}\label{class_player_movement_aff95a78e48e00b3196b7ec14c77539e2}} 
+\index{Player\+Movement@{Player\+Movement}!Check\+Can\+Sprint@{Check\+Can\+Sprint}}
+\index{Check\+Can\+Sprint@{Check\+Can\+Sprint}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Check\+Can\+Sprint()}{CheckCanSprint()}}
+{\footnotesize\ttfamily bool Player\+Movement.\+Check\+Can\+Sprint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check whether the player can currently sprint. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_movement_a17f581958c3a8d8bf6f230117ce79a4e}\label{class_player_movement_a17f581958c3a8d8bf6f230117ce79a4e}} 
+\index{Player\+Movement@{Player\+Movement}!Dive@{Dive}}
+\index{Dive@{Dive}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Dive()}{Dive()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Dive (\begin{DoxyParamCaption}\item[{bool}]{dive\+Pressed }\end{DoxyParamCaption})}
+
+
+
+Handles dive input and plays diving animations. 
+
+\mbox{\Hypertarget{class_player_movement_a7e49eea241ab7a3b11125c33aae4b12d}\label{class_player_movement_a7e49eea241ab7a3b11125c33aae4b12d}} 
+\index{Player\+Movement@{Player\+Movement}!Dive\+Animation@{Dive\+Animation}}
+\index{Dive\+Animation@{Dive\+Animation}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Dive\+Animation()}{DiveAnimation()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Dive\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Play the diving animation. 
+
+\mbox{\Hypertarget{class_player_movement_a0caaa871b9ef680c9f02bd0e22c77db1}\label{class_player_movement_a0caaa871b9ef680c9f02bd0e22c77db1}} 
+\index{Player\+Movement@{Player\+Movement}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Fixed Update method. Calls methods to player input to whale movement. Checks for power up expiration and handles jump lockout. 
+
+\mbox{\Hypertarget{class_player_movement_ae0738f125df9382e2425be64619cbf4a}\label{class_player_movement_ae0738f125df9382e2425be64619cbf4a}} 
+\index{Player\+Movement@{Player\+Movement}!Jump@{Jump}}
+\index{Jump@{Jump}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Jump (\begin{DoxyParamCaption}\item[{bool}]{jump\+Pressed }\end{DoxyParamCaption})}
+
+
+
+Handles jump input. 
+
+\mbox{\Hypertarget{class_player_movement_a14a6dd3ffa26d0ccbf484448b5266b79}\label{class_player_movement_a14a6dd3ffa26d0ccbf484448b5266b79}} 
+\index{Player\+Movement@{Player\+Movement}!Move2D@{Move2D}}
+\index{Move2D@{Move2D}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Move2\+D()}{Move2D()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Move2D (\begin{DoxyParamCaption}\item[{float}]{input }\end{DoxyParamCaption})}
+
+
+
+Translates player input to forward/backward movement. Plays corresponding audio and animation. 
+
+\mbox{\Hypertarget{class_player_movement_a49aa6a80bb76113ff3702536ea1b46de}\label{class_player_movement_a49aa6a80bb76113ff3702536ea1b46de}} 
+\index{Player\+Movement@{Player\+Movement}!No\+Flying\+Whales@{No\+Flying\+Whales}}
+\index{No\+Flying\+Whales@{No\+Flying\+Whales}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{No\+Flying\+Whales()}{NoFlyingWhales()}}
+{\footnotesize\ttfamily void Player\+Movement.\+No\+Flying\+Whales (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Repositions whale and adds force if out of constraints 
+
+\mbox{\Hypertarget{class_player_movement_a0d2a1162c4cc3a5d4be939d00368c6e3}\label{class_player_movement_a0d2a1162c4cc3a5d4be939d00368c6e3}} 
+\index{Player\+Movement@{Player\+Movement}!On\+Trigger\+Enter@{On\+Trigger\+Enter}}
+\index{On\+Trigger\+Enter@{On\+Trigger\+Enter}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{On\+Trigger\+Enter()}{OnTriggerEnter()}}
+{\footnotesize\ttfamily void Player\+Movement.\+On\+Trigger\+Enter (\begin{DoxyParamCaption}\item[{Collider}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles disabling of powerups after they\textquotesingle{}re picked up. 
+\begin{DoxyParams}{Parameters}
+{\em other} & The pickup the player has collided with.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\Hypertarget{class_player_movement_a0f28741d3452090520ee11352140aed0}\label{class_player_movement_a0f28741d3452090520ee11352140aed0}} 
+\index{Player\+Movement@{Player\+Movement}!Position\+Reset@{Position\+Reset}}
+\index{Position\+Reset@{Position\+Reset}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Position\+Reset()}{PositionReset()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Position\+Reset (\begin{DoxyParamCaption}\item[{int}]{x\+AndZ }\end{DoxyParamCaption})}
+
+
+
+Rotates player back to resting position 
+
+\mbox{\Hypertarget{class_player_movement_a96683270dabdb0389c014c436aaf3cb6}\label{class_player_movement_a96683270dabdb0389c014c436aaf3cb6}} 
+\index{Player\+Movement@{Player\+Movement}!Roam\+Animation@{Roam\+Animation}}
+\index{Roam\+Animation@{Roam\+Animation}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Roam\+Animation()}{RoamAnimation()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Roam\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Play the movement animation. 
+
+\mbox{\Hypertarget{class_player_movement_af5abbfc3a23ae53153afb7fc46588770}\label{class_player_movement_af5abbfc3a23ae53153afb7fc46588770}} 
+\index{Player\+Movement@{Player\+Movement}!Rotate\+Player@{Rotate\+Player}}
+\index{Rotate\+Player@{Rotate\+Player}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Rotate\+Player()}{RotatePlayer()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Rotate\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update method. Calls methods to move and rotate player 
+
+\mbox{\Hypertarget{class_player_movement_af704bd9f7ca1cda2ba100a8ef631dbc9}\label{class_player_movement_af704bd9f7ca1cda2ba100a8ef631dbc9}} 
+\index{Player\+Movement@{Player\+Movement}!Set\+Can\+Jump@{Set\+Can\+Jump}}
+\index{Set\+Can\+Jump@{Set\+Can\+Jump}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Set\+Can\+Jump()}{SetCanJump()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Set\+Can\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the player\textquotesingle{}s ability to jump. 
+
+\mbox{\Hypertarget{class_player_movement_a6eca87a71348040e0eedb138eb1c3a0c}\label{class_player_movement_a6eca87a71348040e0eedb138eb1c3a0c}} 
+\index{Player\+Movement@{Player\+Movement}!Set\+Can\+Sprint@{Set\+Can\+Sprint}}
+\index{Set\+Can\+Sprint@{Set\+Can\+Sprint}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Set\+Can\+Sprint()}{SetCanSprint()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Set\+Can\+Sprint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the player\textquotesingle{}s ability to sprint. 
+
+\mbox{\Hypertarget{class_player_movement_a688ef83dd4792fdb5bcf76195b7f2fae}\label{class_player_movement_a688ef83dd4792fdb5bcf76195b7f2fae}} 
+\index{Player\+Movement@{Player\+Movement}!slow\+Down@{slow\+Down}}
+\index{slow\+Down@{slow\+Down}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{slow\+Down()}{slowDown()}}
+{\footnotesize\ttfamily void Player\+Movement.\+slow\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+handles slowdown from oil slicks. 
+
+\mbox{\Hypertarget{class_player_movement_a323e163d04bd2b048ca8d17510cfe299}\label{class_player_movement_a323e163d04bd2b048ca8d17510cfe299}} 
+\index{Player\+Movement@{Player\+Movement}!slow\+Down\+End@{slow\+Down\+End}}
+\index{slow\+Down\+End@{slow\+Down\+End}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{slow\+Down\+End()}{slowDownEnd()}}
+{\footnotesize\ttfamily void Player\+Movement.\+slow\+Down\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles oil slick slowdown expiry. 
+
+\mbox{\Hypertarget{class_player_movement_a9d75c39b5e4ee0c5d999bdfdc4d1db73}\label{class_player_movement_a9d75c39b5e4ee0c5d999bdfdc4d1db73}} 
+\index{Player\+Movement@{Player\+Movement}!Speedup\+Powerup@{Speedup\+Powerup}}
+\index{Speedup\+Powerup@{Speedup\+Powerup}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Speedup\+Powerup()}{SpeedupPowerup()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Speedup\+Powerup (\begin{DoxyParamCaption}\item[{float}]{duration,  }\item[{Audio\+Clip}]{sound }\end{DoxyParamCaption})}
+
+
+
+Handles effects of speedup powerup. 
+\begin{DoxyParams}{Parameters}
+{\em duration} & T\+He duration of the speedup.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\Hypertarget{class_player_movement_a02c0e10fc29c38c92c6196d70364ac89}\label{class_player_movement_a02c0e10fc29c38c92c6196d70364ac89}} 
+\index{Player\+Movement@{Player\+Movement}!Spiral@{Spiral}}
+\index{Spiral@{Spiral}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Spiral()}{Spiral()}}
+{\footnotesize\ttfamily bool Player\+Movement.\+Spiral (\begin{DoxyParamCaption}\item[{float}]{input\+Spiral }\end{DoxyParamCaption})}
+
+
+
+Spirals the whale along z-\/axis 
+
+\mbox{\Hypertarget{class_player_movement_a32c7ec914f2b18dfcf6e9c354f6e2f8e}\label{class_player_movement_a32c7ec914f2b18dfcf6e9c354f6e2f8e}} 
+\index{Player\+Movement@{Player\+Movement}!Turn@{Turn}}
+\index{Turn@{Turn}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Turn()}{Turn()}}
+{\footnotesize\ttfamily bool Player\+Movement.\+Turn (\begin{DoxyParamCaption}\item[{float}]{input\+Vertical,  }\item[{float}]{input\+Horizontal }\end{DoxyParamCaption})}
+
+
+
+Translates input into rotation. 
+
+\mbox{\Hypertarget{class_player_movement_aaf9b77d7177d538be9c1447d08191322}\label{class_player_movement_aaf9b77d7177d538be9c1447d08191322}} 
+\index{Player\+Movement@{Player\+Movement}!Update@{Update}}
+\index{Update@{Update}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update method. Calls methods to move and rotate player 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Jerkbot/\+Documents/\+Whale\+Racer\+V2/\+Whale Racer V2/\+Assets/\+Scripts/\+Player/Player\+Movement.\+cs\end{DoxyCompactItemize}

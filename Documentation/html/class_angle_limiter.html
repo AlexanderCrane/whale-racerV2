@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Whale Racer: AngleLimiter Class Reference</title>
+<title>Whale Racer V2: AngleLimiter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Whale Racer
-   &#160;<span id="projectnumber">Project 3</span>
+   <div id="projectname">Whale Racer V2
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">A 3D whale racing game in C# with Unity.</div>
+   <div id="projectbrief">A 3D Whale Racing video game written in C# with Unity.</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('class_angle_limiter.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_angle_limiter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AngleLimiter Class Reference</div>  </div>
@@ -89,8 +90,109 @@ $(document).ready(function(){initNavTree('class_angle_limiter.html','');});
 <div class="contents">
 
 <p>Inherits MonoBehaviour.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a89e574bae24693203bab055a3a4fd184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_angle_limiter.html#a89e574bae24693203bab055a3a4fd184">Start</a> ()</td></tr>
+<tr class="separator:a89e574bae24693203bab055a3a4fd184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4aa01bc9ab1fa09caede11d39cbaa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_angle_limiter.html#afa4aa01bc9ab1fa09caede11d39cbaa4">FixedUpdate</a> ()</td></tr>
+<tr class="separator:afa4aa01bc9ab1fa09caede11d39cbaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afced607afbb55c3efcd949ee0e397b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_angle_limiter.html#afced607afbb55c3efcd949ee0e397b1a">ReStabilize</a> (float angle)</td></tr>
+<tr class="separator:afced607afbb55c3efcd949ee0e397b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Script to limit movement of buoyant objects. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa4aa01bc9ab1fa09caede11d39cbaa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4aa01bc9ab1fa09caede11d39cbaa4">&#9670;&nbsp;</a></span>FixedUpdate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AngleLimiter.FixedUpdate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FixedUpdate method. Calls ReStabilize if buoyant object is out of alignment. </p>
+
+</div>
+</div>
+<a id="afced607afbb55c3efcd949ee0e397b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afced607afbb55c3efcd949ee0e397b1a">&#9670;&nbsp;</a></span>ReStabilize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AngleLimiter.ReStabilize </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realigns a buoyant object by Slerping it back. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a89e574bae24693203bab055a3a4fd184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e574bae24693203bab055a3a4fd184">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AngleLimiter.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start method. Gets the containing object's rigidbody. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/bill holcomb/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/System/AngleLimiter.cs</li>
+<li>C:/Users/Jerkbot/Documents/WhaleRacerV2/Whale Racer V2/Assets/Scripts/System/AngleLimiter.cs</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
