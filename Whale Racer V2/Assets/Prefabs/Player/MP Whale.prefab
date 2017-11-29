@@ -495,6 +495,7 @@ GameObject:
   - component: {fileID: 114343160947050950}
   - component: {fileID: 114398587462971038}
   - component: {fileID: 114032401966716700}
+  - component: {fileID: 114078377038268638}
   m_Layer: 0
   m_Name: MP Whale
   m_TagString: Player
@@ -2743,6 +2744,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionParent: {fileID: 1457677468697990}
+--- !u!114 &114078377038268638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457677468697990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95679868830563410}
+  m_ParameterSendBits: 255
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
 --- !u!114 &114121817822719170
 MonoBehaviour:
   m_ObjectHideFlags: 1

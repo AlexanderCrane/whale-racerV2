@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using UnityEngine.SceneManagement;
 
 #if ENABLE_UNET
 
@@ -23,11 +24,16 @@ namespace UnityEngine.Networking
 
         void Awake()
         {
+
             manager = GetComponent<NetworkManager>();
         }
 
         void Update()
         {
+            if (SceneManager.GetActiveScene().name == "MPLobby" && GameObject.Find("GameController") != null)
+            {
+                Destroy(GameObject.Find("GameController"));
+            }
             if (!showGUI)
                 return;
 
