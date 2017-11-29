@@ -494,6 +494,7 @@ GameObject:
   - component: {fileID: 114560304618751216}
   - component: {fileID: 114343160947050950}
   - component: {fileID: 114398587462971038}
+  - component: {fileID: 114032401966716700}
   m_Layer: 0
   m_Name: MP Whale
   m_TagString: Player
@@ -2712,6 +2713,24 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114032401966716700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457677468697990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b6d68f959fd4a8ea65864ef1c4e444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+  damageImage: {fileID: 0}
+  deathClip: {fileID: 0}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &114077014402545906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2791,6 +2810,7 @@ MonoBehaviour:
   pmInstance: {fileID: 0}
   currentCheckpoint: 0
   checkpointsHit: 
+  cam: {fileID: 0}
 --- !u!114 &114398587462971038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2803,6 +2823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   whaleAnimator: {fileID: 0}
+  animations: {fileID: 0}
   whaleSpeed: 0
   turnSpeed: 40
   baseTurnSpeed: 500
@@ -2811,7 +2832,23 @@ MonoBehaviour:
   maxBackwardSpeed: 700
   baseMaxForward: 1200
   baseMaxBackward: 500
+  sprintMultiplier: 1.8
+  underwaterMod: 1
+  whaleBody: {fileID: 0}
   splitscreenPlayer2: 0
+  freeFormMovement: 0
+  playerHealth: {fileID: 0}
+  wDirect:
+    initialized: 0
+    xSensitivity: 2
+    ySensitivity: 2
+    clampVertRotation: 1
+    minXAngle: -90
+    maxXAngle: 90
+    smoothingFactor: 4
+    cursorLock: 1
+    smoothingEnabled: 1
+  playerCam: {fileID: 0}
 --- !u!114 &114423845602533568
 MonoBehaviour:
   m_ObjectHideFlags: 1
