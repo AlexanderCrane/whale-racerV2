@@ -54,12 +54,13 @@ public class GameManager : NetworkBehaviour
             {
                 if (cams.Count() == 2)
                 {
-                    cams[1].rect = new Rect(0, 0, 1, .5f);
-                    cams[0].rect = new Rect(0, .5f, 1, .5f);
+                    cams[0].rect = new Rect(0, 0, 1, .5f);
+                    cams[1].rect = new Rect(0, .5f, 1, .5f);
                     GameObject ai = GameObject.Find("AI_Whale");
                     ai.GetComponent<NavMeshAgent>().enabled = false;
                     ai.GetComponent<PlayerMovement>().enabled = true;
                 }
+
             }
             else
             {
