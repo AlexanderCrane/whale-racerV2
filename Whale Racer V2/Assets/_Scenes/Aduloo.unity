@@ -264,7 +264,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 31979283}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,6 +841,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -852,7 +856,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 65788366}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Underwater Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,6 +1055,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -1371,15 +1379,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -1497,6 +1505,10 @@ Prefab:
     - target: {fileID: 4181859734162586, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
@@ -1646,7 +1658,7 @@ GameObject:
   - component: {fileID: 210378452}
   - component: {fileID: 210378449}
   - component: {fileID: 210378451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Waypoint 7.5
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -1791,6 +1803,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -2247,15 +2263,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -2896,7 +2912,7 @@ GameObject:
   - component: {fileID: 434468532}
   - component: {fileID: 434468531}
   - component: {fileID: 434468527}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 10
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -3008,7 +3024,7 @@ GameObject:
   - component: {fileID: 443117635}
   - component: {fileID: 443117634}
   - component: {fileID: 443117630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 2
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -3164,6 +3180,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -3180,7 +3200,7 @@ GameObject:
   - component: {fileID: 462150166}
   - component: {fileID: 462150165}
   - component: {fileID: 462150161}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 5
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -3622,6 +3642,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -3742,7 +3770,7 @@ GameObject:
   - component: {fileID: 520444722}
   - component: {fileID: 520444721}
   - component: {fileID: 520444717}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 11
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -3963,7 +3991,7 @@ GameObject:
   - component: {fileID: 568309257}
   - component: {fileID: 568309256}
   - component: {fileID: 568309252}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 9
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -4488,7 +4516,7 @@ GameObject:
   - component: {fileID: 611265648}
   - component: {fileID: 611265647}
   - component: {fileID: 611265643}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 7
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -4647,6 +4675,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -4954,6 +4986,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -5025,6 +5065,10 @@ Prefab:
       propertyPath: m_NavMeshLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1152971747938832, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
   m_IsPrefabParent: 0
@@ -5075,6 +5119,14 @@ Prefab:
     - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
       propertyPath: m_Name
       value: Speedup (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -5857,6 +5909,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -5981,7 +6041,7 @@ GameObject:
   - component: {fileID: 854552344}
   - component: {fileID: 854552343}
   - component: {fileID: 854552341}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Waypoint 1.5
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -6366,6 +6426,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -6450,6 +6514,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -6717,6 +6789,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -7004,15 +7084,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -7623,6 +7703,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -7928,15 +8016,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -8002,7 +8090,7 @@ GameObject:
   - component: {fileID: 1052110923}
   - component: {fileID: 1052110922}
   - component: {fileID: 1052110921}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8140,6 +8228,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -8250,7 +8342,7 @@ GameObject:
   - component: {fileID: 1084702066}
   - component: {fileID: 1084702065}
   - component: {fileID: 1084702064}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8552,15 +8644,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -9011,15 +9103,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -9173,6 +9265,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -9715,7 +9811,7 @@ GameObject:
   - component: {fileID: 1194858706}
   - component: {fileID: 1194858705}
   - component: {fileID: 1194858701}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 3
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -10000,6 +10096,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -10051,6 +10151,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -10975,6 +11079,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -11617,6 +11725,10 @@ Prefab:
       propertyPath: m_NavMeshLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1152971747938832, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54895594235508072, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
@@ -11765,7 +11877,7 @@ GameObject:
   - component: {fileID: 1460633666}
   - component: {fileID: 1460633665}
   - component: {fileID: 1460633664}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 4
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -12460,7 +12572,7 @@ GameObject:
   - component: {fileID: 1593893442}
   - component: {fileID: 1593893441}
   - component: {fileID: 1593893438}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FinishLine
   m_TagString: FinishLine
   m_Icon: {fileID: 0}
@@ -12822,6 +12934,10 @@ Prefab:
     - target: {fileID: 1152971747938832, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
       propertyPath: m_NavMeshLayer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1152971747938832, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
@@ -13506,6 +13622,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -13912,6 +14032,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -14238,6 +14362,10 @@ Prefab:
       propertyPath: m_NavMeshLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1152971747938832, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 091e680aef9ce0c479a03bb03165470d, type: 2}
   m_IsPrefabParent: 0
@@ -14332,6 +14460,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -14396,6 +14528,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -14664,6 +14804,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -14775,7 +14919,7 @@ GameObject:
   - component: {fileID: 1825591516}
   - component: {fileID: 1825591515}
   - component: {fileID: 1825591511}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 6
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -14930,6 +15074,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -14958,7 +15110,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1840076502}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15042,6 +15194,14 @@ Prefab:
     - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
       propertyPath: m_Name
       value: Speedup (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -15236,6 +15396,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -15320,6 +15484,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -15501,6 +15673,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -15534,7 +15714,7 @@ GameObject:
   - component: {fileID: 1889517791}
   - component: {fileID: 1889517790}
   - component: {fileID: 1889517786}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 8
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -15690,15 +15870,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -16019,7 +16199,7 @@ GameObject:
   - component: {fileID: 1936202251}
   - component: {fileID: 1936202250}
   - component: {fileID: 1936202248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Waypoint 1.75
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -16199,7 +16379,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1945222524}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Speedup Powerups
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16272,7 +16452,7 @@ GameObject:
   - component: {fileID: 1959908684}
   - component: {fileID: 1959908683}
   - component: {fileID: 1959908679}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Checkpoint 1
   m_TagString: Checkpoint
   m_Icon: {fileID: 0}
@@ -16524,7 +16704,7 @@ Transform:
   m_GameObject: {fileID: 1988539855}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: -0.5}
   m_LocalPosition: {x: 0, y: 5, z: 0}
-  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 1342768362}
   m_RootOrder: 5
@@ -16644,6 +16824,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -16893,15 +17077,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1399352347913464, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1355391323157200, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -17029,6 +17213,14 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0d14b68ad99c2c64c985542c793db7ca, type: 3}
+    - target: {fileID: 1745470251716228, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480757275178176, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114189183947754870, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2507da21821fdc45a59ddd70e2a84a2, type: 2}
@@ -17129,6 +17321,10 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 8300000, guid: 0ac139c3001aac841b4376b22daaa88e, type: 3}
+    - target: {fileID: 1495462101865736, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3acb86b4f8472094687e4eae62d9008c, type: 2}
   m_IsPrefabParent: 0
@@ -17248,11 +17444,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 70
+  orthographic size: 50
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 1792
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: eccf9f999e5c64a00b027fdaabb46053, type: 2}
   m_TargetDisplay: 0
