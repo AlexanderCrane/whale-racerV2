@@ -78,6 +78,7 @@ public class GameManager : NetworkBehaviour
     {
         if (countdownOngoing)
         {
+            PlayerManager.allWhaleMovementDisabled = true;
             countdownTime = countdownLength - Time.timeSinceLevelLoad;
             if (countdownTime <= 0f)
             {
