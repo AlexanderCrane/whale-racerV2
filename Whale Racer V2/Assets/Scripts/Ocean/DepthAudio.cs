@@ -12,13 +12,13 @@ public class DepthAudio: MonoBehaviour
     public AudioMixerGroup envirVolume;
 
     //Overwater Presets
-    public float o_musicVolume = 0.0f;
-    public float o_gameVolume = 0.0f;
+    public float o_musicVolume = 1.0f;
+    public float o_gameVolume = -1.0f;
     public float o_envirVolume = 0.0f;
     //Underwater Presets
-    public float u_musicVolume = -3.0f;
-    public float u_gameVolume = 0.0f;
-    public float u_envirVolume = -1.0f;
+    public float u_musicVolume = -4.0f;
+    public float u_gameVolume = -8.0f;
+    public float u_envirVolume = -2.0f;
 
     /*private void Awake()
     {
