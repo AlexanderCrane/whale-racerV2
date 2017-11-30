@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65633129195265778}
   - component: {fileID: 23092273492729876}
   - component: {fileID: 114373586145239436}
+  - component: {fileID: 208967930213470922}
   m_Layer: 0
   m_Name: BounceBox
   m_TagString: Untagged
@@ -108,3 +109,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctDirection: {x: 0, y: 0, z: 0}
+  sound: {fileID: 0}
+--- !u!208 &208967930213470922
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1495462101865736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.735, y: 0.5, z: 0.69}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
