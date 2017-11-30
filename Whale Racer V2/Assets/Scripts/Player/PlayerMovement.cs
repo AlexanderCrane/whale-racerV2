@@ -32,6 +32,8 @@ public class PlayerMovement : NetworkBehaviour
     public PlayerHealth playerHealth;
     public AudioMixer audioMixer;
     public DepthAudio depthAud;
+    //public AudioClip splashClip;
+    //public AudioClip sideSplashClip;
     public float volumeVariance = 0.05f;
     public float pitchVariance = 0.18f;
     #endregion
@@ -223,13 +225,17 @@ public class PlayerMovement : NetworkBehaviour
     {
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
         AudioSource audio_Splash = GetComponent<AudioSource>();
+        /*if (splashClip != null && !Input.GetButton(spiralAxis))
+        {
+            audio_Splash.clip = splashClip;
+        }*/
 
         float directionSpeed = 0.0f; //set equal to forward or backward
 
         if (input > 0) { directionSpeed = maxForwardSpeed; }
         else if (input < 0) { directionSpeed = maxBackwardSpeed; }
 
-        if(audio_Splash.isPlaying)
+        if(audio_Splash.isPlaying && audio_Splash.clip == splashClip)
         {
             PlayAudioEvolve(audio_Splash);
         }
@@ -383,6 +389,19 @@ public class PlayerMovement : NetworkBehaviour
                 transform.Rotate(transform.TransformDirection(Vector3.up), inputSpiral * whaleSpeed/25 * Time.deltaTime);
                 transform.Rotate(Vector3.forward, inputSpiral * whaleSpeed / 20 * Time.deltaTime);
 
+                //For a spraying sound if moving on turns
+                /*AudioSource audio_Splash = GetComponent<AudioSource>();
+                if(sideSplashClip != null)
+                {
+                    audio_Splash.clip = sideSplashClip;
+                    if(!audio_Splash.isPlaying)
+                    {
+                        audio_Splash.volume = 1.5f;
+                        audio_Splash.pitch = 1f + ((whaleSpeed / maxForwardSpeed) / 4);
+                        audio_Splash.Play();
+                    }
+                }*/
+                
                 yRotation = transform.eulerAngles.y;
                 zRotation = transform.eulerAngles.z;
                 PositionReset(1);
