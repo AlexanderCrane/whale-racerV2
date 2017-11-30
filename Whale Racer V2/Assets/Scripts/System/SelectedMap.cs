@@ -27,7 +27,7 @@ public class SelectedMap : MonoBehaviour {
                 selectedMap = "TheShipyard";
                 break;
             case 3:
-                selectedMap = "Map3";
+                selectedMap = "TheMinefield";
                 break;
             default:
                 selectedMap = "Aduloo";
