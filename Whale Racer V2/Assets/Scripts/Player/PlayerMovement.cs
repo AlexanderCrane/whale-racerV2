@@ -433,10 +433,15 @@ public class PlayerMovement : NetworkBehaviour
     {
         if (CheckCanJump())
         {
-            if (jumpPressed && HeightInWater.underwater == false)
+            if (jumpPressed)
             {
-                whaleAnimator.SetBool(animations.jumpBool, true);
-                whaleBody.AddRelativeForce(0, 400, -30, ForceMode.Impulse);
+                if (this.transform.position.y < -1.0f)
+                {
+                    EmergeAnimation();
+                }
+                else { whaleAnimator.SetBool(animations.jumpBool, true); }
+
+                whaleBody.AddRelativeForce(0, whaleSpeed / 5, -30, ForceMode.Impulse);
                 canJump = 0;
             }
         }
@@ -463,6 +468,16 @@ public class PlayerMovement : NetworkBehaviour
         whaleAnimator.SetBool(animations.underwaterBool, true);
         whaleAnimator.SetBool(animations.diveBool, false);
         whaleAnimator.SetBool(animations.subMovementBool, false);
+        whaleAnimator.speed = 1f;
+    }
+    /// <summary>
+    /// Play the emerging animation.
+    /// </summary>
+    private void EmergeAnimation()
+    {
+        whaleAnimator.SetBool(animations.underwaterBool, true);
+        whaleAnimator.SetBool(animations.diveBool, false);
+        whaleAnimator.SetBool(animations.subMovementBool, true);
         whaleAnimator.speed = 1f;
     }
     /// <summary>

@@ -16,6 +16,7 @@ public class AngleLimiter : MonoBehaviour {
     //[SerializeField] Transform target;
     [SerializeField] float rotateSpeed;
     private Rigidbody rb;
+    private float yRotation = 0.0f;
     private Quaternion lookDirection;
     //private Vector3 correctDirection;
     #endregion
@@ -36,31 +37,8 @@ public class AngleLimiter : MonoBehaviour {
     /// </summary>
     private void FixedUpdate ()
     {
-        //RaycastHit hitFloor;
-        //hitDown;
-        Ray downRay = new Ray(transform.position, transform.TransformDirection(-Vector3.forward));
-        Ray down = new Ray(transform.position, Vector3.down);
-        Debug.DrawRay(transform.position, transform.TransformDirection(-Vector3.forward) * 40);
-        Debug.DrawRay(transform.position, Vector3.down * 40);
-        //Physics.Raycast(downRay, out hitFloor, 10.0f);
-        //Physics.Raycast(down, out hitDown, 10.0f);
-
-        //
-        //Difference between two vectors
-        //
-        Vector3 newVector = Vector3.Cross(transform.TransformDirection(-Vector3.forward), Vector3.down);
-        float AngleDifference = Mathf.Abs(Vector3.Angle(transform.TransformDirection(-Vector3.forward), Vector3.down));
-        //Debug.Log(AngleDifference);
-        if (AngleDifference > 30)
-        {
-            //Debug.Log("Send it back");
-            ReStabilize(AngleDifference);
-        }
-
-        /*if (hitFloor.collider.tag == "Floor")
-        {
-            Debug.Log("Hit the bottom");
-        }*/
+        yRotation = this.transform.eulerAngles.y;
+        PositionReset();
     }
     /// <summary>
     /// Realigns a buoyant object by Slerping it back.
@@ -70,6 +48,27 @@ public class AngleLimiter : MonoBehaviour {
     {
         lookDirection = Quaternion.LookRotation(-Vector3.down);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookDirection, Time.deltaTime * rotateSpeed);
+    }
+
+    /// <summary>
+    /// Rotates player back to resting position
+    /// </summary>
+    public void PositionReset() //0 for x&z, 1 for x, 2 for z
+    {
+        Quaternion fromRotation = transform.rotation;
+        Quaternion targetRotation;
+        yRotation = this.transform.eulerAngles.y;
+        
+        //X & Z
+        targetRotation = Quaternion.Euler(new Vector3(-90.0f, yRotation, 0.0f));
+
+        float xAng = transform.localEulerAngles.x;
+        float zAng = transform.localEulerAngles.z;
+        if ((xAng > -70.0f || xAng < -110.0f) || (zAng > 20.0f || zAng < -20.0f))
+        {
+            this.transform.localRotation = Quaternion.Slerp(this.transform.rotation, targetRotation,
+                5.50f * Time.deltaTime);
+        }
     }
     #endregion
 }

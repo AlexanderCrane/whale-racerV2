@@ -945,6 +945,16 @@ Prefab:
       propertyPath: m_Name
       value: Buoy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
   m_IsPrefabParent: 0
@@ -1371,6 +1381,7 @@ GameObject:
   - component: {fileID: 312002785}
   - component: {fileID: 312002784}
   - component: {fileID: 312002786}
+  - component: {fileID: 312002787}
   m_Layer: 0
   m_Name: GameBackgroundMusic
   m_TagString: Untagged
@@ -1485,6 +1496,31 @@ MonoBehaviour:
   aboveWaterClip: {fileID: 8300000, guid: a4b25b6dd7ecc4a999196afcb0065f62, type: 3}
   underWaterClip: {fileID: 8300000, guid: 3594a3f53e90dc647a620ea8e5bc5846, type: 3}
   audioPlayer: {fileID: 312002784}
+--- !u!114 &312002787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 312002783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0247beea6507124439c32a5491221151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: afdf9d1c8e783e445a4d6a8aaee62601, type: 2}
+  masterVolume: {fileID: 24300002, guid: afdf9d1c8e783e445a4d6a8aaee62601, type: 2}
+  musicVolume: {fileID: 243121399403198082, guid: afdf9d1c8e783e445a4d6a8aaee62601,
+    type: 2}
+  gameVolume: {fileID: 243344991988426212, guid: afdf9d1c8e783e445a4d6a8aaee62601,
+    type: 2}
+  envirVolume: {fileID: 243216135670812524, guid: afdf9d1c8e783e445a4d6a8aaee62601,
+    type: 2}
+  o_musicVolume: 0
+  o_gameVolume: 0
+  o_envirVolume: 0
+  u_musicVolume: -10
+  u_gameVolume: 0
+  u_envirVolume: -1
 --- !u!1001 &315395399
 Prefab:
   m_ObjectHideFlags: 0
@@ -1539,6 +1575,16 @@ Prefab:
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Name
       value: Buoy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -3114,6 +3160,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114511070193945522, guid: b544816461f324e56a39767fdeb5b114,
+        type: 2}
+      propertyPath: whales.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b544816461f324e56a39767fdeb5b114, type: 2}
   m_IsPrefabParent: 0
@@ -3534,6 +3585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ad29031b978644988d113b5e88dc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}
+  depthAud: {fileID: 0}
 --- !u!114 &700727181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4989,6 +5042,16 @@ Prefab:
       propertyPath: m_Name
       value: Buoy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
   m_IsPrefabParent: 0
@@ -5521,6 +5584,16 @@ Prefab:
       propertyPath: m_Name
       value: Buoy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
   m_IsPrefabParent: 0
@@ -6012,6 +6085,16 @@ Prefab:
       propertyPath: m_Name
       value: Buoy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
   m_IsPrefabParent: 0
@@ -6400,6 +6483,16 @@ Prefab:
     - target: {fileID: 1348528437799760, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_Name
       value: Buoy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
@@ -10641,6 +10734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1823896313}
   - component: {fileID: 1823896312}
+  - component: {fileID: 1823896314}
   m_Layer: 0
   m_Name: Water4AdvancedReflectionplayer_Camera (1)
   m_TagString: Untagged
@@ -10689,13 +10783,21 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1823896311}
-  m_LocalRotation: {x: 0.0000000134702915, y: 0.9961947, z: 0.08715581, w: -0.00000016223693}
-  m_LocalPosition: {x: -5, y: -3.259999, z: 11.5}
+  m_LocalRotation: {x: -0.25855967, y: 0.41158992, z: 0.12302559, w: 0.86521983}
+  m_LocalPosition: {x: -52.448708, y: -9.932448, z: -196.9616}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &1823896314
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1823896311}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1825591510
 GameObject:
   m_ObjectHideFlags: 0
@@ -11445,6 +11547,16 @@ Prefab:
       propertyPath: m_Name
       value: Buoy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
   m_IsPrefabParent: 0
@@ -11887,6 +11999,7 @@ GameObject:
   - component: {fileID: 1967470138}
   - component: {fileID: 1967470137}
   - component: {fileID: 1967470136}
+  - component: {fileID: 1967470140}
   m_Layer: 0
   m_Name: player_Camera
   m_TagString: PlayerCamera
@@ -12214,6 +12327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ad29031b978644988d113b5e88dc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: afdf9d1c8e783e445a4d6a8aaee62601, type: 2}
+  depthAud: {fileID: 312002787}
 --- !u!114 &1967470134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12321,6 +12436,87 @@ MonoBehaviour:
   separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
   chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
     type: 3}
+--- !u!82 &1967470140
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967470122}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243121399403198082, guid: afdf9d1c8e783e445a4d6a8aaee62601,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: ea8b05015d469164c9b9a0f25e8e5969, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!4 &1970594835 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4181859734162586, guid: 3acb86b4f8472094687e4eae62d9008c,
@@ -12627,6 +12823,16 @@ Prefab:
     - target: {fileID: 4754936960812214, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
       propertyPath: m_LocalScale.x
       value: 68.49211
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906175398304786, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54244645654017730, guid: 524d45788cdbd754ebe73ad55d73b5c7,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 524d45788cdbd754ebe73ad55d73b5c7, type: 2}
