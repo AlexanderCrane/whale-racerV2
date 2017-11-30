@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/TheShipyard_MP.unity
     guid: 11c94b9d2d00b204490cb6b6eda5d40c
+  - enabled: 1
+    path: Assets/_Scenes/TheMinefield_MP.unity
+    guid: c9a0f146b67a2ad46be33c9a24d23251
