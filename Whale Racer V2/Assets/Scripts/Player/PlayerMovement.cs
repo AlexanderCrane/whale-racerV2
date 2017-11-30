@@ -152,7 +152,7 @@ public class PlayerMovement : NetworkBehaviour
         }
 
         if (transform.position.y > -2.0f) { underwaterMod = 1.0f; }
-        else { underwaterMod = 2.0f; }
+        else { underwaterMod = 1.2f; }
 
         float spiralInput = Input.GetAxis(spiralAxis);
         xMovement = Input.GetAxis(horizontalAxis);
