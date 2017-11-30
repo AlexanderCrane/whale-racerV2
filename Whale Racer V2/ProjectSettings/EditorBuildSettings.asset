@@ -24,11 +24,11 @@ EditorBuildSettings:
     path: Assets/_Scenes/MPLobby.unity
     guid: 7ac887a5c4bac5345a102ed366daa90a
   - enabled: 1
-    path: Assets/_Scenes/TheShipyard_MP.unity
-    guid: 76479038328d163469f34ee002dfc2a6
-  - enabled: 1
     path: Assets/_Scenes/TheShipyard.unity
     guid: a7d59f5a788a2f8419f6cc2f0252f615
   - enabled: 1
     path: Assets/_Scenes/TheMinefield.unity
     guid: ffcec1e6d311a164dbdc0b15a582544c
+  - enabled: 1
+    path: Assets/_Scenes/TheShipyard_MP.unity
+    guid: 11c94b9d2d00b204490cb6b6eda5d40c
