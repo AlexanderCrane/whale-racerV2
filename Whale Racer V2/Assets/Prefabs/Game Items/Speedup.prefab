@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 65582372602452336}
   - component: {fileID: 114096007294020610}
   - component: {fileID: 114189183947754870}
+  - component: {fileID: 114684580212459836}
   m_Layer: 0
   m_Name: Speedup
   m_TagString: Pick Up
@@ -147,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSpeedup: 1
   speedupDuration: 3
+  sound: {fileID: 0}
 --- !u!114 &114189183947754870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,5 +158,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb4994dbbb9eeba42867cb3e92b43cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114684580212459836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1745470251716228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ef2aff6fc0484498f8d281f53431b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
