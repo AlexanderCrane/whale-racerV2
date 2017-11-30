@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 8439cff6198444075a9064b36d672525
-timeCreated: 1510522255
+guid: 4dd8b461fa02440e9852e7957e1963f6
+timeCreated: 1511929163
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: whaleOneIconMiniMap_0
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -45,8 +44,8 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePivot: {x: 0.7226504, y: 0.4143652}
+  spriteBorder: {x: 2, y: 0, z: 0, w: 36}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -75,32 +74,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: whaleOneIconMiniMap_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 3
-        width: 96
-        height: 85
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 26, y: 22, z: 28, w: 19}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 

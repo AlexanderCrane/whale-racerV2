@@ -61,6 +61,7 @@ public class PlayerMovement : NetworkBehaviour
     private string spiralAxis = "Spiral";
     private bool noTurn = false;
     private bool noSpiral = false;
+    private bool isSlowedDown = false;
     #endregion
     /// <summary>
     /// Awake method. Stores base values for forward/backward/turn speed. Initializes animator and rigidbody.
@@ -539,14 +540,19 @@ public class PlayerMovement : NetworkBehaviour
     /// </summary>
     public void slowDown()
     {
-        maxForwardSpeed *= .2f;
-        maxBackwardSpeed*= .2f;
+        if (!isSlowedDown)
+        {
+            maxForwardSpeed *= .2f;
+            maxBackwardSpeed *= .2f;
+            isSlowedDown = true;
+        }
     }
     /// <summary>
     /// Handles oil slick slowdown expiry.
     /// </summary>
     public void slowDownEnd()
     {
+        isSlowedDown = false;
         maxForwardSpeed = baseMaxForward;
         maxBackwardSpeed = baseMaxBackward;
     }
