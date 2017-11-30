@@ -3006,7 +3006,7 @@ MonoBehaviour:
   whaleSpeed: 0
   turnSpeed: 40
   baseTurnSpeed: 500
-  accel: 10
+  accel: 15
   maxForwardSpeed: 1650
   maxBackwardSpeed: 700
   baseMaxForward: 800

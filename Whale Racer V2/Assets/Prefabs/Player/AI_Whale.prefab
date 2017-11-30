@@ -2849,6 +2849,10 @@ MonoBehaviour:
   splitscreenPlayer2: 1
   freeFormMovement: 0
   playerHealth: {fileID: 114992644007290428}
+  audioMixer: {fileID: 0}
+  depthAud: {fileID: 0}
+  volumeVariance: 0.05
+  pitchVariance: 0.18
   wDirect:
     initialized: 0
     xSensitivity: 2
@@ -3218,7 +3222,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 5
-  m_Speed: 17
+  m_Speed: 14
   m_Acceleration: 5
   avoidancePriority: 0
   m_AngularSpeed: 900

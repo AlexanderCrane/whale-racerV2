@@ -281,16 +281,19 @@ public class PlayerMovement : NetworkBehaviour
             whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
 
         }
+        float deltaTimeFactor = Time.fixedDeltaTime * 30; //multiplying by deltatime ensures that the force is fps independent
 
-        if(Input.GetButton(sprintButton) && canSprint == 100)
+        if (Input.GetButton(sprintButton) && canSprint == 100)
         {
             Debug.Log("Sprinting");
-            whaleBody.AddRelativeForce(0.0f, 0.0f, input * (-whaleSpeed) * sprintMultiplier * underwaterMod);
+            whaleBody.AddRelativeForce(0.0f, 0.0f, input * deltaTimeFactor * (-whaleSpeed) * sprintMultiplier * underwaterMod);
             whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed*4);
             canSprint = 0;
             return;
         }
-        whaleBody.AddRelativeForce(0.0f, 0.0f, input * (-whaleSpeed) * underwaterMod);
+        //but also reduces speed produced by the values we've been using in the editor by a lot
+        //mess with this constant to keep it about the same
+        whaleBody.AddRelativeForce(0.0f, 0.0f, deltaTimeFactor * input * (-whaleSpeed) * underwaterMod);
     }
     /// <summary>
     /// Plays audio with varying random parameters for interesting effects
