@@ -235,7 +235,7 @@ public class PlayerMovement : NetworkBehaviour
         if (input > 0) { directionSpeed = maxForwardSpeed; }
         else if (input < 0) { directionSpeed = maxBackwardSpeed; }
 
-        if(audio_Splash.isPlaying && audio_Splash.clip == splashClip)
+        if(audio_Splash.isPlaying)// && audio_Splash.clip == splashClip)
         {
             PlayAudioEvolve(audio_Splash);
         }
