@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.Networking;
+using UnityEngine.Audio;
 using System.Linq;
 using UnityEngine;
 /// <summary>
@@ -29,6 +30,10 @@ public class PlayerMovement : NetworkBehaviour
     public bool freeFormMovement = false;
 
     public PlayerHealth playerHealth;
+    public AudioMixer audioMixer;
+    public DepthAudio depthAud;
+    public float volumeVariance = 0.05f;
+    public float pitchVariance = 0.18f;
     #endregion
 
     #region private variables and properties
@@ -98,7 +103,7 @@ public class PlayerMovement : NetworkBehaviour
     /// </summary>
     private void Update()
     {
-
+        
     }
     /// <summary>
     /// Fixed Update method. Calls methods to player input to whale movement.
@@ -186,8 +191,7 @@ public class PlayerMovement : NetworkBehaviour
         {
             gameObject.GetComponent<PlayerManager>().pmInstance.NewLap();
         }
-        //xMovement = Input.GetAxis(horizontalAxis);
-        //zMovement = Input.GetAxis(verticalAxis);
+
         //lock y rotation to 0 so the whale can't be flipped over (for now)
         //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);
         if (Time.time - speedupStart > speedupDuration && spedup)
@@ -217,43 +221,36 @@ public class PlayerMovement : NetworkBehaviour
     public void Move2D(float input)
     {
         Vector3 movement = new Vector3(0.0f, 0.0f, zMovement);
-        AudioSource movementSplash = GetComponent<AudioSource>();
-        //going forward
-        if (input > 0)
-        {
-            if (!movementAudioPlaying && movementSplash != null)
-            {
-                movementSplash.Play();
-                movementAudioPlaying = true;
-            }
-            if (whaleSpeed < maxForwardSpeed)
-            {
-                whaleSpeed += accel;
-            }
-            else
-            {
-                whaleSpeed = maxForwardSpeed + 1;
-            }
-            whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
+        AudioSource audio_Splash = GetComponent<AudioSource>();
 
+        float directionSpeed = 0.0f; //set equal to forward or backward
+
+        if (input > 0) { directionSpeed = maxForwardSpeed; }
+        else if (input < 0) { directionSpeed = maxBackwardSpeed; }
+
+        if(audio_Splash.isPlaying)
+        {
+            PlayAudioEvolve(audio_Splash);
         }
-        //backing up
-        else if (input < 0)
+        
+        //going forward
+        if (input != 0)
         {
-            if (!movementAudioPlaying && movementSplash != null)
+            //play audio
+            if (!movementAudioPlaying && audio_Splash != null)
             {
-                movementSplash.Play();
+                PlayAudioEvolve(audio_Splash);
+                audio_Splash.Play();
                 movementAudioPlaying = true;
             }
 
-            if (whaleSpeed < maxBackwardSpeed)
+            if (whaleSpeed < directionSpeed)
             {
                 whaleSpeed += accel;
-
             }
             else
             {
-                whaleSpeed = maxBackwardSpeed + 1;
+                whaleSpeed = directionSpeed + 1;
             }
             whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
 
@@ -261,9 +258,9 @@ public class PlayerMovement : NetworkBehaviour
         //stopping
         else
         {
-            if (movementAudioPlaying && movementSplash != null)
+            if (movementAudioPlaying && audio_Splash != null)
             {
-                movementSplash.Stop();
+                audio_Splash.Stop();
                 movementAudioPlaying = false;
             }
             if (whaleSpeed < -1)
@@ -287,6 +284,25 @@ public class PlayerMovement : NetworkBehaviour
             return;
         }
         whaleBody.AddRelativeForce(0.0f, 0.0f, input * (-whaleSpeed) * underwaterMod);
+    }
+    /// <summary>
+    /// Plays audio with varying random parameters for interesting effects
+    /// <param name="audioSource">Audio Sent To This Method To Evolve.</param>
+    /// </summary>
+    void PlayAudioEvolve(AudioSource audioSource)
+    {
+        //random variables
+        float volume = 0.1f;
+        float pitch = 0.45f;
+
+        float volumeChange = UnityEngine.Random.Range(-volumeVariance, volumeVariance);
+        float pitchChange = UnityEngine.Random.Range(-pitchVariance, pitchVariance);
+
+        volume += volumeChange + ((whaleSpeed / maxForwardSpeed) / 4);
+        pitch += pitchChange;
+
+        audioSource.volume = volume;
+        audioSource.pitch = pitch;
     }
     /// <summary>
     /// Update method. Calls methods to move and rotate player
@@ -353,9 +369,6 @@ public class PlayerMovement : NetworkBehaviour
             this.transform.localRotation = Quaternion.Slerp(this.transform.rotation, targetRotation,
                 5.50f * Time.deltaTime);
         }
-        //whaleBody.AddForce(-Vector3.forward * zMovement * whaleSpeed);
-        //whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed * 2);
-
     }
     /// <summary>
     /// Spirals the whale along z-axis

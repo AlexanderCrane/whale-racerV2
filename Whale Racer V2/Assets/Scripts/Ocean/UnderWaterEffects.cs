@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityStandardAssets.ImageEffects;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class UnderWaterEffects : MonoBehaviour {
 
@@ -19,6 +20,9 @@ public class UnderWaterEffects : MonoBehaviour {
     private GlobalFog GF;
     private SunShafts sS;
     private VignetteAndChromaticAberration vCA;
+
+    public AudioMixer audioMixer;
+    public DepthAudio depthAud;
 
     private float dFalloff = 0.70f;
     private float blurStart = 0.35f;
@@ -43,7 +47,8 @@ public class UnderWaterEffects : MonoBehaviour {
 
     void Update ()
     {
-        yPosition = this.transform.position.y;    
+        yPosition = this.transform.position.y;
+        depthAud.AdjustAudio(yPosition);
 
         if (yPosition < 1.0f && yPosition > -0.5f)
         {

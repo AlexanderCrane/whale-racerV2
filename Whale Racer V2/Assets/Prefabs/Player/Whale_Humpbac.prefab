@@ -2259,7 +2259,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 50
+  orthographic size: 28
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2494,7 +2494,7 @@ Rigidbody:
   m_GameObject: {fileID: 1210849541884028}
   serializedVersion: 2
   m_Mass: 200
-  m_Drag: 0.75
+  m_Drag: 1
   m_AngularDrag: 1.1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2681,10 +2681,11 @@ AudioSource:
   m_GameObject: {fileID: 1210849541884028}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243344991988426212, guid: afdf9d1c8e783e445a4d6a8aaee62601,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 01cc6025ed326fa44b359c52bd77352c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.044
+  m_Volume: 0.2
   m_Pitch: 1.2
   Loop: 1
   Mute: 0
@@ -3005,7 +3006,7 @@ MonoBehaviour:
   whaleSpeed: 0
   turnSpeed: 40
   baseTurnSpeed: 500
-  accel: 100
+  accel: 10
   maxForwardSpeed: 1650
   maxBackwardSpeed: 700
   baseMaxForward: 800
@@ -3016,6 +3017,10 @@ MonoBehaviour:
   splitscreenPlayer2: 0
   freeFormMovement: 0
   playerHealth: {fileID: 114984246753025996}
+  audioMixer: {fileID: 24100000, guid: afdf9d1c8e783e445a4d6a8aaee62601, type: 2}
+  depthAud: {fileID: 0}
+  volumeVariance: 0.05
+  pitchVariance: 0.18
   wDirect:
     initialized: 0
     xSensitivity: 0.2
