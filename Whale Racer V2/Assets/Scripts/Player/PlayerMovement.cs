@@ -625,7 +625,7 @@ public class PlayerMovement : NetworkBehaviour
     public void BounceBack(Vector3 direction, AudioClip sound)
     {
 		if (playerHealth.currentHealth > 0) {
-			playerHealth.TakeDamage (10);
+			//playerHealth.TakeDamage (10);
 		}
         GetComponent<AudioSource>().PlayOneShot(sound);
         // Vector3 backward = transform.forward * -1;
