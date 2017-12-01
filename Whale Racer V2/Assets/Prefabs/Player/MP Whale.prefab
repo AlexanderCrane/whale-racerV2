@@ -2625,7 +2625,8 @@ AudioSource:
   m_GameObject: {fileID: 1457677468697990}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243344991988426212, guid: afdf9d1c8e783e445a4d6a8aaee62601,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 01cc6025ed326fa44b359c52bd77352c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.281
@@ -2885,6 +2886,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blowholeVisual: {fileID: 100000, guid: 8b721724428e6fc4e954b55c43405c20, type: 3}
+  previousClip: {fileID: 0}
+  blowClip: {fileID: 8300000, guid: 759570708b0f0b94db2aa01ae7347b1d, type: 3}
+  aSource: {fileID: 82160786288197464}
 --- !u!114 &114432837220167326
 MonoBehaviour:
   m_ObjectHideFlags: 1

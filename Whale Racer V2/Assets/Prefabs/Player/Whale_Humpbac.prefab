@@ -2823,6 +2823,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blowholeVisual: {fileID: 100000, guid: 8b721724428e6fc4e954b55c43405c20, type: 3}
+  previousClip: {fileID: 0}
+  blowClip: {fileID: 8300000, guid: 759570708b0f0b94db2aa01ae7347b1d, type: 3}
+  aSource: {fileID: 82181497121362796}
 --- !u!114 &114164314570622818
 MonoBehaviour:
   m_ObjectHideFlags: 1

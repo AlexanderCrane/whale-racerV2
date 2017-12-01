@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 /// <summary>
@@ -8,6 +9,10 @@ using UnityEngine;
 public class Blowhole : MonoBehaviour {
     private string blowholeButton = "Blowhole";
     public GameObject blowholeVisual;
+
+    public AudioClip previousClip;
+    public AudioClip blowClip;
+    public AudioSource aSource;
     /// <summary>
     /// Awake method. Sets the blowhole control to an alternate value if this player is splitscreen p2.
     /// </summary>
@@ -36,8 +41,27 @@ public class Blowhole : MonoBehaviour {
     {
         //instantiate the splash effect asset at point of contact
         GameObject spray = Instantiate(blowholeVisual, position, rotation);
-
-        AnimateSplash(spray);
+        if(aSource != null && blowClip != null && previousClip == null)
+        {
+            previousClip = aSource.clip;
+            aSource.clip = blowClip;
+            AnimateSplash(spray);
+            aSource.Play();
+            StartCoroutine("DelayRoutine");
+        }
+    }
+    /// <summary>
+    /// Moves the input splash sprite up and despawns it.
+    /// </summary>
+    private IEnumerator DelayRoutine()
+    {
+        yield return new WaitForSeconds(0.40f);
+        aSource.Stop();
+        aSource.clip = previousClip;
+        aSource.Play();
+        previousClip = null;
+        StopAllCoroutines();
+        yield return false;
     }
     /// <summary>
     /// Moves the input splash sprite up and despawns it.

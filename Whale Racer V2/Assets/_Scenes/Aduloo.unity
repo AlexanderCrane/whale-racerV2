@@ -830,12 +830,12 @@ Prefab:
     - target: {fileID: 224234180701761802, guid: f683ba29f5afd5a44a6f4f31db63007e,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 442.5
+      value: 423.5
       objectReference: {fileID: 0}
     - target: {fileID: 224234180701761802, guid: f683ba29f5afd5a44a6f4f31db63007e,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 340
+      value: 288
       objectReference: {fileID: 0}
     - target: {fileID: 224234180701761802, guid: f683ba29f5afd5a44a6f4f31db63007e,
         type: 2}
@@ -2066,6 +2066,16 @@ Prefab:
       propertyPath: accel
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114154868987431590, guid: b0551eec69be3be40bd6098b2b3ca8cc,
+        type: 2}
+      propertyPath: aSource
+      value: 
+      objectReference: {fileID: 2063436691}
+    - target: {fileID: 114154868987431590, guid: b0551eec69be3be40bd6098b2b3ca8cc,
+        type: 2}
+      propertyPath: blowClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 759570708b0f0b94db2aa01ae7347b1d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0551eec69be3be40bd6098b2b3ca8cc, type: 2}
   m_IsPrefabParent: 0
@@ -3444,8 +3454,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 569397462}
-  m_LocalRotation: {x: 0.0000000134702915, y: 0.9961947, z: 0.08715581, w: -0.00000016223693}
-  m_LocalPosition: {x: 7.4, y: -3.259999, z: 10.9}
+  m_LocalRotation: {x: -0.010612082, y: 0.36345768, z: 0.0041659954, w: 0.93154097}
+  m_LocalPosition: {x: -7.830537, y: -0.36158907, z: -16.182579}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3469,12 +3479,12 @@ Prefab:
     - target: {fileID: 224482669511206956, guid: 083d1d5d43c44ef4ea3fc6641d10157f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 442.5
+      value: 423.5
       objectReference: {fileID: 0}
     - target: {fileID: 224482669511206956, guid: 083d1d5d43c44ef4ea3fc6641d10157f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 340
+      value: 288
       objectReference: {fileID: 0}
     - target: {fileID: 224482669511206956, guid: 083d1d5d43c44ef4ea3fc6641d10157f,
         type: 2}
@@ -14326,6 +14336,11 @@ NavMeshObstacle:
 --- !u!1 &2063436688 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1210849541884028, guid: b0551eec69be3be40bd6098b2b3ca8cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 340706697}
+--- !u!82 &2063436691 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82181497121362796, guid: b0551eec69be3be40bd6098b2b3ca8cc,
     type: 2}
   m_PrefabInternal: {fileID: 340706697}
 --- !u!1001 &2079976254
