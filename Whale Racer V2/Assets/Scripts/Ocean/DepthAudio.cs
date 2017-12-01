@@ -20,12 +20,6 @@ public class DepthAudio: MonoBehaviour
     public float u_gameVolume = -8.0f;
     public float u_envirVolume = -2.0f;
 
-    /*private void Awake()
-    {
-        masterVolume = audioMixer.FindMatchingGroups("Master")[0];
-        musicVolume = audioMixer.FindMatchingGroups("Music")[0];
-        musicVolume = audioMixer.FindMatchingGroups("Game")[0];
-    }*/
     /// <summary>
     /// Adjust volume to whale position
     /// <param name="yPos">Y-Position of Camera</param>
