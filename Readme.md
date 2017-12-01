@@ -26,7 +26,7 @@ Our test suite was developed using Unity's built-in integration with NUnit. To r
 
 ## Citations
 
-AI, networking implemented with Unity standard libraries using Unity tutorials.
+AI, networking, player health, minimaps implemented with Unity standard libraries using Unity tutorials.
 
 Some graphical assets from Whale Racer Prototype by Austin Irvine.
 
@@ -41,3 +41,7 @@ Documentation generated with Doxygen.
 Some elements of PathingWaypoint.cs by James Arndt for the Unity Simple Vehicle AI tutorial.
 
 Buoyancy and water based on tutorials from Habrador (Erik Nordeus).
+
+Minimap assets by Unity Tutorial packages.
+
+Minimap icons made by Freepik from www.flaticon.com 

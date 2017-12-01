@@ -14,13 +14,14 @@ public class GameManager : NetworkBehaviour
     [SyncVar]
     public int winner;
     public int totalLaps = 1;
-    [SyncVar]
+    [SyncVar(hook = "updateTimer")]
     public float timer;
     public SyncListString finishTimes = new SyncListString();
     public List<String> spFinishTimes = new List<String>();
     public static List<Camera> allPlayerCams = new List<Camera>();
     public float countdownLength;
     private float countdownTime;
+    [SyncVar]
     private bool countdownOngoing = true;
     private bool showGo = false;
     public bool isMP;
@@ -30,6 +31,7 @@ public class GameManager : NetworkBehaviour
 
     void Awake()
     {
+
         DontDestroyOnLoad(this);
         if (SceneManager.GetActiveScene().name == "Aduloo_MP" || SceneManager.GetActiveScene().name == "TheShipyard_MP" || SceneManager.GetActiveScene().name == "TheMinefield_MP")
         {
@@ -39,6 +41,7 @@ public class GameManager : NetworkBehaviour
         {
             gmInst = this;
         }
+
         if (SelectedMap.selectedLaps > 0 && SelectedMap.selectedLaps < 4)
         {
             totalLaps = SelectedMap.selectedLaps;
@@ -80,6 +83,14 @@ public class GameManager : NetworkBehaviour
             }
         }
     }
+    /// <summary>
+    /// update the timer in MP
+    /// </summary>
+    void updateTimer(float value)
+    {
+        Debug.Log("Sync timer");
+        timer = value;
+    }
     ///  <summary>
     /// For the first few seconds of the game, manages the initial countdown timer.
     ///  </summary>
@@ -99,7 +110,7 @@ public class GameManager : NetworkBehaviour
         }
         else
         {
-            if (isMP && NetworkServer.active)
+            if (isMP)
             {
                 timer += Time.deltaTime;
             }
