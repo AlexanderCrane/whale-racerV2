@@ -21,7 +21,6 @@ public class GameManager : NetworkBehaviour
     public static List<Camera> allPlayerCams = new List<Camera>();
     public float countdownLength;
     private float countdownTime;
-    [SyncVar]
     private bool countdownOngoing = true;
     private bool showGo = false;
     public bool isMP;
@@ -103,6 +102,7 @@ public class GameManager : NetworkBehaviour
             countdownTime = countdownLength - Time.timeSinceLevelLoad;
             if (countdownTime <= 0f)
             {
+                Debug.Log("Enabling movement");
                 countdownOngoing = false;
                 showGo = true;
                 PlayerManager.allWhaleMovementDisabled = false;
