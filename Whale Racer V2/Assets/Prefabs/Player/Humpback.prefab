@@ -2788,6 +2788,7 @@ MonoBehaviour:
   pmInstance: {fileID: 0}
   currentCheckpoint: 0
   checkpointsHit: 
+  cam: {fileID: 0}
 --- !u!114 &114046242422267572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2921,7 +2922,13 @@ MonoBehaviour:
   whaleBody: {fileID: 0}
   splitscreenPlayer2: 0
   freeFormMovement: 1
+  playerHealth: {fileID: 0}
+  audioMixer: {fileID: 0}
+  depthAud: {fileID: 0}
+  volumeVariance: 0.05
+  pitchVariance: 0.18
   wDirect:
+    initialized: 0
     xSensitivity: 0.2
     ySensitivity: 0.2
     clampVertRotation: 1
@@ -2943,6 +2950,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blowholeVisual: {fileID: 100000, guid: 8b721724428e6fc4e954b55c43405c20, type: 3}
+  previousClip: {fileID: 0}
+  blowClip: {fileID: 8300000, guid: 759570708b0f0b94db2aa01ae7347b1d, type: 3}
+  aSource: {fileID: 82674621031184308}
 --- !u!114 &114642484099666998
 MonoBehaviour:
   m_ObjectHideFlags: 1
