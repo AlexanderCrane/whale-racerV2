@@ -294,7 +294,7 @@ public class PlayerMovement : NetworkBehaviour
             whaleAnimator.SetFloat(animations.moveFloat, whaleSpeed / 2);
 
         }
-        float deltaTimeFactor = Time.fixedDeltaTime * 30; //multiplying by deltatime ensures that the force is fps independent
+        float deltaTimeFactor = Time.fixedDeltaTime * 40; //multiplying by deltatime ensures that the force is fps independent
 
         if (Input.GetButton(sprintButton) && canSprint == 100)
         {
