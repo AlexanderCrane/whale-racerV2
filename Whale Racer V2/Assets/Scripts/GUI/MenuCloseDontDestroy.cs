@@ -20,10 +20,13 @@ public class MenuCloseDontDestroy : MonoBehaviour {
             Debug.Log("Destroying");
             Destroy(GameObject.Find("GameController"));
         }
-        if (GameObject.Find("LobbyPlayer(Clone)") != null)
+        if (GameObject.FindGameObjectsWithTag("LobbyPlayer") != null)
         {
             Debug.Log("Destroying");
-            Destroy(GameObject.Find("LobbyPlayer(Clone)"));
+            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("LobbyPlayer"))
+            {
+                Destroy(obj);
+            }
         }
     }
 }

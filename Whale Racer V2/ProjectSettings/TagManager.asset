@@ -15,6 +15,7 @@ TagManager:
   - FinishLine
   - Oil
   - MapButton
+  - LobbyPlayer
   layers:
   - Default
   - TransparentFX
