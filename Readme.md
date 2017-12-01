@@ -26,11 +26,15 @@ Our test suite was developed using Unity's built-in integration with NUnit. To r
 
 ## Citations
 
+AI, networking implemented with Unity standard libraries using Unity tutorials.
+
 Some graphical assets from Whale Racer Prototype by Austin Irvine.
 
 Music and Ocean sounds by George Irvine.
 
 Other sounds by various users on Freesound.org: inspectorj, gagaman, SoundBible.com, soundscapel.com.
+
+Metal texture by Textures.com.
 
 Documentation generated with Doxygen.
 
