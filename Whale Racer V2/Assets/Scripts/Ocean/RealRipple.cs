@@ -86,7 +86,7 @@ namespace UnityStandardAssets.Water
                     }
                 }
 
-                if (whales[0] != null)
+                if (whales.Count > 0 && whales[0] != null)
                 {
                     m_WaterBase.sharedMaterial.SetVector("_ObjectDisp1", whales[0].transform.position);
                     if (speeds[0] == 0)
@@ -103,7 +103,7 @@ namespace UnityStandardAssets.Water
                     }
                 }
 
-                if (whales[1] != null)
+                if (whales.Count > 1 && whales[1] != null)
                 {
                     m_WaterBase.sharedMaterial.SetVector("_ObjectDisp2", whales[1].transform.position);
                     if (speeds[1] == 0)
