@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "Assets", "namespace_assets.html", "namespace_assets" ],
     [ "OceanSim", "namespace_ocean_sim.html", "namespace_ocean_sim" ],
     [ "UnityStandardAssets", "namespace_unity_standard_assets.html", "namespace_unity_standard_assets" ],
     [ "AngleLimiter", "class_angle_limiter.html", "class_angle_limiter" ],
@@ -9,9 +10,12 @@ var annotated_dup =
     [ "BounceNBreak", "class_bounce_n_break.html", "class_bounce_n_break" ],
     [ "Checkpoint", "class_checkpoint.html", "class_checkpoint" ],
     [ "ChildCollide", "class_child_collide.html", null ],
+    [ "DepthAudio", "class_depth_audio.html", "class_depth_audio" ],
+    [ "DestroyTimed", "class_destroy_timed.html", "class_destroy_timed" ],
     [ "EnableButtonsOnLapSelect", "class_enable_buttons_on_lap_select.html", "class_enable_buttons_on_lap_select" ],
     [ "ExactWaterHeight", "class_exact_water_height.html", null ],
     [ "FindWaterHeight", "class_find_water_height.html", "class_find_water_height" ],
+    [ "GameAudio", "class_game_audio.html", "class_game_audio" ],
     [ "GameManager", "class_game_manager.html", "class_game_manager" ],
     [ "GetWinner", "class_get_winner.html", "class_get_winner" ],
     [ "HeightInWater", "class_height_in_water.html", null ],
@@ -34,13 +38,15 @@ var annotated_dup =
     [ "SelectedMap", "class_selected_map.html", "class_selected_map" ],
     [ "SimpleBoyancy", "class_simple_boyancy.html", "class_simple_boyancy" ],
     [ "slowDown", "classslow_down.html", "classslow_down" ],
+    [ "SmoothFollow", "class_smooth_follow.html", null ],
     [ "TestAI", "class_test_a_i.html", "class_test_a_i" ],
     [ "TestCheckpoints", "class_test_checkpoints.html", "class_test_checkpoints" ],
     [ "TestMenus", "class_test_menus.html", "class_test_menus" ],
     [ "TestMovement", "class_test_movement.html", "class_test_movement" ],
     [ "TestSplitscreen", "class_test_splitscreen.html", "class_test_splitscreen" ],
     [ "TriangleType", "struct_triangle_type.html", null ],
-    [ "UnderWaterEffects", "class_under_water_effects.html", null ],
+    [ "UnderWaterEffects", "class_under_water_effects.html", "class_under_water_effects" ],
+    [ "UWCaustics", "class_u_w_caustics.html", null ],
     [ "WaterConsole", "class_water_console.html", "class_water_console" ],
     [ "WhaleDirect", "class_whale_direct.html", "class_whale_direct" ]
 ];

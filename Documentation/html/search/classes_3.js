@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['enablebuttonsonlapselect',['EnableButtonsOnLapSelect',['../class_enable_buttons_on_lap_select.html',1,'']]],
-  ['exactwaterheight',['ExactWaterHeight',['../class_exact_water_height.html',1,'']]]
+  ['depthaudio',['DepthAudio',['../class_depth_audio.html',1,'']]],
+  ['destroytimed',['DestroyTimed',['../class_destroy_timed.html',1,'']]]
 ];

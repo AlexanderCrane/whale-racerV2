@@ -44,11 +44,16 @@ public class UnderWaterEffects : MonoBehaviour {
         //sS = this.GetComponent<SunShafts>();
         vCA = this.GetComponent<VignetteAndChromaticAberration>();
     }
-
+    /// <summary>
+    /// Adjust audio and camera effects based on position relative to water.
+    /// </summary>
     void Update ()
     {
         yPosition = this.transform.position.y;
-        depthAud.AdjustAudio(yPosition);
+        if (depthAud != null)
+        {
+            depthAud.AdjustAudio(yPosition);
+        }
 
         if (yPosition < 1.0f && yPosition > -0.5f)
         {
@@ -103,7 +108,9 @@ public class UnderWaterEffects : MonoBehaviour {
             }
         }
 	}
-
+    /// <summary>
+    /// Activate the underwater camera filters.
+    /// </summary>
     private void ActivateFilters()
     {
         GF.height = 1.0f;
@@ -112,7 +119,9 @@ public class UnderWaterEffects : MonoBehaviour {
         //twirl.enabled = true;
         GF.enabled = true;
     }
-
+    /// <summary>
+    /// Deactivate the underwater camera filters.
+    /// </summary>
     private void DeactivateFilters()
     {
         cCC.enabled = false;
@@ -120,22 +129,31 @@ public class UnderWaterEffects : MonoBehaviour {
         //twirl.enabled = false;
         GF.enabled = false;
     }
-
+    /// <summary>
+    /// Update the camera fog filter.
+    /// </summary>
     private void UpdateSFX()
     {
         GF.height = 4.0f * (-this.transform.position.y);
     }
-
+    /// <summary>
+    /// Begin playing the underwater background sound.
+    /// </summary>
     private void ActivateSFX()
     {
         BGMController.bgmInst.ToggleUnderWaterSound();
     }
-
+    /// <summary>
+    /// Begin playing the above water background sound.
+    /// </summary>
     private void DeactivateSFX()
     {
         BGMController.bgmInst.ToggleAboveWaterSound();
     }
-
+    /// <summary>
+    /// Initialize the vignette effect.
+    /// </summary>
+    /// <param name="yPos"></param>
     private void ToWaterTransitions(float yPos)
     {
         vCA.blurSpread = blurStart + ((2 - yPosition) / 2);
@@ -148,7 +166,9 @@ public class UnderWaterEffects : MonoBehaviour {
             sS.maxRadius = dFalloff - ((2 - yPosition) / 6);
         }*/
     }
-
+    /// <summary>
+    /// Deactivate filters used when above water.
+    /// </summary>
     private void DeactivateOverFilters()
     {
         //sS.enabled = false;

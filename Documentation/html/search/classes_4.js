@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['findwaterheight',['FindWaterHeight',['../class_find_water_height.html',1,'']]]
+  ['enablebuttonsonlapselect',['EnableButtonsOnLapSelect',['../class_enable_buttons_on_lap_select.html',1,'']]],
+  ['exactwaterheight',['ExactWaterHeight',['../class_exact_water_height.html',1,'']]]
 ];

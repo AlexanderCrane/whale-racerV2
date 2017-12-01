@@ -23,5 +23,6 @@ var searchData=
   ['testturnmodifiesrotation',['TestTurnModifiesRotation',['../class_test_movement.html#a9eb3b16a356adc915132870fbbddde54',1,'TestMovement']]],
   ['toggleabovewatersound',['ToggleAboveWaterSound',['../class_b_g_m_controller.html#afe57a67a897f90d66a636c55bd5801ac',1,'BGMController']]],
   ['toggleunderwatersound',['ToggleUnderWaterSound',['../class_b_g_m_controller.html#aeba3eaf3dfafbbd774a7910569f858b0',1,'BGMController']]],
+  ['towatertransitions',['ToWaterTransitions',['../class_under_water_effects.html#a544e7334add9f85726fbcfa94e75828a',1,'UnderWaterEffects']]],
   ['turn',['Turn',['../class_player_movement.html#a32c7ec914f2b18dfcf6e9c354f6e2f8e',1,'PlayerMovement']]]
 ];

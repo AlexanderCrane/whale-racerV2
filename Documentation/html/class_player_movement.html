@@ -131,12 +131,16 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aaf9b77d7177d538be9c1447d08191322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a0caaa871b9ef680c9f02bd0e22c77db1">FixedUpdate</a> ()</td></tr>
 <tr class="separator:a0caaa871b9ef680c9f02bd0e22c77db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec8bf4f997d2c43559fe0069870bcb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#afec8bf4f997d2c43559fe0069870bcb1">PlayAudioEvolve</a> (AudioSource audioSource)</td></tr>
+<tr class="separator:afec8bf4f997d2c43559fe0069870bcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5abbfc3a23ae53153afb7fc46588770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#af5abbfc3a23ae53153afb7fc46588770">RotatePlayer</a> ()</td></tr>
 <tr class="separator:af5abbfc3a23ae53153afb7fc46588770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e49eea241ab7a3b11125c33aae4b12d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a7e49eea241ab7a3b11125c33aae4b12d">DiveAnimation</a> ()</td></tr>
 <tr class="separator:a7e49eea241ab7a3b11125c33aae4b12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96683270dabdb0389c014c436aaf3cb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a96683270dabdb0389c014c436aaf3cb6">RoamAnimation</a> ()</td></tr>
 <tr class="separator:a96683270dabdb0389c014c436aaf3cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0190d96bfed446e24e623ef87a7788a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#ae0190d96bfed446e24e623ef87a7788a">EmergeAnimation</a> ()</td></tr>
+<tr class="separator:ae0190d96bfed446e24e623ef87a7788a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d2a1162c4cc3a5d4be939d00368c6e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a0d2a1162c4cc3a5d4be939d00368c6e3">OnTriggerEnter</a> (Collider other)</td></tr>
 <tr class="separator:a0d2a1162c4cc3a5d4be939d00368c6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49aa6a80bb76113ff3702536ea1b46de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player_movement.html#a49aa6a80bb76113ff3702536ea1b46de">NoFlyingWhales</a> ()</td></tr>
@@ -296,6 +300,33 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae0190d96bfed446e24e623ef87a7788a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0190d96bfed446e24e623ef87a7788a">&#9670;&nbsp;</a></span>EmergeAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.EmergeAnimation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Play the emerging animation. </p>
+
+</div>
+</div>
 <a id="a0caaa871b9ef680c9f02bd0e22c77db1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0caaa871b9ef680c9f02bd0e22c77db1">&#9670;&nbsp;</a></span>FixedUpdate()</h2>
 
@@ -417,6 +448,40 @@ Private Member Functions</h2></td></tr>
 <p>Handles disabling of powerups after they're picked up. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>The pickup the player has collided with.</td></tr>
+  </table>
+  </dd>
+</dl>
+</p>
+
+</div>
+</div>
+<a id="afec8bf4f997d2c43559fe0069870bcb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec8bf4f997d2c43559fe0069870bcb1">&#9670;&nbsp;</a></span>PlayAudioEvolve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovement.PlayAudioEvolve </td>
+          <td>(</td>
+          <td class="paramtype">AudioSource&#160;</td>
+          <td class="paramname"><em>audioSource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Plays audio with varying random parameters for interesting effects </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">audioSource</td><td>Audio Sent To This Method To Evolve.</td></tr>
   </table>
   </dd>
 </dl>

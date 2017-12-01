@@ -4,7 +4,10 @@ using UnityEngine;
 
 namespace OceanSim
 {
-	public class Ocean : MonoBehaviour {
+    /// <summary>
+    /// Unused ocean class.
+    /// </summary>
+    public class Ocean : MonoBehaviour {
 
 		// Use this for initialization
 		void Start () {

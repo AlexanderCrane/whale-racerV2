@@ -8,7 +8,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/// <summary>
+/// Stores triangle water mesh data.
+/// </summary>
 public struct TriangleType
 {
 

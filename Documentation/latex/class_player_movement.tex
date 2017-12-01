@@ -44,11 +44,15 @@ void \hyperlink{class_player_movement_aaf9b77d7177d538be9c1447d08191322}{Update}
 \item 
 void \hyperlink{class_player_movement_a0caaa871b9ef680c9f02bd0e22c77db1}{Fixed\+Update} ()
 \item 
+void \hyperlink{class_player_movement_afec8bf4f997d2c43559fe0069870bcb1}{Play\+Audio\+Evolve} (Audio\+Source audio\+Source)
+\item 
 void \hyperlink{class_player_movement_af5abbfc3a23ae53153afb7fc46588770}{Rotate\+Player} ()
 \item 
 void \hyperlink{class_player_movement_a7e49eea241ab7a3b11125c33aae4b12d}{Dive\+Animation} ()
 \item 
 void \hyperlink{class_player_movement_a96683270dabdb0389c014c436aaf3cb6}{Roam\+Animation} ()
+\item 
+void \hyperlink{class_player_movement_ae0190d96bfed446e24e623ef87a7788a}{Emerge\+Animation} ()
 \item 
 void \hyperlink{class_player_movement_a0d2a1162c4cc3a5d4be939d00368c6e3}{On\+Trigger\+Enter} (Collider other)
 \item 
@@ -135,6 +139,16 @@ Handles dive input and plays diving animations.
 
 Play the diving animation. 
 
+\mbox{\Hypertarget{class_player_movement_ae0190d96bfed446e24e623ef87a7788a}\label{class_player_movement_ae0190d96bfed446e24e623ef87a7788a}} 
+\index{Player\+Movement@{Player\+Movement}!Emerge\+Animation@{Emerge\+Animation}}
+\index{Emerge\+Animation@{Emerge\+Animation}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Emerge\+Animation()}{EmergeAnimation()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Emerge\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Play the emerging animation. 
+
 \mbox{\Hypertarget{class_player_movement_a0caaa871b9ef680c9f02bd0e22c77db1}\label{class_player_movement_a0caaa871b9ef680c9f02bd0e22c77db1}} 
 \index{Player\+Movement@{Player\+Movement}!Fixed\+Update@{Fixed\+Update}}
 \index{Fixed\+Update@{Fixed\+Update}!Player\+Movement@{Player\+Movement}}
@@ -186,6 +200,21 @@ Repositions whale and adds force if out of constraints
 Handles disabling of powerups after they\textquotesingle{}re picked up. 
 \begin{DoxyParams}{Parameters}
 {\em other} & The pickup the player has collided with.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\Hypertarget{class_player_movement_afec8bf4f997d2c43559fe0069870bcb1}\label{class_player_movement_afec8bf4f997d2c43559fe0069870bcb1}} 
+\index{Player\+Movement@{Player\+Movement}!Play\+Audio\+Evolve@{Play\+Audio\+Evolve}}
+\index{Play\+Audio\+Evolve@{Play\+Audio\+Evolve}!Player\+Movement@{Player\+Movement}}
+\subsubsection{\texorpdfstring{Play\+Audio\+Evolve()}{PlayAudioEvolve()}}
+{\footnotesize\ttfamily void Player\+Movement.\+Play\+Audio\+Evolve (\begin{DoxyParamCaption}\item[{Audio\+Source}]{audio\+Source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Plays audio with varying random parameters for interesting effects 
+\begin{DoxyParams}{Parameters}
+{\em audio\+Source} & Audio Sent To This Method To Evolve.\\
 \hline
 \end{DoxyParams}
 

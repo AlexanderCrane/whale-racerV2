@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['realripple',['RealRipple',['../class_unity_standard_assets_1_1_water_1_1_real_ripple.html',1,'UnityStandardAssets::Water']]],
-  ['reloadmainmenu',['ReloadMainMenu',['../class_reload_main_menu.html',1,'']]],
-  ['rotator',['Rotator',['../class_rotator.html',1,'']]]
+  ['pathingwaypoint',['PathingWaypoint',['../class_pathing_waypoint.html',1,'']]],
+  ['playerhealth',['PlayerHealth',['../class_player_health.html',1,'']]],
+  ['playermanager',['PlayerManager',['../class_player_manager.html',1,'']]],
+  ['playermovement',['PlayerMovement',['../class_player_movement.html',1,'']]],
+  ['playersplash',['PlayerSplash',['../class_player_splash.html',1,'']]],
+  ['powerup',['PowerUp',['../class_power_up.html',1,'']]]
 ];

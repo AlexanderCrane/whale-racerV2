@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-
+/// <summary>
+/// Manages music volume options and playing of different background audio.
+/// </summary>
 public class GameAudio: MonoBehaviour
 {
     [SerializeField] private AudioMixer master;

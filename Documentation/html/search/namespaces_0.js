@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['oceansim',['OceanSim',['../namespace_ocean_sim.html',1,'']]]
+  ['assets',['Assets',['../namespace_assets.html',1,'']]],
+  ['scripts',['Scripts',['../namespace_assets_1_1_scripts.html',1,'Assets']]]
 ];

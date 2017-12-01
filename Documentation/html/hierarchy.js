@@ -11,14 +11,18 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "AngleLimiter", "class_angle_limiter.html", null ],
       [ "AnimationHashTable", "class_animation_hash_table.html", null ],
+      [ "Assets.Scripts.CausticsProjector", "class_assets_1_1_scripts_1_1_caustics_projector.html", null ],
       [ "BGMController", "class_b_g_m_controller.html", null ],
       [ "Blowhole", "class_blowhole.html", null ],
       [ "BounceNBreak", "class_bounce_n_break.html", null ],
       [ "Checkpoint", "class_checkpoint.html", null ],
       [ "ChildCollide", "class_child_collide.html", null ],
+      [ "DepthAudio", "class_depth_audio.html", null ],
+      [ "DestroyTimed", "class_destroy_timed.html", null ],
       [ "EnableButtonsOnLapSelect", "class_enable_buttons_on_lap_select.html", null ],
       [ "ExactWaterHeight", "class_exact_water_height.html", null ],
       [ "FindWaterHeight", "class_find_water_height.html", null ],
+      [ "GameAudio", "class_game_audio.html", null ],
       [ "GetWinner", "class_get_winner.html", null ],
       [ "HeightInWater", "class_height_in_water.html", null ],
       [ "lerpCamera", "classlerp_camera.html", null ],
@@ -38,8 +42,10 @@ var hierarchy =
       [ "SelectedMap", "class_selected_map.html", null ],
       [ "SimpleBoyancy", "class_simple_boyancy.html", null ],
       [ "slowDown", "classslow_down.html", null ],
+      [ "SmoothFollow", "class_smooth_follow.html", null ],
       [ "UnderWaterEffects", "class_under_water_effects.html", null ],
-      [ "UnityStandardAssets.Water.RealRipple", "class_unity_standard_assets_1_1_water_1_1_real_ripple.html", null ]
+      [ "UnityStandardAssets.Water.RealRipple", "class_unity_standard_assets_1_1_water_1_1_real_ripple.html", null ],
+      [ "UWCaustics", "class_u_w_caustics.html", null ]
     ] ],
     [ "NetworkBehaviour", null, [
       [ "GameManager", "class_game_manager.html", null ],
