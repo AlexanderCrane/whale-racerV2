@@ -22,17 +22,8 @@ namespace UnityStandardAssets.Water
     public class RealRipple : MonoBehaviour
     {
         public Vector3 waterHeight1;
-        //[SerializeField] private List<GameObject> objectsInWater;
         [SerializeField] private List<GameObject> whales;
-        //[SerializeField] private GameObject whale2;
-        //[SerializeField] private GameObject whale3;
-        //[SerializeField] private GameObject whale4;
-        //[SerializeField] private GameObject whale5;
         [SerializeField] private List<float> speeds;
-        //private float speed2;
-        //private float speed3;
-        //private float speed4;
-        //private float speed5;
         private WaterBase m_WaterBase;
 
         /// <summary>
@@ -40,6 +31,8 @@ namespace UnityStandardAssets.Water
         /// </summary>
         private void Start()
         {
+            //CheckForWhales();
+
             for (int i = 0; i < whales.Count; i++)
             {
                 if (whales[i] != null) { 
@@ -49,44 +42,52 @@ namespace UnityStandardAssets.Water
             m_WaterBase = (WaterBase)gameObject.GetComponent(typeof(WaterBase));
             waterHeight1 = new Vector3(0.0f, 0.0f, 0.0f);
         }
-
+        /// <summary>
+        /// Adds whales in scene to displace the water surface
+        /// </summary>
+        private void CheckForWhales()
+        {
+            Debug.Log("Populating whales");
+            foreach (GameObject whale in GameObject.FindGameObjectsWithTag("Player"))
+            {
+                if (whale.name.StartsWith("MP Whale"))
+                {
+                    whales.Add(whale);
+                    speeds.Add(0);
+                }
+            }
+        }
         /// <summary>
         /// Populates whales in multiplayer and creates ripples around whales.
         /// </summary>
         public void Update()
         {
-                if (SceneManager.GetActiveScene().name == "MPLobby")
+            if (SceneManager.GetActiveScene().name == "MPLobby")
+            {
+                return;
+            }
+            if (GameManager.gmInst.isMP && whales.Count == 0)
+            {
+                CheckForWhales();
+            }
+            //speed = whale.GetComponent<PlayerMovement>().whaleSpeed;
+            if (!m_WaterBase)
+            {
+                m_WaterBase = (WaterBase)gameObject.GetComponent(typeof(WaterBase));
+            }
+
+            if (m_WaterBase.sharedMaterial)
+            {
+                for (int i = 0; i < whales.Count; i++)
                 {
-                    return;
-                }
-                if (GameManager.gmInst.isMP && whales.Count == 0)
-                {
-                    Debug.Log("Populating whales");
-                    ;
-                    foreach(GameObject whale in GameObject.FindGameObjectsWithTag("Player"))
+                    if (whales[i] != null)
                     {
-                        if (whale.name.StartsWith("MP Whale"))
-                        {
-                            whales.Add(whale);
-                        }
+                        speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
                     }
                 }
-                //speed = whale.GetComponent<PlayerMovement>().whaleSpeed;
-                if (!m_WaterBase)
-                {
-                    m_WaterBase = (WaterBase)gameObject.GetComponent(typeof(WaterBase));
-                }
 
-                if (m_WaterBase.sharedMaterial)
+                if (whales[0] != null)
                 {
-                    for (int i = 0; i < whales.Count; i++)
-                    {
-                        if (whales[i] != null)
-                        {
-                            speeds[i] = whales[i].GetComponent<PlayerMovement>().whaleSpeed;
-                        }
-                    }
-
                     m_WaterBase.sharedMaterial.SetVector("_ObjectDisp1", whales[0].transform.position);
                     if (speeds[0] == 0)
                     {
@@ -100,7 +101,10 @@ namespace UnityStandardAssets.Water
                     {
                         m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed1", .85f);
                     }
+                }
 
+                if (whales[1] != null)
+                {
                     m_WaterBase.sharedMaterial.SetVector("_ObjectDisp2", whales[1].transform.position);
                     if (speeds[1] == 0)
                     {
@@ -115,6 +119,7 @@ namespace UnityStandardAssets.Water
                         m_WaterBase.sharedMaterial.SetFloat("_ObjectSpeed2", .85f);
                     }
                 }
+            }
         }
     }
 }
