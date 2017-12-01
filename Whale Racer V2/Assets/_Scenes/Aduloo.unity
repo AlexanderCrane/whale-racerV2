@@ -12204,7 +12204,7 @@ Prefab:
     - target: {fileID: 195836280879471222, guid: 793ea5c03f40faf41b7ec0e6aceb7189,
         type: 2}
       propertyPath: m_Speed
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 114155285789756342, guid: 793ea5c03f40faf41b7ec0e6aceb7189,
         type: 2}
@@ -12215,6 +12215,11 @@ Prefab:
         type: 2}
       propertyPath: m_Drag
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195836280879471222, guid: 793ea5c03f40faf41b7ec0e6aceb7189,
+        type: 2}
+      propertyPath: m_Acceleration
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 793ea5c03f40faf41b7ec0e6aceb7189, type: 2}
