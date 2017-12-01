@@ -51,7 +51,7 @@ public class Blowhole : MonoBehaviour {
         }
     }
     /// <summary>
-    /// Moves the input splash sprite up and despawns it.
+    /// Plays blowhole sound and then switches back
     /// </summary>
     private IEnumerator DelayRoutine()
     {
