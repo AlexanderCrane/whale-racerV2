@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 using UnityEngine.Audio;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /// <summary>
 ///Player movement control script.
 /// </summary>
@@ -193,6 +194,18 @@ public class PlayerMovement : NetworkBehaviour
         if ((Input.GetKey(KeyCode.M) && Input.GetKey(KeyCode.N)) && Input.GetKeyDown(KeyCode.RightShift))
         {
             gameObject.GetComponent<PlayerManager>().pmInstance.NewLap();
+        }
+
+        if ((Input.GetKey(KeyCode.Escape)))
+        {
+            if (GameManager.gmInst.isMP)
+            {
+                GameObject.FindObjectOfType<NetworkManager>().ServerChangeScene("MainMenu");
+            }
+            else
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
         }
 
         //lock y rotation to 0 so the whale can't be flipped over (for now)
