@@ -59,11 +59,13 @@ public class TestMovement : IPrebuildSetup {
 
         float initY = whale.transform.position.y; //save whale's initial height and jump
         testPM.SetCanJump();
-        testPM.Jump(true);
-
+        Debug.Log(testPM.CheckCanJump());
+        testPM.whaleSpeed = 99999999; //whale needs speed to jump, just give it a ton
         //run for three frames to let jump take effect
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 50; i++)
         {
+            testPM.Jump(true);
+            Debug.Log(whale.transform.position.y);
             yield return null;
         }
 
