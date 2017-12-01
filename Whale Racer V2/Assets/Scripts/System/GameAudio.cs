@@ -94,7 +94,7 @@ public class GameAudio: MonoBehaviour
         yield return new WaitForSeconds(3.0f);
         auSource.Stop();
         auSource.clip = startClip;
-        auSource.outputAudioMixerGroup = master.FindMatchingGroups("Environment")[0];
+        auSource.outputAudioMixerGroup = master.FindMatchingGroups("Master")[0];
         auSource.Play();
         StopAllCoroutines();
         yield return false;
